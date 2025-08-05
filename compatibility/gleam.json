@@ -1,0 +1,39 @@
+{
+    "name": "gleam",
+    "total": 27,
+    "compatible": 19,
+    "incompatible": [
+        {
+            "pattern": "//.*",
+            "error": "Unknown modifier '/'"
+        },
+        {
+            "pattern": "\\p{upper}\\p{alnum}*",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 18"
+        },
+        {
+            "pattern": "\\b_\\p{word}+{0,1}\\b",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 11"
+        },
+        {
+            "pattern": "\\b(\\p{lower}\\p{word}*)\\b\\s*\\(",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 20"
+        },
+        {
+            "pattern": "\\b(\\p{lower}\\p{word}*):\\s",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 20"
+        },
+        {
+            "pattern": "\\b(\\p{lower}\\p{word}*):",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 20"
+        },
+        {
+            "pattern": "([-*+/]\\.)",
+            "error": "Unknown modifier ']'"
+        },
+        {
+            "pattern": "([-%*+/])",
+            "error": "Unknown modifier ']'"
+        }
+    ]
+}

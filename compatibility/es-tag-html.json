@@ -1,0 +1,15 @@
+{
+    "name": "es-tag-html",
+    "total": 13,
+    "compatible": 11,
+    "incompatible": [
+        {
+            "pattern": "(?i)(\\s?/\\*\\s?(html|template|inline-html|inline-template)\\s?\\*/\\s?)(`)",
+            "error": "Unknown modifier '\\'"
+        },
+        {
+            "pattern": "(?i)(?<=[(,:=\\s]|\\$\\()\\s*(((/\\*)|(//))\\s?(html|template|inline-html|inline-template) {0,1000}\\*?/?) {0,1000}$",
+            "error": "Unknown modifier '\\'"
+        }
+    ]
+}

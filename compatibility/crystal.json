@@ -1,0 +1,87 @@
+{
+    "name": "crystal",
+    "total": 193,
+    "compatible": 173,
+    "incompatible": [
+        {
+            "pattern": "(\\$)([!\\&'+@`]|\\d+|[\"$*,./:-?\\\\_~]|-[0FIadilpv])",
+            "error": "Unknown modifier ':'"
+        },
+        {
+            "pattern": "(?=def\\b)(?<=^|\\s)(def)\\s+((?>[A-Z_a-z]\\w*(?>\\.|::))?(?>[A-Z_a-z]\\w*(?>[!?]|=(?!>))?|\\^|===?|!=|>[=>]?|<=>|<[<=]?|[%\\&/`|]|\\*\\*?|=?~|[-+]@?|\\[][=?]?|\\[]=?))\\s*(\\()",
+            "error": "Unknown modifier '`'"
+        },
+        {
+            "pattern": "(?=def\\b)(?<=^|\\s)(def)\\b(\\s+((?>[A-Z_a-z]\\w*(?>\\.|::))?(?>[A-Z_a-z]\\w*(?>[!?]|=(?!>))?|\\^|===?|!=|>[=>]?|<=>|<[<=]?|[%\\&/`|]|\\*\\*?|=?~|[-+]@?|\\[][=?]?|\\[]=?)))?",
+            "error": "Unknown modifier '`'"
+        },
+        {
+            "pattern": "(?<!\\()/=",
+            "error": "Unknown modifier '='"
+        },
+        {
+            "pattern": "(?:^|(?<=[\\&(,:;=>?\\[|~]|[;\\s]if\\s|[;\\s]elsif\\s|[;\\s]while\\s|[;\\s]unless\\s|[;\\s]when\\s|[;\\s]assert_match\\s|[;\\s]or\\s|[;\\s]and\\s|[;\\s]not\\s|[.\\s]index\\s|[.\\s]scan\\s|[.\\s]sub\\s|[.\\s]sub!\\s|[.\\s]gsub\\s|[.\\s]gsub!\\s|[.\\s]match\\s)|(?<=^(?:when|if|elsif|while|unless)\\s))\\s*((/))(?![*+?{}])",
+            "error": "Unknown modifier ')'"
+        },
+        {
+            "pattern": "((/[imsx]*))",
+            "error": "Unknown modifier '['"
+        },
+        {
+            "pattern": "(?<!:)(:)(?>[A-Z_a-z\\x{80}-\\x{10FFFF}][\\x{80}-\\x{10FFFF}\\w]*(?>[!?]|=(?![=>]))?|===?|>[=>]?|<[<=]?|<=>|[%\\&/`|]|\\*\\*?|=?~|[-+]@?|\\[][=?]?|@@?[A-Z_a-z\\x{80}-\\x{10FFFF}][\\x{80}-\\x{10FFFF}\\w]*)",
+            "error": "Unknown modifier '`'"
+        },
+        {
+            "pattern": "\\s*\\2\\b",
+            "error": "Compilation failed: reference to non-existent subpattern at offset 4"
+        },
+        {
+            "pattern": "\\s*\\2\\b",
+            "error": "Compilation failed: reference to non-existent subpattern at offset 4"
+        },
+        {
+            "pattern": "\\s*\\2\\b",
+            "error": "Compilation failed: reference to non-existent subpattern at offset 4"
+        },
+        {
+            "pattern": "\\s*\\2\\b",
+            "error": "Compilation failed: reference to non-existent subpattern at offset 4"
+        },
+        {
+            "pattern": "\\s*\\2\\b",
+            "error": "Compilation failed: reference to non-existent subpattern at offset 4"
+        },
+        {
+            "pattern": "\\s*\\2\\b",
+            "error": "Compilation failed: reference to non-existent subpattern at offset 4"
+        },
+        {
+            "pattern": "\\s*\\2\\b",
+            "error": "Compilation failed: reference to non-existent subpattern at offset 4"
+        },
+        {
+            "pattern": "\\s*\\2\\b",
+            "error": "Compilation failed: reference to non-existent subpattern at offset 4"
+        },
+        {
+            "pattern": "\\s*\\2\\b",
+            "error": "Compilation failed: reference to non-existent subpattern at offset 4"
+        },
+        {
+            "pattern": "\\s*\\1\\b",
+            "error": "Compilation failed: reference to non-existent subpattern at offset 4"
+        },
+        {
+            "pattern": "\\s*\\1\\b",
+            "error": "Compilation failed: reference to non-existent subpattern at offset 4"
+        },
+        {
+            "pattern": "([%\\&]|\\*\\*|[-*+/])",
+            "error": "Unknown modifier ']'"
+        },
+        {
+            "pattern": "((?<=\\W)\\b|^)\\w+\\b(?=\\s*([]$)-/=^}]|<\\s|<<[.|\\s]))",
+            "error": "Unknown modifier '='"
+        }
+    ]
+}

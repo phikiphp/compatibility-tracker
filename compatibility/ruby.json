@@ -1,0 +1,187 @@
+{
+    "name": "ruby",
+    "total": 336,
+    "compatible": 291,
+    "incompatible": [
+        {
+            "pattern": "^\\s*([_a-z][0-9A-Z_a-z]*)\\s*(([-%*+/]|\\*\\*|[\\&^|]|<<|>>)=)",
+            "error": "Unknown modifier ']'"
+        },
+        {
+            "pattern": "(?<!\\.)\\b(case|if|elsif|unless|until|while)\\b\\s*(\\()*?\\s*([_a-z][0-9A-Z_a-z]*)\\s*(([-%*+/]|\\*\\*|[\\&^|]|<<|>>)=)",
+            "error": "Unknown modifier ']'"
+        },
+        {
+            "pattern": "(\\$)([!\\&'+@`]|\\d+|[\"$*,./:-?\\\\_~]|-[0FIadilpv])",
+            "error": "Unknown modifier ':'"
+        },
+        {
+            "pattern": "(?=def\\b)(?<=^|\\s)(def)\\s+((?>[A-Z_a-z]\\w*(?>\\.|::))?(?>[A-Z_a-z]\\w*(?>[!?]|=(?!>))?|===?|!=|>[=>]?|<=>|<[<=]?|[%\\&/`|]|\\*\\*?|=?~|[-+]@?|\\[]=?))\\s*(\\()",
+            "error": "Unknown modifier '`'"
+        },
+        {
+            "pattern": "(?=def\\b)(?<=^|\\s)(def)\\s+((?>[A-Z_a-z]\\w*(?>\\.|::))?(?>[A-Z_a-z]\\w*(?>[!?]|=(?!>))?|===?|!=|>[=>]?|<=>|<[<=]?|[%\\&/`|]|\\*\\*?|=?~|[-+]@?|\\[]=?))[\\t ](?=[\\t ]*[^#;\\s])",
+            "error": "Unknown modifier '`'"
+        },
+        {
+            "pattern": "(?=def\\b)(?<=^|\\s)(def)\\b(\\s+((?>[A-Z_a-z]\\w*(?>\\.|::))?(?>[A-Z_a-z]\\w*(?>[!?]|=(?!>))?|===?|!=|>[=>]?|<=>|<[<=]?|[%\\&/`|]|\\*\\*?|=?~|[-+]@?|\\[]=?)))?",
+            "error": "Unknown modifier '`'"
+        },
+        {
+            "pattern": "(?<!\\()/=",
+            "error": "Unknown modifier '='"
+        },
+        {
+            "pattern": "(?<![)\\w])((/))(?![*+?])(?=(?:\\\\/|[^/])*+/[eimnosux]*\\s*(?:[]#),.:?}]|\\|\\||&&|<=>|=>|==|=~|!~|!=|;|$|if|else|elsif|then|do|end|unless|while|until|or|and)|$)",
+            "error": "Unknown modifier ')'"
+        },
+        {
+            "pattern": "((/[eimnosux]*))",
+            "error": "Unknown modifier '['"
+        },
+        {
+            "pattern": "\\1[eimnosux]*",
+            "error": "Compilation failed: reference to non-existent subpattern at offset 1"
+        },
+        {
+            "pattern": "\\1",
+            "error": "Compilation failed: reference to non-existent subpattern at offset 1"
+        },
+        {
+            "pattern": "\\1",
+            "error": "Compilation failed: reference to non-existent subpattern at offset 1"
+        },
+        {
+            "pattern": "\\1",
+            "error": "Compilation failed: reference to non-existent subpattern at offset 1"
+        },
+        {
+            "pattern": "\\1",
+            "error": "Compilation failed: reference to non-existent subpattern at offset 1"
+        },
+        {
+            "pattern": "\\1",
+            "error": "Compilation failed: reference to non-existent subpattern at offset 1"
+        },
+        {
+            "pattern": "\\1",
+            "error": "Compilation failed: reference to non-existent subpattern at offset 1"
+        },
+        {
+            "pattern": "\\1",
+            "error": "Compilation failed: reference to non-existent subpattern at offset 1"
+        },
+        {
+            "pattern": "\\1",
+            "error": "Compilation failed: reference to non-existent subpattern at offset 1"
+        },
+        {
+            "pattern": "(?<!:)(:)(?>[$A-Z_a-z]\\w*(?>[!?]|=(?![=>]))?|===?|<=>|>[=>]?|<[<=]?|[%\\&/`|]|\\*\\*?|=?~|[-+]@?|\\[]=?|@@?[A-Z_a-z]\\w*)",
+            "error": "Unknown modifier '`'"
+        },
+        {
+            "pattern": "^\\s*\\2$\\n?",
+            "error": "Compilation failed: reference to non-existent subpattern at offset 5"
+        },
+        {
+            "pattern": "^\\s*\\2$\\n?",
+            "error": "Compilation failed: reference to non-existent subpattern at offset 5"
+        },
+        {
+            "pattern": "^\\s*\\2$\\n?",
+            "error": "Compilation failed: reference to non-existent subpattern at offset 5"
+        },
+        {
+            "pattern": "^\\s*\\2$\\n?",
+            "error": "Compilation failed: reference to non-existent subpattern at offset 5"
+        },
+        {
+            "pattern": "^\\s*\\2$\\n?",
+            "error": "Compilation failed: reference to non-existent subpattern at offset 5"
+        },
+        {
+            "pattern": "^\\s*\\2$\\n?",
+            "error": "Compilation failed: reference to non-existent subpattern at offset 5"
+        },
+        {
+            "pattern": "^\\s*\\2$\\n?",
+            "error": "Compilation failed: reference to non-existent subpattern at offset 5"
+        },
+        {
+            "pattern": "^\\s*\\2$\\n?",
+            "error": "Compilation failed: reference to non-existent subpattern at offset 5"
+        },
+        {
+            "pattern": "^\\s*\\2$\\n?",
+            "error": "Compilation failed: reference to non-existent subpattern at offset 5"
+        },
+        {
+            "pattern": "^\\s*\\2$\\n?",
+            "error": "Compilation failed: reference to non-existent subpattern at offset 5"
+        },
+        {
+            "pattern": "^\\s*\\2$\\n?",
+            "error": "Compilation failed: reference to non-existent subpattern at offset 5"
+        },
+        {
+            "pattern": "^\\s*\\2$\\n?",
+            "error": "Compilation failed: reference to non-existent subpattern at offset 5"
+        },
+        {
+            "pattern": "^\\s*\\2$\\n?",
+            "error": "Compilation failed: reference to non-existent subpattern at offset 5"
+        },
+        {
+            "pattern": "^\\s*\\2$\\n?",
+            "error": "Compilation failed: reference to non-existent subpattern at offset 5"
+        },
+        {
+            "pattern": "^\\s*\\2$\\n?",
+            "error": "Compilation failed: reference to non-existent subpattern at offset 5"
+        },
+        {
+            "pattern": "^\\2$",
+            "error": "Compilation failed: reference to non-existent subpattern at offset 2"
+        },
+        {
+            "pattern": "^\\s*\\6$",
+            "error": "Compilation failed: reference to non-existent subpattern at offset 5"
+        },
+        {
+            "pattern": "(?<=\\{|\\{\\s+|[^$0-:@-Z_a-z]do|^do|[^$0-:@-Z_a-z]do\\s+|^do\\s+)(\\|)",
+            "error": "Compilation failed: length of lookbehind assertion is not limited at offset 0"
+        },
+        {
+            "pattern": "([%\\&]|\\*\\*|[-*+/])",
+            "error": "Unknown modifier ']'"
+        },
+        {
+            "pattern": "^(?!\\s*#\\3\\s{2,}|\\s*#\\s*$)",
+            "error": "Compilation failed: reference to non-existent subpattern at offset 9"
+        },
+        {
+            "pattern": "^(?!\\s*#\\3\\s{2,}|\\s*#\\s*$)",
+            "error": "Compilation failed: reference to non-existent subpattern at offset 9"
+        },
+        {
+            "pattern": "^(?!\\s*#\\3\\s{2,}|\\s*#\\s*$)",
+            "error": "Compilation failed: reference to non-existent subpattern at offset 9"
+        },
+        {
+            "pattern": "^(?!\\s*#\\3\\s{2,}|\\s*#\\s*$)",
+            "error": "Compilation failed: reference to non-existent subpattern at offset 9"
+        },
+        {
+            "pattern": "^(?!\\s*#\\3\\s{2,}|\\s*#\\s*$)",
+            "error": "Compilation failed: reference to non-existent subpattern at offset 9"
+        },
+        {
+            "pattern": "^(?!\\s*#\\3\\s{2,}|\\s*#\\s*$)",
+            "error": "Compilation failed: reference to non-existent subpattern at offset 9"
+        },
+        {
+            "pattern": "^(?!\\s*#\\3\\s{2,}|\\s*#\\s*$)",
+            "error": "Compilation failed: reference to non-existent subpattern at offset 9"
+        }
+    ]
+}

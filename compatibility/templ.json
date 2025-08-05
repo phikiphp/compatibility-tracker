@@ -1,0 +1,59 @@
+{
+    "name": "templ",
+    "total": 113,
+    "compatible": 100,
+    "incompatible": [
+        {
+            "pattern": "(</?)((?i:address|blockquote|dd|div|section|article|aside|header|footer|nav|menu|dl|dt|fieldset|form|frame|frameset|h1|h2|h3|h4|h5|h6|iframe|noframes|object|ol|p|ul|applet|center|dir|hr|pre)(?=[>\\\\\\s]))",
+            "error": "Unknown modifier '?'"
+        },
+        {
+            "pattern": "(</?)([-0-:A-Za-z]+)",
+            "error": "Unknown modifier '?'"
+        },
+        {
+            "pattern": "(<)([-0-:A-Za-z]++)(?=[^>]*></\\2>)",
+            "error": "Unknown modifier '\\'"
+        },
+        {
+            "pattern": "(>(<)/)(\\2)(>)",
+            "error": "Unknown modifier ')'"
+        },
+        {
+            "pattern": "(/\\*)",
+            "error": "Unknown modifier '\\'"
+        },
+        {
+            "pattern": "(\\*/)",
+            "error": "Unknown modifier ')'"
+        },
+        {
+            "pattern": "(//)",
+            "error": "Unknown modifier '/'"
+        },
+        {
+            "pattern": "(</?)((?i:a|abbr|acronym|area|b|base|basefont|bdo|big|br|button|caption|cite|code|col|colgroup|del|dfn|em|font|head|html|i|img|input|ins|isindex|kbd|label|legend|li|link|map|meta|noscript|optgroup|option|param|[qs]|samp|script|select|small|span|strike|strong|style|sub|sup|table|tbody|td|textarea|tfoot|th|thead|title|tr|tt|u|var)(?=[>\\\\\\s]))",
+            "error": "Unknown modifier '?'"
+        },
+        {
+            "pattern": "((?: ?/)?>)",
+            "error": "Unknown modifier ')'"
+        },
+        {
+            "pattern": "</script>",
+            "error": "Unknown modifier 'c'"
+        },
+        {
+            "pattern": "</style>",
+            "error": "Unknown modifier 't'"
+        },
+        {
+            "pattern": "(?!\\G)(?<=[\"'[^/<>\\s]])",
+            "error": "Unknown modifier '<'"
+        },
+        {
+            "pattern": "(?<==)(?:[^\"'/<>{}\\s]|/(?!>))+",
+            "error": "Unknown modifier '<'"
+        }
+    ]
+}

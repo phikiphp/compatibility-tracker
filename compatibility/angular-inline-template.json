@@ -1,0 +1,11 @@
+{
+    "name": "angular-inline-template",
+    "total": 6,
+    "compatible": 5,
+    "incompatible": [
+        {
+            "pattern": "\\1",
+            "error": "Compilation failed: reference to non-existent subpattern at offset 1"
+        }
+    ]
+}

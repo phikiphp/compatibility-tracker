@@ -1,0 +1,15 @@
+{
+    "name": "cmake",
+    "total": 29,
+    "compatible": 27,
+    "incompatible": [
+        {
+            "pattern": "]\\1]",
+            "error": "Compilation failed: reference to non-existent subpattern at offset 2"
+        },
+        {
+            "pattern": "]\\1]",
+            "error": "Compilation failed: reference to non-existent subpattern at offset 2"
+        }
+    ]
+}

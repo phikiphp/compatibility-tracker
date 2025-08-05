@@ -1,0 +1,39 @@
+{
+    "name": "jsonnet",
+    "total": 37,
+    "compatible": 29,
+    "incompatible": [
+        {
+            "pattern": "/\\*",
+            "error": "Unknown modifier '\\'"
+        },
+        {
+            "pattern": "\\*/",
+            "error": "Unknown modifier '/'"
+        },
+        {
+            "pattern": "//.*$",
+            "error": "Unknown modifier '/'"
+        },
+        {
+            "pattern": "\\\\([\"/\\\\bfnrt]|(u\\h{4}))",
+            "error": "Unknown modifier '\\'"
+        },
+        {
+            "pattern": "\\\\[^\"/\\\\bfnrtu]",
+            "error": "Unknown modifier '\\'"
+        },
+        {
+            "pattern": "[-!%\\&*+/:<=>^|~]",
+            "error": "Unknown modifier ':'"
+        },
+        {
+            "pattern": "\\\\(['/\\\\bfnrt]|(u\\h{4}))",
+            "error": "Unknown modifier '\\'"
+        },
+        {
+            "pattern": "\\\\[^'/\\\\bfnrtu]",
+            "error": "Unknown modifier '\\'"
+        }
+    ]
+}

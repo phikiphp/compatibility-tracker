@@ -1,0 +1,15 @@
+{
+    "name": "angular-html",
+    "total": 3,
+    "compatible": 1,
+    "incompatible": [
+        {
+            "pattern": "(</?)(\\w[^>\\s]*)(?<!/)",
+            "error": "Unknown modifier '?'"
+        },
+        {
+            "pattern": "((?: ?/)?>)",
+            "error": "Unknown modifier ')'"
+        }
+    ]
+}

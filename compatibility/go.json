@@ -1,0 +1,179 @@
+{
+    "name": "go",
+    "total": 336,
+    "compatible": 293,
+    "incompatible": [
+        {
+            "pattern": "(?<=\\brange\\b|;|\\bif\\b|\\bfor\\b|[<>]|<=|>=|==|!=|\\w[-%*+/]|\\w[-%*+/]=|\\|\\||&&)\\s*((?![]\\[]+)[-\\]!%*+./:<=>\\[_[:alnum:]]+)\\s*(?=\\{)",
+            "error": "Unknown modifier ']'"
+        },
+        {
+            "pattern": "\\b(make)\\b(\\()((?:(?:[]*\\[]+{0,1}(?:<-\\s*)?\\bchan\\b(?:\\s*<-)?\\s*)+(?:\\([^)]+\\))?)?[]*\\[]+{0,1}(?:(?!\\bmap\\b)[.\\w]+)?(\\[(?:\\S+(?:,\\s*\\S+)*)?])?,?)?",
+            "error": "Compilation failed: quantifier does not follow a repeatable item at offset 32"
+        },
+        {
+            "pattern": "(/\\*)",
+            "error": "Unknown modifier '\\'"
+        },
+        {
+            "pattern": "(\\*/)",
+            "error": "Unknown modifier ')'"
+        },
+        {
+            "pattern": "(//)",
+            "error": "Unknown modifier '/'"
+        },
+        {
+            "pattern": "(?<=\\bconst\\b)\\s*\\b([.\\w]+(?:,\\s*[.\\w]+)*)\\s*((?:(?:[]*\\[]+{0,1}(?:<-\\s*)?\\bchan\\b(?:\\s*<-)?\\s*)+(?:\\([^)]+\\))?)?(?![]*\\[]+{0,1}\\b(?:struct|func|map)\\b)(?:[]*.\\[\\w]+(?:,\\s*[]*.\\[\\w]+)*)?\\s*=?)?",
+            "error": "Compilation failed: quantifier does not follow a repeatable item at offset 63"
+        },
+        {
+            "pattern": "^\\s*\\b([.\\w]+(?:,\\s*[.\\w]+)*)\\s*((?:(?:[]*\\[]+{0,1}(?:<-\\s*)?\\bchan\\b(?:\\s*<-)?\\s*)+(?:\\([^)]+\\))?)?(?![]*\\[]+{0,1}\\b(?:struct|func|map)\\b)(?:[]*.\\[\\w]+(?:,\\s*[]*.\\[\\w]+)*)?\\s*=?)?",
+            "error": "Compilation failed: quantifier does not follow a repeatable item at offset 50"
+        },
+        {
+            "pattern": "(?<!\\w)(\\([]*\\[]+{0,1}[.\\w]+(?:\\[(?:[]*.\\[{}\\w]+(?:,\\s*[]*.\\[{}\\w]+)*)?])?\\))(?=\\()",
+            "error": "Compilation failed: quantifier does not follow a repeatable item at offset 21"
+        },
+        {
+            "pattern": "(?<=\\))\\s*((?:[]*\\[]+{0,1}(?:<-\\s*)?\\bchan\\b(?:\\s*<-)?\\s*)+{0,1}(?![]*\\[]+{0,1}\\b(?:struct|interface)\\b)[-\\]*.\\[\\w]+)?\\s*(?=\\{)",
+            "error": "Compilation failed: quantifier does not follow a repeatable item at offset 25"
+        },
+        {
+            "pattern": "(?<=\\))\\s*((?:\\s*[]*\\[]+{0,1}(?:<-\\s*)?\\bchan\\b(?:\\s*<-)?\\s*)+{0,1}[-\\]*.<>\\[\\w]+\\s*(?:/[*/].*)?)$",
+            "error": "Unknown modifier '['"
+        },
+        {
+            "pattern": "(\\w+\\s+)?([*.\\w]+(?:\\[(?:[*.\\w]+(?:,\\s+)?)+{0,1}])?)",
+            "error": "Compilation failed: quantifier does not follow a repeatable item at offset 47"
+        },
+        {
+            "pattern": "((?:\\b\\w+,\\s*)+{0,1}\\b\\w+)\\s+(?=(?:\\s*[]*\\[]+{0,1}(?:<-\\s*)?\\bchan\\b(?:\\s*<-)?\\s*)+{0,1}[]*\\[]+{0,1}\\b(?:struct|interface)\\b\\s*\\{)",
+            "error": "Compilation failed: quantifier does not follow a repeatable item at offset 19"
+        },
+        {
+            "pattern": "(?:(?<=\\()|^\\s*)((?:\\b\\w+,\\s*)+(?:/[*/].*)?)$",
+            "error": "Unknown modifier '['"
+        },
+        {
+            "pattern": "((?:\\b\\w+,\\s*)+{0,1}\\b\\w+)\\s+((?:\\s*[]*\\[]+{0,1}(?:<-\\s*)?\\bchan\\b(?:\\s*<-)?\\s*)+{0,1}(?:[]*.\\[\\w]+{0,1}(?:\\bfunc\\b\\([^)]+{0,1}\\)(?:\\s*[]*\\[]+{0,1}(?:<-\\s*)?\\bchan\\b(?:\\s*<-)?\\s*)+{0,1}\\s*)+(?:[]*.\\[\\w]+|\\([^)]+{0,1}\\))?|(?:[]*\\[]+{0,1}[*.\\w]+(?:\\[[^]]+])?[*.\\w]+{0,1})+))",
+            "error": "Compilation failed: quantifier does not follow a repeatable item at offset 19"
+        },
+        {
+            "pattern": "(?<=\\))(\\s*(?:[]*\\[]+{0,1}(?:<-\\s*)?\\bchan\\b(?:\\s*<-)?\\s*)+)?(\\s*(?:[]*\\[]+{0,1}[*.\\w]+)?(?:\\[(?:[*.\\w]+{0,1}(?:\\[[^]]+{0,1}])?(?:,\\s+)?)+]|\\([^)]+{0,1}\\))?[*.\\w]+{0,1}\\s*(?=\\{)|\\s*(?:[]*\\[]+{0,1}(?!\\bfunc\\b)[*.\\w]+(?:\\[(?:[*.\\w]+{0,1}(?:\\[[^]]+{0,1}])?(?:,\\s+)?)+])?[*.\\w]+{0,1}|\\([^)]+{0,1}\\)))?",
+            "error": "Compilation failed: quantifier does not follow a repeatable item at offset 25"
+        },
+        {
+            "pattern": "\\b(func)\\b(\\([^/]*?\\)\\s+\\([^/]*?\\))\\s+(?=\\{)",
+            "error": "Unknown modifier ']'"
+        },
+        {
+            "pattern": "((?:\\b\\w+,\\s*)+{0,1}\\b\\w+)\\s+(?=(?:\\s*[]*\\[]+{0,1}(?:<-\\s*)?\\bchan\\b(?:\\s*<-)?\\s*)+{0,1}[]*\\[]+{0,1}\\b(?:struct|interface)\\b\\s*\\{)",
+            "error": "Compilation failed: quantifier does not follow a repeatable item at offset 19"
+        },
+        {
+            "pattern": "(?:(?<=\\()|^\\s*)((?:\\b\\w+,\\s*)+(?:/[*/].*)?)$",
+            "error": "Unknown modifier '['"
+        },
+        {
+            "pattern": "((?:\\b\\w+,\\s*)+{0,1}\\b\\w+)\\s+((?:\\s*[]*\\[]+{0,1}(?:<-\\s*)?\\bchan\\b(?:\\s*<-)?\\s*)+{0,1}(?:[]*.\\[\\w]+{0,1}(?:\\bfunc\\b\\([^)]+{0,1}\\)(?:\\s*[]*\\[]+{0,1}(?:<-\\s*)?\\bchan\\b(?:\\s*<-)?\\s*)+{0,1}\\s*)+(?:[*.\\w]+|\\([^)]+{0,1}\\))?|(?:(?:[*.~\\w]+|\\[(?:[*.\\w]+{0,1}(?:\\[[^]]+{0,1}])?(?:,\\s+)?)+])[*.\\w]+{0,1})+))",
+            "error": "Compilation failed: quantifier does not follow a repeatable item at offset 19"
+        },
+        {
+            "pattern": "([*.\\w]+)(\\[[^]]+{0,1}])",
+            "error": "Compilation failed: quantifier does not follow a repeatable item at offset 21"
+        },
+        {
+            "pattern": "^(\\s*\\w+:\\s*|\\s*\\b(?:break|goto|continue)\\b\\s+\\w+(?:\\s*/[*/]\\s*.*)?)$",
+            "error": "Unknown modifier '['"
+        },
+        {
+            "pattern": "(])((?:[]*\\[]+{0,1}(?:<-\\s*)?\\bchan\\b(?:\\s*<-)?\\s*)+{0,1}(?![]*\\[]+{0,1}\\b(?:func|struct|map)\\b)[]*\\[]+{0,1}[.\\w]+(?:\\[(?:[]*.\\[{}\\w]+(?:,\\s*[]*.\\[{}\\w]+)*)?])?)?",
+            "error": "Compilation failed: quantifier does not follow a repeatable item at offset 18"
+        },
+        {
+            "pattern": "((?:|[-%*+/:^|]|<<|>>|&\\^?)=)",
+            "error": "Unknown modifier ':'"
+        },
+        {
+            "pattern": "([-%*+/])",
+            "error": "Unknown modifier ']'"
+        },
+        {
+            "pattern": "^\\s*\\b(type)\\b\\s*([*.\\w]+)\\s+(?!(?:=\\s*)?[]*\\[]+{0,1}\\b(?:struct|interface)\\b)([\\s\\S]+)",
+            "error": "Compilation failed: quantifier does not follow a repeatable item at offset 52"
+        },
+        {
+            "pattern": "(?<=])(\\s+(?:=\\s*)?(?:[]*\\[]+{0,1}(?:<-\\s*)?\\bchan\\b(?:\\s*<-)?\\s*)+{0,1}(?![]*\\[]+{0,1}\\b(?:struct|interface|func)\\b)[-\\]*.\\[\\w]+(?:,\\s*[]*.\\[\\w]+)*)?",
+            "error": "Compilation failed: quantifier does not follow a repeatable item at offset 33"
+        },
+        {
+            "pattern": "(?<=\\w\\[)((?:\\b[-%\\&*+./<>|\\w]+:|:\\b[-%\\&*+./<>|\\w]+)(?:\\b[-%\\&*+./<>|\\w]+)?(?::\\b[-%\\&*+./<>|\\w]+)?)(?=])",
+            "error": "Unknown modifier '<'"
+        },
+        {
+            "pattern": "\\b(\\w+(?:,\\s*\\b\\w+)*(?:\\s*[]*\\[]+{0,1}(?:<-\\s*)?\\bchan\\b(?:\\s*<-)?\\s*)+{0,1}\\s*[]*\\[]+{0,1})\\b(struct)\\b\\s*(\\{)",
+            "error": "Compilation failed: quantifier does not follow a repeatable item at offset 37"
+        },
+        {
+            "pattern": "\\b(\\w+(?:,\\s*\\b\\w+)*(?:\\s*[]*\\[]+{0,1}(?:<-\\s*)?\\bchan\\b(?:\\s*<-)?\\s*)+{0,1}\\s*[]*\\[]+{0,1})\\b(interface)\\b\\s*(\\{)",
+            "error": "Compilation failed: quantifier does not follow a repeatable item at offset 37"
+        },
+        {
+            "pattern": "\\b(\\w+(?:,\\s*\\b\\w+)*(?:\\s*[]*\\[]+{0,1}(?:<-\\s*)?\\bchan\\b(?:\\s*<-)?\\s*)+{0,1}\\s*[]*\\[]+{0,1})\\b(func)\\b\\s*(\\()",
+            "error": "Compilation failed: quantifier does not follow a repeatable item at offset 37"
+        },
+        {
+            "pattern": "(?<=\\{)\\s*((?:\\s*[]*\\[]+{0,1}(?:<-\\s*)?\\bchan\\b(?:\\s*<-)?\\s*)+{0,1}[]*.\\[\\w]+)\\s*(?=})",
+            "error": "Compilation failed: quantifier does not follow a repeatable item at offset 28"
+        },
+        {
+            "pattern": "(?<=\\{)\\s*((?:\\w+,\\s*)+{0,1}\\w+\\s+)((?:\\s*[]*\\[]+{0,1}(?:<-\\s*)?\\bchan\\b(?:\\s*<-)?\\s*)+{0,1}[]*.\\[\\w]+)\\s*(?=})",
+            "error": "Compilation failed: quantifier does not follow a repeatable item at offset 27"
+        },
+        {
+            "pattern": "(?<=\\{)((?:\\s*(?:(?:\\w+,\\s*)+{0,1}\\w+\\s+)?(?:\\s*[]*\\[]+{0,1}(?:<-\\s*)?\\bchan\\b(?:\\s*<-)?\\s*)+{0,1}[^/\\s]+;?)+)\\s*(?=})",
+            "error": "Unknown modifier '\\'"
+        },
+        {
+            "pattern": "((?:\\w+,\\s*)+{0,1}\\w+\\s+)?((?:\\s*[]*\\[]+{0,1}(?:<-\\s*)?\\bchan\\b(?:\\s*<-)?\\s*)+{0,1}[^/\\s]+;?)",
+            "error": "Unknown modifier '\\'"
+        },
+        {
+            "pattern": "((?:\\s*[]*\\[]+{0,1}(?:<-\\s*)?\\bchan\\b(?:\\s*<-)?\\s*)+{0,1}[*.\\w]+\\s*)(?:(?=[\"/`])|$)",
+            "error": "Unknown modifier '`'"
+        },
+        {
+            "pattern": "\\b(\\w+(?:\\s*,\\s*\\b\\w+)*)\\s*([^\"/`]+)",
+            "error": "Unknown modifier '`'"
+        },
+        {
+            "pattern": "(?<=\\bswitch\\b)\\s*(\\w+\\s*:=)?\\s*([-\\]%\\&(-+./<>\\[|\\w]+)(\\.\\(\\btype\\b\\)\\s*)(\\{)",
+            "error": "Unknown modifier '<'"
+        },
+        {
+            "pattern": "^\\s*\\b(case)\\b\\s+([!*,.<=>\\w\\s]+)(:)(\\s*/[*/]\\s*.*)?$",
+            "error": "Unknown modifier '['"
+        },
+        {
+            "pattern": "^\\s*\\b(case)\\b\\s+([\\s\\S]+:\\s*(?:/[*/].*)?)$",
+            "error": "Unknown modifier '['"
+        },
+        {
+            "pattern": "(?<=\\bswitch\\b)\\s*((?:[.\\w]+(?:\\s*[-!%\\&+,/:<=>|]+\\s*[.\\w]+)*\\s*[-!%\\&+,/:<=>|]+)?\\s*[-\\]%\\&(-+./<>\\[|\\w]+{0,1}\\s*(?:;\\s*[-\\]%\\&(-+./<>\\[|\\w]+\\s*)?)(\\{)",
+            "error": "Unknown modifier ':'"
+        },
+        {
+            "pattern": "(?<=\\.\\()(?:\\b(type)\\b|((?:\\s*[]*\\[]+{0,1}(?:<-\\s*)?\\bchan\\b(?:\\s*<-)?\\s*)+{0,1}[]*\\[]+{0,1}[.\\w]+(?:\\[(?:[]*.\\[{}\\w]+(?:,\\s*[]*.\\[{}\\w]+)*)?])?))(?=\\))",
+            "error": "Compilation failed: quantifier does not follow a repeatable item at offset 41"
+        },
+        {
+            "pattern": "(?<=\\bvar\\b)\\s*\\b([.\\w]+(?:,\\s*[.\\w]+)*)\\s*((?:(?:[]*\\[]+{0,1}(?:<-\\s*)?\\bchan\\b(?:\\s*<-)?\\s*)+(?:\\([^)]+\\))?)?(?![]*\\[]+{0,1}\\b(?:struct|func|map)\\b)(?:[]*.\\[\\w]+(?:,\\s*[]*.\\[\\w]+)*)?\\s*=?)?",
+            "error": "Compilation failed: quantifier does not follow a repeatable item at offset 61"
+        },
+        {
+            "pattern": "^\\s*\\b([.\\w]+(?:,\\s*[.\\w]+)*)\\s*((?:(?:[]*\\[]+{0,1}(?:<-\\s*)?\\bchan\\b(?:\\s*<-)?\\s*)+(?:\\([^)]+\\))?)?(?![]*\\[]+{0,1}\\b(?:struct|func|map)\\b)(?:[]*.\\[\\w]+(?:,\\s*[]*.\\[\\w]+)*)?\\s*=?)?",
+            "error": "Compilation failed: quantifier does not follow a repeatable item at offset 50"
+        }
+    ]
+}

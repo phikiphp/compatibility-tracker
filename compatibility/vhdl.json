@@ -1,0 +1,11 @@
+{
+    "name": "vhdl",
+    "total": 95,
+    "compatible": 94,
+    "incompatible": [
+        {
+            "pattern": "([-+]|<=|=>??|:=|>=|[\\&/<>|]|(\\*{1,2}))",
+            "error": "Unknown modifier '<'"
+        }
+    ]
+}

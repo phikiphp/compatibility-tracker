@@ -1,0 +1,423 @@
+{
+    "name": "wikitext",
+    "total": 249,
+    "compatible": 145,
+    "incompatible": [
+        {
+            "pattern": "(\\[)((?:https?|ftps?)://[-.\\w]+(?:\\.[-.\\w]+)+[!#-/:;=?@~\\w]+)\\s*?([^]]*)(])",
+            "error": "Unknown modifier '/'"
+        },
+        {
+            "pattern": "(\\[)([-.\\w]+(?:\\.[-.\\w]+)+[!#-/:;=?@~\\w]+)\\s*?([^]]*)(])",
+            "error": "Unknown modifier ':'"
+        },
+        {
+            "pattern": "(?i)(</)(\\2)\\s*(>)",
+            "error": "Unknown modifier ')'"
+        },
+        {
+            "pattern": "(?i)(</)(\\2)\\s*(>)",
+            "error": "Unknown modifier ')'"
+        },
+        {
+            "pattern": "(?i)(</?)(includeonly|onlyinclude|noinclude)(\\s+[^>]+)?\\s*(>)",
+            "error": "Unknown modifier '?'"
+        },
+        {
+            "pattern": "(?i)(</)(nowiki)\\s*(>)",
+            "error": "Unknown modifier ')'"
+        },
+        {
+            "pattern": "(?i)(</)(ref)\\s*(>)",
+            "error": "Unknown modifier ')'"
+        },
+        {
+            "pattern": "(?i)(</)(syntaxhighlight)\\s*(>)",
+            "error": "Unknown modifier ')'"
+        },
+        {
+            "pattern": "(?i)(?=</syntaxhighlight\\s*>)",
+            "error": "Unknown modifier 'y'"
+        },
+        {
+            "pattern": "(?i)(</)(syntaxhighlight)\\s*(>)",
+            "error": "Unknown modifier ')'"
+        },
+        {
+            "pattern": "(?i)(?=</syntaxhighlight\\s*>)",
+            "error": "Unknown modifier 'y'"
+        },
+        {
+            "pattern": "(?i)(</)(syntaxhighlight)\\s*(>)",
+            "error": "Unknown modifier ')'"
+        },
+        {
+            "pattern": "(?i)(?=</syntaxhighlight\\s*>)",
+            "error": "Unknown modifier 'y'"
+        },
+        {
+            "pattern": "(?i)(</)(syntaxhighlight)\\s*(>)",
+            "error": "Unknown modifier ')'"
+        },
+        {
+            "pattern": "(?i)(?=</syntaxhighlight\\s*>)",
+            "error": "Unknown modifier 'y'"
+        },
+        {
+            "pattern": "(?i)(</)(syntaxhighlight)\\s*(>)",
+            "error": "Unknown modifier ')'"
+        },
+        {
+            "pattern": "(?i)(?=</syntaxhighlight\\s*>)",
+            "error": "Unknown modifier 'y'"
+        },
+        {
+            "pattern": "(?i)(</)(syntaxhighlight)\\s*(>)",
+            "error": "Unknown modifier ')'"
+        },
+        {
+            "pattern": "(?i)(?=</syntaxhighlight\\s*>)",
+            "error": "Unknown modifier 'y'"
+        },
+        {
+            "pattern": "(?i)(</)(syntaxhighlight)\\s*(>)",
+            "error": "Unknown modifier ')'"
+        },
+        {
+            "pattern": "(?i)(?=</syntaxhighlight\\s*>)",
+            "error": "Unknown modifier 'y'"
+        },
+        {
+            "pattern": "(?i)(</)(syntaxhighlight)\\s*(>)",
+            "error": "Unknown modifier ')'"
+        },
+        {
+            "pattern": "(?i)(?=</syntaxhighlight\\s*>)",
+            "error": "Unknown modifier 'y'"
+        },
+        {
+            "pattern": "(?i)(</)(syntaxhighlight)\\s*(>)",
+            "error": "Unknown modifier ')'"
+        },
+        {
+            "pattern": "(?i)(?=</syntaxhighlight\\s*>)",
+            "error": "Unknown modifier 'y'"
+        },
+        {
+            "pattern": "(?i)(</)(syntaxhighlight)\\s*(>)",
+            "error": "Unknown modifier ')'"
+        },
+        {
+            "pattern": "(?i)(?=</syntaxhighlight\\s*>)",
+            "error": "Unknown modifier 'y'"
+        },
+        {
+            "pattern": "(?i)(</)(syntaxhighlight)\\s*(>)",
+            "error": "Unknown modifier ')'"
+        },
+        {
+            "pattern": "(?i)(?=</syntaxhighlight\\s*>)",
+            "error": "Unknown modifier 'y'"
+        },
+        {
+            "pattern": "(?i)(</)(syntaxhighlight)\\s*(>)",
+            "error": "Unknown modifier ')'"
+        },
+        {
+            "pattern": "(?i)(?=</syntaxhighlight\\s*>)",
+            "error": "Unknown modifier 'y'"
+        },
+        {
+            "pattern": "(?i)(</)(syntaxhighlight)\\s*(>)",
+            "error": "Unknown modifier ')'"
+        },
+        {
+            "pattern": "(?i)(?=</syntaxhighlight\\s*>)",
+            "error": "Unknown modifier 'y'"
+        },
+        {
+            "pattern": "(?i)(</)(syntaxhighlight)\\s*(>)",
+            "error": "Unknown modifier ')'"
+        },
+        {
+            "pattern": "(?i)(?=</syntaxhighlight\\s*>)",
+            "error": "Unknown modifier 'y'"
+        },
+        {
+            "pattern": "(?i)(</)(syntaxhighlight)\\s*(>)",
+            "error": "Unknown modifier ')'"
+        },
+        {
+            "pattern": "(?i)(?=</syntaxhighlight\\s*>)",
+            "error": "Unknown modifier 'y'"
+        },
+        {
+            "pattern": "(?i)(</)(syntaxhighlight)\\s*(>)",
+            "error": "Unknown modifier ')'"
+        },
+        {
+            "pattern": "(?i)(?=</syntaxhighlight\\s*>)",
+            "error": "Unknown modifier 'y'"
+        },
+        {
+            "pattern": "(?i)(</)(syntaxhighlight)\\s*(>)",
+            "error": "Unknown modifier ')'"
+        },
+        {
+            "pattern": "(?i)(?=</syntaxhighlight\\s*>)",
+            "error": "Unknown modifier 'y'"
+        },
+        {
+            "pattern": "(?i)(</)(syntaxhighlight)\\s*(>)",
+            "error": "Unknown modifier ')'"
+        },
+        {
+            "pattern": "(?i)(?=</syntaxhighlight\\s*>)",
+            "error": "Unknown modifier 'y'"
+        },
+        {
+            "pattern": "(?i)(</)(syntaxhighlight)\\s*(>)",
+            "error": "Unknown modifier ')'"
+        },
+        {
+            "pattern": "(?i)(?=</syntaxhighlight\\s*>)",
+            "error": "Unknown modifier 'y'"
+        },
+        {
+            "pattern": "(?i)(</)(syntaxhighlight)\\s*(>)",
+            "error": "Unknown modifier ')'"
+        },
+        {
+            "pattern": "(?i)(?=</syntaxhighlight\\s*>)",
+            "error": "Unknown modifier 'y'"
+        },
+        {
+            "pattern": "(?i)(</)(syntaxhighlight)\\s*(>)",
+            "error": "Unknown modifier ')'"
+        },
+        {
+            "pattern": "(?i)(?=</syntaxhighlight\\s*>)",
+            "error": "Unknown modifier 'y'"
+        },
+        {
+            "pattern": "(?i)(</)(syntaxhighlight)\\s*(>)",
+            "error": "Unknown modifier ')'"
+        },
+        {
+            "pattern": "(?i)(?=</syntaxhighlight\\s*>)",
+            "error": "Unknown modifier 'y'"
+        },
+        {
+            "pattern": "(?i)(</)(syntaxhighlight)\\s*(>)",
+            "error": "Unknown modifier ')'"
+        },
+        {
+            "pattern": "(?i)(?=</syntaxhighlight\\s*>)",
+            "error": "Unknown modifier 'y'"
+        },
+        {
+            "pattern": "(?i)(</)(syntaxhighlight)\\s*(>)",
+            "error": "Unknown modifier ')'"
+        },
+        {
+            "pattern": "(?i)(?=</syntaxhighlight\\s*>)",
+            "error": "Unknown modifier 'y'"
+        },
+        {
+            "pattern": "(?i)(</)(syntaxhighlight)\\s*(>)",
+            "error": "Unknown modifier ')'"
+        },
+        {
+            "pattern": "(?i)(?=</syntaxhighlight\\s*>)",
+            "error": "Unknown modifier 'y'"
+        },
+        {
+            "pattern": "(?i)(</)(syntaxhighlight)\\s*(>)",
+            "error": "Unknown modifier ')'"
+        },
+        {
+            "pattern": "(?i)(?=</syntaxhighlight\\s*>)",
+            "error": "Unknown modifier 'y'"
+        },
+        {
+            "pattern": "(?i)(</)(syntaxhighlight)\\s*(>)",
+            "error": "Unknown modifier ')'"
+        },
+        {
+            "pattern": "(?i)(?=</syntaxhighlight\\s*>)",
+            "error": "Unknown modifier 'y'"
+        },
+        {
+            "pattern": "(?i)(</)(syntaxhighlight)\\s*(>)",
+            "error": "Unknown modifier ')'"
+        },
+        {
+            "pattern": "(?i)(?=</syntaxhighlight\\s*>)",
+            "error": "Unknown modifier 'y'"
+        },
+        {
+            "pattern": "(?i)(</)(syntaxhighlight)\\s*(>)",
+            "error": "Unknown modifier ')'"
+        },
+        {
+            "pattern": "(?i)(?=</syntaxhighlight\\s*>)",
+            "error": "Unknown modifier 'y'"
+        },
+        {
+            "pattern": "(?i)(</)(syntaxhighlight)\\s*(>)",
+            "error": "Unknown modifier ')'"
+        },
+        {
+            "pattern": "(?i)(?=</syntaxhighlight\\s*>)",
+            "error": "Unknown modifier 'y'"
+        },
+        {
+            "pattern": "(?i)(</)(syntaxhighlight)\\s*(>)",
+            "error": "Unknown modifier ')'"
+        },
+        {
+            "pattern": "(?i)(?=</syntaxhighlight\\s*>)",
+            "error": "Unknown modifier 'y'"
+        },
+        {
+            "pattern": "(?i)(</)(syntaxhighlight)\\s*(>)",
+            "error": "Unknown modifier ')'"
+        },
+        {
+            "pattern": "(?i)(?=</syntaxhighlight\\s*>)",
+            "error": "Unknown modifier 'y'"
+        },
+        {
+            "pattern": "(?i)(</)(syntaxhighlight)\\s*(>)",
+            "error": "Unknown modifier ')'"
+        },
+        {
+            "pattern": "(?i)(?=</syntaxhighlight\\s*>)",
+            "error": "Unknown modifier 'y'"
+        },
+        {
+            "pattern": "(?i)(</)(syntaxhighlight)\\s*(>)",
+            "error": "Unknown modifier ')'"
+        },
+        {
+            "pattern": "(?i)(?=</syntaxhighlight\\s*>)",
+            "error": "Unknown modifier 'y'"
+        },
+        {
+            "pattern": "(?i)(</)(syntaxhighlight)\\s*(>)",
+            "error": "Unknown modifier ')'"
+        },
+        {
+            "pattern": "(?i)(?=</syntaxhighlight\\s*>)",
+            "error": "Unknown modifier 'y'"
+        },
+        {
+            "pattern": "(?i)(</)(syntaxhighlight)\\s*(>)",
+            "error": "Unknown modifier ')'"
+        },
+        {
+            "pattern": "(?i)(?=</syntaxhighlight\\s*>)",
+            "error": "Unknown modifier 'y'"
+        },
+        {
+            "pattern": "(?i)(</)(syntaxhighlight)\\s*(>)",
+            "error": "Unknown modifier ')'"
+        },
+        {
+            "pattern": "(?i)(?=</syntaxhighlight\\s*>)",
+            "error": "Unknown modifier 'y'"
+        },
+        {
+            "pattern": "(?i)(</)(syntaxhighlight)\\s*(>)",
+            "error": "Unknown modifier ')'"
+        },
+        {
+            "pattern": "(?i)(?=</syntaxhighlight\\s*>)",
+            "error": "Unknown modifier 'y'"
+        },
+        {
+            "pattern": "(?i)(</)(syntaxhighlight)\\s*(>)",
+            "error": "Unknown modifier ')'"
+        },
+        {
+            "pattern": "(?i)(?=</syntaxhighlight\\s*>)",
+            "error": "Unknown modifier 'y'"
+        },
+        {
+            "pattern": "(?i)(</)(syntaxhighlight)\\s*(>)",
+            "error": "Unknown modifier ')'"
+        },
+        {
+            "pattern": "(?i)(?=</syntaxhighlight\\s*>)",
+            "error": "Unknown modifier 'y'"
+        },
+        {
+            "pattern": "(?i)(</)(syntaxhighlight)\\s*(>)",
+            "error": "Unknown modifier ')'"
+        },
+        {
+            "pattern": "(?i)(?=</syntaxhighlight\\s*>)",
+            "error": "Unknown modifier 'y'"
+        },
+        {
+            "pattern": "(?i)(</)(syntaxhighlight)\\s*(>)",
+            "error": "Unknown modifier ')'"
+        },
+        {
+            "pattern": "(?i)(?=</syntaxhighlight\\s*>)",
+            "error": "Unknown modifier 'y'"
+        },
+        {
+            "pattern": "(?i)(</)(syntaxhighlight)\\s*(>)",
+            "error": "Unknown modifier ')'"
+        },
+        {
+            "pattern": "(?i)(?=</syntaxhighlight\\s*>)",
+            "error": "Unknown modifier 'y'"
+        },
+        {
+            "pattern": "(?i)(</)(syntaxhighlight)\\s*(>)",
+            "error": "Unknown modifier ')'"
+        },
+        {
+            "pattern": "(?i)(?=</syntaxhighlight\\s*>)",
+            "error": "Unknown modifier 'y'"
+        },
+        {
+            "pattern": "(?i)(</)(syntaxhighlight)\\s*(>)",
+            "error": "Unknown modifier ')'"
+        },
+        {
+            "pattern": "(?i)(?=</syntaxhighlight\\s*>)",
+            "error": "Unknown modifier 'y'"
+        },
+        {
+            "pattern": "(?i)(</)(syntaxhighlight)\\s*(>)",
+            "error": "Unknown modifier ')'"
+        },
+        {
+            "pattern": "(?i)(?=</syntaxhighlight\\s*>)",
+            "error": "Unknown modifier 'y'"
+        },
+        {
+            "pattern": "(?i)(</)(syntaxhighlight)\\s*(>)",
+            "error": "Unknown modifier ')'"
+        },
+        {
+            "pattern": "(?i)(?=</syntaxhighlight\\s*>)",
+            "error": "Unknown modifier 'y'"
+        },
+        {
+            "pattern": "(?i)(</)(syntaxhighlight)\\s*(>)",
+            "error": "Unknown modifier ')'"
+        },
+        {
+            "pattern": "(?i)(?=</syntaxhighlight\\s*>)",
+            "error": "Unknown modifier 'y'"
+        },
+        {
+            "pattern": "(?i)(<)(templatestyles|ref|nowiki|onlyinclude|includeonly)(\\s+[^>]+)?\\s*(/>)",
+            "error": "Unknown modifier '>'"
+        }
+    ]
+}

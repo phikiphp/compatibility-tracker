@@ -1,0 +1,83 @@
+{
+    "name": "rst",
+    "total": 79,
+    "compatible": 60,
+    "incompatible": [
+        {
+            "pattern": "^(?!\\1\\s|\\s*$)",
+            "error": "Compilation failed: reference to non-existent subpattern at offset 5"
+        },
+        {
+            "pattern": "^(?:\\1(?=\\s)|\\s*$)",
+            "error": "Compilation failed: reference to non-existent subpattern at offset 5"
+        },
+        {
+            "pattern": "^(?:\\1(?=\\s)|\\s*$)",
+            "error": "Compilation failed: reference to non-existent subpattern at offset 5"
+        },
+        {
+            "pattern": "^(?:\\1(?=\\s)|\\s*$)",
+            "error": "Compilation failed: reference to non-existent subpattern at offset 5"
+        },
+        {
+            "pattern": "^(?:\\1(?=\\s)|\\s*$)",
+            "error": "Compilation failed: reference to non-existent subpattern at offset 5"
+        },
+        {
+            "pattern": "^(?:\\1(?=\\s)|\\s*$)",
+            "error": "Compilation failed: reference to non-existent subpattern at offset 5"
+        },
+        {
+            "pattern": "^(?:\\1(?=\\s)|\\s*$)",
+            "error": "Compilation failed: reference to non-existent subpattern at offset 5"
+        },
+        {
+            "pattern": "^(?:\\1(?=\\s)|\\s*$)",
+            "error": "Compilation failed: reference to non-existent subpattern at offset 5"
+        },
+        {
+            "pattern": "^(?:\\1(?=\\s)|\\s*$)",
+            "error": "Compilation failed: reference to non-existent subpattern at offset 5"
+        },
+        {
+            "pattern": "^(?:\\1(?=\\s)|\\s*$)",
+            "error": "Compilation failed: reference to non-existent subpattern at offset 5"
+        },
+        {
+            "pattern": "^(?:\\1(?=\\s)|\\s*$)",
+            "error": "Compilation failed: reference to non-existent subpattern at offset 5"
+        },
+        {
+            "pattern": "^(?:\\1(?=\\s)|\\s*$)",
+            "error": "Compilation failed: reference to non-existent subpattern at offset 5"
+        },
+        {
+            "pattern": "^(?:\\1(?=\\s)|\\s*$)",
+            "error": "Compilation failed: reference to non-existent subpattern at offset 5"
+        },
+        {
+            "pattern": "^(?:\\1(?=\\s)|\\s*$)",
+            "error": "Compilation failed: reference to non-existent subpattern at offset 5"
+        },
+        {
+            "pattern": "^(?!\\1[\\t ]|$)",
+            "error": "Compilation failed: reference to non-existent subpattern at offset 5"
+        },
+        {
+            "pattern": "^(?:\\1(?=\\s)|\\s*$)",
+            "error": "Compilation failed: reference to non-existent subpattern at offset 5"
+        },
+        {
+            "pattern": "^(?:\\1(?=\\s)|\\s*$)",
+            "error": "Compilation failed: reference to non-existent subpattern at offset 5"
+        },
+        {
+            "pattern": "(?:(?:^|,\\s+)(?:[-+]\\w|--?[A-Za-z][-\\w]+|/\\w+)(?:[ =](?:\\w+|<[^<>]+?>))?)+(?=  |\\t|$)",
+            "error": "Unknown modifier '\\'"
+        },
+        {
+            "pattern": "^(?:\\1(?=\\s)|\\s*$)",
+            "error": "Compilation failed: reference to non-existent subpattern at offset 5"
+        }
+    ]
+}

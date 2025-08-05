@@ -1,0 +1,27 @@
+{
+    "name": "fsharp",
+    "total": 162,
+    "compatible": 157,
+    "incompatible": [
+        {
+            "pattern": "//",
+            "error": "Unknown modifier '/'"
+        },
+        {
+            "pattern": "(?<![!%\\&+-/<-@^|])///(?!/)",
+            "error": "Unknown modifier '<'"
+        },
+        {
+            "pattern": "(?<![!%\\&+-/<-@^|])///(?!/)",
+            "error": "Unknown modifier '<'"
+        },
+        {
+            "pattern": "(?<![!%\\&+-/<-@^|])//(.*)$",
+            "error": "Unknown modifier '<'"
+        },
+        {
+            "pattern": "[.?]*(&&&|\\|\\|\\||\\^\\^\\^|~~~|~\\+|~-|<<<|>>>|\\|>|:>|:\\?>|[]:;\\[]|<>|[=@]|\\|\\||&&|[%\\&_{|}]|\\.\\.|[!*-\\-/>^]|>=|>>|<=??|[()]|<<)[.?]*",
+            "error": "Unknown modifier '>'"
+        }
+    ]
+}

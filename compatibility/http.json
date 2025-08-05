@@ -1,0 +1,39 @@
+{
+    "name": "http",
+    "total": 24,
+    "compatible": 16,
+    "incompatible": [
+        {
+            "pattern": "^([-\\w]+)\\s*(:)\\s*([^/].*?)\\s*$",
+            "error": "Unknown modifier ']'"
+        },
+        {
+            "pattern": "^\\s*/{2,}.*$",
+            "error": "Unknown modifier '{'"
+        },
+        {
+            "pattern": "^\\s*/{2,}\\s+((@)name)\\s+([^.\\s]+)$",
+            "error": "Unknown modifier '{'"
+        },
+        {
+            "pattern": "^\\s*/{2,}\\s+((@)note)\\s*$",
+            "error": "Unknown modifier '{'"
+        },
+        {
+            "pattern": "^\\s*/{2,}\\s+((@)prompt)\\s+(\\S+)(?:\\s+(.*))?\\s*$",
+            "error": "Unknown modifier '{'"
+        },
+        {
+            "pattern": "(HTTP)/(\\d+.\\d+)",
+            "error": "Unknown modifier '('"
+        },
+        {
+            "pattern": "(?i)^(get|post|put|delete|patch|head|options|connect|trace|lock|unlock|propfind|proppatch|copy|move|mkcol|mkcalendar|acl|search)\\s+\\s*(.+?)(?:\\s+(HTTP/\\S+))?$",
+            "error": "Unknown modifier '\\'"
+        },
+        {
+            "pattern": "(?i)^\\s*(HTTP/\\S+)\\s([1-5][0-9][0-9])\\s(.*)$",
+            "error": "Unknown modifier '\\'"
+        }
+    ]
+}

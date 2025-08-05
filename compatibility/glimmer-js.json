@@ -1,0 +1,111 @@
+{
+    "name": "glimmer-js",
+    "total": 118,
+    "compatible": 92,
+    "incompatible": [
+        {
+            "pattern": "(</?)(@|this.)?([-$.0-:A-Z_a-z]+)\\b",
+            "error": "Unknown modifier '?'"
+        },
+        {
+            "pattern": "(/?)(>)",
+            "error": "Unknown modifier '?'"
+        },
+        {
+            "pattern": "(\\{\\{~?)([#/])(([$\\--9@-Z_a-z]+))",
+            "error": "Unknown modifier ']'"
+        },
+        {
+            "pattern": "(/)+",
+            "error": "Unknown modifier ')'"
+        },
+        {
+            "pattern": "(\\{\\{~?)(([-/-9A-Z_a-z]+)\\s)",
+            "error": "Unknown modifier '-'"
+        },
+        {
+            "pattern": "(</?)([-0-9a-z]+)(?![.:])\\b",
+            "error": "Unknown modifier '?'"
+        },
+        {
+            "pattern": "(/?)(>)",
+            "error": "Unknown modifier '?'"
+        },
+        {
+            "pattern": "(</)(template)(>)",
+            "error": "Unknown modifier ')'"
+        },
+        {
+            "pattern": "(</)(template)(>)",
+            "error": "Unknown modifier ')'"
+        },
+        {
+            "pattern": "(?=</template>)",
+            "error": "Unknown modifier 't'"
+        },
+        {
+            "pattern": "(/)((?i:script))(>)",
+            "error": "Unknown modifier ')'"
+        },
+        {
+            "pattern": "(?=/)",
+            "error": "Unknown modifier ')'"
+        },
+        {
+            "pattern": "((<))(?=/(?i:script))",
+            "error": "Unknown modifier '('"
+        },
+        {
+            "pattern": "(?=</(?i:script))",
+            "error": "Unknown modifier '('"
+        },
+        {
+            "pattern": "(^[\\t ]+)?(?=//)",
+            "error": "Unknown modifier '/'"
+        },
+        {
+            "pattern": "//",
+            "error": "Unknown modifier '/'"
+        },
+        {
+            "pattern": "(?=</script)|\\n",
+            "error": "Unknown modifier 'c'"
+        },
+        {
+            "pattern": "/\\*",
+            "error": "Unknown modifier '\\'"
+        },
+        {
+            "pattern": "\\*/|(?=</script)",
+            "error": "Unknown modifier '|'"
+        },
+        {
+            "pattern": "(?i:(?=type\\s*=\\s*([\"']?)text/(x-handlebars|(x-(handlebars-)?|ng-)?template|html)[\"'>\\s]))",
+            "error": "Unknown modifier '('"
+        },
+        {
+            "pattern": "((<))(?=/(?i:script))",
+            "error": "Unknown modifier '('"
+        },
+        {
+            "pattern": "(?=</(?i:script))",
+            "error": "Unknown modifier '('"
+        },
+        {
+            "pattern": "(<)(?=/(?i:script))",
+            "error": "Unknown modifier '('"
+        },
+        {
+            "pattern": "(?i)(<)(style)(?=\\s|/?>)",
+            "error": "Unknown modifier '?'"
+        },
+        {
+            "pattern": "(?i)((<)/)(style)\\s*(>)",
+            "error": "Unknown modifier ')'"
+        },
+        {
+            "pattern": "(?=</(?i:style))",
+            "error": "Unknown modifier '('"
+        }
+    ]
+}

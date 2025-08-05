@@ -1,0 +1,27 @@
+{
+    "name": "postcss",
+    "total": 53,
+    "compatible": 48,
+    "incompatible": [
+        {
+            "pattern": "/\\*",
+            "error": "Unknown modifier '\\'"
+        },
+        {
+            "pattern": "\\*/",
+            "error": "Unknown modifier '/'"
+        },
+        {
+            "pattern": "(?<=@import)\\s[-*./\\w]+",
+            "error": "Unknown modifier '\\'"
+        },
+        {
+            "pattern": "//",
+            "error": "Unknown modifier '/'"
+        },
+        {
+            "pattern": "\\+|\\s-\\s|\\s-(?=\\$)|(?<=\\()-(?=\\$)|\\s-(?=\\()|[!%*/<=>~]",
+            "error": "Unknown modifier '<'"
+        }
+    ]
+}

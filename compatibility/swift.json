@@ -1,0 +1,259 @@
+{
+    "name": "swift",
+    "total": 439,
+    "compatible": 376,
+    "incompatible": [
+        {
+            "pattern": "/\\*\\*(?!/)",
+            "error": "Unknown modifier '\\'"
+        },
+        {
+            "pattern": "\\*/",
+            "error": "Unknown modifier '/'"
+        },
+        {
+            "pattern": "/\\*:",
+            "error": "Unknown modifier '\\'"
+        },
+        {
+            "pattern": "\\*/",
+            "error": "Unknown modifier '/'"
+        },
+        {
+            "pattern": "/\\*",
+            "error": "Unknown modifier '\\'"
+        },
+        {
+            "pattern": "\\*/",
+            "error": "Unknown modifier '/'"
+        },
+        {
+            "pattern": "\\*/",
+            "error": "Unknown modifier '/'"
+        },
+        {
+            "pattern": "(^[\\t ]+)?(?=//)",
+            "error": "Unknown modifier '/'"
+        },
+        {
+            "pattern": "///",
+            "error": "Unknown modifier '/'"
+        },
+        {
+            "pattern": "//:",
+            "error": "Unknown modifier '/'"
+        },
+        {
+            "pattern": "//",
+            "error": "Unknown modifier '/'"
+        },
+        {
+            "pattern": "/\\*",
+            "error": "Unknown modifier '\\'"
+        },
+        {
+            "pattern": "\\*/",
+            "error": "Unknown modifier '/'"
+        },
+        {
+            "pattern": "^\\s*(#)(if|elseif)\\s+(false)\\b.*?(?=$|//|/\\*)",
+            "error": "Unknown modifier '/'"
+        },
+        {
+            "pattern": "(?=\\s*/[*/])|$",
+            "error": "Unknown modifier '['"
+        },
+        {
+            "pattern": "^\\s*(#)(e(?:lse|ndif))(.*?)(?=$|//|/\\*)",
+            "error": "Unknown modifier '/'"
+        },
+        {
+            "pattern": "^\\s*(#)(sourceLocation)((\\()([^)]*)(\\)))(.*?)(?=$|//|/\\*)",
+            "error": "Unknown modifier '/'"
+        },
+        {
+            "pattern": "(?<![-!%\\&*+./<=>^|~])(->)(?![-!%\\&*+./<=>^|~])",
+            "error": "Unknown modifier '<'"
+        },
+        {
+            "pattern": "(?<![-!%\\&*+./<=>^|~])(&)(?![-!%\\&*+./<=>^|~])",
+            "error": "Unknown modifier '<'"
+        },
+        {
+            "pattern": "\\b(func)\\s+((?<q>`?)[_\\p{L}][_\\p{L}\\p{N}\\p{M}]*(\\k<q>)|(?:((?<oph>[-!%\\&*+/<-?^|~¡-§©«¬®°±¶»¿×÷‖‗†-‧‰-‾⁁-⁓⁕-⁞←-⏿─-❵➔-⯿⸀-⹿、。〃〈-〰])(\\g<oph>|(?<opc>[̀-ͯ᷀-᷿⃐-⃿︀-️︠-︯\\x{E0100}-\\x{E01EF}]))*)|(\\.(\\g<oph>|\\g<opc>|\\.)+)))\\s*(?=[(<])",
+            "error": "Unknown modifier '<'"
+        },
+        {
+            "pattern": "(?<![-!%\\&*+./<=>^|~])(->)(?![-!%\\&*+./<=>^|~])\\s*",
+            "error": "Unknown modifier '<'"
+        },
+        {
+            "pattern": "(?!\\G)$|(?=[\\n;>{}]|//|/\\*)",
+            "error": "Unknown modifier '/'"
+        },
+        {
+            "pattern": "(?=[\\n,;>{}]|//|/\\*)",
+            "error": "Unknown modifier '/'"
+        },
+        {
+            "pattern": "(?<![-!%\\&*+./<=>^|~])(==)(?![-!%\\&*+./<=>^|~])",
+            "error": "Unknown modifier '<'"
+        },
+        {
+            "pattern": "(?=\\s*[\\n,;>{}]|//|/\\*)",
+            "error": "Unknown modifier '/'"
+        },
+        {
+            "pattern": "(?<![-!%\\&*+./<=>^|~])(:)(?![-!%\\&*+./<=>^|~])",
+            "error": "Unknown modifier '<'"
+        },
+        {
+            "pattern": "(?=\\s*[\\n,;>{}]|//|/\\*)",
+            "error": "Unknown modifier '/'"
+        },
+        {
+            "pattern": "(?=\\s*[\\n,;>{}]|//|/\\*)",
+            "error": "Unknown modifier '/'"
+        },
+        {
+            "pattern": "(;)|$\\n?|(?=/[*/])",
+            "error": "Unknown modifier '['"
+        },
+        {
+            "pattern": "\\G(?!;|$|//|/\\*)(?:(typealias|struct|class|actor|enum|protocol|var|func)\\s+)?",
+            "error": "Unknown modifier '/'"
+        },
+        {
+            "pattern": "(?=;|$|//|/\\*)",
+            "error": "Unknown modifier '/'"
+        },
+        {
+            "pattern": "(?<=\\G|\\.)(?:((?<oph>[-!%\\&*+/<-?^|~¡-§©«¬®°±¶»¿×÷‖‗†-‧‰-‾⁁-⁓⁕-⁞←-⏿─-❵➔-⯿⸀-⹿、。〃〈-〰])(\\g<oph>|(?<opc>[̀-ͯ᷀-᷿⃐-⃿︀-️︠-︯\\x{E0100}-\\x{E01EF}]))*)|(\\.(\\g<oph>|\\g<opc>|\\.)+))(?=[.;]|$|//|/\\*|\\s)",
+            "error": "Unknown modifier '<'"
+        },
+        {
+            "pattern": "(?!\\s*(;|$|//|/\\*))",
+            "error": "Unknown modifier '/'"
+        },
+        {
+            "pattern": "(?=\\s*(;|$|//|/\\*))",
+            "error": "Unknown modifier '/'"
+        },
+        {
+            "pattern": "(?!\\G)(?!/[*/])|(?=[,={}]|(?!\\G)\\bwhere\\b)",
+            "error": "Unknown modifier '['"
+        },
+        {
+            "pattern": "$|(?=;|//|/\\*|[=}])",
+            "error": "Unknown modifier '/'"
+        },
+        {
+            "pattern": "(?:\\b((?:pre|in|post)fix)\\s+)?\\b(operator)\\s+(((?<oph>[-!%\\&*+/<-?^|~¡-§©«¬®°±¶»¿×÷‖‗†-‧‰-‾⁁-⁓⁕-⁞←-⏿─-❵➔-⯿⸀-⹿、。〃〈-〰])(\\g<oph>|\\.|(?<opc>[̀-ͯ᷀-᷿⃐-⃿︀-️︠-︯\\x{E0100}-\\x{E01EF}]))*+)|(\\.(\\g<oph>|\\g<opc>|\\.)++))\\s*",
+            "error": "Unknown modifier '<'"
+        },
+        {
+            "pattern": "(;)|$\\n?|(?=/[*/])",
+            "error": "Unknown modifier '['"
+        },
+        {
+            "pattern": "((?!$|;|//|/\\*)\\S)+",
+            "error": "Unknown modifier '/'"
+        },
+        {
+            "pattern": "$|(?=;|//|/\\*|})",
+            "error": "Unknown modifier '/'"
+        },
+        {
+            "pattern": "\\b(func)\\s+((?<q>`?)[_\\p{L}][_\\p{L}\\p{N}\\p{M}]*(\\k<q>)|(?:((?<oph>[-!%\\&*+/<-?^|~¡-§©«¬®°±¶»¿×÷‖‗†-‧‰-‾⁁-⁓⁕-⁞←-⏿─-❵➔-⯿⸀-⹿、。〃〈-〰])(\\g<oph>|(?<opc>[̀-ͯ᷀-᷿⃐-⃿︀-️︠-︯\\x{E0100}-\\x{E01EF}]))*)|(\\.(\\g<oph>|\\g<opc>|\\.)+)))\\s*(?=[(<])",
+            "error": "Unknown modifier '<'"
+        },
+        {
+            "pattern": "$|(?=;|//|/\\*|})",
+            "error": "Unknown modifier '/'"
+        },
+        {
+            "pattern": "(?=[;}])|(?!\\G)(?!/[*/])(?=[^,\\s])",
+            "error": "Unknown modifier '['"
+        },
+        {
+            "pattern": "(?!\\G)(?!/[*/])(?=[;}[^,\\s]])",
+            "error": "Unknown modifier '['"
+        },
+        {
+            "pattern": "(?<![-!%\\&*+./<=>^|~])(&)(?![-!%\\&*+./<=>^|~])",
+            "error": "Unknown modifier '<'"
+        },
+        {
+            "pattern": "(?<![-!%\\&*+./<=>^|~])(~)(?![-!%\\&*+./<=>^|~])",
+            "error": "Unknown modifier '<'"
+        },
+        {
+            "pattern": "(?!\\G)$|(?=;|//|/\\*|$)",
+            "error": "Unknown modifier '/'"
+        },
+        {
+            "pattern": "(?!\\G)$|(?=;|//|/\\*|$)",
+            "error": "Unknown modifier '/'"
+        },
+        {
+            "pattern": "(#+)/\\n",
+            "error": "Unknown modifier '\\'"
+        },
+        {
+            "pattern": "/\\1",
+            "error": "Unknown modifier '\\'"
+        },
+        {
+            "pattern": "(/)(?!\\s)(?!/)(?:\\\\\\s(?=/)|(?<guts>(?>(?:\\\\Q(?:(?!\\\\E)(?!/).)*+(?:\\\\E|(?=/))|\\\\.|\\(\\?#[^)]*\\)|\\(\\?(?>\\{(?:[^{].*?|\\{[^{].*?}|\\{\\{[^{].*?}}|\\{\\{\\{[^{].*?}}}|\\{\\{\\{\\{[^{].*?}}}}|\\{\\{\\{\\{\\{.+?}}}}})})(?:\\[(?!\\d)\\w+])?[<>X]?\\)|\\[(?:\\\\.|[^]\\[\\\\]|\\[(?:\\\\.|[^]\\[\\\\]|\\[(?:\\\\.|[^]\\[\\\\]|\\[(?:\\\\.|[^]\\[\\\\])+])+])+])+]|\\(\\g<guts>?+\\)|(?:(?!/)[^()\\[\\\\])+)+))?+(?<!\\s))(/)",
+            "error": "Unknown modifier ')'"
+        },
+        {
+            "pattern": "((#+)/)(?<guts>(?>(?:\\\\Q(?:(?!\\\\E)(?!/\\2).)*+(?:\\\\E|(?=/\\2))|\\\\.|\\(\\?#[^)]*\\)|\\(\\?(?>\\{(?:[^{].*?|\\{[^{].*?}|\\{\\{[^{].*?}}|\\{\\{\\{[^{].*?}}}|\\{\\{\\{\\{[^{].*?}}}}|\\{\\{\\{\\{\\{.+?}}}}})})(?:\\[(?!\\d)\\w+])?[<>X]?\\)|\\[(?:\\\\.|[^]\\[\\\\]|\\[(?:\\\\.|[^]\\[\\\\]|\\[(?:\\\\.|[^]\\[\\\\]|\\[(?:\\\\.|[^]\\[\\\\])+])+])+])+]|\\(\\g<guts>?+\\)|(?:(?!/\\2)[^()\\[\\\\])+)+))?+(/\\2)|#+/.+(\\n)",
+            "error": "Unknown modifier ')'"
+        },
+        {
+            "pattern": "(\\()(?<keyw>\\?C)(?:(?<num>\\d+)|`(?<name>(?:[^`]|``)*)`|'(?<name>(?:[^']|'')*)'|\"(?<name>(?:[^\"]|\"\")*)\"|\\^(?<name>(?:[^^]|\\^\\^)*)\\^|%(?<name>(?:[^%]|%%)*)%|#(?<name>(?:[^#]|##)*)#|\\$(?<name>(?:[^$]|\\$\\$)*)\\$|\\{(?<name>(?:[^}]|}})*)})?(\\))|(\\()(?<keyw>\\*)(?<name>(?!\\d)\\w+)(?:\\[(?<tag>(?!\\d)\\w+)])?(?:\\{[^,}]+(?:,[^,}]+)*})?(\\))|(\\()(?<keyw>\\?)(?>(\\{(?:\\g<20>|(?!\\{).*?)}))(?:\\[(?<tag>(?!\\d)\\w+)])?(?<keyw>[<>X]?)(\\))",
+            "error": "Compilation failed: two named subpatterns have the same name (PCRE2_DUPNAMES not set) at offset 64"
+        },
+        {
+            "pattern": "(\\()(?<cond>\\?\\()(?:(?<NumberRef>(?<num>[-+]?\\d+)(?:(?<op>[-+])(?<num>\\d+))?)|(?<cond>R)\\g<NumberRef>?|(?<cond>R&)(?<NamedRef>(?<name>(?!\\d)\\w+)(?:(?<op>[-+])(?<num>\\d+))?)|(?<cond><)(?:\\g<NamedRef>|\\g<NumberRef>)(?<cond>>)|(?<cond>')(?:\\g<NamedRef>|\\g<NumberRef>)(?<cond>')|(?<cond>DEFINE)|(?<cond>VERSION)(?<compar>>?=)(?<num>\\d+\\.\\d+))(?<cond>\\))|(\\()(?<cond>\\?)(?=\\()",
+            "error": "Compilation failed: two named subpatterns have the same name (PCRE2_DUPNAMES not set) at offset 70"
+        },
+        {
+            "pattern": "(?=(?<oph>[-!%\\&*+/<-?^|~¡-§©«¬®°±¶»¿×÷‖‗†-‧‰-‾⁁-⁓⁕-⁞←-⏿─-❵➔-⯿⸀-⹿、。〃〈-〰])|\\.(\\g<oph>|[.̀-ͯ᷀-᷿⃐-⃿︀-️︠-︯\\x{E0100}-\\x{E01EF}]))",
+            "error": "Unknown modifier '<'"
+        },
+        {
+            "pattern": "\\G(?<=^|[(,:;\\[{\\s])((?!(//|/\\*|\\*/))([-!%\\&*+/<-?^|~¡-§©«¬®°±¶»¿×÷̀-ͯ᷀-᷿‖‗†-‧‰-‾⁁-⁓⁕-⁞⃐-⃿←-⏿─-❵➔-⯿⸀-⹿、。〃〈-〰︀-️︠-︯\\x{E0100}-\\x{E01EF}]))++(?![]),:;}\\s]|\\z)",
+            "error": "Unknown modifier '/'"
+        },
+        {
+            "pattern": "\\G(?<!^|[(,:;\\[{\\s])((?!(//|/\\*|\\*/))([-!%\\&*+/<-?^|~¡-§©«¬®°±¶»¿×÷̀-ͯ᷀-᷿‖‗†-‧‰-‾⁁-⁓⁕-⁞⃐-⃿←-⏿─-❵➔-⯿⸀-⹿、。〃〈-〰︀-️︠-︯\\x{E0100}-\\x{E01EF}]))++(?=[]),:;}\\s]|\\z)",
+            "error": "Unknown modifier '/'"
+        },
+        {
+            "pattern": "\\G((?!(//|/\\*|\\*/))([-!%\\&*+/<-?^|~¡-§©«¬®°±¶»¿×÷̀-ͯ᷀-᷿‖‗†-‧‰-‾⁁-⁓⁕-⁞⃐-⃿←-⏿─-❵➔-⯿⸀-⹿、。〃〈-〰︀-️︠-︯\\x{E0100}-\\x{E01EF}]))++",
+            "error": "Unknown modifier '/'"
+        },
+        {
+            "pattern": "\\G([-%*+/]|<<|>>|[\\&^|]|&&|\\|\\|)=$",
+            "error": "Unknown modifier ']'"
+        },
+        {
+            "pattern": "\\G([-*+/])$",
+            "error": "Unknown modifier ']'"
+        },
+        {
+            "pattern": "\\G(?<=^|[(,:;\\[{\\s])\\.((?!(//|/\\*|\\*/))([-!%\\&*+./<-?^|~¡-§©«¬®°±¶»¿×÷̀-ͯ᷀-᷿‖‗†-‧‰-‾⁁-⁓⁕-⁞⃐-⃿←-⏿─-❵➔-⯿⸀-⹿、。〃〈-〰︀-️︠-︯\\x{E0100}-\\x{E01EF}]))++(?![]),:;}\\s]|\\z)",
+            "error": "Unknown modifier '/'"
+        },
+        {
+            "pattern": "\\G(?<!^|[(,:;\\[{\\s])\\.((?!(//|/\\*|\\*/))([-!%\\&*+./<-?^|~¡-§©«¬®°±¶»¿×÷̀-ͯ᷀-᷿‖‗†-‧‰-‾⁁-⁓⁕-⁞⃐-⃿←-⏿─-❵➔-⯿⸀-⹿、。〃〈-〰︀-️︠-︯\\x{E0100}-\\x{E01EF}]))++(?=[]),:;}\\s]|\\z)",
+            "error": "Unknown modifier '/'"
+        },
+        {
+            "pattern": "\\G\\.((?!(//|/\\*|\\*/))([-!%\\&*+./<-?^|~¡-§©«¬®°±¶»¿×÷̀-ͯ᷀-᷿‖‗†-‧‰-‾⁁-⁓⁕-⁞⃐-⃿←-⏿─-❵➔-⯿⸀-⹿、。〃〈-〰︀-️︠-︯\\x{E0100}-\\x{E01EF}]))++",
+            "error": "Unknown modifier '/'"
+        }
+    ]
+}

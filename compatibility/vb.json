@@ -1,0 +1,15 @@
+{
+    "name": "vb",
+    "total": 36,
+    "compatible": 34,
+    "incompatible": [
+        {
+            "pattern": "(?i:((?<=([-\\&(+,/<=>\\\\]))\\s*\\b([7A-Z_a-z][0-9A-Z_a-z]*?)\\b(?!([(.]))|\\b([7A-Z_a-z][0-9A-Z_a-z]*?)\\b(?=\\s*([-\\&()+/<=>\\\\]))))",
+            "error": "Unknown modifier '<'"
+        },
+        {
+            "pattern": "[!$%\\&*]|--?|\\+\\+|[+~]|===?|=|!==??|<=|>=|<<=|>>=|>>>=|<>|[!<>]|&&|\\|\\||\\?:|\\*=|/=|%=|\\+=|-=|&=|\\^=|\\b(in|instanceof|new|delete|typeof|void)\\b",
+            "error": "Unknown modifier '='"
+        }
+    ]
+}

@@ -1,0 +1,539 @@
+{
+    "name": "ocaml",
+    "total": 350,
+    "compatible": 217,
+    "incompatible": [
+        {
+            "pattern": "(\\[)\\s*((?<![-!#-\\&*+./:<-@^|~])@{1,3}(?![-!#-\\&*+./:<-@^|~]))",
+            "error": "Unknown modifier ':'"
+        },
+        {
+            "pattern": "((?<![-!#-\\&*+./:<-@^|~])%(?![-!#-\\&*+./:<-@^|~]))((?!\\b(?:and|'|asr??|assert|\\*|begin|class|[,:@]|constraint|do|done|downto|else|end|=|exception|external|false|for|\\.|fun|function|functor|[->]|if|in|include|inherit|initializer|land|lazy|[(<\\[{]|let|lor|lsl|lsr|lxor|match|method|mod|module|mutable|new|nonrec|#|object|of|open|or|[%+]|private|[\"?]|rec|[]);\\\\}]|sig|/|struct|then|~|to|true|try|type|val|\\||virtual|when|while|with)\\b(?:[^']|$))\\b(?=[_[:lower:]])[_[:alpha:]]['[:word:]]*)",
+            "error": "Unknown modifier ':'"
+        },
+        {
+            "pattern": "(?<=(?:[^-!#-\\&*+./:<-@^|~]|^)%)(?![-!#-\\&*+./:<-@^|~])",
+            "error": "Unknown modifier ':'"
+        },
+        {
+            "pattern": "((?<![-!#-\\&*+./:<-@^|~])[:?](?![-!#-\\&*+./:<-@^|~]))|(?<=\\s)|(?=])",
+            "error": "Unknown modifier ':'"
+        },
+        {
+            "pattern": "(?<=(?:[^-!#-\\&*+./:<-@^|~]|^):)(?![-!#-\\&*+./:<-@^|~])",
+            "error": "Unknown modifier ':'"
+        },
+        {
+            "pattern": "(?<=(?:[^-!#-\\&*+./:<-@^|~]|^)\\?)(?![-!#-\\&*+./:<-@^|~])",
+            "error": "Unknown modifier ':'"
+        },
+        {
+            "pattern": "(?<=(?:[^-!#-\\&*+./:<-@^|~]|^)\\?)(?![-!#-\\&*+./:<-@^|~])",
+            "error": "Unknown modifier ':'"
+        },
+        {
+            "pattern": "(?<=(?:\\P{word}|^)when)(?!\\p{word})",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 15"
+        },
+        {
+            "pattern": "(?<=(?:\\P{word}|^)(?:and|class|type))(?!\\p{word})",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 15"
+        },
+        {
+            "pattern": "(?<![-!#-\\&*+./:<-@^|~])(:)|(=)(?![-!#-\\&*+./:<-@^|~])|(?=;;|[])}]|\\b(?:end|and|class|exception|external|in|include|inherit|initializer|let|method|module|open|type|val)\\b)",
+            "error": "Unknown modifier ':'"
+        },
+        {
+            "pattern": "(?<=(?:\\P{word}|^)(?:and|class|type))(?!\\p{word})",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 15"
+        },
+        {
+            "pattern": "(?=(?!\\b(?:and|'|asr??|assert|\\*|begin|class|[,:@]|constraint|do|done|downto|else|end|=|exception|external|false|for|\\.|fun|function|functor|[->]|if|in|include|inherit|initializer|land|lazy|[(<\\[{]|let|lor|lsl|lsr|lxor|match|method|mod|module|mutable|new|nonrec|#|object|of|open|or|[%+]|private|[\"?]|rec|[]);\\\\}]|sig|/|struct|then|~|to|true|try|type|val|\\||virtual|when|while|with)\\b(?:[^']|$))\\b(?=[_[:lower:]])[_[:alpha:]]['[:word:]]*\\s*,|[^%\\s[:lower:]])|(?!\\b(?:and|'|asr??|assert|\\*|begin|class|[,:@]|constraint|do|done|downto|else|end|=|exception|external|false|for|\\.|fun|function|functor|[->]|if|in|include|inherit|initializer|land|lazy|[(<\\[{]|let|lor|lsl|lsr|lxor|match|method|mod|module|mutable|new|nonrec|#|object|of|open|or|[%+]|private|[\"?]|rec|[]);\\\\}]|sig|/|struct|then|~|to|true|try|type|val|\\||virtual|when|while|with)\\b(?:[^']|$))\\b(?=[_[:lower:]])[_[:alpha:]]['[:word:]]*|(?=\\btype\\b)",
+            "error": "Unknown modifier '|'"
+        },
+        {
+            "pattern": "(?<=(?:[^-!#-\\&*+./:<-@^|~]|^):)(?![-!#-\\&*+./:<-@^|~])",
+            "error": "Unknown modifier ':'"
+        },
+        {
+            "pattern": "(?<![-!#-\\&*+./:<-@^|~])=(?![-!#-\\&*+./:<-@^|~])|(?=[])}]|\\b(?:end|and|class|exception|external|in|include|inherit|initializer|let|method|module|open|val)\\b)",
+            "error": "Unknown modifier ':'"
+        },
+        {
+            "pattern": "(?<=(?:[^-!#-\\&*+./:<-@^|~]|^)=)(?![-!#-\\&*+./:<-@^|~])",
+            "error": "Unknown modifier ':'"
+        },
+        {
+            "pattern": "(?<=(?:\\P{word}|^)(?:and|class|type))(?!\\p{word})",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 15"
+        },
+        {
+            "pattern": "(?<![-!#-\\&*+./:<-@^|~])(:)|(=)(?![-!#-\\&*+./:<-@^|~])|(?=;;|[])}]|\\b(?:end|and|class|exception|external|in|include|inherit|initializer|let|method|module|open|type|val)\\b)",
+            "error": "Unknown modifier ':'"
+        },
+        {
+            "pattern": "(?<=(?:\\P{word}|^)(?:and|class|type))(?!\\p{word})",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 15"
+        },
+        {
+            "pattern": "(?=(?!\\b(?:and|'|asr??|assert|\\*|begin|class|[,:@]|constraint|do|done|downto|else|end|=|exception|external|false|for|\\.|fun|function|functor|[->]|if|in|include|inherit|initializer|land|lazy|[(<\\[{]|let|lor|lsl|lsr|lxor|match|method|mod|module|mutable|new|nonrec|#|object|of|open|or|[%+]|private|[\"?]|rec|[]);\\\\}]|sig|/|struct|then|~|to|true|try|type|val|\\||virtual|when|while|with)\\b(?:[^']|$))\\b(?=[_[:lower:]])[_[:alpha:]]['[:word:]]*\\s*,|[^%\\s[:lower:]])|(?!\\b(?:and|'|asr??|assert|\\*|begin|class|[,:@]|constraint|do|done|downto|else|end|=|exception|external|false|for|\\.|fun|function|functor|[->]|if|in|include|inherit|initializer|land|lazy|[(<\\[{]|let|lor|lsl|lsr|lxor|match|method|mod|module|mutable|new|nonrec|#|object|of|open|or|[%+]|private|[\"?]|rec|[]);\\\\}]|sig|/|struct|then|~|to|true|try|type|val|\\||virtual|when|while|with)\\b(?:[^']|$))\\b(?=[_[:lower:]])[_[:alpha:]]['[:word:]]*|(?=\\btype\\b)",
+            "error": "Unknown modifier '|'"
+        },
+        {
+            "pattern": "(?<=(?:[^-!#-\\&*+./:<-@^|~]|^):)(?![-!#-\\&*+./:<-@^|~])",
+            "error": "Unknown modifier ':'"
+        },
+        {
+            "pattern": "(?<![-!#-\\&*+./:<-@^|~])=(?![-!#-\\&*+./:<-@^|~])|(?=[])}]|\\b(?:end|and|class|exception|external|in|include|inherit|initializer|let|method|module|open|val)\\b)",
+            "error": "Unknown modifier ':'"
+        },
+        {
+            "pattern": "(?<=(?:[^-!#-\\&*+./:<-@^|~]|^)=)(?![-!#-\\&*+./:<-@^|~])",
+            "error": "Unknown modifier ':'"
+        },
+        {
+            "pattern": "(?<=(?:\\P{word}|^)exception)(?!\\p{word})|(?<=[^-!#-\\&*+./:<-@^|~]\\+=|^\\+=|[^-!#-\\&*+./:<-@^|~]=|^=|[^-!#-\\&*+./:<-@^|~]\\||^\\|)(?![-!#-\\&*+./:<-@^|~])",
+            "error": "Unknown modifier ':'"
+        },
+        {
+            "pattern": "(:)|\\b(of)\\b|((?<![-!#-\\&*+./:<-@^|~])\\|(?![-!#-\\&*+./:<-@^|~]))|(?=;;|[])}]|\\b(?:end|and|class|exception|external|in|include|inherit|initializer|let|method|module|open|type|val)\\b)",
+            "error": "Unknown modifier ':'"
+        },
+        {
+            "pattern": "(?<=(?:[^-!#-\\&*+./:<-@^|~]|^):)(?![-!#-\\&*+./:<-@^|~])|(?<=(?:\\P{word}|^)of)(?!\\p{word})",
+            "error": "Unknown modifier ':'"
+        },
+        {
+            "pattern": "(?<![-!#-\\&*+./:<-@^|~])\\|(?![-!#-\\&*+./:<-@^|~])|(?=;;|[])}]|\\b(?:end|and|class|exception|external|in|include|inherit|initializer|let|method|module|open|type|val)\\b)",
+            "error": "Unknown modifier ':'"
+        },
+        {
+            "pattern": "(?<=(?:\\P{word}|^)type)(?!\\p{word})",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 15"
+        },
+        {
+            "pattern": "(?<![-!#-\\&*+./:<-@^|~])=(?![-!#-\\&*+./:<-@^|~])",
+            "error": "Unknown modifier ':'"
+        },
+        {
+            "pattern": "(?<=(?:[^-!#-\\&*+./:<-@^|~]|^)=)(?![-!#-\\&*+./:<-@^|~])",
+            "error": "Unknown modifier ':'"
+        },
+        {
+            "pattern": "(?<=(?:\\P{word}|^)and)(?!\\p{word})|(?=\\p{upper})",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 15"
+        },
+        {
+            "pattern": "(?<![-!#-\\&*+./:<-@^|~])(:(?!=))|(:?=)(?![-!#-\\&*+./:<-@^|~])|(?=[])}]|\\b(?:end|and|class|exception|external|in|include|inherit|initializer|let|method|open|type|val)\\b)",
+            "error": "Unknown modifier ':'"
+        },
+        {
+            "pattern": "(?<![-!#-\\&*+./:<-@^|~]):(?![-!#-\\&*+./:<-@^|~])",
+            "error": "Unknown modifier ':'"
+        },
+        {
+            "pattern": "(?<=(?:[^-!#-\\&*+./:<-@^|~]|^):)(?![-!#-\\&*+./:<-@^|~])",
+            "error": "Unknown modifier ':'"
+        },
+        {
+            "pattern": "\\b(and)\\b|((?<![-!#-\\&*+./:<-@^|~])=(?![-!#-\\&*+./:<-@^|~]))|(?=;;|[])}]|\\b(?:end|and|class|exception|external|in|include|inherit|initializer|let|method|module|open|type|val)\\b)",
+            "error": "Unknown modifier ':'"
+        },
+        {
+            "pattern": "(?<=(?:[^-!#-\\&*+./:<-@^|~]:|^:|[^-!#-\\&*+./:<-@^|~]|^)=)(?![-!#-\\&*+./:<-@^|~])",
+            "error": "Unknown modifier ':'"
+        },
+        {
+            "pattern": "(?<=(?:[^-!#-\\&*+./:<-@^|~]|^)!)(?![-!#-\\&*+./:<-@^|~])|(?<=(?:\\P{word}|^)(?:and|external|let|method|val))(?!\\p{word})",
+            "error": "Unknown modifier ':'"
+        },
+        {
+            "pattern": "\\b(module)\\b|\\b(open)\\b|(?<![-!#-\\&*+./:<-@^|~])(:)|((?<![-!#-\\&*+./:<-@^|~])=(?![-!#-\\&*+./:<-@^|~]))(?![-!#-\\&*+./:<-@^|~])|(?=;;|[])}]|\\b(?:end|and|class|exception|external|in|include|inherit|initializer|let|method|module|open|type|val)\\b)",
+            "error": "Unknown modifier ':'"
+        },
+        {
+            "pattern": "(?<=(?:[^-!#-\\&*+./:<-@^|~]|^)!)(?![-!#-\\&*+./:<-@^|~])|(?<=(?:\\P{word}|^)(?:and|external|let|method|val))(?!\\p{word})",
+            "error": "Unknown modifier ':'"
+        },
+        {
+            "pattern": "(?=\\b(?:module|open)\\b)|(?=(?!\\b(?:and|'|asr??|assert|\\*|begin|class|[,:@]|constraint|do|done|downto|else|end|=|exception|external|false|for|\\.|fun|function|functor|[->]|if|in|include|inherit|initializer|land|lazy|[(<\\[{]|let|lor|lsl|lsr|lxor|match|method|mod|module|mutable|new|nonrec|#|object|of|open|or|[%+]|private|[\"?]|rec|[]);\\\\}]|sig|/|struct|then|~|to|true|try|type|val|\\||virtual|when|while|with)\\b(?:[^']|$))\\b(?=[_[:lower:]])[_[:alpha:]]['[:word:]]*\\s*,|[^%\\s[:lower:]])|\\b(rec)\\b|((?!\\b(?:and|'|asr??|assert|\\*|begin|class|[,:@]|constraint|do|done|downto|else|end|=|exception|external|false|for|\\.|fun|function|functor|[->]|if|in|include|inherit|initializer|land|lazy|[(<\\[{]|let|lor|lsl|lsr|lxor|match|method|mod|module|mutable|new|nonrec|#|object|of|open|or|[%+]|private|[\"?]|rec|[]);\\\\}]|sig|/|struct|then|~|to|true|try|type|val|\\||virtual|when|while|with)\\b(?:[^']|$))\\b(?=[_[:lower:]])[_[:alpha:]]['[:word:]]*)",
+            "error": "Unknown modifier '|'"
+        },
+        {
+            "pattern": "(?<=(?:\\P{word}|^)rec)(?!\\p{word})",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 15"
+        },
+        {
+            "pattern": "((?!\\b(?:and|'|asr??|assert|\\*|begin|class|[,:@]|constraint|do|done|downto|else|end|=|exception|external|false|for|\\.|fun|function|functor|[->]|if|in|include|inherit|initializer|land|lazy|[(<\\[{]|let|lor|lsl|lsr|lxor|match|method|mod|module|mutable|new|nonrec|#|object|of|open|or|[%+]|private|[\"?]|rec|[]);\\\\}]|sig|/|struct|then|~|to|true|try|type|val|\\||virtual|when|while|with)\\b(?:[^']|$))\\b(?=[_[:lower:]])[_[:alpha:]]['[:word:]]*)|(?=[^\\s[:alpha:]])",
+            "error": "Unknown modifier '|'"
+        },
+        {
+            "pattern": "(?<=(?:\\P{word}|^)module)(?!\\p{word})",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 15"
+        },
+        {
+            "pattern": "(?<=(?:\\P{word}|^)open)(?!\\p{word})",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 15"
+        },
+        {
+            "pattern": "(?<=(?:[^-!#-\\&*+./:<-@^|~]|^):)(?![-!#-\\&*+./:<-@^|~])",
+            "error": "Unknown modifier ':'"
+        },
+        {
+            "pattern": "(?<![-!#-\\&*+./:<-@^|~])=(?![-!#-\\&*+./:<-@^|~])|(?=;;|[])}]|\\b(?:end|and|class|exception|external|in|include|inherit|initializer|let|method|module|open|type|val)\\b)",
+            "error": "Unknown modifier ':'"
+        },
+        {
+            "pattern": "(?<=(?:[^-!#-\\&*+./:<-@^|~]|^):)(?![-!#-\\&*+./:<-@^|~])",
+            "error": "Unknown modifier ':'"
+        },
+        {
+            "pattern": "(?<=(?:\\P{word}|^)type)(?!\\p{word})",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 15"
+        },
+        {
+            "pattern": "(?<![-!#-\\&*+./:<-@^|~])\\.(?![-!#-\\&*+./:<-@^|~])",
+            "error": "Unknown modifier ':'"
+        },
+        {
+            "pattern": "(?<=(?:[^-!#-\\&*+./:<-@^|~]|^)=)(?![-!#-\\&*+./:<-@^|~])",
+            "error": "Unknown modifier ':'"
+        },
+        {
+            "pattern": "(?<=[^-!#-\\&*+./:<-@^|~]~|^~|[^-!#-\\&*+./:<-@^|~]\\?|^\\?)(?![-!#-\\&*+./:<-@^|~])",
+            "error": "Unknown modifier ':'"
+        },
+        {
+            "pattern": "(?!\\b(?:and|'|asr??|assert|\\*|begin|class|[,:@]|constraint|do|done|downto|else|end|=|exception|external|false|for|\\.|fun|function|functor|[->]|if|in|include|inherit|initializer|land|lazy|[(<\\[{]|let|lor|lsl|lsr|lxor|match|method|mod|module|mutable|new|nonrec|#|object|of|open|or|[%+]|private|[\"?]|rec|[]);\\\\}]|sig|/|struct|then|~|to|true|try|type|val|\\||virtual|when|while|with)\\b(?:[^']|$))\\b(?=[_[:lower:]])[_[:alpha:]]['[:word:]]*|(?<=\\))",
+            "error": "Unknown modifier '|'"
+        },
+        {
+            "pattern": "(?!\\b(?:and|'|asr??|assert|\\*|begin|class|[,:@]|constraint|do|done|downto|else|end|=|exception|external|false|for|\\.|fun|function|functor|[->]|if|in|include|inherit|initializer|land|lazy|[(<\\[{]|let|lor|lsl|lsr|lxor|match|method|mod|module|mutable|new|nonrec|#|object|of|open|or|[%+]|private|[\"?]|rec|[]);\\\\}]|sig|/|struct|then|~|to|true|try|type|val|\\||virtual|when|while|with)\\b(?:[^']|$))\\b(?=[_[:lower:]])[_[:alpha:]]['[:word:]]*",
+            "error": "Unknown modifier '|'"
+        },
+        {
+            "pattern": "(?<=(?:[^-!#-\\&*+./:<-@^|~]|^)=)(?![-!#-\\&*+./:<-@^|~])",
+            "error": "Unknown modifier ':'"
+        },
+        {
+            "pattern": "(?<=(?:\\P{word}|^)(?:and|type))(?!\\p{word})",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 15"
+        },
+        {
+            "pattern": "(?<![-!#-\\&*+./:<-@^|~])\\+=|=(?![-!#-\\&*+./:<-@^|~])|(?=;;|[])}]|\\b(?:end|and|class|exception|external|in|include|inherit|initializer|let|method|module|open|type|val)\\b)",
+            "error": "Unknown modifier ':'"
+        },
+        {
+            "pattern": "(?!\\b(?:and|'|asr??|assert|\\*|begin|class|[,:@]|constraint|do|done|downto|else|end|=|exception|external|false|for|\\.|fun|function|functor|[->]|if|in|include|inherit|initializer|land|lazy|[(<\\[{]|let|lor|lsl|lsr|lxor|match|method|mod|module|mutable|new|nonrec|#|object|of|open|or|[%+]|private|[\"?]|rec|[]);\\\\}]|sig|/|struct|then|~|to|true|try|type|val|\\||virtual|when|while|with)\\b(?:[^']|$))\\b(?=[_[:lower:]])[_[:alpha:]]['[:word:]]*",
+            "error": "Unknown modifier '|'"
+        },
+        {
+            "pattern": "(?<=(?:[^-!#-\\&*+./:<-@^|~]\\+|^\\+|[^-!#-\\&*+./:<-@^|~]|^)=)(?![-!#-\\&*+./:<-@^|~])",
+            "error": "Unknown modifier ':'"
+        },
+        {
+            "pattern": "(?<=(?:\\P{word}|^)class)(?!\\p{word})",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 15"
+        },
+        {
+            "pattern": "(?<=(?:\\P{word}|^)type)(?!\\p{word})",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 15"
+        },
+        {
+            "pattern": "(?<=(?:\\P{word}|^)module)(?!\\p{word})|\\bmodule\\b",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 15"
+        },
+        {
+            "pattern": "(?<=(?:\\P{word}|^)module)(?!\\p{word})",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 15"
+        },
+        {
+            "pattern": "(?<=(?:\\P{word}|^)type)(?!\\p{word})",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 15"
+        },
+        {
+            "pattern": "(?<=(?:\\P{word}|^)type)(?!\\p{word})|\\btype\\b",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 15"
+        },
+        {
+            "pattern": "(\\[)((?<![-!#-\\&*+./:<-@^|~])%{1,3}(?![-!#-\\&*+./:<-@^|~]))",
+            "error": "Unknown modifier ':'"
+        },
+        {
+            "pattern": "(?<!\\p{word})'",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 12"
+        },
+        {
+            "pattern": "(?!\\b(?:and|'|asr??|assert|\\*|begin|class|[,:@]|constraint|do|done|downto|else|end|=|exception|external|false|for|\\.|fun|function|functor|[->]|if|in|include|inherit|initializer|land|lazy|[(<\\[{]|let|lor|lsl|lsr|lxor|match|method|mod|module|mutable|new|nonrec|#|object|of|open|or|[%+]|private|[\"?]|rec|[]);\\\\}]|sig|/|struct|then|~|to|true|try|type|val|\\||virtual|when|while|with)\\b(?:[^']|$))\\b(?=[_[:lower:]])[_[:alpha:]]['[:word:]]*",
+            "error": "Unknown modifier '|'"
+        },
+        {
+            "pattern": "(?<=(?:\\P{word}|^)with)(?!\\p{word})",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 15"
+        },
+        {
+            "pattern": "(?!\\b(?:and|'|asr??|assert|\\*|begin|class|[,:@]|constraint|do|done|downto|else|end|=|exception|external|false|for|\\.|fun|function|functor|[->]|if|in|include|inherit|initializer|land|lazy|[(<\\[{]|let|lor|lsl|lsr|lxor|match|method|mod|module|mutable|new|nonrec|#|object|of|open|or|[%+]|private|[\"?]|rec|[]);\\\\}]|sig|/|struct|then|~|to|true|try|type|val|\\||virtual|when|while|with)\\b(?:[^']|$))\\b(?=[_[:lower:]])[_[:alpha:]]['[:word:]]*",
+            "error": "Unknown modifier '|'"
+        },
+        {
+            "pattern": "(?<=(?:[^-!#-\\&*+./:<-@^|~]|^):)(?![-!#-\\&*+./:<-@^|~])",
+            "error": "Unknown modifier ':'"
+        },
+        {
+            "pattern": "(?<=(?:[^-!#-\\&*+./:<-@^|~]|^)=)(?![-!#-\\&*+./:<-@^|~])",
+            "error": "Unknown modifier ':'"
+        },
+        {
+            "pattern": "(?<![-!#-\\&*+./:<-@^|~])\\.(?![-!#-\\&*+./:<-@^|~])",
+            "error": "Unknown modifier ':'"
+        },
+        {
+            "pattern": "(?<![-!#-\\&*+./:<-@^|~])\\.(?![-!#-\\&*+./:<-@^|~])",
+            "error": "Unknown modifier ':'"
+        },
+        {
+            "pattern": "(?!\\b(?:and|'|asr??|assert|\\*|begin|class|[,:@]|constraint|do|done|downto|else|end|=|exception|external|false|for|\\.|fun|function|functor|[->]|if|in|include|inherit|initializer|land|lazy|[(<\\[{]|let|lor|lsl|lsr|lxor|match|method|mod|module|mutable|new|nonrec|#|object|of|open|or|[%+]|private|[\"?]|rec|[]);\\\\}]|sig|/|struct|then|~|to|true|try|type|val|\\||virtual|when|while|with)\\b(?:[^']|$))\\b(?=[_[:lower:]])[_[:alpha:]]['[:word:]]*",
+            "error": "Unknown modifier '|'"
+        },
+        {
+            "pattern": "(?<=(?:[^-!#-\\&*+./:<-@^|~]|^)\\.)(?![-!#-\\&*+./:<-@^|~])|(?<![-!#-\\&*+./:<-@^|~])\\.(?![-!#-\\&*+./:<-@^|~])",
+            "error": "Unknown modifier ':'"
+        },
+        {
+            "pattern": "((?<![-!#-\\&*+./:<-@^|~])\\.(?![-!#-\\&*+./:<-@^|~]))|((?!\\b(?:and|'|asr??|assert|\\*|begin|class|[,:@]|constraint|do|done|downto|else|end|=|exception|external|false|for|\\.|fun|function|functor|[->]|if|in|include|inherit|initializer|land|lazy|[(<\\[{]|let|lor|lsl|lsr|lxor|match|method|mod|mutable|nonrec|#|object|of|open|or|[%+]|private|[\"?]|rec|[]);\\\\}]|sig|/|struct|then|~|to|true|try|type|val|\\||virtual|when|while|with)\\b(?:[^']|$))\\b(?=[_[:lower:]])[_[:alpha:]]['[:word:]]*)|(?<=\\))|(?<=])",
+            "error": "Unknown modifier ':'"
+        },
+        {
+            "pattern": "((?<![-!#-\\&*+./:<-@^|~]),(?![-!#-\\&*+./:<-@^|~]))|([-!#-\\&*+./:<-@^|~]+)|\\b(as)\\b",
+            "error": "Unknown modifier ':'"
+        },
+        {
+            "pattern": "(?<![-!#-\\&*+./:<-@^|~]):(?![-!#-\\&*+./:<-@^|~])",
+            "error": "Unknown modifier ':'"
+        },
+        {
+            "pattern": "(?!\\b(?:and|'|asr??|assert|\\*|begin|class|[,:@]|constraint|do|done|downto|else|end|=|exception|external|false|for|\\.|fun|function|functor|[->]|if|in|include|inherit|initializer|land|lazy|[(<\\[{]|let|lor|lsl|lsr|lxor|match|method|mod|module|mutable|new|nonrec|#|object|of|open|or|[%+]|private|[\"?]|rec|[]);\\\\}]|sig|/|struct|then|~|to|true|try|type|val|\\||virtual|when|while|with)\\b(?:[^']|$))\\b(?=[_[:lower:]])[_[:alpha:]]['[:word:]]*",
+            "error": "Unknown modifier '|'"
+        },
+        {
+            "pattern": "(?<=(?:\\P{word}|^)with)(?!\\p{word})",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 15"
+        },
+        {
+            "pattern": "(?!\\b(?:and|'|asr??|assert|\\*|begin|class|[,:@]|constraint|do|done|downto|else|end|=|exception|external|false|for|\\.|fun|function|functor|[->]|if|in|include|inherit|initializer|land|lazy|[(<\\[{]|let|lor|lsl|lsr|lxor|match|method|mod|module|mutable|new|nonrec|#|object|of|open|or|[%+]|private|[\"?]|rec|[]);\\\\}]|sig|/|struct|then|~|to|true|try|type|val|\\||virtual|when|while|with)\\b(?:[^']|$))\\b(?=[_[:lower:]])[_[:alpha:]]['[:word:]]*",
+            "error": "Unknown modifier '|'"
+        },
+        {
+            "pattern": "(?<=(?:[^-!#-\\&*+./:<-@^|~]|^):)(?![-!#-\\&*+./:<-@^|~])",
+            "error": "Unknown modifier ':'"
+        },
+        {
+            "pattern": "(?<=(?:[^-!#-\\&*+./:<-@^|~]|^)=)(?![-!#-\\&*+./:<-@^|~])",
+            "error": "Unknown modifier ':'"
+        },
+        {
+            "pattern": "(?<![-!#-\\&*+./:<-@^|~])#(?![-!#-\\&*+./:<-@^|~])",
+            "error": "Unknown modifier ':'"
+        },
+        {
+            "pattern": "(?<=(?:\\P{word}|^)with)(?!\\p{word})",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 15"
+        },
+        {
+            "pattern": "(?<=(?:\\P{word}|^)functor)(?!\\p{word})",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 15"
+        },
+        {
+            "pattern": "(?<=(?:[^-!#-\\&*+./:<-@^|~]|^):)(?![-!#-\\&*+./:<-@^|~])",
+            "error": "Unknown modifier ':'"
+        },
+        {
+            "pattern": "(\\()|((?<![-!#-\\&*+./:<-@^|~])->(?![-!#-\\&*+./:<-@^|~]))",
+            "error": "Unknown modifier ':'"
+        },
+        {
+            "pattern": "(?<=(?:[^-!#-\\&*+./:<-@^|~]|^)->)(?![-!#-\\&*+./:<-@^|~])",
+            "error": "Unknown modifier ':'"
+        },
+        {
+            "pattern": "(?<![-!#-\\&*+./:<-@^|~])->(?![-!#-\\&*+./:<-@^|~])",
+            "error": "Unknown modifier ':'"
+        },
+        {
+            "pattern": "(?<![-!#-\\&*+./:<-@^|~]):(?![-!#-\\&*+./:<-@^|~])",
+            "error": "Unknown modifier ':'"
+        },
+        {
+            "pattern": "\\(|(?<=[^-!#-\\&*+./:<-@^|~]:|^:|[^-!#-\\&*+./:<-@^|~]->|^->)(?![-!#-\\&*+./:<-@^|~])|(?<=(?:\\P{word}|^)(?:include|open))(?!\\p{word})",
+            "error": "Unknown modifier ':'"
+        },
+        {
+            "pattern": "(?<=(?:\\P{word}|^)module)(?!\\p{word})",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 15"
+        },
+        {
+            "pattern": "(?<=(?:\\P{word}|^)module)(?!\\p{word})",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 15"
+        },
+        {
+            "pattern": "(?<=(?:\\P{word}|^)type)(?!\\p{word})",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 15"
+        },
+        {
+            "pattern": "(?<=(?:\\P{word}|^)of)(?!\\p{word})",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 15"
+        },
+        {
+            "pattern": "(?<=(?:\\P{word}|^)functor)(?!\\p{word})",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 15"
+        },
+        {
+            "pattern": "(?<=(?:[^-!#-\\&*+./:<-@^|~]|^):)(?![-!#-\\&*+./:<-@^|~])",
+            "error": "Unknown modifier ':'"
+        },
+        {
+            "pattern": "(\\()|((?<![-!#-\\&*+./:<-@^|~])->(?![-!#-\\&*+./:<-@^|~]))",
+            "error": "Unknown modifier ':'"
+        },
+        {
+            "pattern": "(?<=(?:[^-!#-\\&*+./:<-@^|~]|^)->)(?![-!#-\\&*+./:<-@^|~])",
+            "error": "Unknown modifier ':'"
+        },
+        {
+            "pattern": "(?<![-!#-\\&*+./:<-@^|~])->(?![-!#-\\&*+./:<-@^|~])",
+            "error": "Unknown modifier ':'"
+        },
+        {
+            "pattern": "(?<=(?:\\P{word}|^)for)(?!\\p{word})",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 15"
+        },
+        {
+            "pattern": "(?<![-!#-\\&*+./:<-@^|~])=(?![-!#-\\&*+./:<-@^|~])",
+            "error": "Unknown modifier ':'"
+        },
+        {
+            "pattern": "(?<=(?:[^-!#-\\&*+./:<-@^|~]|^)=)(?![-!#-\\&*+./:<-@^|~])",
+            "error": "Unknown modifier ':'"
+        },
+        {
+            "pattern": "(?<=(?:\\P{word}|^)to)(?!\\p{word})",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 15"
+        },
+        {
+            "pattern": "(?<=(?:\\P{word}|^)do)(?!\\p{word})",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 15"
+        },
+        {
+            "pattern": "(?:(?<=[^-!#-\\&*+./:<-@^|~]=|^=|[^-!#-\\&*+./:<-@^|~]->|^->)(?![-!#-\\&*+./:<-@^|~])|(?<=[(;]))(?=\\s|\\blet\\b)|(?<=(?:\\P{word}|^)(?:begin|do|else|in|struct|then|try))(?!\\p{word})|(?<=(?:[^-!#-\\&*+./:<-@^|~]|^)@@)(?![-!#-\\&*+./:<-@^|~])\\s+",
+            "error": "Unknown modifier ':'"
+        },
+        {
+            "pattern": "(?<=(?:\\P{word}|^)(?:and|let))(?!\\p{word})|(let)",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 15"
+        },
+        {
+            "pattern": "(?<=(?:\\P{word}|^)(?:fun|function|with))(?!\\p{word})",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 15"
+        },
+        {
+            "pattern": "(?<![-!#-\\&*+./:<-@^|~])(\\|)|(->)(?![-!#-\\&*+./:<-@^|~])",
+            "error": "Unknown modifier ':'"
+        },
+        {
+            "pattern": "(?<=(?:[^-!#-\\&*+./:<-@\\[^|~]|^)\\|)(?![-!#-\\&*+./:<-@^|~])|(?<![-!#-\\&*+./:<-@^|~])\\|(?![-!#-\\&*+./:<-@^|~])",
+            "error": "Unknown modifier ':'"
+        },
+        {
+            "pattern": "(?<![-!#-\\&*+./:<-@^|~])(\\|)|(->)(?![-!#-\\&*+./:<-@^|~])",
+            "error": "Unknown modifier ':'"
+        },
+        {
+            "pattern": "(?=(?<![-!#-\\&*+./:<-@^|~])->(?![-!#-\\&*+./:<-@^|~]))",
+            "error": "Unknown modifier ':'"
+        },
+        {
+            "pattern": "(?<![-!#-\\&*+./:<-@^|~])#(?![-!#-\\&*+./:<-@^|~])",
+            "error": "Unknown modifier ':'"
+        },
+        {
+            "pattern": "(?!\\b(?:and|'|asr??|assert|\\*|begin|class|[,:@]|constraint|do|done|downto|else|end|=|exception|external|false|for|\\.|fun|function|functor|[->]|if|in|include|inherit|initializer|land|lazy|[(<\\[{]|let|lor|lsl|lsr|lxor|match|method|mod|module|mutable|new|nonrec|#|object|of|open|or|[%+]|private|[\"?]|rec|[]);\\\\}]|sig|/|struct|then|~|to|true|try|type|val|\\||virtual|when|while|with)\\b(?:[^']|$))\\b(?=[_[:lower:]])[_[:alpha:]]['[:word:]]*",
+            "error": "Unknown modifier '|'"
+        },
+        {
+            "pattern": "(,|[-!#-\\&*+./:<-@^|~]+)|(;)",
+            "error": "Unknown modifier ':'"
+        },
+        {
+            "pattern": "(?<![-!#-\\&*+./:<-@^|~])\\?|~(?![-!#-\\&*+./:<-@^|~])",
+            "error": "Unknown modifier ':'"
+        },
+        {
+            "pattern": "(?<=[^-!#-\\&*+./:<-@^|~]\\?|^\\?|[^-!#-\\&*+./:<-@^|~]~|^~)(?![-!#-\\&*+./:<-@^|~])",
+            "error": "Unknown modifier ':'"
+        },
+        {
+            "pattern": "(?!\\b(?:and|'|asr??|assert|\\*|begin|class|[,:@]|constraint|do|done|downto|else|end|=|exception|external|false|for|\\.|fun|function|functor|[->]|if|in|include|inherit|initializer|land|lazy|[(<\\[{]|let|lor|lsl|lsr|lxor|match|method|mod|module|mutable|new|nonrec|#|object|of|open|or|[%+]|private|[\"?]|rec|[]);\\\\}]|sig|/|struct|then|~|to|true|try|type|val|\\||virtual|when|while|with)\\b(?:[^']|$))\\b(?=[_[:lower:]])[_[:alpha:]]['[:word:]]*",
+            "error": "Unknown modifier '|'"
+        },
+        {
+            "pattern": "(?<=(?:\\P{word}|^)while)(?!\\p{word})",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 15"
+        },
+        {
+            "pattern": "(?<=(?:\\P{word}|^)do)(?!\\p{word})",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 15"
+        },
+        {
+            "pattern": "(_)|((?!\\b(?:and|'|asr??|assert|\\*|begin|class|[,:@]|constraint|do|done|downto|else|end|=|exception|external|false|for|\\.|fun|function|functor|[->]|if|in|include|inherit|initializer|land|lazy|[(<\\[{]|let|lor|lsl|lsr|lxor|match|method|mod|module|mutable|new|nonrec|#|object|of|open|or|[%+]|private|[\"?]|rec|[]);\\\\}]|sig|/|struct|then|~|to|true|try|type|val|\\||virtual|when|while|with)\\b(?:[^']|$))\\b(?=[_[:lower:]])[_[:alpha:]]['[:word:]]*)|(')((?!\\b(?:and|'|asr??|assert|\\*|begin|class|[,:@]|constraint|do|done|downto|else|end|=|exception|external|false|for|\\.|fun|function|functor|[->]|if|in|include|inherit|initializer|land|lazy|[(<\\[{]|let|lor|lsl|lsr|lxor|match|method|mod|module|mutable|new|nonrec|#|object|of|open|or|[%+]|private|[\"?]|rec|[]);\\\\}]|sig|/|struct|then|~|to|true|try|type|val|\\||virtual|when|while|with)\\b(?:[^']|$))\\b(?=[_[:lower:]])[_[:alpha:]]['[:word:]]*)|(?<=[^*]\\)|])",
+            "error": "Unknown modifier '|'"
+        },
+        {
+            "pattern": "(?=\\((?!\\*)|[])-.:;=>\\[{|}])|((?!\\b(?:and|'|asr??|assert|\\*|begin|class|[,:@]|constraint|do|done|downto|else|end|=|exception|external|false|for|\\.|fun|function|functor|[->]|if|in|include|inherit|initializer|land|lazy|[(<\\[{]|let|lor|lsl|lsr|lxor|match|method|mod|module|mutable|new|nonrec|#|object|of|open|or|[%+]|private|[\"?]|rec|[]);\\\\}]|sig|/|struct|then|~|to|true|try|type|val|\\||virtual|when|while|with)\\b(?:[^']|$))\\b(?=[_[:lower:]])[_[:alpha:]]['[:word:]]*)[:aceps]*(?!\\(\\*|\\p{word})|(?=;;|[])}]|\\b(?:end|and|class|exception|external|in|include|inherit|initializer|let|method|module|open|type|val)\\b)",
+            "error": "Unknown modifier '|'"
+        },
+        {
+            "pattern": "(\\??)((?!\\b(?:and|'|asr??|assert|\\*|begin|class|[,:@]|constraint|do|done|downto|else|end|=|exception|external|false|for|\\.|fun|function|functor|[->]|if|in|include|inherit|initializer|land|lazy|[(<\\[{]|let|lor|lsl|lsr|lxor|match|method|mod|module|mutable|new|nonrec|#|object|of|open|or|[%+]|private|[\"?]|rec|[]);\\\\}]|sig|/|struct|then|~|to|true|try|type|val|\\||virtual|when|while|with)\\b(?:[^']|$))\\b(?=[_[:lower:]])[_[:alpha:]]['[:word:]]*)\\s*((?<![-!#-\\&*+./:<-@^|~]):(?![-!#-\\&*+./:<-@^|~]))",
+            "error": "Unknown modifier '|'"
+        },
+        {
+            "pattern": "(?=(?<![-!#-\\&*+./:<-@^|~])->(?![-!#-\\&*+./:<-@^|~]))",
+            "error": "Unknown modifier ':'"
+        },
+        {
+            "pattern": "(?!\\b(?:and|'|asr??|assert|\\*|begin|class|[,:@]|constraint|do|done|downto|else|end|=|exception|external|false|for|\\.|fun|function|functor|[->]|if|in|include|inherit|initializer|land|lazy|[(<\\[{]|let|lor|lsl|lsr|lxor|match|method|mod|module|mutable|new|nonrec|#|object|of|open|or|[%+]|private|[\"?]|rec|[]);\\\\}]|sig|/|struct|then|~|to|true|try|type|val|\\||virtual|when|while|with)\\b(?:[^']|$))\\b(?=[_[:lower:]])[_[:alpha:]]['[:word:]]*",
+            "error": "Unknown modifier '|'"
+        },
+        {
+            "pattern": "(?<=(?:[^-!#-\\&*+./:<-@^|~]|^):)(?![-!#-\\&*+./:<-@^|~])",
+            "error": "Unknown modifier ':'"
+        },
+        {
+            "pattern": "[,;]|[-!#-\\&*+./:<-@^|~]+",
+            "error": "Unknown modifier ':'"
+        },
+        {
+            "pattern": "(?!\\b(?:and|'|asr??|assert|\\*|begin|class|[,:@]|constraint|do|done|downto|else|end|=|exception|external|false|for|\\.|fun|function|functor|[->]|if|in|include|inherit|initializer|land|lazy|[(<\\[{]|let|lor|lsl|lsr|lxor|match|method|mod|module|mutable|new|nonrec|#|object|of|open|or|[%+]|private|[\"?]|rec|[]);\\\\}]|sig|/|struct|then|~|to|true|try|type|val|\\||virtual|when|while|with)\\b(?:[^']|$))\\b(?=[_[:lower:]])[_[:alpha:]]['[:word:]]*",
+            "error": "Unknown modifier '|'"
+        },
+        {
+            "pattern": "(?<=(?:\\P{word}|^)with)(?!\\p{word})",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 15"
+        },
+        {
+            "pattern": "(?!\\b(?:and|'|asr??|assert|\\*|begin|class|[,:@]|constraint|do|done|downto|else|end|=|exception|external|false|for|\\.|fun|function|functor|[->]|if|in|include|inherit|initializer|land|lazy|[(<\\[{]|let|lor|lsl|lsr|lxor|match|method|mod|module|mutable|new|nonrec|#|object|of|open|or|[%+]|private|[\"?]|rec|[]);\\\\}]|sig|/|struct|then|~|to|true|try|type|val|\\||virtual|when|while|with)\\b(?:[^']|$))\\b(?=[_[:lower:]])[_[:alpha:]]['[:word:]]*",
+            "error": "Unknown modifier '|'"
+        },
+        {
+            "pattern": "(?<=(?:[^-!#-\\&*+./:<-@^|~]|^):)(?![-!#-\\&*+./:<-@^|~])",
+            "error": "Unknown modifier ':'"
+        },
+        {
+            "pattern": "(?<=(?:[^-!#-\\&*+./:<-@^|~]|^)=)(?![-!#-\\&*+./:<-@^|~])",
+            "error": "Unknown modifier ':'"
+        },
+        {
+            "pattern": "\\b(_)\\b|((?!\\b(?:and|'|asr??|assert|\\*|begin|class|[,:@]|constraint|do|done|downto|else|end|=|exception|external|false|for|\\.|fun|function|functor|[->]|if|in|include|inherit|initializer|land|lazy|[(<\\[{]|let|lor|lsl|lsr|lxor|match|method|mod|module|mutable|new|nonrec|#|object|of|open|or|[%+]|private|[\"?]|rec|[]);\\\\}]|sig|/|struct|then|~|to|true|try|type|val|\\||virtual|when|while|with)\\b(?:[^']|$))\\b(?=[_[:lower:]])[_[:alpha:]]['[:word:]]*)",
+            "error": "Unknown modifier '|'"
+        }
+    ]
+}

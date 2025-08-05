@@ -1,0 +1,47 @@
+{
+    "name": "cobol",
+    "total": 161,
+    "compatible": 151,
+    "incompatible": [
+        {
+            "pattern": "^([ *][ *][ *][ *][ *][ *])(/.*)$",
+            "error": "Unknown modifier '.'"
+        },
+        {
+            "pattern": "^([0-9\\s][0-9\\s][0-9\\s][0-9\\s][0-9\\s][0-9\\s])(/.*)$",
+            "error": "Unknown modifier '.'"
+        },
+        {
+            "pattern": "^([#$%.0-9@-Za-z\\s][#$%.0-9@-Za-z\\s][#$%.0-9@-Za-z\\s][#$%.0-9@-Za-z\\s][#$%.0-9@-Za-z\\s][#$%.0-9@-Za-z\\s])(/.*)$",
+            "error": "Unknown modifier '.'"
+        },
+        {
+            "pattern": "(operator-id\\s+[-*+/])",
+            "error": "Unknown modifier ']'"
+        },
+        {
+            "pattern": "(?<![-_])((?i:pic(?:ture\\s+is|ture|\\s+is|))\\s+[$*-09ABNPSUXZabnpsuxz]*)\\(([0-9]*)\\)([.Vv][$*-\\-/09ABNSUXZabnsuxz]*[().0-9])*",
+            "error": "Unknown modifier '0'"
+        },
+        {
+            "pattern": "(?<![-_])(?i:pic(?:ture\\s+is|ture|\\s+is|))\\s+[$*-09ABNPSUXZabnpsuxz]*\\([0-9]*\\)[.Vv][$*-\\-/09ABNPSUXZabnpsuxz]*",
+            "error": "Unknown modifier '0'"
+        },
+        {
+            "pattern": "(?<![-_])(?i:pic(?:ture\\s+is|ture|\\s+is|))\\s+[$*-09ABNPSUXZabnpsuxz]*\\([0-9]*\\)[$*-\\-/09ABNPSUXZabnpsuxz]*[.Vv][$*-\\-/09ABNPSUXZabnpsuxz]*",
+            "error": "Unknown modifier '0'"
+        },
+        {
+            "pattern": "(?<![-_])((?i:pic(?:ture\\s+is|ture|\\s+is|))\\s+[$*-09ABNPSUXZabnpsuxz]*)\\(([0-9]*)\\)[$*-\\-/09ABNPSUXZabnpsuxz]*",
+            "error": "Unknown modifier '0'"
+        },
+        {
+            "pattern": "(?<![-_])(?i:pic(?:ture\\s+is|ture|\\s+is|))\\s+[$*-/9ABNPSUVXZabnpsuvxz]*",
+            "error": "Unknown modifier '9'"
+        },
+        {
+            "pattern": "[<=>]|<=|>=|<>|[-*+/]|(?<![-_])(?i:b-and|b-or|b-xor|b-exor|b-not|b-left|b-right|and|or|equals?|greater\\s+than|less\\s+than|greater)(?![-0-9A-Z_a-z])",
+            "error": "Unknown modifier ']'"
+        }
+    ]
+}

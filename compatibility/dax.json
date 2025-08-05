@@ -1,0 +1,23 @@
+{
+    "name": "dax",
+    "total": 29,
+    "compatible": 25,
+    "incompatible": [
+        {
+            "pattern": "//",
+            "error": "Unknown modifier '/'"
+        },
+        {
+            "pattern": "/\\*",
+            "error": "Unknown modifier '\\'"
+        },
+        {
+            "pattern": "\\*/",
+            "error": "Unknown modifier '/'"
+        },
+        {
+            "pattern": "[-*+/]",
+            "error": "Unknown modifier ']'"
+        }
+    ]
+}

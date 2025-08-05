@@ -1,0 +1,175 @@
+{
+    "name": "imba",
+    "total": 293,
+    "compatible": 251,
+    "incompatible": [
+        {
+            "pattern": "}|(?=\\*/)",
+            "error": "Unknown modifier ')'"
+        },
+        {
+            "pattern": "]|(?=\\*/)",
+            "error": "Unknown modifier ')'"
+        },
+        {
+            "pattern": "/\\*\\*(?!/)",
+            "error": "Unknown modifier '\\'"
+        },
+        {
+            "pattern": "\\*/",
+            "error": "Unknown modifier '/'"
+        },
+        {
+            "pattern": "(/\\*)(?:\\s*((@)internal)(?=\\s|(\\*/)))?",
+            "error": "Unknown modifier '\\'"
+        },
+        {
+            "pattern": "\\*/",
+            "error": "Unknown modifier '/'"
+        },
+        {
+            "pattern": "(^[\\t ]+)?((//|#\\s)(?:\\s*((@)internal)(?=\\s|$))?)",
+            "error": "Unknown modifier '/'"
+        },
+        {
+            "pattern": "[*/]|(?<=\\s|^)[-+](?=\\s|$)",
+            "error": "Unknown modifier ']'"
+        },
+        {
+            "pattern": "(?i)(?<=[\",\\s]|\\*/|^)\\d+x(?=[\"'),\\s]|/\\*|$)",
+            "error": "Unknown modifier '|'"
+        },
+        {
+            "pattern": "(?i)(?<=\\s|^|\\*/)(at|round)(?=\\s|/\\*|$)",
+            "error": "Unknown modifier ')'"
+        },
+        {
+            "pattern": "(?<=[\"'\\s]|^|\\*/)\\s*([Ii])\\s*(?=[]\\s]|/\\*|$)",
+            "error": "Unknown modifier ')'"
+        },
+        {
+            "pattern": "(?<==)\\s*((?!/\\*)(?:[^]\"'\\\\\\s]|\\\\.)+)",
+            "error": "Unknown modifier '\\'"
+        },
+        {
+            "pattern": "(-?(?!\\d)(?>[-\\w[^0-\\\\x]]|\\\\(?:\\h{1,6}|.))+)\\s*(?=[]$*=^|~]|/\\*)",
+            "error": "Unknown modifier '\\'"
+        },
+        {
+            "pattern": "^(///)\\s*(?=<(reference|amd-dependency|amd-module)(\\s+(path|types|no-default-lib|lib|name)\\s*=\\s*(('([^'\\\\]|\\\\.)*')|(\"([^\"\\\\]|\\\\.)*\")|(`([^\\\\`]|\\\\.)*`)))+\\s*/>\\s*$)",
+            "error": "Unknown modifier '/'"
+        },
+        {
+            "pattern": "/>",
+            "error": "Unknown modifier '>'"
+        },
+        {
+            "pattern": "((@)author)\\s+([^*/<>@\\s](?:[^*/<>@]|\\*[^/])*)(?:\\s*(<)([^>\\s]+)(>))?",
+            "error": "Unknown modifier '<'"
+        },
+        {
+            "pattern": "((@)borrows)\\s+((?:[^*/@\\s]|\\*[^/])+)\\s+(as)\\s+((?:[^*/@\\s]|\\*[^/])+)",
+            "error": "Unknown modifier '@'"
+        },
+        {
+            "pattern": "(?=@|\\*/)",
+            "error": "Unknown modifier ')'"
+        },
+        {
+            "pattern": "(</)caption(>)|(?=\\*/)",
+            "error": "Unknown modifier ')'"
+        },
+        {
+            "pattern": "[^*@\\s](?:[^*]|\\*[^/])*",
+            "error": "Unknown modifier ']'"
+        },
+        {
+            "pattern": "((@)see)\\s+(?:((?=https?://)(?:[^*\\s]|\\*[^/])+)|((?!https?://|(?:\\[[^]\\[]*])?\\{@(?:link|linkcode|linkplain|tutorial)\\b)(?:[^*/@\\s]|\\*[^/])+))",
+            "error": "Unknown modifier '/'"
+        },
+        {
+            "pattern": "(?=\\s|\\*/|[^]$A-\\[_a-{}])",
+            "error": "Unknown modifier '|'"
+        },
+        {
+            "pattern": "(?:[^*/@\\s]|\\*[^/])+",
+            "error": "Unknown modifier '@'"
+        },
+        {
+            "pattern": "(?=\\s|\\*/|[^]$A-\\[_a-{}])",
+            "error": "Unknown modifier '|'"
+        },
+        {
+            "pattern": "(\\[)\\s*[$\\w]+(?:(?:\\[])?\\.[$\\w]+)*(?:\\s*(=)\\s*((?>\"(?:\\*(?!/)|\\\\(?!\")|[^*\\\\])*?\"|'(?:\\*(?!/)|\\\\(?!')|[^*\\\\])*?'|\\[(?:\\*(?!/)|[^*])*?]|(?:\\*(?!/)|\\s(?!\\s*])|\\[.*?(?:]|(?=\\*/))|[^]*\\[\\s])*)*))?\\s*(?:(])((?:[^*\\s]|\\*[^/\\s])+)?|(?=\\*/))",
+            "error": "Unknown modifier ')'"
+        },
+        {
+            "pattern": "(?=\\s|\\*/|[^]$A-\\[_a-{}])",
+            "error": "Unknown modifier '|'"
+        },
+        {
+            "pattern": "((@)(?:alias|augments|callback|constructs|emits|event|fires|exports?|extends|external|function|func|host|lends|listens|interface|memberof!?|method|module|mixes|mixin|name|requires|see|this|typedef|uses))\\s+((?:[^*@{}\\s]|\\*[^/])+)",
+            "error": "Unknown modifier ']'"
+        },
+        {
+            "pattern": "(\\3)|(?=$|\\*/)",
+            "error": "Unknown modifier ')'"
+        },
+        {
+            "pattern": "}|(?=\\*/)",
+            "error": "Unknown modifier ')'"
+        },
+        {
+            "pattern": "\\G((?=https?://)(?:[^*|}\\s]|\\*/)+)(\\|)?",
+            "error": "Unknown modifier '/'"
+        },
+        {
+            "pattern": "\\G((?:[^*@{|}\\s]|\\*[^/])+)(\\|)?",
+            "error": "Unknown modifier ']'"
+        },
+        {
+            "pattern": "\\G\\{(?:[^*}]|\\*[^/}])+$",
+            "error": "Unknown modifier '}'"
+        },
+        {
+            "pattern": "((}))\\s*|(?=\\*/)",
+            "error": "Unknown modifier ')'"
+        },
+        {
+            "pattern": "(?<=%[-\\w]+)(?![-!$%.@^\\w]+\\s*[:=][^:])",
+            "error": "Compilation failed: length of lookbehind assertion is not limited at offset 0"
+        },
+        {
+            "pattern": "\\*=|(?<!\\()/=|%=|\\+=|-=|\\?=|\\?\\?=|=\\?",
+            "error": "Unknown modifier '='"
+        },
+        {
+            "pattern": "(!)\\s*(/)(?![*/])",
+            "error": "Unknown modifier ')'"
+        },
+        {
+            "pattern": "[-%*+/]",
+            "error": "Unknown modifier ']'"
+        },
+        {
+            "pattern": "(?<!\\+\\+|--|})(?<=[!(+,:=?\\[]|^return|[^$._[:alnum:]]return|^case|[^$._[:alnum:]]case|=>|&&|\\|\\||\\*/)\\s*(/)(?![*/])(?=(?:[^()/\\[\\\\]|\\\\.|\\[([^]\\\\]|\\\\.)+]|\\(([^)\\\\]|\\\\.)+\\))+/([gimsuy]+|(?![*/])|(?=/\\*))(?!\\s*[$0-9A-Z_a-z]))",
+            "error": "Unknown modifier ')'"
+        },
+        {
+            "pattern": "(/)([gimsuy]*)",
+            "error": "Unknown modifier ')'"
+        },
+        {
+            "pattern": "((?<![]$)_[:alnum:]]|\\+\\+|--|}|\\*/)|((?<=^return|[^$._[:alnum:]]return|^case|[^$._[:alnum:]]case))\\s*)/(?![*/])(?=(?:[^/\\[\\\\]|\\\\.|\\[([^]\\\\]|\\\\.)+])+/([gimsuy]+|(?![*/])|(?=/\\*))(?!\\s*[$0-9A-Z_a-z]))",
+            "error": "Unknown modifier ')'"
+        },
+        {
+            "pattern": "(/)([gimsuy]*)",
+            "error": "Unknown modifier ')'"
+        },
+        {
+            "pattern": "(^[\\t ]+)?((//|#\\s)(?:\\s*((@)internal)(?=\\s|$))?)",
+            "error": "Unknown modifier '/'"
+        }
+    ]
+}

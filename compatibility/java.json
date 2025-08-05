@@ -1,0 +1,63 @@
+{
+    "name": "java",
+    "total": 214,
+    "compatible": 200,
+    "incompatible": [
+        {
+            "pattern": "(?=[])-.:;?}]|/(?![*/])|[!%\\&=^|])",
+            "error": "Unknown modifier '('"
+        },
+        {
+            "pattern": "(?=[])-.:;?}]|/(?![*/])|[!%\\&=^|])",
+            "error": "Unknown modifier '('"
+        },
+        {
+            "pattern": "(?=[])-.:;?}]|/(?![*/])|[!%\\&=^|])",
+            "error": "Unknown modifier '('"
+        },
+        {
+            "pattern": "/\\*\\*/",
+            "error": "Unknown modifier '\\'"
+        },
+        {
+            "pattern": "/\\*",
+            "error": "Unknown modifier '\\'"
+        },
+        {
+            "pattern": "\\*/",
+            "error": "Unknown modifier '/'"
+        },
+        {
+            "pattern": "(^[\\t ]+)?(?=//)",
+            "error": "Unknown modifier '/'"
+        },
+        {
+            "pattern": "//",
+            "error": "Unknown modifier '/'"
+        },
+        {
+            "pattern": "^\\s*(/\\*\\*)(?!/)",
+            "error": "Unknown modifier '\\'"
+        },
+        {
+            "pattern": "\\*/",
+            "error": "Unknown modifier '/'"
+        },
+        {
+            "pattern": "([-%*+/]=)",
+            "error": "Unknown modifier ']'"
+        },
+        {
+            "pattern": "([-%*+/])",
+            "error": "Unknown modifier ']'"
+        },
+        {
+            "pattern": "(?!new)(?=[<\\w].*\\s+)(?=([^/=]|/(?!/))+\\()",
+            "error": "Unknown modifier '='"
+        },
+        {
+            "pattern": "(?!new)(?=[<\\w].*\\s+)(?=([^(/=]|/(?!/))+(?=\\{))",
+            "error": "Unknown modifier '='"
+        }
+    ]
+}

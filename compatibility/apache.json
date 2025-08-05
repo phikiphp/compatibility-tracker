@@ -1,0 +1,15 @@
+{
+    "name": "apache",
+    "total": 60,
+    "compatible": 58,
+    "incompatible": [
+        {
+            "pattern": "(</)(Proxy|ProxyMatch|IfVersion|Directory|DirectoryMatch|Files|FilesMatch|IfDefine|IfModule|Limit|LimitExcept|Location|LocationMatch|VirtualHost|Macro|If|Else|ElseIf)(>)",
+            "error": "Unknown modifier ')'"
+        },
+        {
+            "pattern": "\\b((text|image|application|video|audio)/.+?)\\s",
+            "error": "Unknown modifier '.'"
+        }
+    ]
+}

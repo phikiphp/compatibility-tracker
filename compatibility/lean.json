@@ -1,0 +1,31 @@
+{
+    "name": "lean",
+    "total": 41,
+    "compatible": 35,
+    "incompatible": [
+        {
+            "pattern": "/-",
+            "error": "Unknown modifier '-'"
+        },
+        {
+            "pattern": "-/",
+            "error": "Unknown modifier '/'"
+        },
+        {
+            "pattern": "/--",
+            "error": "Unknown modifier '-'"
+        },
+        {
+            "pattern": "-/",
+            "error": "Unknown modifier '/'"
+        },
+        {
+            "pattern": "/-!",
+            "error": "Unknown modifier '-'"
+        },
+        {
+            "pattern": "-/",
+            "error": "Unknown modifier '/'"
+        }
+    ]
+}

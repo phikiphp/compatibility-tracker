@@ -1,0 +1,75 @@
+{
+    "name": "erlang",
+    "total": 193,
+    "compatible": 176,
+    "incompatible": [
+        {
+            "pattern": "^(\\s*(\\7))\\s*(\\)\\s*)?(\\.)",
+            "error": "Compilation failed: reference to non-existent subpattern at offset 7"
+        },
+        {
+            "pattern": "\\b(fun)\\s+((([a-z][@-Z_a-z\\d]*+)|(_[@-Z_a-z\\d]++|[A-Z][@-Z_a-z\\d]*+))\\s*+(:)\\s*+)?(([a-z][@-Z_a-z\\d]*+|'[^']*+')|(_[@-Z_a-z\\d]++|[A-Z][@-Z_a-z\\d]*+))\\s*(/)",
+            "error": "Unknown modifier ')'"
+        },
+        {
+            "pattern": "(/)",
+            "error": "Unknown modifier ')'"
+        },
+        {
+            "pattern": "(/)",
+            "error": "Unknown modifier ')'"
+        },
+        {
+            "pattern": "([a-z][@-Z_a-z\\d]*+|'[^']*+')\\s*+(/)",
+            "error": "Unknown modifier ')'"
+        },
+        {
+            "pattern": "(/)",
+            "error": "Unknown modifier ')'"
+        },
+        {
+            "pattern": "^(\\s*(\\3))(?!\")",
+            "error": "Compilation failed: reference to non-existent subpattern at offset 7"
+        },
+        {
+            "pattern": "^(\\s*(\\3))(?!\")",
+            "error": "Compilation failed: reference to non-existent subpattern at offset 7"
+        },
+        {
+            "pattern": "(\\2)",
+            "error": "Compilation failed: reference to non-existent subpattern at offset 2"
+        },
+        {
+            "pattern": "(\\2)",
+            "error": "Compilation failed: reference to non-existent subpattern at offset 2"
+        },
+        {
+            "pattern": "(~[bs]?)([#/`|])",
+            "error": "Unknown modifier '`'"
+        },
+        {
+            "pattern": "(\\2)",
+            "error": "Compilation failed: reference to non-existent subpattern at offset 2"
+        },
+        {
+            "pattern": "(~[BS])([#/`|])",
+            "error": "Unknown modifier '`'"
+        },
+        {
+            "pattern": "(\\2)",
+            "error": "Compilation failed: reference to non-existent subpattern at offset 2"
+        },
+        {
+            "pattern": "(\\2)",
+            "error": "Compilation failed: reference to non-existent subpattern at offset 2"
+        },
+        {
+            "pattern": "(\\2)",
+            "error": "Compilation failed: reference to non-existent subpattern at offset 2"
+        },
+        {
+            "pattern": "\\+\\+?|--|[-*]|/=?|=/=|=:=|==|=<?|<-?|>=|[!>]|::|\\?=",
+            "error": "Unknown modifier '='"
+        }
+    ]
+}

@@ -1,0 +1,27 @@
+{
+    "name": "typespec",
+    "total": 122,
+    "compatible": 117,
+    "incompatible": [
+        {
+            "pattern": "/\\*",
+            "error": "Unknown modifier '\\'"
+        },
+        {
+            "pattern": "\\*/",
+            "error": "Unknown modifier '/'"
+        },
+        {
+            "pattern": "/\\*\\*",
+            "error": "Unknown modifier '\\'"
+        },
+        {
+            "pattern": "\\*/",
+            "error": "Unknown modifier '/'"
+        },
+        {
+            "pattern": "//.*$",
+            "error": "Unknown modifier '/'"
+        }
+    ]
+}

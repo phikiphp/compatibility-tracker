@@ -1,0 +1,71 @@
+{
+    "name": "codeql",
+    "total": 183,
+    "compatible": 167,
+    "incompatible": [
+        {
+            "pattern": "[-%*+/]",
+            "error": "Unknown modifier ']'"
+        },
+        {
+            "pattern": "(?!(?:\\s|$|/[*/])|\\[)|(?<=])",
+            "error": "Unknown modifier '['"
+        },
+        {
+            "pattern": "/\\*\\*",
+            "error": "Unknown modifier '\\'"
+        },
+        {
+            "pattern": "\\*/",
+            "error": "Unknown modifier '/'"
+        },
+        {
+            "pattern": "(?<=/\\*\\*)([^*]|\\*(?!/))*$",
+            "error": "Unknown modifier '\\'"
+        },
+        {
+            "pattern": "(^|\\G)\\s*([^*]|\\*(?!/))(?=([^*]|\\*(?!/))*$)",
+            "error": "Unknown modifier ')'"
+        },
+        {
+            "pattern": "/\\*",
+            "error": "Unknown modifier '\\'"
+        },
+        {
+            "pattern": "\\*/",
+            "error": "Unknown modifier '/'"
+        },
+        {
+            "pattern": "//.*$",
+            "error": "Unknown modifier '/'"
+        },
+        {
+            "pattern": "/[*/]",
+            "error": "Unknown modifier '['"
+        },
+        {
+            "pattern": "(?<=[0-9A-Z_a-z])(?![0-9A-Z_a-z])(?<!(?<![0-9A-Z_a-z])as)|(?=\\s*(?!/[*/]|\\b[A-Za-z][0-9A-Z_a-z]*(?![0-9A-Z_a-z]))\\S)|(?=\\s*\\b(?:_(?![0-9A-Z_a-z])|and(?![0-9A-Z_a-z])|any(?![0-9A-Z_a-z])|as(?![0-9A-Z_a-z])|asc(?![0-9A-Z_a-z])|avg(?![0-9A-Z_a-z])|boolean(?![0-9A-Z_a-z])|by(?![0-9A-Z_a-z])|class(?![0-9A-Z_a-z])|concat(?![0-9A-Z_a-z])|count(?![0-9A-Z_a-z])|date(?![0-9A-Z_a-z])|desc(?![0-9A-Z_a-z])|else(?![0-9A-Z_a-z])|exists(?![0-9A-Z_a-z])|extends(?![0-9A-Z_a-z])|false(?![0-9A-Z_a-z])|float(?![0-9A-Z_a-z])|forall(?![0-9A-Z_a-z])|forex(?![0-9A-Z_a-z])|from(?![0-9A-Z_a-z])|if(?![0-9A-Z_a-z])|implies(?![0-9A-Z_a-z])|import(?![0-9A-Z_a-z])|in(?![0-9A-Z_a-z])|instanceof(?![0-9A-Z_a-z])|int(?![0-9A-Z_a-z])|max(?![0-9A-Z_a-z])|min(?![0-9A-Z_a-z])|module(?![0-9A-Z_a-z])|newtype(?![0-9A-Z_a-z])|none(?![0-9A-Z_a-z])|not(?![0-9A-Z_a-z])|or(?![0-9A-Z_a-z])|order(?![0-9A-Z_a-z])|predicate(?![0-9A-Z_a-z])|rank(?![0-9A-Z_a-z])|result(?![0-9A-Z_a-z])|select(?![0-9A-Z_a-z])|strictconcat(?![0-9A-Z_a-z])|strictcount(?![0-9A-Z_a-z])|strictsum(?![0-9A-Z_a-z])|string(?![0-9A-Z_a-z])|sum(?![0-9A-Z_a-z])|super(?![0-9A-Z_a-z])|then(?![0-9A-Z_a-z])|this(?![0-9A-Z_a-z])|true(?![0-9A-Z_a-z])|unique(?![0-9A-Z_a-z])|where(?![0-9A-Z_a-z])))",
+            "error": "Unknown modifier '['"
+        },
+        {
+            "pattern": "(?<=[0-9A-Z_a-z])(?![0-9A-Z_a-z])(?<!(?<![0-9A-Z_a-z])as)|(?=\\s*(?!/[*/]|\\b[A-Za-z][0-9A-Z_a-z]*(?![0-9A-Z_a-z]))\\S)|(?=\\s*\\b(?:_(?![0-9A-Z_a-z])|and(?![0-9A-Z_a-z])|any(?![0-9A-Z_a-z])|as(?![0-9A-Z_a-z])|asc(?![0-9A-Z_a-z])|avg(?![0-9A-Z_a-z])|boolean(?![0-9A-Z_a-z])|by(?![0-9A-Z_a-z])|class(?![0-9A-Z_a-z])|concat(?![0-9A-Z_a-z])|count(?![0-9A-Z_a-z])|date(?![0-9A-Z_a-z])|desc(?![0-9A-Z_a-z])|else(?![0-9A-Z_a-z])|exists(?![0-9A-Z_a-z])|extends(?![0-9A-Z_a-z])|false(?![0-9A-Z_a-z])|float(?![0-9A-Z_a-z])|forall(?![0-9A-Z_a-z])|forex(?![0-9A-Z_a-z])|from(?![0-9A-Z_a-z])|if(?![0-9A-Z_a-z])|implies(?![0-9A-Z_a-z])|import(?![0-9A-Z_a-z])|in(?![0-9A-Z_a-z])|instanceof(?![0-9A-Z_a-z])|int(?![0-9A-Z_a-z])|max(?![0-9A-Z_a-z])|min(?![0-9A-Z_a-z])|module(?![0-9A-Z_a-z])|newtype(?![0-9A-Z_a-z])|none(?![0-9A-Z_a-z])|not(?![0-9A-Z_a-z])|or(?![0-9A-Z_a-z])|order(?![0-9A-Z_a-z])|predicate(?![0-9A-Z_a-z])|rank(?![0-9A-Z_a-z])|result(?![0-9A-Z_a-z])|select(?![0-9A-Z_a-z])|strictconcat(?![0-9A-Z_a-z])|strictcount(?![0-9A-Z_a-z])|strictsum(?![0-9A-Z_a-z])|string(?![0-9A-Z_a-z])|sum(?![0-9A-Z_a-z])|super(?![0-9A-Z_a-z])|then(?![0-9A-Z_a-z])|this(?![0-9A-Z_a-z])|true(?![0-9A-Z_a-z])|unique(?![0-9A-Z_a-z])|where(?![0-9A-Z_a-z])))",
+            "error": "Unknown modifier '['"
+        },
+        {
+            "pattern": "(?<=[0-9A-Z_a-z])(?![0-9A-Z_a-z])(?<!(?<![0-9A-Z_a-z])as)|(?=\\s*(?!/[*/]|\\b[A-Za-z][0-9A-Z_a-z]*(?![0-9A-Z_a-z]))\\S)|(?=\\s*\\b(?:_(?![0-9A-Z_a-z])|and(?![0-9A-Z_a-z])|any(?![0-9A-Z_a-z])|as(?![0-9A-Z_a-z])|asc(?![0-9A-Z_a-z])|avg(?![0-9A-Z_a-z])|boolean(?![0-9A-Z_a-z])|by(?![0-9A-Z_a-z])|class(?![0-9A-Z_a-z])|concat(?![0-9A-Z_a-z])|count(?![0-9A-Z_a-z])|date(?![0-9A-Z_a-z])|desc(?![0-9A-Z_a-z])|else(?![0-9A-Z_a-z])|exists(?![0-9A-Z_a-z])|extends(?![0-9A-Z_a-z])|false(?![0-9A-Z_a-z])|float(?![0-9A-Z_a-z])|forall(?![0-9A-Z_a-z])|forex(?![0-9A-Z_a-z])|from(?![0-9A-Z_a-z])|if(?![0-9A-Z_a-z])|implies(?![0-9A-Z_a-z])|import(?![0-9A-Z_a-z])|in(?![0-9A-Z_a-z])|instanceof(?![0-9A-Z_a-z])|int(?![0-9A-Z_a-z])|max(?![0-9A-Z_a-z])|min(?![0-9A-Z_a-z])|module(?![0-9A-Z_a-z])|newtype(?![0-9A-Z_a-z])|none(?![0-9A-Z_a-z])|not(?![0-9A-Z_a-z])|or(?![0-9A-Z_a-z])|order(?![0-9A-Z_a-z])|predicate(?![0-9A-Z_a-z])|rank(?![0-9A-Z_a-z])|result(?![0-9A-Z_a-z])|select(?![0-9A-Z_a-z])|strictconcat(?![0-9A-Z_a-z])|strictcount(?![0-9A-Z_a-z])|strictsum(?![0-9A-Z_a-z])|string(?![0-9A-Z_a-z])|sum(?![0-9A-Z_a-z])|super(?![0-9A-Z_a-z])|then(?![0-9A-Z_a-z])|this(?![0-9A-Z_a-z])|true(?![0-9A-Z_a-z])|unique(?![0-9A-Z_a-z])|where(?![0-9A-Z_a-z])))",
+            "error": "Unknown modifier '['"
+        },
+        {
+            "pattern": "(?!(?:\\s|$|/[*/])|\\[)|(?<=])",
+            "error": "Unknown modifier '['"
+        },
+        {
+            "pattern": "(?!(?:\\s|$|/[*/])|\\[)|(?<=])",
+            "error": "Unknown modifier '['"
+        },
+        {
+            "pattern": "\\s|$|/[*/]",
+            "error": "Unknown modifier '['"
+        }
+    ]
+}

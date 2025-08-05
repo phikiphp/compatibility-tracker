@@ -1,0 +1,11 @@
+{
+    "name": "sparql",
+    "total": 4,
+    "compatible": 3,
+    "incompatible": [
+        {
+            "pattern": "\\|\\||&&|=|!=|[<>]|<=|>=|[-!*+/?^|]",
+            "error": "Unknown modifier '?'"
+        }
+    ]
+}

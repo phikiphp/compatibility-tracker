@@ -1,0 +1,27 @@
+{
+    "name": "powershell",
+    "total": 96,
+    "compatible": 91,
+    "incompatible": [
+        {
+            "pattern": "(?<![-\\w])((?i:class)|[%?])\\s+([-_\\p{L}\\d]?{1,})\\b",
+            "error": "Compilation failed: quantifier does not follow a repeatable item at offset 46"
+        },
+        {
+            "pattern": "[-%*+/]?=|[-%*+/]",
+            "error": "Unknown modifier ']'"
+        },
+        {
+            "pattern": "(?i)\\b(mandatory|valuefrompipeline|valuefrompipelinebypropertyname|valuefromremainingarguments|position|parametersetname|defaultparametersetname|supportsshouldprocess|supportspaging|positionalbinding|helpuri|confirmimpact|helpmessage)\\b\\s+{0,1}(=)?",
+            "error": "Compilation failed: quantifier does not follow a repeatable item at offset 243"
+        },
+        {
+            "pattern": "\\b([\"']?)(\\w+)([\"']?)\\s+{0,1}(=)\\s+{0,1}",
+            "error": "Compilation failed: quantifier does not follow a repeatable item at offset 28"
+        },
+        {
+            "pattern": "(?<!\\w)([-+]?[0-9_]+{0,1}\\.[0-9_]+(?:[Ee][0-9]+)?[DFMdfm]?)((?i:[gkmpt]b)?)\\b",
+            "error": "Compilation failed: quantifier does not follow a repeatable item at offset 24"
+        }
+    ]
+}

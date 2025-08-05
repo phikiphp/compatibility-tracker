@@ -1,0 +1,35 @@
+{
+    "name": "log",
+    "total": 31,
+    "compatible": 24,
+    "incompatible": [
+        {
+            "pattern": "(?<=^[p\\s\\d]*)\\bV\\b",
+            "error": "Compilation failed: length of lookbehind assertion is not limited at offset 0"
+        },
+        {
+            "pattern": "(?<=^[p\\s\\d]*)\\bD\\b",
+            "error": "Compilation failed: length of lookbehind assertion is not limited at offset 0"
+        },
+        {
+            "pattern": "(?<=^[p\\s\\d]*)\\bI\\b",
+            "error": "Compilation failed: length of lookbehind assertion is not limited at offset 0"
+        },
+        {
+            "pattern": "(?<=^[p\\s\\d]*)\\bW\\b",
+            "error": "Compilation failed: length of lookbehind assertion is not limited at offset 0"
+        },
+        {
+            "pattern": "(?<=^[p\\s\\d]*)\\bE\\b",
+            "error": "Compilation failed: length of lookbehind assertion is not limited at offset 0"
+        },
+        {
+            "pattern": "\\b[a-z]+://\\S+\\b/?",
+            "error": "Unknown modifier '/'"
+        },
+        {
+            "pattern": "(?<![/\\\\\\w])([-\\w]+\\.)+([-\\w])+(?![/\\\\\\w])",
+            "error": "Unknown modifier '\\'"
+        }
+    ]
+}

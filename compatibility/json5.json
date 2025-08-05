@@ -1,0 +1,35 @@
+{
+    "name": "json5",
+    "total": 28,
+    "compatible": 21,
+    "incompatible": [
+        {
+            "pattern": "/{2}.*",
+            "error": "Unknown modifier '{'"
+        },
+        {
+            "pattern": "/\\*\\*(?!/)",
+            "error": "Unknown modifier '\\'"
+        },
+        {
+            "pattern": "\\*/",
+            "error": "Unknown modifier '/'"
+        },
+        {
+            "pattern": "/\\*",
+            "error": "Unknown modifier '\\'"
+        },
+        {
+            "pattern": "\\*/",
+            "error": "Unknown modifier '/'"
+        },
+        {
+            "pattern": "\\\\(?:[\"/\\\\bfnrt]|u\\h{4})",
+            "error": "Unknown modifier '\\'"
+        },
+        {
+            "pattern": "\\\\(?:[\"/\\\\bfnrt]|u\\h{4})",
+            "error": "Unknown modifier '\\'"
+        }
+    ]
+}

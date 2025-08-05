@@ -1,0 +1,11 @@
+{
+    "name": "cairo",
+    "total": 23,
+    "compatible": 22,
+    "incompatible": [
+        {
+            "pattern": "//[^\\n]*\\n",
+            "error": "Unknown modifier '/'"
+        }
+    ]
+}

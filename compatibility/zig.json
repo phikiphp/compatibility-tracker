@@ -1,0 +1,19 @@
+{
+    "name": "zig",
+    "total": 56,
+    "compatible": 53,
+    "incompatible": [
+        {
+            "pattern": "//[!/](?=[^/])",
+            "error": "Unknown modifier '/'"
+        },
+        {
+            "pattern": "//",
+            "error": "Unknown modifier '/'"
+        },
+        {
+            "pattern": "(-%?|\\+%?|\\*%?|[%/])=?",
+            "error": "Unknown modifier ']'"
+        }
+    ]
+}

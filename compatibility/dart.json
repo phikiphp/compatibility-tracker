@@ -1,0 +1,71 @@
+{
+    "name": "dart",
+    "total": 88,
+    "compatible": 72,
+    "incompatible": [
+        {
+            "pattern": "/\\*\\*/",
+            "error": "Unknown modifier '\\'"
+        },
+        {
+            "pattern": "/\\*",
+            "error": "Unknown modifier '\\'"
+        },
+        {
+            "pattern": "\\*/",
+            "error": "Unknown modifier '/'"
+        },
+        {
+            "pattern": "///",
+            "error": "Unknown modifier '/'"
+        },
+        {
+            "pattern": "^(?!\\s*///)",
+            "error": "Unknown modifier '/'"
+        },
+        {
+            "pattern": "/\\*\\*",
+            "error": "Unknown modifier '\\'"
+        },
+        {
+            "pattern": "\\*/",
+            "error": "Unknown modifier '/'"
+        },
+        {
+            "pattern": "((//).*)$",
+            "error": "Unknown modifier '/'"
+        },
+        {
+            "pattern": "^\\s*///\\s*(```)",
+            "error": "Unknown modifier '/'"
+        },
+        {
+            "pattern": "^(?:\\s*///\\s*(```)|(?!\\s*///))",
+            "error": "Unknown modifier '/'"
+        },
+        {
+            "pattern": "^(?:\\s*\\*\\s*(```)|(?=\\s*\\*/))",
+            "error": "Unknown modifier ')'"
+        },
+        {
+            "pattern": "(?:\\*|//)\\s{4,}(.*?)(?=($|\\*/))",
+            "error": "Unknown modifier '/'"
+        },
+        {
+            "pattern": "^\\s*\\*\\s*(?!(\\s*```|/))",
+            "error": "Unknown modifier ')'"
+        },
+        {
+            "pattern": "^\\s*///\\s*(?!\\s*```)",
+            "error": "Unknown modifier '/'"
+        },
+        {
+            "pattern": "(([-%*+/~])=)",
+            "error": "Unknown modifier '~'"
+        },
+        {
+            "pattern": "([-*+/]|~/|%)",
+            "error": "Unknown modifier ']'"
+        }
+    ]
+}

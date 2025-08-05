@@ -1,0 +1,55 @@
+{
+    "name": "wolfram",
+    "total": 509,
+    "compatible": 497,
+    "incompatible": [
+        {
+            "pattern": "\\\\[ !%\\&(-+/@^_`]",
+            "error": "Unknown modifier '@'"
+        },
+        {
+            "pattern": "[!\\&'*-/:-@\\\\^|~]",
+            "error": "Unknown modifier ':'"
+        },
+        {
+            "pattern": "=!=|\\.\\.\\.|//\\.|@@@|<->|//@",
+            "error": "Unknown modifier '/'"
+        },
+        {
+            "pattern": "//=",
+            "error": "Unknown modifier '/'"
+        },
+        {
+            "pattern": "/=",
+            "error": "Unknown modifier '='"
+        },
+        {
+            "pattern": "/:",
+            "error": "Unknown modifier ':'"
+        },
+        {
+            "pattern": "<=|>=|\\.\\.|:>|<>|->|/@|/;|/\\.|//|/\\*|@@|@\\*|~~|\\*\\*",
+            "error": "Unknown modifier '@'"
+        },
+        {
+            "pattern": "[-*+/]",
+            "error": "Unknown modifier ']'"
+        },
+        {
+            "pattern": "^\\s*(`?(?:[$[:alpha:]][$[:alnum:]]*`)*)([$[:alpha:]][$[:alnum:]]*)(?=\\s*(\\[(?>[^]\\[]+|\\g<3>)*])\\s*(?:/;.*)?(?::=|=(?![!.=])))",
+            "error": "Unknown modifier ';'"
+        },
+        {
+            "pattern": "^\\s*(`?(?:[$[:alpha:]][$[:alnum:]]*`)*)([$[:alpha:]][$[:alnum:]]*)(?=\\s*(?:/;.*)?(?::=|=(?![!.=])))",
+            "error": "Unknown modifier ';'"
+        },
+        {
+            "pattern": "#\\p{alpha}\\p{alnum}*",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 19"
+        },
+        {
+            "pattern": "(::)(\\p{alpha}\\p{alnum}*)",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 23"
+        }
+    ]
+}

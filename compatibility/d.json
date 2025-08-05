@@ -1,0 +1,47 @@
+{
+    "name": "d",
+    "total": 377,
+    "compatible": 367,
+    "incompatible": [
+        {
+            "pattern": "\\1\"",
+            "error": "Compilation failed: reference to non-existent subpattern at offset 1"
+        },
+        {
+            "pattern": "\\^\\^|\\+\\+|--|(?<!/)\\+(?!/)|[-~]|(?<!/)\\*(?!/)|(?<![*+/])/(?![*+/])|%",
+            "error": "Unknown modifier ')'"
+        },
+        {
+            "pattern": ">>>=|\\^\\^=|>>=|<<=|~=|\\^=|\\|=|&=|%=|/=|\\*=|-=|\\+=|=(?!>)",
+            "error": "Unknown modifier '='"
+        },
+        {
+            "pattern": "/((?!\\*/)\\*)+",
+            "error": "Unknown modifier '('"
+        },
+        {
+            "pattern": "\\*+/",
+            "error": "Unknown modifier '/'"
+        },
+        {
+            "pattern": "//+.*$",
+            "error": "Unknown modifier '/'"
+        },
+        {
+            "pattern": "/((?!\\+/)\\+)+",
+            "error": "Unknown modifier '('"
+        },
+        {
+            "pattern": "\\++/",
+            "error": "Unknown modifier '/'"
+        },
+        {
+            "pattern": ">>>|\\|\\||&&|==|!=|<=|>=|<<|>>|[-!%\\&*+/<>^|~]",
+            "error": "Unknown modifier '<'"
+        },
+        {
+            "pattern": "~=?|>>>|>>=?|>=?|=>|==?|<>|<=|<<?|%=|[#%]|&=|&&|[$\\&]|\\|=|\\|\\|?|\\+=|\\+\\+?|\\^=|\\^\\^=?|\\^|\\*=|[]()*\\[{}]|\\.\\.\\.?|[.?]|!>=?|!=|!<>=?|!<=?|!|/=|[,/:;@]|-=|--?",
+            "error": "Unknown modifier '='"
+        }
+    ]
+}

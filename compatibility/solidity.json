@@ -1,0 +1,35 @@
+{
+    "name": "solidity",
+    "total": 125,
+    "compatible": 118,
+    "incompatible": [
+        {
+            "pattern": "/\\*",
+            "error": "Unknown modifier '\\'"
+        },
+        {
+            "pattern": "\\*/",
+            "error": "Unknown modifier '/'"
+        },
+        {
+            "pattern": "(?<!tp:)//",
+            "error": "Unknown modifier '/'"
+        },
+        {
+            "pattern": "/\\*\\*",
+            "error": "Unknown modifier '\\'"
+        },
+        {
+            "pattern": "\\*/",
+            "error": "Unknown modifier '/'"
+        },
+        {
+            "pattern": "///",
+            "error": "Unknown modifier '/'"
+        },
+        {
+            "pattern": "([-*+/])",
+            "error": "Unknown modifier ']'"
+        }
+    ]
+}

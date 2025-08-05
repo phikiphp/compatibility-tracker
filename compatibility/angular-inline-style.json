@@ -1,0 +1,11 @@
+{
+    "name": "angular-inline-style",
+    "total": 8,
+    "compatible": 7,
+    "incompatible": [
+        {
+            "pattern": "\\1",
+            "error": "Compilation failed: reference to non-existent subpattern at offset 1"
+        }
+    ]
+}

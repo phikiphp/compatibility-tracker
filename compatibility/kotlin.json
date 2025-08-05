@@ -1,0 +1,35 @@
+{
+    "name": "kotlin",
+    "total": 65,
+    "compatible": 58,
+    "incompatible": [
+        {
+            "pattern": "/\\*(?!\\*)",
+            "error": "Unknown modifier '\\'"
+        },
+        {
+            "pattern": "\\*/",
+            "error": "Unknown modifier '/'"
+        },
+        {
+            "pattern": "/\\*\\*",
+            "error": "Unknown modifier '\\'"
+        },
+        {
+            "pattern": "\\*/",
+            "error": "Unknown modifier '/'"
+        },
+        {
+            "pattern": "//",
+            "error": "Unknown modifier '/'"
+        },
+        {
+            "pattern": "([-%*+/]=)",
+            "error": "Unknown modifier ']'"
+        },
+        {
+            "pattern": "([-%*+/])",
+            "error": "Unknown modifier ']'"
+        }
+    ]
+}

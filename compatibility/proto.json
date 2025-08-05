@@ -1,0 +1,23 @@
+{
+    "name": "proto",
+    "total": 41,
+    "compatible": 37,
+    "incompatible": [
+        {
+            "pattern": "/\\*",
+            "error": "Unknown modifier '\\'"
+        },
+        {
+            "pattern": "\\*/",
+            "error": "Unknown modifier '/'"
+        },
+        {
+            "pattern": "//",
+            "error": "Unknown modifier '/'"
+        },
+        {
+            "pattern": "(;)|,|(?=[/A-Z_a-z}])",
+            "error": "Unknown modifier '-'"
+        }
+    ]
+}

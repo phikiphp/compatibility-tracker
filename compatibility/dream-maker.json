@@ -1,0 +1,63 @@
+{
+    "name": "dream-maker",
+    "total": 77,
+    "compatible": 63,
+    "incompatible": [
+        {
+            "pattern": "(var)[ /](?:(static|global|tmp|const)/)?(?:(datum|atom(?:/movable)?|obj|mob|turf|area|savefile|list|client|sound|image|database|matrix|regex|exception)/)?(?:([-$0-9A-Z_a-z]*)/)*([$0-9A-Z_a-z]*)\\b",
+            "error": "Unknown modifier ']'"
+        },
+        {
+            "pattern": "\\b(proc|verb|datum|atom(/movable)?|obj|mob|turf|area|savefile|list|client|sound|image|database|matrix|regex|exception)\\b",
+            "error": "Unknown modifier 'o'"
+        },
+        {
+            "pattern": "(\\?|([<>])(=)?|[.:]|/(=)?|~|\\+([+=])?|-([-=])?|\\*([*=])?|%|>>|<<|=(=)?|!(=)?|<>|&&??|[\\^|]|\\|\\||\\bto\\b|\\bin\\b|\\bstep\\b)",
+            "error": "Unknown modifier '('"
+        },
+        {
+            "pattern": "(?=/[*/])|(?<!\\\\)(?=\\n)",
+            "error": "Unknown modifier '['"
+        },
+        {
+            "pattern": "(?=/[*/])|(?<!\\\\)(?=\\n)",
+            "error": "Unknown modifier '['"
+        },
+        {
+            "pattern": "(?=/[*/])|(?<!\\\\)(?=\\n)",
+            "error": "Unknown modifier '['"
+        },
+        {
+            "pattern": "^/\\* =(\\s*.*?)\\s*= \\*/$\\n?",
+            "error": "Unknown modifier '\\'"
+        },
+        {
+            "pattern": "/\\*",
+            "error": "Unknown modifier '\\'"
+        },
+        {
+            "pattern": "\\*/",
+            "error": "Unknown modifier '/'"
+        },
+        {
+            "pattern": "\\*/.*\\n",
+            "error": "Unknown modifier '.'"
+        },
+        {
+            "pattern": "^// =(\\s*.*?)\\s*=\\s*$\\n?",
+            "error": "Unknown modifier '/'"
+        },
+        {
+            "pattern": "//",
+            "error": "Unknown modifier '/'"
+        },
+        {
+            "pattern": "^\\s*((#\\s*(if(n?def)?))\\b.*?(?:(?=/[*/])|$))",
+            "error": "Unknown modifier '['"
+        },
+        {
+            "pattern": "^\\s*(#\\s*(if(n?def)?)\\b.*?(?:(?=/[*/])|$))",
+            "error": "Unknown modifier '['"
+        }
+    ]
+}

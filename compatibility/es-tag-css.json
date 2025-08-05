@@ -1,0 +1,15 @@
+{
+    "name": "es-tag-css",
+    "total": 11,
+    "compatible": 9,
+    "incompatible": [
+        {
+            "pattern": "(?i)(\\s?/\\*\\s?((?:|inline-)css)\\s?\\*/\\s?)(`)",
+            "error": "Unknown modifier '\\'"
+        },
+        {
+            "pattern": "(?i)(?<=[(,:=\\s]|\\$\\()\\s*(((/\\*)|(//))\\s?((?:|inline-)css) {0,1000}\\*?/?) {0,1000}$",
+            "error": "Unknown modifier '\\'"
+        }
+    ]
+}

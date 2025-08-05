@@ -1,0 +1,19 @@
+{
+    "name": "plsql",
+    "total": 45,
+    "compatible": 42,
+    "incompatible": [
+        {
+            "pattern": "/\\*",
+            "error": "Unknown modifier '\\'"
+        },
+        {
+            "pattern": "\\*/",
+            "error": "Unknown modifier '/'"
+        },
+        {
+            "pattern": "[!:<>]?=|<>|[+<>]|(?<!\\.)\\*|-|(?<!^)/|\\|\\|",
+            "error": "Unknown modifier '|'"
+        }
+    ]
+}

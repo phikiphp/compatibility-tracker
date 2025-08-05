@@ -1,0 +1,39 @@
+{
+    "name": "v",
+    "total": 93,
+    "compatible": 85,
+    "incompatible": [
+        {
+            "pattern": "\\s+([-%\\&*+/:^|]?=)\\s+",
+            "error": "Unknown modifier ':'"
+        },
+        {
+            "pattern": "/\\*",
+            "error": "Unknown modifier '\\'"
+        },
+        {
+            "pattern": "\\*/",
+            "error": "Unknown modifier '/'"
+        },
+        {
+            "pattern": "//",
+            "error": "Unknown modifier '/'"
+        },
+        {
+            "pattern": "^\\s*(pub)?\\s*(fn)\\s*(\\()([^)]*)(\\))\\s*([-*+/])?\\s*(\\()([^)]*)(\\))\\s*(?:C\\.)?(\\w+)",
+            "error": "Unknown modifier ']'"
+        },
+        {
+            "pattern": "([-%*+/]|\\+\\+|--|>>|<<)",
+            "error": "Unknown modifier ']'"
+        },
+        {
+            "pattern": "((?::?|[-%\\&*+/^|~]|&&|\\|\\||>>|<<)=)",
+            "error": "Unknown modifier '^'"
+        },
+        {
+            "pattern": "\\b(\\w+)\\s+([]\\&*.\\[\\w]+)(?:\\s*(=)\\s*((?:.(?=$|//|/\\*))*+))?",
+            "error": "Unknown modifier '/'"
+        }
+    ]
+}

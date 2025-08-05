@@ -1,0 +1,47 @@
+{
+    "name": "markdown",
+    "total": 291,
+    "compatible": 281,
+    "incompatible": [
+        {
+            "pattern": "<(?![!$/?A-Za-z])",
+            "error": "Unknown modifier '?'"
+        },
+        {
+            "pattern": "^(?: {0,3}\\1-*[\\t ]*|[\\t ]*\\.{3})$",
+            "error": "Compilation failed: reference to non-existent subpattern at offset 11"
+        },
+        {
+            "pattern": "^(?!(?: {0,3}\\1-*[\\t ]*|[\\t ]*\\.{3})$)",
+            "error": "Compilation failed: reference to non-existent subpattern at offset 14"
+        },
+        {
+            "pattern": "(?i)(^|\\G)\\s*(?=<(script|style|pre)(\\s|$|>)(?!.*?</(script|style|pre)>))",
+            "error": "Unknown modifier '('"
+        },
+        {
+            "pattern": "(?i)(.*)((</)(script|style|pre)(>))",
+            "error": "Unknown modifier ')'"
+        },
+        {
+            "pattern": "(?i)^(?!.*</(script|style|pre)>)",
+            "error": "Unknown modifier '('"
+        },
+        {
+            "pattern": "(?i)(^|\\G)\\s*(?=</?[A-Za-z]+[^\\&/;gt\\s]*(\\s|$|/?>))",
+            "error": "Unknown modifier '?'"
+        },
+        {
+            "pattern": "(^|\\G)\\s*(?=(<(?:[-0-9A-Za-z](/?>|\\s.*?>)|/[-0-9A-Za-z]>))\\s*$)",
+            "error": "Unknown modifier '?'"
+        },
+        {
+            "pattern": "(<)((?:https?|ftp)://.*?)(>)",
+            "error": "Unknown modifier '/'"
+        },
+        {
+            "pattern": "(?<!\\\\)(~{2,})(?!(?<=\\w~~)_)((?:[^~]|(?!(?<![\\\\~])\\1(?!~))~)*+)(\\1)(?!(?<=_\\1)\\w)",
+            "error": "Compilation failed: length of lookbehind assertion is not limited at offset 70"
+        }
+    ]
+}

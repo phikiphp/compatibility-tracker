@@ -1,0 +1,11 @@
+{
+    "name": "graphql",
+    "total": 89,
+    "compatible": 88,
+    "incompatible": [
+        {
+            "pattern": "\\\\[\"'/\\\\bfnrt]",
+            "error": "Unknown modifier '\\'"
+        }
+    ]
+}

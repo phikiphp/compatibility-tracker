@@ -1,0 +1,15 @@
+{
+    "name": "smalltalk",
+    "total": 51,
+    "compatible": 49,
+    "incompatible": [
+        {
+            "pattern": "/^:\\w*\\s*\\|/",
+            "error": "Unknown modifier '^'"
+        },
+        {
+            "pattern": "([-*+/\\\\])",
+            "error": "Unknown modifier '\\'"
+        }
+    ]
+}

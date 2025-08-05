@@ -1,0 +1,23 @@
+{
+    "name": "zenscript",
+    "total": 24,
+    "compatible": 20,
+    "incompatible": [
+        {
+            "pattern": "//[^\\n]*",
+            "error": "Unknown modifier '/'"
+        },
+        {
+            "pattern": "/\\*",
+            "error": "Unknown modifier '\\'"
+        },
+        {
+            "pattern": "\\*/",
+            "error": "Unknown modifier '/'"
+        },
+        {
+            "pattern": "\\b(\\.\\.??|\\.\\.\\.|[+,]|\\+=|\\+\\+|-=??|--|~=??|\\*=??|/=??|%=??|\\|=??|\\|\\||&=??|&&|\\^=??|\\?\\.??|\\?\\?|<=??|<<=??|>=??|>>=??|>>>=??|=>?|===??|!=??|!==|[$`])\\b",
+            "error": "Unknown modifier '='"
+        }
+    ]
+}

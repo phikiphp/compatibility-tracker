@@ -1,0 +1,35 @@
+{
+    "name": "riscv",
+    "total": 47,
+    "compatible": 40,
+    "incompatible": [
+        {
+            "pattern": "/\\*",
+            "error": "Unknown modifier '\\'"
+        },
+        {
+            "pattern": "\\*/",
+            "error": "Unknown modifier '/'"
+        },
+        {
+            "pattern": "//",
+            "error": "Unknown modifier '/'"
+        },
+        {
+            "pattern": "(?=/[*/])|$",
+            "error": "Unknown modifier '['"
+        },
+        {
+            "pattern": "(?=/[*/])|$",
+            "error": "Unknown modifier '['"
+        },
+        {
+            "pattern": "(?=/[*/])|$",
+            "error": "Unknown modifier '['"
+        },
+        {
+            "pattern": "#|(//)",
+            "error": "Unknown modifier '/'"
+        }
+    ]
+}

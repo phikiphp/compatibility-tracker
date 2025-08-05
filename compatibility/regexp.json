@@ -1,0 +1,19 @@
+{
+    "name": "regexp",
+    "total": 42,
+    "compatible": 39,
+    "incompatible": [
+        {
+            "pattern": "(\\()(\\?P=\\w+(?:\\s+\\p{alnum}+)?)(\\))",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 27"
+        },
+        {
+            "pattern": "(\\()\\?\\((\\w+(?:\\s+\\p{alnum}+)?|\\d+)\\)",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 27"
+        },
+        {
+            "pattern": "(\\()(\\?P<\\w+(?:\\s+\\p{alnum}+)?>)",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 27"
+        }
+    ]
+}

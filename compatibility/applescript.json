@@ -1,0 +1,15 @@
+{
+    "name": "applescript",
+    "total": 191,
+    "compatible": 189,
+    "incompatible": [
+        {
+            "pattern": "^\\s*(to|on)\\s+(\\w+)(\\()((?:[,:{}\\s]*\\w+{0,1})*)(\\))",
+            "error": "Compilation failed: quantifier does not follow a repeatable item at offset 43"
+        },
+        {
+            "pattern": "([-\\&*+/^÷])",
+            "error": "Unknown modifier '^'"
+        }
+    ]
+}

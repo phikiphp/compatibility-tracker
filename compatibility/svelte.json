@@ -1,0 +1,223 @@
+{
+    "name": "svelte",
+    "total": 161,
+    "compatible": 107,
+    "incompatible": [
+        {
+            "pattern": "(?<=>)(?!</)",
+            "error": "Unknown modifier ')'"
+        },
+        {
+            "pattern": "(?=</)",
+            "error": "Unknown modifier ')'"
+        },
+        {
+            "pattern": "(?<=>)(?!</)",
+            "error": "Unknown modifier ')'"
+        },
+        {
+            "pattern": "(?=</)",
+            "error": "Unknown modifier ')'"
+        },
+        {
+            "pattern": "(?<=>)(?!</)",
+            "error": "Unknown modifier ')'"
+        },
+        {
+            "pattern": "(?=</)",
+            "error": "Unknown modifier ')'"
+        },
+        {
+            "pattern": "(?<![\"$'./_[:alnum:]])\\$(?=[_[:alpha:]][$_[:alnum:]]*)",
+            "error": "Unknown modifier '_'"
+        },
+        {
+            "pattern": "(?<![\"$'./_[:alnum:]])(\\$\\$)(?=props|restProps|slots)",
+            "error": "Unknown modifier '_'"
+        },
+        {
+            "pattern": "(?<=>)(?!</)",
+            "error": "Unknown modifier ')'"
+        },
+        {
+            "pattern": "(?=</)",
+            "error": "Unknown modifier ')'"
+        },
+        {
+            "pattern": "(?<=>)(?!</)",
+            "error": "Unknown modifier ')'"
+        },
+        {
+            "pattern": "(?=</)",
+            "error": "Unknown modifier ')'"
+        },
+        {
+            "pattern": "(?<=>)(?!</)",
+            "error": "Unknown modifier ')'"
+        },
+        {
+            "pattern": "(?=</)",
+            "error": "Unknown modifier ')'"
+        },
+        {
+            "pattern": "(?<=>)(?!</)",
+            "error": "Unknown modifier ')'"
+        },
+        {
+            "pattern": "(?=</)",
+            "error": "Unknown modifier ')'"
+        },
+        {
+            "pattern": "(?<=>)(?!</)",
+            "error": "Unknown modifier ')'"
+        },
+        {
+            "pattern": "(?=</)",
+            "error": "Unknown modifier ')'"
+        },
+        {
+            "pattern": "(?<=>)(?!</)",
+            "error": "Unknown modifier ')'"
+        },
+        {
+            "pattern": "(?=</)",
+            "error": "Unknown modifier ')'"
+        },
+        {
+            "pattern": "(?<=>)(?!</)",
+            "error": "Unknown modifier ')'"
+        },
+        {
+            "pattern": "(?=</)",
+            "error": "Unknown modifier ')'"
+        },
+        {
+            "pattern": "(?<=>)(?!</)",
+            "error": "Unknown modifier ')'"
+        },
+        {
+            "pattern": "(?=</)",
+            "error": "Unknown modifier ')'"
+        },
+        {
+            "pattern": "(?=</template)",
+            "error": "Unknown modifier 't'"
+        },
+        {
+            "pattern": "(?<=>)(?!</)",
+            "error": "Unknown modifier ')'"
+        },
+        {
+            "pattern": "(?=</)",
+            "error": "Unknown modifier ')'"
+        },
+        {
+            "pattern": "(?<=[^=\\s])(?!\\s*=)|(?=/?>)",
+            "error": "Unknown modifier '?'"
+        },
+        {
+            "pattern": "(\\3)",
+            "error": "Compilation failed: reference to non-existent subpattern at offset 2"
+        },
+        {
+            "pattern": "(?<=[^=\\s])(?!\\s*=)|(?=/?>)",
+            "error": "Unknown modifier '?'"
+        },
+        {
+            "pattern": "([\"'])([.0-9_]+[%\\w]{0,4})(\\1)|([.0-9_]+[%\\w]{0,4})(?=\\s|/?>)",
+            "error": "Unknown modifier '?'"
+        },
+        {
+            "pattern": "([^\"'/<=>`\\s]|/(?!>))+",
+            "error": "Unknown modifier '<'"
+        },
+        {
+            "pattern": "\\1",
+            "error": "Compilation failed: reference to non-existent subpattern at offset 1"
+        },
+        {
+            "pattern": "(\\{)\\s*(/([a-z]*))",
+            "error": "Unknown modifier '('"
+        },
+        {
+            "pattern": "([#/:@])(else\\s+if|[a-z]*)",
+            "error": "Unknown modifier ':'"
+        },
+        {
+            "pattern": "(?<=(if|key|then|catch|html|render).*?)\\G",
+            "error": "Compilation failed: length of lookbehind assertion is not limited at offset 0"
+        },
+        {
+            "pattern": "(?<=snippet.*?)\\G",
+            "error": "Compilation failed: length of lookbehind assertion is not limited at offset 0"
+        },
+        {
+            "pattern": "(?<=>\\s*\\()",
+            "error": "Compilation failed: length of lookbehind assertion is not limited at offset 0"
+        },
+        {
+            "pattern": "(?<=const.*?)\\G",
+            "error": "Compilation failed: length of lookbehind assertion is not limited at offset 0"
+        },
+        {
+            "pattern": "(?<=each.*?)\\G",
+            "error": "Compilation failed: length of lookbehind assertion is not limited at offset 0"
+        },
+        {
+            "pattern": "(?<=await.*?)\\G",
+            "error": "Compilation failed: length of lookbehind assertion is not limited at offset 0"
+        },
+        {
+            "pattern": "(?<=debug.*?)\\G",
+            "error": "Compilation failed: length of lookbehind assertion is not limited at offset 0"
+        },
+        {
+            "pattern": "(</)(.*?)\\s*(>)|(/>)",
+            "error": "Unknown modifier ')'"
+        },
+        {
+            "pattern": "(</)([^/>\\s]*)",
+            "error": "Unknown modifier ')'"
+        },
+        {
+            "pattern": "(<)([^/>\\s]*)",
+            "error": "Unknown modifier '>'"
+        },
+        {
+            "pattern": "(/?>)",
+            "error": "Unknown modifier '?'"
+        },
+        {
+            "pattern": "</\\1\\s*>|/>",
+            "error": "Unknown modifier '\\'"
+        },
+        {
+            "pattern": "\\G(?=\\s*[^>]*?(type|lang)\\s*=\\s*([\"']?)(?:text/)?(\\w+)\\2)",
+            "error": "Unknown modifier ')'"
+        },
+        {
+            "pattern": "(?=</|/>)",
+            "error": "Unknown modifier '|'"
+        },
+        {
+            "pattern": "(?=/>)|>",
+            "error": "Unknown modifier '>'"
+        },
+        {
+            "pattern": "(?=/?>)",
+            "error": "Unknown modifier '?'"
+        },
+        {
+            "pattern": "(<)([^/>\\s]*)",
+            "error": "Unknown modifier '>'"
+        },
+        {
+            "pattern": "(<)(area|base|br|col|embed|hr|img|input|link|meta|param|source|track|wbr)(?=\\s|/?>)",
+            "error": "Unknown modifier '?'"
+        },
+        {
+            "pattern": "/?>",
+            "error": "Unknown modifier '?'"
+        }
+    ]
+}

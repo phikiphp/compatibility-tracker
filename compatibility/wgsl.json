@@ -1,0 +1,39 @@
+{
+    "name": "wgsl",
+    "total": 45,
+    "compatible": 37,
+    "incompatible": [
+        {
+            "pattern": "/\\*\\*/",
+            "error": "Unknown modifier '\\'"
+        },
+        {
+            "pattern": "/\\*\\*",
+            "error": "Unknown modifier '\\'"
+        },
+        {
+            "pattern": "\\*/",
+            "error": "Unknown modifier '/'"
+        },
+        {
+            "pattern": "/\\*(?!\\*)",
+            "error": "Unknown modifier '\\'"
+        },
+        {
+            "pattern": "\\*/",
+            "error": "Unknown modifier '/'"
+        },
+        {
+            "pattern": "((?:[-%\\&*+/^|]|<<|>>)=)",
+            "error": "Unknown modifier '^'"
+        },
+        {
+            "pattern": "(([%+]|(\\*(?!\\w)))(?!=))|(-(?!>))|(/(?!/))",
+            "error": "Unknown modifier '('"
+        },
+        {
+            "pattern": "\\s*//.*",
+            "error": "Unknown modifier '/'"
+        }
+    ]
+}

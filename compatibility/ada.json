@@ -1,0 +1,27 @@
+{
+    "name": "ada",
+    "total": 388,
+    "compatible": 383,
+    "incompatible": [
+        {
+            "pattern": "(?i)(?:\\b(end)\\s+(\\3|\\4)\\s*)?(;)",
+            "error": "Compilation failed: reference to non-existent subpattern at offset 22"
+        },
+        {
+            "pattern": "([-*+/])",
+            "error": "Unknown modifier ']'"
+        },
+        {
+            "pattern": "(=|/=|[<>]|<=|>=)",
+            "error": "Unknown modifier '='"
+        },
+        {
+            "pattern": "(?i)([*/]|\\bmod\\b|\\brem\\b)",
+            "error": "Unknown modifier ']'"
+        },
+        {
+            "pattern": "(=|/=|<=??|>=??)",
+            "error": "Unknown modifier '='"
+        }
+    ]
+}

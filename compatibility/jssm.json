@@ -1,0 +1,19 @@
+{
+    "name": "jssm",
+    "total": 30,
+    "compatible": 27,
+    "incompatible": [
+        {
+            "pattern": "/\\*",
+            "error": "Unknown modifier '\\'"
+        },
+        {
+            "pattern": "\\*/",
+            "error": "Unknown modifier '/'"
+        },
+        {
+            "pattern": "//",
+            "error": "Unknown modifier '/'"
+        }
+    ]
+}

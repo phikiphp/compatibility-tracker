@@ -1,0 +1,27 @@
+{
+    "name": "vala",
+    "total": 27,
+    "compatible": 22,
+    "incompatible": [
+        {
+            "pattern": "/\\*\\*/",
+            "error": "Unknown modifier '\\'"
+        },
+        {
+            "pattern": "/\\*",
+            "error": "Unknown modifier '\\'"
+        },
+        {
+            "pattern": "\\*/",
+            "error": "Unknown modifier '/'"
+        },
+        {
+            "pattern": "\\s*((//).*$\\n?)",
+            "error": "Unknown modifier '/'"
+        },
+        {
+            "pattern": "/((\\\\/)|([^/]))*/(?=\\s*[\\n),.;])",
+            "error": "Unknown modifier '('"
+        }
+    ]
+}

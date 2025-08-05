@@ -1,0 +1,35 @@
+{
+    "name": "rel",
+    "total": 20,
+    "compatible": 13,
+    "incompatible": [
+        {
+            "pattern": "/\\*\\*(?!/)",
+            "error": "Unknown modifier '\\'"
+        },
+        {
+            "pattern": "\\*/",
+            "error": "Unknown modifier '/'"
+        },
+        {
+            "pattern": "(/\\*)(?:\\s*((@)internal)(?=\\s|(\\*/)))?",
+            "error": "Unknown modifier '\\'"
+        },
+        {
+            "pattern": "\\*/",
+            "error": "Unknown modifier '/'"
+        },
+        {
+            "pattern": "(^[\\t ]+)?((//)(?:\\s*((@)internal)(?=\\s|$))?)",
+            "error": "Unknown modifier '/'"
+        },
+        {
+            "pattern": "\\b((if|then|else|and|or|not|eq|neq|lt|lt_eq|gt|gt_eq))\\b|([-%*+/=^÷]|!=|[<≠]|<=|[>≤]|>=|[\\&≥])|\\s+(end)",
+            "error": "Unknown modifier '='"
+        },
+        {
+            "pattern": "(^[\\t ]+)?((//)(?:\\s*((@)internal)(?=\\s|$))?)",
+            "error": "Unknown modifier '/'"
+        }
+    ]
+}

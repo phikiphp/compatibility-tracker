@@ -1,0 +1,23 @@
+{
+    "name": "tex",
+    "total": 41,
+    "compatible": 37,
+    "incompatible": [
+        {
+            "pattern": "(?<=^\\s*)\\\\if[a-z]*",
+            "error": "Compilation failed: length of lookbehind assertion is not limited at offset 0"
+        },
+        {
+            "pattern": "(?<=^\\s*)\\\\fi",
+            "error": "Compilation failed: length of lookbehind assertion is not limited at offset 0"
+        },
+        {
+            "pattern": "(?<=^\\s*)((\\\\)iffalse)(?!\\s*[{}]\\s*\\\\fi\\b)",
+            "error": "Compilation failed: length of lookbehind assertion is not limited at offset 0"
+        },
+        {
+            "pattern": "[-*+/]|(?<!\\^)\\^(?!\\^)|(?<!_)_(?!_)",
+            "error": "Unknown modifier ']'"
+        }
+    ]
+}

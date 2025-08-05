@@ -1,0 +1,27 @@
+{
+    "name": "clojure",
+    "total": 44,
+    "compatible": 39,
+    "incompatible": [
+        {
+            "pattern": "([-+]?\\d+/\\d+)",
+            "error": "Unknown modifier '\\'"
+        },
+        {
+            "pattern": "(?<=([(\\[{\\s])):[-!#*+./:<-?_\\w]+(?=([]),}\\s]))",
+            "error": "Unknown modifier ':'"
+        },
+        {
+            "pattern": "([-!*+.<-?_\\p{L}][-!*+.:<-?_\\w\\d]*)/",
+            "error": "Unknown modifier '/'"
+        },
+        {
+            "pattern": "(?<=\\()(ns|declare|def[-!*+.:<-?_\\w\\d]*|[-!*+.:<-?_\\w][-!*+.:<-?_\\w\\d]*/def[-!*+.:<-?_\\w\\d]*)\\s+",
+            "error": "Unknown modifier 'd'"
+        },
+        {
+            "pattern": "(?<=([(\\[{\\s])#)'[-!*+./:<-?_\\w]+(?=([])}\\s]))",
+            "error": "Unknown modifier ':'"
+        }
+    ]
+}

@@ -1,0 +1,43 @@
+{
+    "name": "actionscript-3",
+    "total": 71,
+    "compatible": 62,
+    "incompatible": [
+        {
+            "pattern": "([-%+/]|(?<!:)\\*)",
+            "error": "Unknown modifier ']'"
+        },
+        {
+            "pattern": "/\\*\\*(?!/)",
+            "error": "Unknown modifier '\\'"
+        },
+        {
+            "pattern": "\\*/",
+            "error": "Unknown modifier '/'"
+        },
+        {
+            "pattern": "/\\*",
+            "error": "Unknown modifier '\\'"
+        },
+        {
+            "pattern": "\\*/",
+            "error": "Unknown modifier '/'"
+        },
+        {
+            "pattern": "//.*",
+            "error": "Unknown modifier '/'"
+        },
+        {
+            "pattern": "(?<=(?:^|[;{}]|\\*/)\\s*)\\[\\s*\\b([$A-Z_a-z][$0-9A-Z_a-z]+)\\b",
+            "error": "Unknown modifier ')'"
+        },
+        {
+            "pattern": "(?<=[(,:=\\[]|^|return|&&|\\|\\||!)\\s*(/)(?![*+/?{}])",
+            "error": "Unknown modifier ')'"
+        },
+        {
+            "pattern": "$|(/)[gim]*",
+            "error": "Unknown modifier ')'"
+        }
+    ]
+}

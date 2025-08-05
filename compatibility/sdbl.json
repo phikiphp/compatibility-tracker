@@ -1,0 +1,23 @@
+{
+    "name": "sdbl",
+    "total": 23,
+    "compatible": 19,
+    "incompatible": [
+        {
+            "pattern": "^(\\s*//.*)$",
+            "error": "Unknown modifier '/'"
+        },
+        {
+            "pattern": "//",
+            "error": "Unknown modifier '/'"
+        },
+        {
+            "pattern": "^(\\s*//.*)$",
+            "error": "Unknown modifier '/'"
+        },
+        {
+            "pattern": "([-%*+/])",
+            "error": "Unknown modifier ']'"
+        }
+    ]
+}

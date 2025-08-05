@@ -1,0 +1,15 @@
+{
+    "name": "mdc",
+    "total": 39,
+    "compatible": 37,
+    "incompatible": [
+        {
+            "pattern": "(?<=[^=\\s])(?!\\s*=)|(?=/?>)",
+            "error": "Unknown modifier '?'"
+        },
+        {
+            "pattern": "([^\"'/<=>`\\s]|/(?!>))+",
+            "error": "Unknown modifier '<'"
+        }
+    ]
+}

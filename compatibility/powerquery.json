@@ -1,0 +1,23 @@
+{
+    "name": "powerquery",
+    "total": 32,
+    "compatible": 28,
+    "incompatible": [
+        {
+            "pattern": "/\\*",
+            "error": "Unknown modifier '\\'"
+        },
+        {
+            "pattern": "\\*/",
+            "error": "Unknown modifier '/'"
+        },
+        {
+            "pattern": "//.*",
+            "error": "Unknown modifier '/'"
+        },
+        {
+            "pattern": "(=>)|(=)|(<>|[<>]|<=|>=)|(&)|([-*+/])|(!)|(\\?)",
+            "error": "Unknown modifier ']'"
+        }
+    ]
+}

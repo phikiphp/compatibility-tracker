@@ -1,0 +1,11 @@
+{
+    "name": "shaderlab",
+    "total": 39,
+    "compatible": 38,
+    "incompatible": [
+        {
+            "pattern": "//",
+            "error": "Unknown modifier '/'"
+        }
+    ]
+}

@@ -1,0 +1,55 @@
+{
+    "name": "latex",
+    "total": 448,
+    "compatible": 436,
+    "incompatible": [
+        {
+            "pattern": "\\\\end\\{\\1}",
+            "error": "Compilation failed: reference to non-existent subpattern at offset 8"
+        },
+        {
+            "pattern": "\\\\end\\{\\1}(?:\\s*\\n)?",
+            "error": "Compilation failed: reference to non-existent subpattern at offset 8"
+        },
+        {
+            "pattern": "(\\\\end\\{\\2})",
+            "error": "Compilation failed: reference to non-existent subpattern at offset 9"
+        },
+        {
+            "pattern": "\\\\end\\{\\1}",
+            "error": "Compilation failed: reference to non-existent subpattern at offset 8"
+        },
+        {
+            "pattern": "(\\\\end\\{\\2})",
+            "error": "Compilation failed: reference to non-existent subpattern at offset 9"
+        },
+        {
+            "pattern": "(\\\\end\\{\\2})",
+            "error": "Compilation failed: reference to non-existent subpattern at offset 9"
+        },
+        {
+            "pattern": "(\\\\end\\{\\2}(?:\\s*\\n)?)",
+            "error": "Compilation failed: reference to non-existent subpattern at offset 9"
+        },
+        {
+            "pattern": "(\\\\end\\{\\2}(?:\\s*\\n)?)",
+            "error": "Compilation failed: reference to non-existent subpattern at offset 9"
+        },
+        {
+            "pattern": "(\\\\end\\{\\2}(?:\\s*\\n)?)",
+            "error": "Compilation failed: reference to non-existent subpattern at offset 9"
+        },
+        {
+            "pattern": "[!*,-/:^_\\p{Alphabetic}\\p{N}]+",
+            "error": "Unknown modifier ':'"
+        },
+        {
+            "pattern": "((\\\\)\\w*[Rr]efrange\\*?)(?:\\[[^]]*])?(\\{)([!*,-/:^_\\p{Alphabetic}\\p{N}]+)(})(\\{)([!*,-/:^_\\p{Alphabetic}\\p{N}]+)(})",
+            "error": "Unknown modifier ':'"
+        },
+        {
+            "pattern": "[!*,-/:^_\\p{Alphabetic}\\p{N}]+",
+            "error": "Unknown modifier ':'"
+        }
+    ]
+}

@@ -1,0 +1,27 @@
+{
+    "name": "desktop",
+    "total": 17,
+    "compatible": 12,
+    "incompatible": [
+        {
+            "pattern": "(?<=^Categories.*)AudioVideo|(?<=^Categories.*)Audio|(?<=^Categories.*)Video|(?<=^Categories.*)Development|(?<=^Categories.*)Education|(?<=^Categories.*)Game|(?<=^Categories.*)Graphics|(?<=^Categories.*)Network|(?<=^Categories.*)Office|(?<=^Categories.*)Science|(?<=^Categories.*)Settings|(?<=^Categories.*)System|(?<=^Categories.*)Utility",
+            "error": "Compilation failed: length of lookbehind assertion is not limited at offset 0"
+        },
+        {
+            "pattern": "(?<=^Exec.*\\s)-+\\S+",
+            "error": "Compilation failed: length of lookbehind assertion is not limited at offset 0"
+        },
+        {
+            "pattern": "(?<=^Exec.*)\\s%[FUcfiku]\\s",
+            "error": "Compilation failed: length of lookbehind assertion is not limited at offset 0"
+        },
+        {
+            "pattern": "(?<=^\\S+)=",
+            "error": "Compilation failed: length of lookbehind assertion is not limited at offset 0"
+        },
+        {
+            "pattern": "(?<=^Version.*)\\d+(\\.?\\d*)",
+            "error": "Compilation failed: length of lookbehind assertion is not limited at offset 0"
+        }
+    ]
+}

@@ -1,0 +1,27 @@
+{
+    "name": "luau",
+    "total": 113,
+    "compatible": 108,
+    "incompatible": [
+        {
+            "pattern": "]\\1]",
+            "error": "Compilation failed: reference to non-existent subpattern at offset 2"
+        },
+        {
+            "pattern": "((?<=[!*/\\s])[@\\\\]param)\\s+\\b(\\w+)\\b",
+            "error": "Unknown modifier '\\'"
+        },
+        {
+            "pattern": "(?:[-+]|//??|[%*^]|\\.\\.|)=",
+            "error": "Unknown modifier '/'"
+        },
+        {
+            "pattern": "[-%*+]|//|[/^]",
+            "error": "Unknown modifier '/'"
+        },
+        {
+            "pattern": "]\\1]",
+            "error": "Compilation failed: reference to non-existent subpattern at offset 2"
+        }
+    ]
+}

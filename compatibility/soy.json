@@ -1,0 +1,71 @@
+{
+    "name": "soy",
+    "total": 57,
+    "compatible": 41,
+    "incompatible": [
+        {
+            "pattern": "\\{((?:del)?call)\\s+([.\\w]+)(?=[^/]*?})",
+            "error": "Unknown modifier ']'"
+        },
+        {
+            "pattern": "\\{/(\\1)}",
+            "error": "Unknown modifier '('"
+        },
+        {
+            "pattern": "/}",
+            "error": "Unknown modifier '}'"
+        },
+        {
+            "pattern": "/\\*",
+            "error": "Unknown modifier '\\'"
+        },
+        {
+            "pattern": "\\*/",
+            "error": "Unknown modifier '/'"
+        },
+        {
+            "pattern": "^\\s*(//.*)$",
+            "error": "Unknown modifier '/'"
+        },
+        {
+            "pattern": "\\{/?(if|elseif|switch|case)\\s*",
+            "error": "Unknown modifier '?'"
+        },
+        {
+            "pattern": "\\{/?(for(?:each|))(?=[}\\s])",
+            "error": "Unknown modifier '?'"
+        },
+        {
+            "pattern": "/}",
+            "error": "Unknown modifier '}'"
+        },
+        {
+            "pattern": "\\{/(\\1)}",
+            "error": "Unknown modifier '('"
+        },
+        {
+            "pattern": "\\{/(\\1)}",
+            "error": "Unknown modifier '('"
+        },
+        {
+            "pattern": "\\{/?((?:|fallback)msg)",
+            "error": "Unknown modifier '?'"
+        },
+        {
+            "pattern": "-|not|[%*+/]|<=|>=|[<>]|==|!=|and|or|\\?:|[:?]",
+            "error": "Unknown modifier ']'"
+        },
+        {
+            "pattern": "/}",
+            "error": "Unknown modifier '}'"
+        },
+        {
+            "pattern": "\\{/(\\1)}",
+            "error": "Unknown modifier '('"
+        },
+        {
+            "pattern": "\\{(/\\1)}",
+            "error": "Unknown modifier '\\'"
+        }
+    ]
+}

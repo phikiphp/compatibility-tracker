@@ -1,0 +1,43 @@
+{
+    "name": "jison",
+    "total": 95,
+    "compatible": 86,
+    "incompatible": [
+        {
+            "pattern": "//",
+            "error": "Unknown modifier '/'"
+        },
+        {
+            "pattern": "/\\*",
+            "error": "Unknown modifier '\\'"
+        },
+        {
+            "pattern": "\\*/",
+            "error": "Unknown modifier '/'"
+        },
+        {
+            "pattern": "^\\s*(/lex)\\b",
+            "error": "Unknown modifier 'l'"
+        },
+        {
+            "pattern": "(?=/lex)",
+            "error": "Unknown modifier 'l'"
+        },
+        {
+            "pattern": "(?=/lex)",
+            "error": "Unknown modifier 'l'"
+        },
+        {
+            "pattern": "(?=/lex)",
+            "error": "Unknown modifier 'l'"
+        },
+        {
+            "pattern": "^(?=%%|/lex)",
+            "error": "Unknown modifier 'l'"
+        },
+        {
+            "pattern": "(?=%%|/lex)",
+            "error": "Unknown modifier 'l'"
+        }
+    ]
+}

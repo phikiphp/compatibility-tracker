@@ -1,0 +1,19 @@
+{
+    "name": "hlsl",
+    "total": 53,
+    "compatible": 50,
+    "incompatible": [
+        {
+            "pattern": "/\\*",
+            "error": "Unknown modifier '\\'"
+        },
+        {
+            "pattern": "\\*/",
+            "error": "Unknown modifier '/'"
+        },
+        {
+            "pattern": "//",
+            "error": "Unknown modifier '/'"
+        }
+    ]
+}

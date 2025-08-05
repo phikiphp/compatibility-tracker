@@ -1,0 +1,183 @@
+{
+    "name": "php",
+    "total": 474,
+    "compatible": 430,
+    "incompatible": [
+        {
+            "pattern": "(?i)(:)\\s*((?:\\?\\s*)?[0-9\\\\_a-z\\x7F-\\x{10FFFF}]+|(?:[0-9\\\\_a-z\\x7F-\\x{10FFFF}]+|\\(\\s*[0-9\\\\_a-z\\x7F-\\x{10FFFF}]+(?:\\s*&\\s*[0-9\\\\_a-z\\x7F-\\x{10FFFF}]+)+\\s*\\))(?:\\s*[\\&|]\\s*(?:[0-9\\\\_a-z\\x7F-\\x{10FFFF}]+|\\(\\s*[0-9\\\\_a-z\\x7F-\\x{10FFFF}]+(?:\\s*&\\s*[0-9\\\\_a-z\\x7F-\\x{10FFFF}]+)+\\s*\\)))+)(?=\\s*(?:\\{|/[*/]|#|$))",
+            "error": "Unknown modifier '['"
+        },
+        {
+            "pattern": "(?i)(:)\\s*((?:\\?\\s*)?[0-9\\\\_a-z\\x7F-\\x{10FFFF}]+|(?:[0-9\\\\_a-z\\x7F-\\x{10FFFF}]+|\\(\\s*[0-9\\\\_a-z\\x7F-\\x{10FFFF}]+(?:\\s*&\\s*[0-9\\\\_a-z\\x7F-\\x{10FFFF}]+)+\\s*\\))(?:\\s*[\\&|]\\s*(?:[0-9\\\\_a-z\\x7F-\\x{10FFFF}]+|\\(\\s*[0-9\\\\_a-z\\x7F-\\x{10FFFF}]+(?:\\s*&\\s*[0-9\\\\_a-z\\x7F-\\x{10FFFF}]+)+\\s*\\)))+)(?=\\s*(?:=>|/[*/]|#|$))",
+            "error": "Unknown modifier '['"
+        },
+        {
+            "pattern": "(?i)(\\))\\s*(:\\s*(?:\\?\\s*)?(?!\\s)[\\&()0-9\\\\_a-z|\\x7F-\\x{10FFFF}\\s]+(?<!\\s))?(?=\\s*(?:\\{|/[*/]|#|$|;))",
+            "error": "Unknown modifier '['"
+        },
+        {
+            "pattern": "(?=\\s*(?:[),]|/[*/]|#))",
+            "error": "Unknown modifier '['"
+        },
+        {
+            "pattern": "(?=\\s*(?:[),]|/[*/]|#))",
+            "error": "Unknown modifier '['"
+        },
+        {
+            "pattern": "(?i)(\\))(?:\\s*(:)\\s*((?:\\?\\s*)?[0-9\\\\_a-z\\x7F-\\x{10FFFF}]+|(?:[0-9\\\\_a-z\\x7F-\\x{10FFFF}]+|\\(\\s*[0-9\\\\_a-z\\x7F-\\x{10FFFF}]+(?:\\s*&\\s*[0-9\\\\_a-z\\x7F-\\x{10FFFF}]+)+\\s*\\))(?:\\s*[\\&|]\\s*(?:[0-9\\\\_a-z\\x7F-\\x{10FFFF}]+|\\(\\s*[0-9\\\\_a-z\\x7F-\\x{10FFFF}]+(?:\\s*&\\s*[0-9\\\\_a-z\\x7F-\\x{10FFFF}]+)+\\s*\\)))+))?(?=\\s*(?:\\{|/[*/]|#|$|;))",
+            "error": "Unknown modifier '['"
+        },
+        {
+            "pattern": "(?:|[-+]|\\*\\*?|[%\\&/^|]|<<|>>|\\?\\?)=",
+            "error": "Unknown modifier '^'"
+        },
+        {
+            "pattern": "[-+]|\\*\\*?|[%/]",
+            "error": "Unknown modifier ']'"
+        },
+        {
+            "pattern": "/\\*\\*(?=\\s)",
+            "error": "Unknown modifier '\\'"
+        },
+        {
+            "pattern": "\\*/",
+            "error": "Unknown modifier '/'"
+        },
+        {
+            "pattern": "/\\*",
+            "error": "Unknown modifier '\\'"
+        },
+        {
+            "pattern": "\\*/",
+            "error": "Unknown modifier '/'"
+        },
+        {
+            "pattern": "(^\\s+)?(?=//)",
+            "error": "Unknown modifier '/'"
+        },
+        {
+            "pattern": "//",
+            "error": "Unknown modifier '/'"
+        },
+        {
+            "pattern": "(?i)(?:((?:\\?\\s*)?[0-9\\\\_a-z\\x7F-\\x{10FFFF}]+|(?:[0-9\\\\_a-z\\x7F-\\x{10FFFF}]+|\\(\\s*[0-9\\\\_a-z\\x7F-\\x{10FFFF}]+(?:\\s*&\\s*[0-9\\\\_a-z\\x7F-\\x{10FFFF}]+)+\\s*\\))(?:\\s*[\\&|]\\s*(?:[0-9\\\\_a-z\\x7F-\\x{10FFFF}]+|\\(\\s*[0-9\\\\_a-z\\x7F-\\x{10FFFF}]+(?:\\s*&\\s*[0-9\\\\_a-z\\x7F-\\x{10FFFF}]+)+\\s*\\)))+)\\s+)?((?:(&)\\s*)?(\\.\\.\\.)(\\$)[_a-z\\x7F-\\x{10FFFF}][0-9_a-z\\x7F-\\x{10FFFF}]*)(?=\\s*(?:[),]|/[*/]|#|$))",
+            "error": "Unknown modifier '['"
+        },
+        {
+            "pattern": "(?=\\s*(?:[),]|/[*/]|#))",
+            "error": "Unknown modifier '['"
+        },
+        {
+            "pattern": "(?=\\s*(?:[),]|/[*/]|#))",
+            "error": "Unknown modifier '['"
+        },
+        {
+            "pattern": "(?i)((?:(&)\\s*)?(\\$)[_a-z\\x7F-\\x{10FFFF}][0-9_a-z\\x7F-\\x{10FFFF}]*)(?=\\s*(?:[),]|/[*/]|#|$))",
+            "error": "Unknown modifier '['"
+        },
+        {
+            "pattern": "(?=\\s*(?:[),]|/[*/]|#))",
+            "error": "Unknown modifier '['"
+        },
+        {
+            "pattern": "^\\s*(\\3)(?![0-9A-Z_a-z\\x7F-\\x{10FFFF}])",
+            "error": "Compilation failed: reference to non-existent subpattern at offset 6"
+        },
+        {
+            "pattern": "^\\s*(\\3)(?![0-9A-Z_a-z\\x7F-\\x{10FFFF}])",
+            "error": "Compilation failed: reference to non-existent subpattern at offset 6"
+        },
+        {
+            "pattern": "^\\s*(\\3)(?![0-9A-Z_a-z\\x7F-\\x{10FFFF}])",
+            "error": "Compilation failed: reference to non-existent subpattern at offset 6"
+        },
+        {
+            "pattern": "^\\s*(\\3)(?![0-9A-Z_a-z\\x7F-\\x{10FFFF}])",
+            "error": "Compilation failed: reference to non-existent subpattern at offset 6"
+        },
+        {
+            "pattern": "^\\s*(\\3)(?![0-9A-Z_a-z\\x7F-\\x{10FFFF}])",
+            "error": "Compilation failed: reference to non-existent subpattern at offset 6"
+        },
+        {
+            "pattern": "^\\s*(\\3)(?![0-9A-Z_a-z\\x7F-\\x{10FFFF}])",
+            "error": "Compilation failed: reference to non-existent subpattern at offset 6"
+        },
+        {
+            "pattern": "^\\s*(\\3)(?![0-9A-Z_a-z\\x7F-\\x{10FFFF}])",
+            "error": "Compilation failed: reference to non-existent subpattern at offset 6"
+        },
+        {
+            "pattern": "^\\s*(\\3)(?![0-9A-Z_a-z\\x7F-\\x{10FFFF}])",
+            "error": "Compilation failed: reference to non-existent subpattern at offset 6"
+        },
+        {
+            "pattern": "^\\s*(\\3)(?![0-9A-Z_a-z\\x7F-\\x{10FFFF}])",
+            "error": "Compilation failed: reference to non-existent subpattern at offset 6"
+        },
+        {
+            "pattern": "^\\s*(\\2)(?![0-9A-Z_a-z\\x7F-\\x{10FFFF}])",
+            "error": "Compilation failed: reference to non-existent subpattern at offset 6"
+        },
+        {
+            "pattern": "^\\s*(\\2)(?![0-9A-Z_a-z\\x7F-\\x{10FFFF}])",
+            "error": "Compilation failed: reference to non-existent subpattern at offset 6"
+        },
+        {
+            "pattern": "^\\s*(\\2)(?![0-9A-Z_a-z\\x7F-\\x{10FFFF}])",
+            "error": "Compilation failed: reference to non-existent subpattern at offset 6"
+        },
+        {
+            "pattern": "^\\s*(\\2)(?![0-9A-Z_a-z\\x7F-\\x{10FFFF}])",
+            "error": "Compilation failed: reference to non-existent subpattern at offset 6"
+        },
+        {
+            "pattern": "^\\s*(\\2)(?![0-9A-Z_a-z\\x7F-\\x{10FFFF}])",
+            "error": "Compilation failed: reference to non-existent subpattern at offset 6"
+        },
+        {
+            "pattern": "^\\s*(\\2)(?![0-9A-Z_a-z\\x7F-\\x{10FFFF}])",
+            "error": "Compilation failed: reference to non-existent subpattern at offset 6"
+        },
+        {
+            "pattern": "^\\s*(\\2)(?![0-9A-Z_a-z\\x7F-\\x{10FFFF}])",
+            "error": "Compilation failed: reference to non-existent subpattern at offset 6"
+        },
+        {
+            "pattern": "^\\s*(\\2)(?![0-9A-Z_a-z\\x7F-\\x{10FFFF}])",
+            "error": "Compilation failed: reference to non-existent subpattern at offset 6"
+        },
+        {
+            "pattern": "^\\s*(\\2)(?![0-9A-Z_a-z\\x7F-\\x{10FFFF}])",
+            "error": "Compilation failed: reference to non-existent subpattern at offset 6"
+        },
+        {
+            "pattern": "^(?!\\s*\\*).*?(?:(?=\\*/)|$\\n?)",
+            "error": "Unknown modifier ')'"
+        },
+        {
+            "pattern": "(?=\\s|\\*/)",
+            "error": "Unknown modifier ')'"
+        },
+        {
+            "pattern": "(\\))(\\[])?|(?=\\*/)",
+            "error": "Unknown modifier ')'"
+        },
+        {
+            "pattern": "\"/(?=(\\\\.|[^\"/])++/[ADSUXeimsux]*\")",
+            "error": "Unknown modifier '('"
+        },
+        {
+            "pattern": "(/)([ADSUXeimsux]*)(\")",
+            "error": "Unknown modifier ')'"
+        },
+        {
+            "pattern": "'/(?=(\\\\(?:\\\\(?:\\\\['\\\\]?|[^'])|.)|[^'/])++/[ADSUXeimsux]*')",
+            "error": "Unknown modifier '('"
+        },
+        {
+            "pattern": "(/)([ADSUXeimsux]*)(')",
+            "error": "Unknown modifier ')'"
+        }
+    ]
+}

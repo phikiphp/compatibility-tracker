@@ -1,0 +1,107 @@
+{
+    "name": "mojo",
+    "total": 350,
+    "compatible": 325,
+    "incompatible": [
+        {
+            "pattern": "<<=|>>=|//=|\\*\\*=|\\+=|-=|/=|@=|\\*=|%=|~=|\\^=|&=|\\|=|=(?!=)",
+            "error": "Unknown modifier '/'"
+        },
+        {
+            "pattern": "(\\()\\?\\((\\w+(?:\\s+\\p{alnum}+)?|\\d+)\\)",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 27"
+        },
+        {
+            "pattern": "(\\()(\\?P<\\w+(?:\\s+\\p{alnum}+)?>)",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 27"
+        },
+        {
+            "pattern": "(\\()\\?\\((\\w+(?:\\s+\\p{alnum}+)?|\\d+)\\)",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 27"
+        },
+        {
+            "pattern": "(\\()(\\?P<\\w+(?:\\s+\\p{alnum}+)?>)",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 27"
+        },
+        {
+            "pattern": "(\\3)",
+            "error": "Compilation failed: reference to non-existent subpattern at offset 2"
+        },
+        {
+            "pattern": "(\\3)|((?<!\\\\)\\n)",
+            "error": "Compilation failed: reference to non-existent subpattern at offset 2"
+        },
+        {
+            "pattern": "(\\3)",
+            "error": "Compilation failed: reference to non-existent subpattern at offset 2"
+        },
+        {
+            "pattern": "(\\3)|((?<!\\\\)\\n)",
+            "error": "Compilation failed: reference to non-existent subpattern at offset 2"
+        },
+        {
+            "pattern": "(\\2)",
+            "error": "Compilation failed: reference to non-existent subpattern at offset 2"
+        },
+        {
+            "pattern": "\\s*(?:\\b(async)\\s+)?\\b(def|fn)\\s+(?=[_[:alpha:]]\\p{word}*\\s*[(\\[])",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 56"
+        },
+        {
+            "pattern": "/",
+            "error": "Unknown modifier '/'"
+        },
+        {
+            "pattern": "\\b(?<!\\.)(?:(and|or|not|in|is)|(for|if|else|await|yield(?:\\s+from)?))(?!\\s*:)\\b|(<<|>>|[\\&^|~])|(\\*\\*|[-%*+]|//|[/@])|(!=|==|>=|<=|[<>])|(:=)",
+            "error": "Unknown modifier '/'"
+        },
+        {
+            "pattern": "/",
+            "error": "Unknown modifier '/'"
+        },
+        {
+            "pattern": "(\\()(\\?P=\\w+(?:\\s+\\p{alnum}+)?)(\\))",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 27"
+        },
+        {
+            "pattern": "(\\()\\?\\((\\w+(?:\\s+\\p{alnum}+)?|\\d+)\\)",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 27"
+        },
+        {
+            "pattern": "(\\()(\\?P<\\w+(?:\\s+\\p{alnum}+)?>)",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 27"
+        },
+        {
+            "pattern": "(\\()\\?\\((\\w+(?:\\s+\\p{alnum}+)?|\\d+)\\)",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 27"
+        },
+        {
+            "pattern": "(\\()(\\?P<\\w+(?:\\s+\\p{alnum}+)?>)",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 27"
+        },
+        {
+            "pattern": "(\\2)",
+            "error": "Compilation failed: reference to non-existent subpattern at offset 2"
+        },
+        {
+            "pattern": "(\\3)",
+            "error": "Compilation failed: reference to non-existent subpattern at offset 2"
+        },
+        {
+            "pattern": "(\\3)|((?<!\\\\)\\n)",
+            "error": "Compilation failed: reference to non-existent subpattern at offset 2"
+        },
+        {
+            "pattern": "(\\2)",
+            "error": "Compilation failed: reference to non-existent subpattern at offset 2"
+        },
+        {
+            "pattern": "(\\4)",
+            "error": "Compilation failed: reference to non-existent subpattern at offset 2"
+        },
+        {
+            "pattern": "(\\4)|((?<!\\\\)\\n)",
+            "error": "Compilation failed: reference to non-existent subpattern at offset 2"
+        }
+    ]
+}
