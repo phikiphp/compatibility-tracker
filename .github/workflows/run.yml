@@ -26,6 +26,8 @@ jobs:
                 bash ./scripts/clone-grammars.sh
                 php ./scripts/check-grammars.php
                 php ./scripts/build-readme.php
+              env:
+                GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
             - name: Commit and push changes
               uses: stefanzweifel/git-auto-commit-action@v6
