@@ -104,3 +104,42 @@ class GrammarPatternCollector
         return $patterns;
     }
 }
+
+class MarkdownTable
+{
+    /**
+     * @param array<array<mixed>> $data
+     * @param array<string, string> $headers
+     */
+    public function generate(array $data, array $headers = []): string
+    {
+        if ($data === []) {
+            return '';
+        }
+
+        $table = '';
+
+        if ($headers === []) {
+            $headers = array_combine(array_keys($data[0]), array_keys($data[0]));
+        }
+
+        $headerLine = '| ' . implode(' | ', $headers) . ' |' . PHP_EOL;
+        $separatorLine = '| ' . str_repeat('--- | ', count($headers)) . PHP_EOL;
+        $table .= $headerLine . $separatorLine;
+
+        foreach ($data as $row) {
+            $rowData = [];
+
+            foreach (array_keys($headers) as $key) {
+                $rowData[] = $row[$key] ?? '';
+            }
+
+            $rowLine = '| ' . implode(' | ', $rowData) . ' |' . PHP_EOL;
+            $table .= $rowLine;
+        }
+
+        $table = trim($table);
+
+        return $table;
+    }
+}
