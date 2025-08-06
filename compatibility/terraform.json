@@ -1,27 +1,6 @@
 {
     "name": "terraform",
     "total": 82,
-    "compatible": 77,
-    "incompatible": [
-        {
-            "pattern": "/\\*",
-            "error": "Unknown modifier '\\'"
-        },
-        {
-            "pattern": "\\*/",
-            "error": "Unknown modifier '/'"
-        },
-        {
-            "pattern": "//",
-            "error": "Unknown modifier '/'"
-        },
-        {
-            "pattern": "^\\s*\\2\\s*$",
-            "error": "Compilation failed: reference to non-existent subpattern at offset 5"
-        },
-        {
-            "pattern": "/",
-            "error": "Unknown modifier '/'"
-        }
-    ]
+    "compatible": 82,
+    "incompatible": []
 }

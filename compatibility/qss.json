@@ -1,15 +1,6 @@
 {
     "name": "qss",
     "total": 35,
-    "compatible": 33,
-    "incompatible": [
-        {
-            "pattern": "/\\*",
-            "error": "Unknown modifier '\\'"
-        },
-        {
-            "pattern": "\\*/",
-            "error": "Unknown modifier '/'"
-        }
-    ]
+    "compatible": 35,
+    "incompatible": []
 }

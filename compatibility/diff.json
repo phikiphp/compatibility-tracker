@@ -1,11 +1,6 @@
 {
     "name": "diff",
     "total": 16,
-    "compatible": 15,
-    "incompatible": [
-        {
-            "pattern": "^diff --git a/.*$\\n?",
-            "error": "Unknown modifier '.'"
-        }
-    ]
+    "compatible": 16,
+    "incompatible": []
 }

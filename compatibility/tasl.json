@@ -1,15 +1,6 @@
 {
     "name": "tasl",
     "total": 30,
-    "compatible": 28,
-    "incompatible": [
-        {
-            "pattern": "=/",
-            "error": "Unknown modifier '/'"
-        },
-        {
-            "pattern": "/=>",
-            "error": "Unknown modifier '='"
-        }
-    ]
+    "compatible": 30,
+    "incompatible": []
 }

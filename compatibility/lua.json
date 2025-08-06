@@ -1,27 +1,6 @@
 {
     "name": "lua",
     "total": 149,
-    "compatible": 144,
-    "incompatible": [
-        {
-            "pattern": "[-#%*+/^]|==?|~=|!=|<=?|>=?|(?<!\\.)\\.{2}(?!\\.)",
-            "error": "Unknown modifier '^'"
-        },
-        {
-            "pattern": "/\\*",
-            "error": "Unknown modifier '\\'"
-        },
-        {
-            "pattern": "\\*/",
-            "error": "Unknown modifier '/'"
-        },
-        {
-            "pattern": "(]\\2])[\\t ]*",
-            "error": "Compilation failed: reference to non-existent subpattern at offset 3"
-        },
-        {
-            "pattern": "]\\1][\\t ]*",
-            "error": "Compilation failed: reference to non-existent subpattern at offset 2"
-        }
-    ]
+    "compatible": 149,
+    "incompatible": []
 }

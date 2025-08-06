@@ -1,11 +1,6 @@
 {
     "name": "polar",
     "total": 49,
-    "compatible": 48,
-    "incompatible": [
-        {
-            "pattern": "([-!*+/<=>])",
-            "error": "Unknown modifier '<'"
-        }
-    ]
+    "compatible": 49,
+    "incompatible": []
 }

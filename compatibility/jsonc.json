@@ -1,31 +1,6 @@
 {
     "name": "jsonc",
     "total": 23,
-    "compatible": 17,
-    "incompatible": [
-        {
-            "pattern": "/\\*\\*(?!/)",
-            "error": "Unknown modifier '\\'"
-        },
-        {
-            "pattern": "\\*/",
-            "error": "Unknown modifier '/'"
-        },
-        {
-            "pattern": "/\\*",
-            "error": "Unknown modifier '\\'"
-        },
-        {
-            "pattern": "\\*/",
-            "error": "Unknown modifier '/'"
-        },
-        {
-            "pattern": "(//).*$\\n?",
-            "error": "Unknown modifier '/'"
-        },
-        {
-            "pattern": "\\\\(?:[\"/\\\\bfnrt]|u\\h{4})",
-            "error": "Unknown modifier '\\'"
-        }
-    ]
+    "compatible": 23,
+    "incompatible": []
 }

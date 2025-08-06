@@ -1,31 +1,6 @@
 {
     "name": "ara",
     "total": 58,
-    "compatible": 52,
-    "incompatible": [
-        {
-            "pattern": "/\\*",
-            "error": "Unknown modifier '\\'"
-        },
-        {
-            "pattern": "\\*/",
-            "error": "Unknown modifier '/'"
-        },
-        {
-            "pattern": "(^[\\t ]+)?(?=//)",
-            "error": "Unknown modifier '/'"
-        },
-        {
-            "pattern": "//",
-            "error": "Unknown modifier '/'"
-        },
-        {
-            "pattern": "((?:[-%*+/^]|&&|[\\&<>|]|<<|>>|\\?\\?)=)",
-            "error": "Unknown modifier '^'"
-        },
-        {
-            "pattern": "(([%+]|(\\*(?!\\w)))(?!=))|(-(?!>))|(/(?!/))",
-            "error": "Unknown modifier '('"
-        }
-    ]
+    "compatible": 58,
+    "incompatible": []
 }

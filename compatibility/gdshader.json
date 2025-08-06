@@ -1,31 +1,6 @@
 {
     "name": "gdshader",
     "total": 44,
-    "compatible": 38,
-    "incompatible": [
-        {
-            "pattern": "/\\*",
-            "error": "Unknown modifier '\\'"
-        },
-        {
-            "pattern": "\\*/",
-            "error": "Unknown modifier '/'"
-        },
-        {
-            "pattern": "//",
-            "error": "Unknown modifier '/'"
-        },
-        {
-            "pattern": "\\b[A-Z_a-z]\\w*(?=(?:\\s|/\\*(?:\\*(?!/)|[^*])*\\*/)*\\()",
-            "error": "Unknown modifier '\\'"
-        },
-        {
-            "pattern": "<<=?|>>=?|[-!\\&*+/<=>|]=|&&|\\|\\||[-!%\\&*+/<=>^|~]",
-            "error": "Unknown modifier '<'"
-        },
-        {
-            "pattern": "\\b(?:vertex|fragment|light|start|process|sky|fog)(?=(?:\\s|/\\*(?:\\*(?!/)|[^*])*\\*/)*\\()",
-            "error": "Unknown modifier '\\'"
-        }
-    ]
+    "compatible": 44,
+    "incompatible": []
 }

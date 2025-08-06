@@ -1,19 +1,6 @@
 {
     "name": "berry",
     "total": 20,
-    "compatible": 17,
-    "incompatible": [
-        {
-            "pattern": "[-\\]!%\\&(-+./:<=>\\[^|~]",
-            "error": "Unknown modifier ':'"
-        },
-        {
-            "pattern": "\\1",
-            "error": "Compilation failed: reference to non-existent subpattern at offset 1"
-        },
-        {
-            "pattern": "\\1",
-            "error": "Compilation failed: reference to non-existent subpattern at offset 1"
-        }
-    ]
+    "compatible": 20,
+    "incompatible": []
 }

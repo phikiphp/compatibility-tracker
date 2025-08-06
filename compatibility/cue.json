@@ -1,55 +1,6 @@
 {
     "name": "cue",
     "total": 121,
-    "compatible": 109,
-    "incompatible": [
-        {
-            "pattern": "(//).*$\\n?",
-            "error": "Unknown modifier '/'"
-        },
-        {
-            "pattern": "/\\*",
-            "error": "Unknown modifier '\\'"
-        },
-        {
-            "pattern": "\\*/",
-            "error": "Unknown modifier '/'"
-        },
-        {
-            "pattern": "[-*+]|/(?![*/])",
-            "error": "Unknown modifier '('"
-        },
-        {
-            "pattern": "\\\\#(?:\"\"\"|[/\\\\abfnrtv]|u\\h{4}|U\\h{8})",
-            "error": "Unknown modifier '\\'"
-        },
-        {
-            "pattern": "\\\\#(?:[\"/\\\\abfnrtv]|u\\h{4}|U\\h{8})",
-            "error": "Unknown modifier '\\'"
-        },
-        {
-            "pattern": "\\\\#(?:'''|[/\\\\abfnrtv]|u\\h{4}|U\\h{8})",
-            "error": "Unknown modifier '\\'"
-        },
-        {
-            "pattern": "\\\\#(?:['/\\\\abfnrtv]|u\\h{4}|U\\h{8})",
-            "error": "Unknown modifier '\\'"
-        },
-        {
-            "pattern": "\\\\(?:\"\"\"|[/\\\\abfnrtv]|u\\h{4}|U\\h{8})",
-            "error": "Unknown modifier '\\'"
-        },
-        {
-            "pattern": "\\\\(?:[\"/\\\\abfnrtv]|u\\h{4}|U\\h{8})",
-            "error": "Unknown modifier '\\'"
-        },
-        {
-            "pattern": "\\\\(?:'''|[/\\\\abfnrtv]|u\\h{4}|U\\h{8})",
-            "error": "Unknown modifier '\\'"
-        },
-        {
-            "pattern": "\\\\(?:['/\\\\abfnrtv]|u\\h{4}|U\\h{8})",
-            "error": "Unknown modifier '\\'"
-        }
-    ]
+    "compatible": 121,
+    "incompatible": []
 }

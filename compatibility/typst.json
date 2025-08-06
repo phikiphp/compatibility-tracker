@@ -1,19 +1,11 @@
 {
     "name": "typst",
     "total": 87,
-    "compatible": 74,
+    "compatible": 82,
     "incompatible": [
         {
-            "pattern": "//",
-            "error": "Unknown modifier '/'"
-        },
-        {
-            "pattern": "(?:[-*+]|/?)=",
-            "error": "Unknown modifier '?'"
-        },
-        {
             "pattern": "[*+/]|(?<![_[:alpha:]][-_[:alnum:]]*)-(?![:almnu]_-]*[_[:alpha:]])",
-            "error": "Unknown modifier ']'"
+            "error": "Compilation failed: length of lookbehind assertion is not limited at offset 7"
         },
         {
             "pattern": "(?<=\\bshow\\s*)\\b[_[:alpha:]][-_[:alnum:]]*(?=\\s*[.:])",
@@ -22,30 +14,6 @@
         {
             "pattern": "(?<=\\b[_[:alpha:]][-_[:alnum:]]*!?)\\(",
             "error": "Compilation failed: length of lookbehind assertion is not limited at offset 0"
-        },
-        {
-            "pattern": "/\\*",
-            "error": "Unknown modifier '\\'"
-        },
-        {
-            "pattern": "\\*/",
-            "error": "Unknown modifier '/'"
-        },
-        {
-            "pattern": "(?<!:)//",
-            "error": "Unknown modifier '/'"
-        },
-        {
-            "pattern": "\\\\([]#-/=\\[\\\\_`{}~]|u\\{[0-9A-Za-z]*}?)",
-            "error": "Unknown modifier '='"
-        },
-        {
-            "pattern": "https?://[#%\\&'+,.-9;=?A-Za-z~]*",
-            "error": "Unknown modifier '/'"
-        },
-        {
-            "pattern": "^\\s*(/)\\s+([^:]*:)",
-            "error": "Unknown modifier ')'"
         },
         {
             "pattern": "((#)if|(?<=([]}])\\s*)else)\\b",

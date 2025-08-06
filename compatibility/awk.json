@@ -1,59 +1,6 @@
 {
     "name": "awk",
     "total": 43,
-    "compatible": 30,
-    "incompatible": [
-        {
-            "pattern": "\\\\(?:[\"/\\\\abfnrtv]|x\\h{2}|[0-7]{3})",
-            "error": "Unknown modifier '\\'"
-        },
-        {
-            "pattern": "([-%*+/^]=|\\+\\+|--|>>|=)",
-            "error": "Unknown modifier '^'"
-        },
-        {
-            "pattern": "([-%*+/^])",
-            "error": "Unknown modifier '^'"
-        },
-        {
-            "pattern": "([^-!%*+/<=>^]=)\\s*(/)",
-            "error": "Unknown modifier '<'"
-        },
-        {
-            "pattern": "/",
-            "error": "Unknown modifier '/'"
-        },
-        {
-            "pattern": "(!?~)\\s*(/)",
-            "error": "Unknown modifier ')'"
-        },
-        {
-            "pattern": "/",
-            "error": "Unknown modifier '/'"
-        },
-        {
-            "pattern": "(\\()\\s*(/)",
-            "error": "Unknown modifier ')'"
-        },
-        {
-            "pattern": "/",
-            "error": "Unknown modifier '/'"
-        },
-        {
-            "pattern": "(,)\\s*(/)",
-            "error": "Unknown modifier ')'"
-        },
-        {
-            "pattern": "/",
-            "error": "Unknown modifier '/'"
-        },
-        {
-            "pattern": "/",
-            "error": "Unknown modifier '/'"
-        },
-        {
-            "pattern": "/",
-            "error": "Unknown modifier '/'"
-        }
-    ]
+    "compatible": 43,
+    "incompatible": []
 }

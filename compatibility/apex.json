@@ -1,55 +1,11 @@
 {
     "name": "apex",
     "total": 277,
-    "compatible": 265,
+    "compatible": 276,
     "incompatible": [
         {
             "pattern": "(?=\\s(?!\\())|(?=\\s*$)|(?<=\\s*\\))",
             "error": "Compilation failed: length of lookbehind assertion is not limited at offset 22"
-        },
-        {
-            "pattern": "/\\*(\\*)?",
-            "error": "Unknown modifier '\\'"
-        },
-        {
-            "pattern": "\\*/",
-            "error": "Unknown modifier '/'"
-        },
-        {
-            "pattern": "(^\\s+)?(?=//)",
-            "error": "Unknown modifier '/'"
-        },
-        {
-            "pattern": "(?<!/)///(?!/)",
-            "error": "Unknown modifier ')'"
-        },
-        {
-            "pattern": "(?<!/)//(?:(?!/)|(?=//))",
-            "error": "Unknown modifier ')'"
-        },
-        {
-            "pattern": "[-%*+/]=",
-            "error": "Unknown modifier ']'"
-        },
-        {
-            "pattern": "[-%*+/]",
-            "error": "Unknown modifier ']'"
-        },
-        {
-            "pattern": "^\\s*(/\\*\\*)(?!/)",
-            "error": "Unknown modifier '\\'"
-        },
-        {
-            "pattern": "\\*/",
-            "error": "Unknown modifier '/'"
-        },
-        {
-            "pattern": "(</?)((?:([-_[:alnum:]]+)(:))?([-_[:alnum:]]+))",
-            "error": "Unknown modifier '?'"
-        },
-        {
-            "pattern": "(/?>)",
-            "error": "Unknown modifier '?'"
         }
     ]
 }

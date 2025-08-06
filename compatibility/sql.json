@@ -1,28 +1,8 @@
 {
     "name": "sql",
     "total": 73,
-    "compatible": 67,
+    "compatible": 72,
     "incompatible": [
-        {
-            "pattern": "[-+/]",
-            "error": "Unknown modifier ']'"
-        },
-        {
-            "pattern": "/\\*",
-            "error": "Unknown modifier '\\'"
-        },
-        {
-            "pattern": "\\*/",
-            "error": "Unknown modifier '/'"
-        },
-        {
-            "pattern": "/(?=\\S.*/)",
-            "error": "Unknown modifier '('"
-        },
-        {
-            "pattern": "/",
-            "error": "Unknown modifier '/'"
-        },
         {
             "pattern": "\\\\/",
             "error": "Unknown modifier '/'"

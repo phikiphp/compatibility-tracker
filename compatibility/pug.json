@@ -1,51 +1,6 @@
 {
     "name": "pug",
     "total": 136,
-    "compatible": 125,
-    "incompatible": [
-        {
-            "pattern": "^(\\s*)//-",
-            "error": "Unknown modifier '/'"
-        },
-        {
-            "pattern": "^(\\s*)//",
-            "error": "Unknown modifier '/'"
-        },
-        {
-            "pattern": "^\\s*(//)(?!-)",
-            "error": "Unknown modifier '/'"
-        },
-        {
-            "pattern": "^(\\s*)(script)((\\.)$|(?=[^\\n]*((text|application)/javascript|module).*\\.$))",
-            "error": "Unknown modifier 'j'"
-        },
-        {
-            "pattern": "</?(?=[!#])",
-            "error": "Unknown modifier '?'"
-        },
-        {
-            "pattern": "([^(),/=\\s]+)\\s*=\\s*",
-            "error": "Unknown modifier '='"
-        },
-        {
-            "pattern": "([^!(),/=\\s]+)\\s*",
-            "error": "Unknown modifier '='"
-        },
-        {
-            "pattern": "$|(?=,|\\s+[^-!%\\&*+/<>?|~]|\\))",
-            "error": "Unknown modifier '<'"
-        },
-        {
-            "pattern": "(?<=[-%\\&*+/:<>?|~])\\s+",
-            "error": "Unknown modifier ':'"
-        },
-        {
-            "pattern": "$|(?=,|\\s+[^-!%\\&*+/<>?|~]|\\))",
-            "error": "Unknown modifier '<'"
-        },
-        {
-            "pattern": "\\G((?<!\\5[^-\\w]))|}|$",
-            "error": "Compilation failed: reference to non-existent subpattern at offset 8"
-        }
-    ]
+    "compatible": 136,
+    "incompatible": []
 }

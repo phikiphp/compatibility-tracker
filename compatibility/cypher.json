@@ -1,15 +1,6 @@
 {
     "name": "cypher",
     "total": 41,
-    "compatible": 39,
-    "incompatible": [
-        {
-            "pattern": "//.*$\\n?",
-            "error": "Unknown modifier '/'"
-        },
-        {
-            "pattern": "([-!%*+/?])",
-            "error": "Unknown modifier '?'"
-        }
-    ]
+    "compatible": 41,
+    "incompatible": []
 }

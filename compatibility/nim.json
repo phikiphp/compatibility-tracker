@@ -1,11 +1,6 @@
 {
     "name": "nim",
     "total": 190,
-    "compatible": 189,
-    "incompatible": [
-        {
-            "pattern": "([-!$%\\&*+./:<-@\\\\^~])+",
-            "error": "Unknown modifier ':'"
-        }
-    ]
+    "compatible": 190,
+    "incompatible": []
 }

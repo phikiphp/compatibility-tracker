@@ -1,35 +1,6 @@
 {
     "name": "wit",
     "total": 114,
-    "compatible": 107,
-    "incompatible": [
-        {
-            "pattern": "/\\*\\*/",
-            "error": "Unknown modifier '\\'"
-        },
-        {
-            "pattern": "/\\*\\*",
-            "error": "Unknown modifier '\\'"
-        },
-        {
-            "pattern": "\\*/",
-            "error": "Unknown modifier '/'"
-        },
-        {
-            "pattern": "/\\*(?!\\*)",
-            "error": "Unknown modifier '\\'"
-        },
-        {
-            "pattern": "\\*/",
-            "error": "Unknown modifier '/'"
-        },
-        {
-            "pattern": "^\\s*///",
-            "error": "Unknown modifier '/'"
-        },
-        {
-            "pattern": "\\s*//.*",
-            "error": "Unknown modifier '/'"
-        }
-    ]
+    "compatible": 114,
+    "incompatible": []
 }

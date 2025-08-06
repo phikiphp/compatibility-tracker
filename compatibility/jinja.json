@@ -1,19 +1,6 @@
 {
     "name": "jinja",
     "total": 37,
-    "compatible": 34,
-    "incompatible": [
-        {
-            "pattern": "([-+]|\\*\\*?|//|[%/])",
-            "error": "Unknown modifier '/'"
-        },
-        {
-            "pattern": "@/",
-            "error": "Unknown modifier '/'"
-        },
-        {
-            "pattern": "/",
-            "error": "Unknown modifier '/'"
-        }
-    ]
+    "compatible": 37,
+    "incompatible": []
 }

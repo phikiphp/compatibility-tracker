@@ -1,43 +1,6 @@
 {
     "name": "beancount",
     "total": 52,
-    "compatible": 43,
-    "incompatible": [
-        {
-            "pattern": "([0-9]{4})([-/|])([0-9]{2})([-/|])([0-9]{2})\\s+(open|close|pad)\\b",
-            "error": "Unknown modifier '|'"
-        },
-        {
-            "pattern": "([0-9]{4})([-/|])([0-9]{2})([-/|])([0-9]{2})\\s+(custom)\\b",
-            "error": "Unknown modifier '|'"
-        },
-        {
-            "pattern": "([0-9]{4})([-/|])([0-9]{2})([-/|])([0-9]{2})\\s(event)",
-            "error": "Unknown modifier '|'"
-        },
-        {
-            "pattern": "([0-9]{4})([-/|])([0-9]{2})([-/|])([0-9]{2})\\s(commodity)",
-            "error": "Unknown modifier '|'"
-        },
-        {
-            "pattern": "([0-9]{4})([-/|])([0-9]{2})([-/|])([0-9]{2})\\s(note|document)",
-            "error": "Unknown modifier '|'"
-        },
-        {
-            "pattern": "([0-9]{4})([-/|])([0-9]{2})([-/|])([0-9]{2})\\s(price)",
-            "error": "Unknown modifier '|'"
-        },
-        {
-            "pattern": "([0-9]{4})([-/|])([0-9]{2})([-/|])([0-9]{2})\\s(balance)",
-            "error": "Unknown modifier '|'"
-        },
-        {
-            "pattern": "([0-9]{4})([-/|])([0-9]{2})([-/|])([0-9]{2})\\s*(txn|[!#%\\&*?CMPR-U])\\s*(\".*?\")?\\s*(\".*?\")?",
-            "error": "Unknown modifier '|'"
-        },
-        {
-            "pattern": "([0-9]{4})([-/|])([0-9]{2})([-/|])([0-9]{2})",
-            "error": "Unknown modifier '|'"
-        }
-    ]
+    "compatible": 52,
+    "incompatible": []
 }

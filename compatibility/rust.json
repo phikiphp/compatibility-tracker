@@ -1,43 +1,6 @@
 {
     "name": "rust",
     "total": 94,
-    "compatible": 85,
-    "incompatible": [
-        {
-            "pattern": "/\\*\\*/",
-            "error": "Unknown modifier '\\'"
-        },
-        {
-            "pattern": "/\\*\\*",
-            "error": "Unknown modifier '\\'"
-        },
-        {
-            "pattern": "\\*/",
-            "error": "Unknown modifier '/'"
-        },
-        {
-            "pattern": "/\\*(?!\\*)",
-            "error": "Unknown modifier '\\'"
-        },
-        {
-            "pattern": "\\*/",
-            "error": "Unknown modifier '/'"
-        },
-        {
-            "pattern": "(///).*$",
-            "error": "Unknown modifier '/'"
-        },
-        {
-            "pattern": "(//).*$",
-            "error": "Unknown modifier '/'"
-        },
-        {
-            "pattern": "((?:[-%\\&*+/^|]|<<|>>)=)",
-            "error": "Unknown modifier '^'"
-        },
-        {
-            "pattern": "(([%+]|(\\*(?!\\w)))(?!=))|(-(?!>))|(/(?!/))",
-            "error": "Unknown modifier '('"
-        }
-    ]
+    "compatible": 94,
+    "incompatible": []
 }

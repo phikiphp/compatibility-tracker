@@ -1,67 +1,6 @@
 {
     "name": "shellscript",
     "total": 195,
-    "compatible": 180,
-    "incompatible": [
-        {
-            "pattern": "(?<!\\w)(?:unfunction|continue|autoload|unsetopt|bindkey|builtin|getopts|command|declare|unalias|history|unlimit|typeset|suspend|source|printf|unhash|disown|ulimit|return|which|alias|break|false|print|shift|times|umask|unset|read|type|exec|eval|wait|echo|dirs|jobs|kill|hash|stat|exit|test|trap|true|let|set|pwd|cd|fg|bg|fc|[.:])(?!/)(?!\\w)(?!-)",
-            "error": "Unknown modifier ')'"
-        },
-        {
-            "pattern": "\\s*+(/\\*)",
-            "error": "Unknown modifier '\\'"
-        },
-        {
-            "pattern": "\\*/",
-            "error": "Unknown modifier '/'"
-        },
-        {
-            "pattern": "(?<!\\w)(?:unfunction|continue|autoload|unsetopt|bindkey|builtin|getopts|command|declare|unalias|history|unlimit|typeset|suspend|source|printf|unhash|disown|ulimit|return|which|alias|break|false|print|shift|times|umask|unset|read|type|exec|eval|wait|echo|dirs|jobs|kill|hash|stat|exit|test|trap|true|let|set|pwd|cd|fg|bg|fc|[.:])(?!/)(?!\\w)(?!-)",
-            "error": "Unknown modifier ')'"
-        },
-        {
-            "pattern": "(?<!\\G)(?<=\\2)",
-            "error": "Compilation failed: reference to non-existent subpattern at offset 12"
-        },
-        {
-            "pattern": "^\\t*\\3(?=[\\&;\\s]|$)",
-            "error": "Compilation failed: reference to non-existent subpattern at offset 5"
-        },
-        {
-            "pattern": "^\\3(?=[\\&;\\s]|$)",
-            "error": "Compilation failed: reference to non-existent subpattern at offset 2"
-        },
-        {
-            "pattern": "^\\t*\\2(?=[\\&;\\s]|$)",
-            "error": "Compilation failed: reference to non-existent subpattern at offset 5"
-        },
-        {
-            "pattern": "^\\2(?=[\\&;\\s]|$)",
-            "error": "Compilation failed: reference to non-existent subpattern at offset 2"
-        },
-        {
-            "pattern": "(/\\*)((?:[^*]|\\*++[^/])*+(\\*++/))",
-            "error": "Unknown modifier '\\'"
-        },
-        {
-            "pattern": "\\*/",
-            "error": "Unknown modifier '/'"
-        },
-        {
-            "pattern": "\\s*+(//)",
-            "error": "Unknown modifier '/'"
-        },
-        {
-            "pattern": "\\+{1,2}|-{1,2}|[!~]|\\*{1,2}|[%/]|<[<=]?|>[=>]?|==|!=|^|\\|{1,2}|&{1,2}|[,:=?]|[-%\\&*+/^|]=|<<=|>>=",
-            "error": "Unknown modifier ']'"
-        },
-        {
-            "pattern": "\\+{1,2}|-{1,2}|[!~]|\\*{1,2}|[%/]|<[<=]?|>[=>]?|==|!=|^|\\|{1,2}|&{1,2}|[,:=?]|[-%\\&*+/^|]=|<<=|>>=",
-            "error": "Unknown modifier ']'"
-        },
-        {
-            "pattern": "!|:[-=?]?|[*@]|##?|%%|[%/]",
-            "error": "Unknown modifier ']'"
-        }
-    ]
+    "compatible": 195,
+    "incompatible": []
 }

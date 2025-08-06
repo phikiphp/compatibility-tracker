@@ -1,15 +1,6 @@
 {
     "name": "narrat",
     "total": 35,
-    "compatible": 33,
-    "incompatible": [
-        {
-            "pattern": "//.*$",
-            "error": "Unknown modifier '/'"
-        },
-        {
-            "pattern": "([-*+/])\\s",
-            "error": "Unknown modifier ']'"
-        }
-    ]
+    "compatible": 35,
+    "incompatible": []
 }

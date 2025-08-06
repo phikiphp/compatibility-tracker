@@ -1,31 +1,6 @@
 {
     "name": "move",
     "total": 176,
-    "compatible": 170,
-    "incompatible": [
-        {
-            "pattern": "/\\*[!*](?![*/])",
-            "error": "Unknown modifier '\\'"
-        },
-        {
-            "pattern": "\\*/",
-            "error": "Unknown modifier '/'"
-        },
-        {
-            "pattern": "/\\*",
-            "error": "Unknown modifier '\\'"
-        },
-        {
-            "pattern": "\\*/",
-            "error": "Unknown modifier '/'"
-        },
-        {
-            "pattern": "///",
-            "error": "Unknown modifier '/'"
-        },
-        {
-            "pattern": "//",
-            "error": "Unknown modifier '/'"
-        }
-    ]
+    "compatible": 176,
+    "incompatible": []
 }

@@ -1,67 +1,6 @@
 {
     "name": "cadence",
     "total": 86,
-    "compatible": 71,
-    "incompatible": [
-        {
-            "pattern": "/\\*\\*(?!/)",
-            "error": "Unknown modifier '\\'"
-        },
-        {
-            "pattern": "\\*/",
-            "error": "Unknown modifier '/'"
-        },
-        {
-            "pattern": "/\\*:",
-            "error": "Unknown modifier '\\'"
-        },
-        {
-            "pattern": "\\*/",
-            "error": "Unknown modifier '/'"
-        },
-        {
-            "pattern": "/\\*",
-            "error": "Unknown modifier '\\'"
-        },
-        {
-            "pattern": "\\*/",
-            "error": "Unknown modifier '/'"
-        },
-        {
-            "pattern": "\\*/",
-            "error": "Unknown modifier '/'"
-        },
-        {
-            "pattern": "(^[\\t ]+)?(?=//)",
-            "error": "Unknown modifier '/'"
-        },
-        {
-            "pattern": "///",
-            "error": "Unknown modifier '/'"
-        },
-        {
-            "pattern": "//:",
-            "error": "Unknown modifier '/'"
-        },
-        {
-            "pattern": "//",
-            "error": "Unknown modifier '/'"
-        },
-        {
-            "pattern": "/\\*",
-            "error": "Unknown modifier '\\'"
-        },
-        {
-            "pattern": "\\*/",
-            "error": "Unknown modifier '/'"
-        },
-        {
-            "pattern": "(?<![-!%\\&*+./<=>^|~])(:)(?![-!%\\&*+./<=>^|~])\\s*",
-            "error": "Unknown modifier '<'"
-        },
-        {
-            "pattern": "[-*+/]",
-            "error": "Unknown modifier ']'"
-        }
-    ]
+    "compatible": 86,
+    "incompatible": []
 }

@@ -1,15 +1,11 @@
 {
     "name": "kusto",
     "total": 60,
-    "compatible": 58,
+    "compatible": 59,
     "incompatible": [
         {
             "pattern": "\\b(range)\\s*\\((?:\\s*(\\w+(?:\\(.*?\\))?)\\s*,\\s*(\\w+(?:\\(.*?\\))?)\\s*,?\\s*{0,1}(\\w+(?:\\(.*?\\))?)?\\s*\\))?(?!\\w)",
             "error": "Compilation failed: quantifier does not follow a repeatable item at offset 73"
-        },
-        {
-            "pattern": "//.*",
-            "error": "Unknown modifier '/'"
         }
     ]
 }

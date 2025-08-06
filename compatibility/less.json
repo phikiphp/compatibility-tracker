@@ -1,51 +1,11 @@
 {
     "name": "less",
     "total": 591,
-    "compatible": 580,
+    "compatible": 590,
     "incompatible": [
-        {
-            "pattern": "(([<>])=?)|[/=]",
-            "error": "Unknown modifier '='"
-        },
-        {
-            "pattern": "/",
-            "error": "Unknown modifier '/'"
-        },
-        {
-            "pattern": "/\\*",
-            "error": "Unknown modifier '\\'"
-        },
-        {
-            "pattern": "\\*/",
-            "error": "Unknown modifier '/'"
-        },
-        {
-            "pattern": "(//).*$\\n?",
-            "error": "Unknown modifier '/'"
-        },
-        {
-            "pattern": "[-*+/]",
-            "error": "Unknown modifier ']'"
-        },
-        {
-            "pattern": "\\s*(\\d+)(/)(\\d+)",
-            "error": "Unknown modifier ')'"
-        },
         {
             "pattern": "([-+])?\\d+{0,1}(n)(\\s*([-+])\\s*\\d+)?|[-+]?\\s*\\d+",
             "error": "Compilation failed: quantifier does not follow a repeatable item at offset 14"
-        },
-        {
-            "pattern": "(?=[#\\&*+./>A-\\[a-z~]|(:{1,2}\\S)|@\\{)",
-            "error": "Unknown modifier '>'"
-        },
-        {
-            "pattern": "/deep/",
-            "error": "Unknown modifier 'd'"
-        },
-        {
-            "pattern": "\\s*(/)\\s*",
-            "error": "Unknown modifier ')'"
         }
     ]
 }

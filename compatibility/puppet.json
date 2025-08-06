@@ -1,19 +1,11 @@
 {
     "name": "puppet",
     "total": 79,
-    "compatible": 72,
+    "compatible": 75,
     "incompatible": [
         {
-            "pattern": "^\\s*/\\*",
-            "error": "Unknown modifier '\\'"
-        },
-        {
-            "pattern": "\\*/",
-            "error": "Unknown modifier '/'"
-        },
-        {
             "pattern": "@\\(\\p{blank}*\"([^\\t )/:]+)\"\\p{blank}*(:\\p{blank}*[a-z][+0-9A-Z_a-z]*\\p{blank}*)?(/\\p{blank}*[$Lnrst]*)?\\p{blank}*\\)",
-            "error": "Unknown modifier ':'"
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 12"
         },
         {
             "pattern": "^\\p{blank}*(\\|\\p{blank}*-|[-|])?\\p{blank}*\\1",
@@ -21,15 +13,11 @@
         },
         {
             "pattern": "@\\(\\p{blank}*([^\\t )/:]+)\\p{blank}*(:\\p{blank}*[a-z][+0-9A-Z_a-z]*\\p{blank}*)?(/\\p{blank}*[$Lnrst]*)?\\p{blank}*\\)",
-            "error": "Unknown modifier ':'"
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 12"
         },
         {
             "pattern": "^\\p{blank}*(\\|\\p{blank}*-|[-|])?\\p{blank}*\\1",
             "error": "Compilation failed: unknown property after \\P or \\p at offset 10"
-        },
-        {
-            "pattern": "(/)(.+?)[^\\\\]/",
-            "error": "Unknown modifier ')'"
         }
     ]
 }

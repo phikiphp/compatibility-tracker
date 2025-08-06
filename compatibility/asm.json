@@ -1,23 +1,6 @@
 {
     "name": "asm",
     "total": 309,
-    "compatible": 305,
-    "incompatible": [
-        {
-            "pattern": "/\\*",
-            "error": "Unknown modifier '\\'"
-        },
-        {
-            "pattern": "\\*/",
-            "error": "Unknown modifier '/'"
-        },
-        {
-            "pattern": "(?=/[*/])|$",
-            "error": "Unknown modifier '['"
-        },
-        {
-            "pattern": "(?=/[*/])|$",
-            "error": "Unknown modifier '['"
-        }
-    ]
+    "compatible": 309,
+    "incompatible": []
 }

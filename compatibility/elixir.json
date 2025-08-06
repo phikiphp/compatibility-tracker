@@ -1,35 +1,6 @@
 {
     "name": "elixir",
     "total": 130,
-    "compatible": 123,
-    "incompatible": [
-        {
-            "pattern": "^\\s*(def(?:|macro|delegate|guard))\\s+((?>[A-Z_a-z]\\w*(?>\\.|::))?(?>[A-Z_a-z]\\w*(?>[!?]|=(?!>))?|===?|>[=>]?|<=>|<[<=]?|[%\\&/`|]|\\*\\*?|=?~|[-+]@?|\\[]=?))((\\()|\\s*)",
-            "error": "Unknown modifier '`'"
-        },
-        {
-            "pattern": "^\\s*(def(?:|n|macro|guard)p)\\s+((?>[A-Z_a-z]\\w*(?>\\.|::))?(?>[A-Z_a-z]\\w*(?>[!?]|=(?!>))?|===?|>[=>]?|<=>|<[<=]?|[%\\&/`|]|\\*\\*?|=?~|[-+]@?|\\[]=?))((\\()|\\s*)",
-            "error": "Unknown modifier '`'"
-        },
-        {
-            "pattern": "\\1[a-z]*",
-            "error": "Compilation failed: reference to non-existent subpattern at offset 1"
-        },
-        {
-            "pattern": "\\1[a-z]*",
-            "error": "Compilation failed: reference to non-existent subpattern at offset 1"
-        },
-        {
-            "pattern": "(?<!:)(:)(?>[A-Z_a-z][@\\w]*(?>[!?]|=(?![=>]))?|<>|===?|!==?|<<>>|<<<|>>>|~~~|::|<-|\\|>|=>|=~|[/=]|\\\\\\\\|\\*\\*?|\\.\\.?\\.?|\\.\\.//|>=?|<=?|&&?&?|\\+\\+?|--?|\\|\\|?\\|?|[!@]|%?\\{}|%|\\[]|\\^(\\^\\^)?)",
-            "error": "Unknown modifier '='"
-        },
-        {
-            "pattern": "([-*+/])",
-            "error": "Unknown modifier ']'"
-        },
-        {
-            "pattern": "\\||\\+\\+|--|\\*\\*|\\\\\\\\|<-|<>|<<|>>|::|\\.\\.|//|\\|>|~|=>|&",
-            "error": "Unknown modifier '/'"
-        }
-    ]
+    "compatible": 130,
+    "incompatible": []
 }

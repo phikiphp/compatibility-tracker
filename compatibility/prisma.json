@@ -1,31 +1,6 @@
 {
     "name": "prisma",
     "total": 34,
-    "compatible": 28,
-    "incompatible": [
-        {
-            "pattern": "//",
-            "error": "Unknown modifier '/'"
-        },
-        {
-            "pattern": "//[^\\n]*",
-            "error": "Unknown modifier '/'"
-        },
-        {
-            "pattern": "([-%./:=?@\\\\_\\w]+)",
-            "error": "Unknown modifier ':'"
-        },
-        {
-            "pattern": "/\\*",
-            "error": "Unknown modifier '\\'"
-        },
-        {
-            "pattern": "\\*/",
-            "error": "Unknown modifier '/'"
-        },
-        {
-            "pattern": "///",
-            "error": "Unknown modifier '/'"
-        }
-    ]
+    "compatible": 34,
+    "incompatible": []
 }

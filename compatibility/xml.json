@@ -1,23 +1,6 @@
 {
     "name": "xml",
     "total": 32,
-    "compatible": 28,
-    "incompatible": [
-        {
-            "pattern": "(<)((?:([-0-9A-Z_a-z]+)(:))?([-0-:A-Z_a-z]+))(?=(\\s[^>]*)?></\\2>)",
-            "error": "Unknown modifier '\\'"
-        },
-        {
-            "pattern": "(>)(</)((?:([-0-9A-Z_a-z]+)(:))?([-0-:A-Z_a-z]+))(>)",
-            "error": "Unknown modifier ')'"
-        },
-        {
-            "pattern": "(</?)(?:([-.\\w]+)((:)))?([-.:\\w]+)",
-            "error": "Unknown modifier '?'"
-        },
-        {
-            "pattern": "(/?>)",
-            "error": "Unknown modifier '?'"
-        }
-    ]
+    "compatible": 32,
+    "incompatible": []
 }

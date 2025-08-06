@@ -1,23 +1,6 @@
 {
     "name": "angular-expression",
     "total": 108,
-    "compatible": 104,
-    "incompatible": [
-        {
-            "pattern": "(?:\\*|(?<!\\()/|[-%+])=",
-            "error": "Unknown modifier '|'"
-        },
-        {
-            "pattern": "[-%*+/]",
-            "error": "Unknown modifier ']'"
-        },
-        {
-            "pattern": "(?<=[$_[:alnum:]])\\s*(/)(?![*/])",
-            "error": "Unknown modifier ')'"
-        },
-        {
-            "pattern": "(?=$|[]),;}]|//|\")|(?==[^>])|(?<=[]$)>_}[:alpha:]])\\s*(?=\\{)",
-            "error": "Unknown modifier '/'"
-        }
-    ]
+    "compatible": 108,
+    "incompatible": []
 }

@@ -1,27 +1,6 @@
 {
     "name": "stylus",
     "total": 130,
-    "compatible": 125,
-    "incompatible": [
-        {
-            "pattern": "/\\*",
-            "error": "Unknown modifier '\\'"
-        },
-        {
-            "pattern": "\\*/",
-            "error": "Unknown modifier '/'"
-        },
-        {
-            "pattern": "(^[\\t ]+)?(?=//)",
-            "error": "Unknown modifier '/'"
-        },
-        {
-            "pattern": "//",
-            "error": "Unknown modifier '/'"
-        },
-        {
-            "pattern": "((?:[!+:?~]|(\\s-\\s)|\\*?\\*|[%/]|(\\.)?\\.\\.|[<>]|[-%*+/:<-?]?=|!=)|\\b(?:in|is(?:nt)?|(?<!:)not|or|and)\\b)",
-            "error": "Unknown modifier ']'"
-        }
-    ]
+    "compatible": 130,
+    "incompatible": []
 }

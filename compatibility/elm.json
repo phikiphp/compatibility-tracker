@@ -1,11 +1,6 @@
 {
     "name": "elm",
     "total": 93,
-    "compatible": 92,
-    "incompatible": [
-        {
-            "pattern": "(</>|<\\?>|<\\||<=|\\|\\||&&|>=|\\|>|\\|=|\\|\\.|\\+\\+|::|/=|==|//|>>|<<|[-*+/<>^])",
-            "error": "Unknown modifier '>'"
-        }
-    ]
+    "compatible": 93,
+    "incompatible": []
 }

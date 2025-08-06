@@ -1,35 +1,6 @@
 {
     "name": "groovy",
     "total": 184,
-    "compatible": 177,
-    "incompatible": [
-        {
-            "pattern": "/\\*",
-            "error": "Unknown modifier '\\'"
-        },
-        {
-            "pattern": "\\*/",
-            "error": "Unknown modifier '/'"
-        },
-        {
-            "pattern": "/\\*\\*/",
-            "error": "Unknown modifier '\\'"
-        },
-        {
-            "pattern": "(//).*$\\n?",
-            "error": "Unknown modifier '/'"
-        },
-        {
-            "pattern": "([-%*+/])",
-            "error": "Unknown modifier ']'"
-        },
-        {
-            "pattern": "/(?=[^/]+/([^>]|$))",
-            "error": "Unknown modifier '('"
-        },
-        {
-            "pattern": "/",
-            "error": "Unknown modifier '/'"
-        }
-    ]
+    "compatible": 184,
+    "incompatible": []
 }

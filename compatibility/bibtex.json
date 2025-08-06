@@ -1,35 +1,6 @@
 {
     "name": "bibtex",
     "total": 28,
-    "compatible": 21,
-    "incompatible": [
-        {
-            "pattern": "((@)[-!$\\&*+./:;<>-z|~][!$\\&*+\\--<>-z|~]*)\\s*(\\{)\\s*([^,}\\s]*)",
-            "error": "Unknown modifier ':'"
-        },
-        {
-            "pattern": "([-!$\\&*+./:;<>-z|~][!$\\&*+\\--<>-z|~]*)\\s*(=)",
-            "error": "Unknown modifier ':'"
-        },
-        {
-            "pattern": "((@)[-!$\\&*+./:;<>-z|~][!$\\&*+\\--<>-z|~]*)\\s*(\\()\\s*([^,\\s]*)",
-            "error": "Unknown modifier ':'"
-        },
-        {
-            "pattern": "([-!$\\&*+./:;<>-z|~][!$\\&*+\\--<>-z|~]*)\\s*(=)",
-            "error": "Unknown modifier ':'"
-        },
-        {
-            "pattern": "((@)(?i:string))\\s*(\\{)\\s*([-!$\\&*+./:;<>-z|~][!$\\&*+\\--<>-z|~]*)",
-            "error": "Unknown modifier ':'"
-        },
-        {
-            "pattern": "((@)(?i:string))\\s*(\\()\\s*([-!$\\&*+./:;<>-z|~][!$\\&*+\\--<>-z|~]*)",
-            "error": "Unknown modifier ':'"
-        },
-        {
-            "pattern": "[-!$\\&*+./:;<>-z|~][!$\\&*+\\--<>-z|~]*",
-            "error": "Unknown modifier ':'"
-        }
-    ]
+    "compatible": 28,
+    "incompatible": []
 }

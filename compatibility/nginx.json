@@ -1,15 +1,6 @@
 {
     "name": "nginx",
     "total": 183,
-    "compatible": 181,
-    "incompatible": [
-        {
-            "pattern": "\\b([a-z]+/[-+.0-9A-Za-z]+)\\b",
-            "error": "Unknown modifier '['"
-        },
-        {
-            "pattern": "(?<=\\G|\\s)(kqueue|rtsig|epoll|/dev/poll|select|poll|eventport|max|all|default_server|default|main|crit|error|debug|warn|notice|last)(?=[\\t ;])",
-            "error": "Unknown modifier 'd'"
-        }
-    ]
+    "compatible": 183,
+    "incompatible": []
 }

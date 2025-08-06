@@ -1,15 +1,6 @@
 {
     "name": "es-tag-sql",
     "total": 12,
-    "compatible": 10,
-    "incompatible": [
-        {
-            "pattern": "(?i)(\\s?/?\\*?\\s?((?:|inline-)sql)\\s?\\*?/?\\s?)(`)",
-            "error": "Unknown modifier '?'"
-        },
-        {
-            "pattern": "(?i)(?<=[(,:=\\s]|\\$\\()\\s*(((/\\*)|(//))\\s?((?:|inline-)sql) {0,1000}\\*?/?) {0,1000}$",
-            "error": "Unknown modifier '\\'"
-        }
-    ]
+    "compatible": 12,
+    "incompatible": []
 }

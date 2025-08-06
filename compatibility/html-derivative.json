@@ -1,15 +1,6 @@
 {
     "name": "html-derivative",
     "total": 3,
-    "compatible": 1,
-    "incompatible": [
-        {
-            "pattern": "(</?)(\\w[^<>\\s]*)(?<!/)",
-            "error": "Unknown modifier '?'"
-        },
-        {
-            "pattern": "((?: ?/)?>)",
-            "error": "Unknown modifier ')'"
-        }
-    ]
+    "compatible": 3,
+    "incompatible": []
 }

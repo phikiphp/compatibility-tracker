@@ -1,19 +1,6 @@
 {
     "name": "sas",
     "total": 34,
-    "compatible": 31,
-    "incompatible": [
-        {
-            "pattern": "/\\*",
-            "error": "Unknown modifier '\\'"
-        },
-        {
-            "pattern": "\\*/",
-            "error": "Unknown modifier '/'"
-        },
-        {
-            "pattern": "([-*+/^])",
-            "error": "Unknown modifier '^'"
-        }
-    ]
+    "compatible": 34,
+    "incompatible": []
 }

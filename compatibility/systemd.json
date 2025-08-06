@@ -1,11 +1,6 @@
 {
     "name": "systemd",
     "total": 40,
-    "compatible": 39,
-    "incompatible": [
-        {
-            "pattern": "\\b(?<![-./])(true|false|on|off|yes|no)(?![-./])\\b",
-            "error": "Unknown modifier ']'"
-        }
-    ]
+    "compatible": 40,
+    "incompatible": []
 }

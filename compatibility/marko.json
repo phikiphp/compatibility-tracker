@@ -1,187 +1,23 @@
 {
     "name": "marko",
     "total": 169,
-    "compatible": 124,
+    "compatible": 165,
     "incompatible": [
         {
             "pattern": "(?=[],;]|/>|(?<=[^=])>|(?<!(?:^|[!%\\&*:?^|~]|[-!%\\&*+/<-?^|~]=|=>|>{2,}|[^.]\\.|[^-]-|^\\s*\\+\\+|[^+]\\+{2}*\\+|[]%).0-9<A-Za-z}]\\s*/|\\b(?<!\\.\\s*)(?:await|async|class|function|keyof|new|typeof|void))\\s*)(?:\\n|[\\t ]+(?![\\n!%\\&(*+:?^{|~]|[-/<=>]=|=>|>{2,}|\\.[^.]|-[^-]|/[^>]|(?:in|instanceof|satisfies|as|extends)\\s+[^,/:;=>])))",
-            "error": "Unknown modifier '>'"
+            "error": "Compilation failed: quantifier does not follow a repeatable item at offset 105"
         },
         {
             "pattern": "(?=[],;]|/>|(?<=[^=])>|(?<!(?:^|[!%\\&*:?^|~]|[-!%\\&*+/<-?^|~]=|=>|>{2,}|[^.]\\.|[^-]-|^\\s*\\+\\+|[^+]\\+{2}*\\+|[]%).0-9<A-Za-z}]\\s*/|\\b(?<!\\.\\s*)(?:await|async|class|function|keyof|new|typeof|void))\\s*)(?:\\n|[\\t ]+(?![\\n!%\\&(*+:?^{|~]|[-/<=>]=|=>|>{2,}|\\.[^.]|-[^-]|/[^>]|(?:in|instanceof|satisfies|as|extends)\\s+[^,/:;=>])))",
-            "error": "Unknown modifier '>'"
-        },
-        {
-            "pattern": "\\1",
-            "error": "Compilation failed: reference to non-existent subpattern at offset 1"
-        },
-        {
-            "pattern": "\\1",
-            "error": "Compilation failed: reference to non-existent subpattern at offset 1"
-        },
-        {
-            "pattern": "\\1",
-            "error": "Compilation failed: reference to non-existent subpattern at offset 1"
-        },
-        {
-            "pattern": "\\1",
-            "error": "Compilation failed: reference to non-existent subpattern at offset 1"
-        },
-        {
-            "pattern": "\\1",
-            "error": "Compilation failed: reference to non-existent subpattern at offset 1"
-        },
-        {
-            "pattern": "\\1",
-            "error": "Compilation failed: reference to non-existent subpattern at offset 1"
-        },
-        {
-            "pattern": "(?=^(?:\\s*[])`}]|\\*/|\\s*$|\\1\\s+(\\S|$)))",
-            "error": "Unknown modifier '|'"
-        },
-        {
-            "pattern": "(?=^(?:\\s*[])`}]|\\*/|\\s*$|\\1\\s+(\\S|$)))",
-            "error": "Unknown modifier '|'"
-        },
-        {
-            "pattern": "(?=^(?:\\s*[])`}]|\\*/|\\s*$|\\1\\s+(\\S|$)))",
-            "error": "Unknown modifier '|'"
-        },
-        {
-            "pattern": "(?=^(?:\\s*[])`}]|\\*/|\\s*$|\\1\\s+(\\S|$)))",
-            "error": "Unknown modifier '|'"
-        },
-        {
-            "pattern": "(?=^(?:\\s*[])`}]|\\*/|\\s*$|\\1\\s+(\\S|$)))",
-            "error": "Unknown modifier '|'"
-        },
-        {
-            "pattern": "(?=^(?:\\s*[])`}]|\\*/|\\s*$|\\1\\s+(\\S|$)))",
-            "error": "Unknown modifier '|'"
-        },
-        {
-            "pattern": "(?=^(?:\\s*[])`}]|\\*/|\\s*$|\\1\\s+(\\S|$)))",
-            "error": "Unknown modifier '|'"
-        },
-        {
-            "pattern": "\\2>",
-            "error": "Compilation failed: reference to non-existent subpattern at offset 1"
-        },
-        {
-            "pattern": "\\s*</.*?",
-            "error": "Unknown modifier '.'"
-        },
-        {
-            "pattern": "\\s*(?=/\\*)",
-            "error": "Unknown modifier '\\'"
-        },
-        {
-            "pattern": "(?<=\\*/)",
-            "error": "Unknown modifier ')'"
-        },
-        {
-            "pattern": "\\s*//.*$",
-            "error": "Unknown modifier '/'"
-        },
-        {
-            "pattern": "(?:^|\\s+)(?=/\\*)",
-            "error": "Unknown modifier '\\'"
-        },
-        {
-            "pattern": "(?<=\\*/)",
-            "error": "Unknown modifier ')'"
-        },
-        {
-            "pattern": "(?:^|\\s+)//.*$",
-            "error": "Unknown modifier '/'"
-        },
-        {
-            "pattern": "(?:\\s*\\b(?:as|await|extends|in|instanceof|satisfies|keyof|new|typeof|void))+\\s+(?![,/:;=>])[#$0-9@-Z_a-z]*",
-            "error": "Unknown modifier ':'"
-        },
-        {
-            "pattern": "(?<![]%).0-9<A-Za-z}])\\s*/(?:[^/\\[\\\\]|\\\\.|\\[(?:[^]\\\\]|\\\\.)*])*/[A-Za-z]*",
-            "error": "Unknown modifier '('"
-        },
-        {
-            "pattern": "(?!/?>)",
-            "error": "Unknown modifier '?'"
-        },
-        {
-            "pattern": "(?=/?>)",
-            "error": "Unknown modifier '?'"
-        },
-        {
-            "pattern": "/(?![*/])",
-            "error": "Unknown modifier '('"
-        },
-        {
-            "pattern": "(?=[(,/;<>|]|:?=|\\s+[^:]|$)",
-            "error": "Unknown modifier ';'"
+            "error": "Compilation failed: quantifier does not follow a repeatable item at offset 105"
         },
         {
             "pattern": "(?=[](,;]|/>|(?<=[^=])>|(?<!(?:^|[!%\\&*:?^|~]|[-!%\\&*+/<-?^|~]=|=>|>{2,}|[^.]\\.|[^-]-|^\\s*\\+\\+|[^+]\\+{2}*\\+|[]%).0-9<A-Za-z}]\\s*/|\\b(?<!\\.\\s*)(?:await|async|class|function|keyof|new|typeof|void))\\s*)(?:\\n|[\\t ]+(?![\\n!%\\&*+:?^{|~]|[-/<=>]=|=>|>{2,}|\\.[^.]|-[^-]|/[^>]|(?:in|instanceof|satisfies|as|extends)\\s+[^,/:;=>])))",
-            "error": "Unknown modifier '>'"
-        },
-        {
-            "pattern": "/?>",
-            "error": "Unknown modifier '?'"
-        },
-        {
-            "pattern": "/>|(?<=</(?:html-comment)?>)",
-            "error": "Unknown modifier '>'"
-        },
-        {
-            "pattern": "\\s*(</)(html-comment)?(>)",
-            "error": "Unknown modifier ')'"
-        },
-        {
-            "pattern": "/>|(?<=</(?:(?:html-)?style)?>)",
-            "error": "Unknown modifier '>'"
-        },
-        {
-            "pattern": "\\s*(</)((?:html-)?style)?(>)",
-            "error": "Unknown modifier ')'"
-        },
-        {
-            "pattern": "/>|(?<=</(?:(?:html-)?style)?>)",
-            "error": "Unknown modifier '>'"
-        },
-        {
-            "pattern": "\\s*(</)((?:html-)?style)?(>)",
-            "error": "Unknown modifier ')'"
-        },
-        {
-            "pattern": "/>|(?<=</(?:(?:html-)?style)?>)",
-            "error": "Unknown modifier '>'"
-        },
-        {
-            "pattern": "\\s*(</)((?:html-)?style)?(>)",
-            "error": "Unknown modifier ')'"
-        },
-        {
-            "pattern": "/>|(?<=</(?:(?:html-)?style)?>)",
-            "error": "Unknown modifier '>'"
-        },
-        {
-            "pattern": "\\s*(</)((?:html-)?style)?(>)",
-            "error": "Unknown modifier ')'"
-        },
-        {
-            "pattern": "/>|(?<=</(?:(?:html-)?script)?>)",
-            "error": "Unknown modifier '>'"
-        },
-        {
-            "pattern": "\\s*(</)((?:html-)?script)?(>)",
-            "error": "Unknown modifier ')'"
+            "error": "Compilation failed: quantifier does not follow a repeatable item at offset 106"
         },
         {
             "pattern": "/>|(?<=</[-#$.0-:@-Z_a-z]*>)",
-            "error": "Unknown modifier '>'"
-        },
-        {
-            "pattern": "\\s*(</)([-#$.0-:@-Z_a-z]+)?(.*?)(>)",
-            "error": "Unknown modifier ')'"
+            "error": "Compilation failed: length of lookbehind assertion is not limited at offset 4"
         }
     ]
 }

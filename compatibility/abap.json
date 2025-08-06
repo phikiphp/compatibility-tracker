@@ -1,43 +1,6 @@
 {
     "name": "abap",
     "total": 57,
-    "compatible": 48,
-    "incompatible": [
-        {
-            "pattern": "(?i)(?<=[-~\\s])(?<=[-=]>)([/_a-z][/-9_a-z]*)(?=\\s+(?:|[-*+/]|&&?)=\\s+)",
-            "error": "Unknown modifier '_'"
-        },
-        {
-            "pattern": "(?i)^\\s*(class)\\s([/_a-z][/-9_a-z]*)",
-            "error": "Unknown modifier '_'"
-        },
-        {
-            "pattern": "(?i)^\\s*(method)\\s(?:([/_a-z][/-9_a-z]*)~)?([/_a-z][/-9_a-z]*)",
-            "error": "Unknown modifier '_'"
-        },
-        {
-            "pattern": "(?i)(?<=\\s)(USING)\\s+([/_a-z][/-9=>_a-z]*)+(?=\\s+|\\.)",
-            "error": "Unknown modifier '_'"
-        },
-        {
-            "pattern": "(?i)^\\s*(INTERFACE)\\s([/_a-z][/-9_a-z]*)",
-            "error": "Unknown modifier '_'"
-        },
-        {
-            "pattern": "(?i)^\\s*(FORM)\\s([/_a-z][-/-9?_a-z]*)",
-            "error": "Unknown modifier '_'"
-        },
-        {
-            "pattern": "(?i)(?<=\\s)([-*+]|\\*\\*|[%/]|DIV|MOD|BIT-AND|BIT-OR|BIT-XOR|BIT-NOT)(?=\\s)",
-            "error": "Unknown modifier ']'"
-        },
-        {
-            "pattern": "(?i)\\b(data|value|field-symbol|final|reference|resumable)\\((<?[/_a-z][/-9_a-z]*>?)\\)",
-            "error": "Unknown modifier '_'"
-        },
-        {
-            "pattern": "(?<=\\s)(&&?|\\?=|\\+=|-=|/=|\\*=|&&=|&=)(?=\\s)",
-            "error": "Unknown modifier '='"
-        }
-    ]
+    "compatible": 57,
+    "incompatible": []
 }

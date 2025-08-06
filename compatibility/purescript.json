@@ -1,43 +1,15 @@
 {
     "name": "purescript",
     "total": 107,
-    "compatible": 98,
+    "compatible": 105,
     "incompatible": [
-        {
-            "pattern": "^(?!\\1[\\t ]|[\\t ]*$)",
-            "error": "Compilation failed: reference to non-existent subpattern at offset 5"
-        },
         {
             "pattern": "(?<=([=|])\\s*)([\\p{Lu}\\p{Lt}]['_\\p{Ll}\\p{Lu}\\p{Lt}\\d]*)",
             "error": "Compilation failed: length of lookbehind assertion is not limited at offset 0"
         },
         {
-            "pattern": "^(?!\\1[\\t ]*|[\\t ]*$)",
-            "error": "Compilation failed: reference to non-existent subpattern at offset 5"
-        },
-        {
-            "pattern": "^(?!\\1[\\t ]|[\\t ]*$)",
-            "error": "Compilation failed: reference to non-existent subpattern at offset 5"
-        },
-        {
-            "pattern": "^(?!\\1[\\t ]|[\\t ]*$)",
-            "error": "Compilation failed: reference to non-existent subpattern at offset 5"
-        },
-        {
-            "pattern": "^(?!\\1[\\t ]|[\\t ]*$)",
-            "error": "Compilation failed: reference to non-existent subpattern at offset 5"
-        },
-        {
-            "pattern": "^(?!\\1[\\t ]|[\\t ]*$)",
-            "error": "Compilation failed: reference to non-existent subpattern at offset 5"
-        },
-        {
             "pattern": "\\((?<classConstraints>([\\p{Lu}\\p{Lt}]['_\\p{Ll}\\p{Lu}\\p{Lt}\\d]*(?:\\.[\\p{Lu}\\p{Lt}]['_\\p{Ll}\\p{Lu}\\p{Lt}\\d]*)*)\\s+(?<classConstraint>(?:[\\p{Lu}\\p{Lt}]['_\\p{Ll}\\p{Lu}\\p{Lt}\\d]*(?:\\.[\\p{Lu}\\p{Lt}]['_\\p{Ll}\\p{Lu}\\p{Lt}\\d]*)*|(?:[\\p{Lu}\\p{Lt}]['_\\p{Ll}\\p{Lu}\\p{Lt}\\d]*(?:\\.[\\p{Lu}\\p{Lt}]['_\\p{Ll}\\p{Lu}\\p{Lt}\\d]*)*\\.)?[_\\p{Ll}]['_\\p{Ll}\\p{Lu}\\p{Lt}\\d]*)(?:\\s*\\s+\\s*(?:[\\p{Lu}\\p{Lt}]['_\\p{Ll}\\p{Lu}\\p{Lt}\\d]*(?:\\.[\\p{Lu}\\p{Lt}]['_\\p{Ll}\\p{Lu}\\p{Lt}\\d]*)*|(?:[\\p{Lu}\\p{Lt}]['_\\p{Ll}\\p{Lu}\\p{Lt}\\d]*(?:\\.[\\p{Lu}\\p{Lt}]['_\\p{Ll}\\p{Lu}\\p{Lt}\\d]*)*\\.)?[_\\p{Ll}]['_\\p{Ll}\\p{Lu}\\p{Lt}\\d]*))*)(?:\\s*,\\s*([\\p{Lu}\\p{Lt}]['_\\p{Ll}\\p{Lu}\\p{Lt}\\d]*(?:\\.[\\p{Lu}\\p{Lt}]['_\\p{Ll}\\p{Lu}\\p{Lt}\\d]*)*)\\s+(?<classConstraint>(?:[\\p{Lu}\\p{Lt}]['_\\p{Ll}\\p{Lu}\\p{Lt}\\d]*(?:\\.[\\p{Lu}\\p{Lt}]['_\\p{Ll}\\p{Lu}\\p{Lt}\\d]*)*|(?:[\\p{Lu}\\p{Lt}]['_\\p{Ll}\\p{Lu}\\p{Lt}\\d]*(?:\\.[\\p{Lu}\\p{Lt}]['_\\p{Ll}\\p{Lu}\\p{Lt}\\d]*)*\\.)?[_\\p{Ll}]['_\\p{Ll}\\p{Lu}\\p{Lt}\\d]*)(?:\\s*\\s+\\s*(?:[\\p{Lu}\\p{Lt}]['_\\p{Ll}\\p{Lu}\\p{Lt}\\d]*(?:\\.[\\p{Lu}\\p{Lt}]['_\\p{Ll}\\p{Lu}\\p{Lt}\\d]*)*|(?:[\\p{Lu}\\p{Lt}]['_\\p{Ll}\\p{Lu}\\p{Lt}\\d]*(?:\\.[\\p{Lu}\\p{Lt}]['_\\p{Ll}\\p{Lu}\\p{Lt}\\d]*)*\\.)?[_\\p{Ll}]['_\\p{Ll}\\p{Lu}\\p{Lt}\\d]*))*))*)\\)\\s*(=>|<=|[⇐⇒])",
             "error": "Compilation failed: two named subpatterns have the same name (PCRE2_DUPNAMES not set) at offset 697"
-        },
-        {
-            "pattern": "^(?!\\1[\\t ]|[\\t ]*$)",
-            "error": "Compilation failed: reference to non-existent subpattern at offset 5"
         }
     ]
 }

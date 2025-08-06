@@ -1,15 +1,11 @@
 {
     "name": "viml",
     "total": 75,
-    "compatible": 73,
+    "compatible": 74,
     "incompatible": [
         {
             "pattern": "/(\\\\\\\\|\\\\/|[^\\n/])*/",
             "error": "Unknown modifier '('"
-        },
-        {
-            "pattern": "https?://\\S+",
-            "error": "Unknown modifier '/'"
         }
     ]
 }

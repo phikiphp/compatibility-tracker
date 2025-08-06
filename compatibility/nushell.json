@@ -1,31 +1,11 @@
 {
     "name": "nushell",
     "total": 103,
-    "compatible": 97,
+    "compatible": 102,
     "incompatible": [
         {
             "pattern": "(?<=]\\s*)(:)\\s+(\\[)",
             "error": "Compilation failed: length of lookbehind assertion is not limited at offset 0"
-        },
-        {
-            "pattern": "(?<= )(?:[-*+/]=?|//|\\*\\*|!=|[<=>]=?|[!=]~|\\+\\+=?)(?= |$)",
-            "error": "Unknown modifier ']'"
-        },
-        {
-            "pattern": "\\\\(?:[\"'/\\\\bfnrt]|u\\h{4})",
-            "error": "Unknown modifier '\\'"
-        },
-        {
-            "pattern": "'\\1",
-            "error": "Compilation failed: reference to non-existent subpattern at offset 2"
-        },
-        {
-            "pattern": "(?<path>(?:[/\\\\]|~[/\\\\]|\\.\\.?[/\\\\])?(?:[^/\\\\]+[/\\\\])*[- \\w]+(?:\\.nu)?){0}^\\s*((?:export )?use)\\s+(\"\\g<path>\"|'\\g<path>'|(?![\"'])\\g<path>)(?:\\s+([-\\w]+|\"[- \\w]+\"|'[^']+'|\\*))?\\s*;?$",
-            "error": "Unknown modifier '\\'"
-        },
-        {
-            "pattern": "(?<path>(?:[/\\\\]|~[/\\\\]|\\.\\.?[/\\\\])?(?:[^/\\\\]+[/\\\\])*[- \\w]+(?:\\.nu)?){0}^\\s*((?:export )?use)\\s+(\"\\g<path>\"|'\\g<path>'|(?![\"'])\\g<path>)\\s+\\[",
-            "error": "Unknown modifier '\\'"
         }
     ]
 }

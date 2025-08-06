@@ -1,39 +1,6 @@
 {
     "name": "r",
     "total": 107,
-    "compatible": 99,
-    "incompatible": [
-        {
-            "pattern": "%[*/ox]%",
-            "error": "Unknown modifier 'o'"
-        },
-        {
-            "pattern": "[-*+/^]",
-            "error": "Unknown modifier '^'"
-        },
-        {
-            "pattern": "]\\1\"",
-            "error": "Compilation failed: reference to non-existent subpattern at offset 2"
-        },
-        {
-            "pattern": "]\\1'",
-            "error": "Compilation failed: reference to non-existent subpattern at offset 2"
-        },
-        {
-            "pattern": "}\\1\"",
-            "error": "Compilation failed: reference to non-existent subpattern at offset 2"
-        },
-        {
-            "pattern": "}\\1'",
-            "error": "Compilation failed: reference to non-existent subpattern at offset 2"
-        },
-        {
-            "pattern": "\\)\\1\"",
-            "error": "Compilation failed: reference to non-existent subpattern at offset 3"
-        },
-        {
-            "pattern": "\\)\\1'",
-            "error": "Compilation failed: reference to non-existent subpattern at offset 3"
-        }
-    ]
+    "compatible": 107,
+    "incompatible": []
 }

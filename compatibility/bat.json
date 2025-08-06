@@ -1,23 +1,6 @@
 {
     "name": "bat",
     "total": 79,
-    "compatible": 75,
-    "incompatible": [
-        {
-            "pattern": "\\s+/[Aa]\\s+",
-            "error": "Unknown modifier '['"
-        },
-        {
-            "pattern": "\\s+/[Pp]\\s+",
-            "error": "Unknown modifier '['"
-        },
-        {
-            "pattern": "([^ ]*)((?:[-*+/]|%%|[\\&^|]|<<|>>)=)",
-            "error": "Unknown modifier ']'"
-        },
-        {
-            "pattern": "[-*+/]|%%|[\\&^|]|<<|>>|~",
-            "error": "Unknown modifier ']'"
-        }
-    ]
+    "compatible": 79,
+    "incompatible": []
 }

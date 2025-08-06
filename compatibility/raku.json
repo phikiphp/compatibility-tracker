@@ -1,24 +1,8 @@
 {
     "name": "raku",
     "total": 63,
-    "compatible": 57,
+    "compatible": 61,
     "incompatible": [
-        {
-            "pattern": "q(q|to|heredoc)*\\s*:?(q|to|heredoc)*\\s*/(.+)/",
-            "error": "Unknown modifier '('"
-        },
-        {
-            "pattern": "\\3",
-            "error": "Compilation failed: reference to non-existent subpattern at offset 1"
-        },
-        {
-            "pattern": "([Qq])(x|exec|w|words|ww|quotewords|v|val|q|single|qq|double|s|scalar|a|array|h|hash|f|function|c|closure|b|blackslash|regexp|substr|trans|codes|p|path)*\\s*:?(x|exec|w|words|ww|quotewords|v|val|q|single|qq|double|s|scalar|a|array|h|hash|f|function|c|closure|b|blackslash|regexp|substr|trans|codes|p|path)*\\s*/",
-            "error": "Unknown modifier '/'"
-        },
-        {
-            "pattern": "/",
-            "error": "Unknown modifier '/'"
-        },
         {
             "pattern": "\\\\/",
             "error": "Unknown modifier '/'"

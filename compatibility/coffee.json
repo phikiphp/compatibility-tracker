@@ -1,43 +1,6 @@
 {
     "name": "coffee",
     "total": 143,
-    "compatible": 134,
-    "incompatible": [
-        {
-            "pattern": "///",
-            "error": "Unknown modifier '/'"
-        },
-        {
-            "pattern": "(///)[gimuy]*",
-            "error": "Unknown modifier '/'"
-        },
-        {
-            "pattern": "(?<![$\\w])(/)(?=(?![*+/?])(.+)(/)[gimuy]*(?!\\s*[$(/\\w]))",
-            "error": "Unknown modifier ')'"
-        },
-        {
-            "pattern": "(/)[gimuy]*(?!\\s*[$(/\\w])",
-            "error": "Unknown modifier ')'"
-        },
-        {
-            "pattern": "(</)([-.\\w]+)",
-            "error": "Unknown modifier ')'"
-        },
-        {
-            "pattern": "(/?>)",
-            "error": "Unknown modifier '?'"
-        },
-        {
-            "pattern": "(/?>)",
-            "error": "Unknown modifier '?'"
-        },
-        {
-            "pattern": "([$A-Z_a-z][$\\w]*)?\\s*((?:[-%*+]|&&|\\|\\||\\?|(?<!\\()/)=)",
-            "error": "Unknown modifier ')'"
-        },
-        {
-            "pattern": "[-%*+/]",
-            "error": "Unknown modifier ']'"
-        }
-    ]
+    "compatible": 143,
+    "incompatible": []
 }

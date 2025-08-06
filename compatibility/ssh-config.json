@@ -1,15 +1,6 @@
 {
     "name": "ssh-config",
     "total": 14,
-    "compatible": 12,
-    "incompatible": [
-        {
-            "pattern": "(^[\\t ]+)?(?=//)",
-            "error": "Unknown modifier '/'"
-        },
-        {
-            "pattern": "//",
-            "error": "Unknown modifier '/'"
-        }
-    ]
+    "compatible": 14,
+    "incompatible": []
 }

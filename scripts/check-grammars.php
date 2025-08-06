@@ -46,6 +46,12 @@ foreach ($grammars as ['path' => $path, 'name' => $name, 'total' => &$total, 'co
 
             $compatible++;
         } catch (RuntimeException $e) {
+            // TextMate patterns can contain references to matching groups that do not technically exist in the pattern.
+            if (str_contains($e->getMessage(), 'Compilation failed: reference to non-existent subpattern')) {
+                $compatible++;
+                continue;
+            }
+
             $incompatible[] = [
                 'pattern' => $pattern,
                 'error' => str_replace('preg_match(): ', '', $e->getMessage()),

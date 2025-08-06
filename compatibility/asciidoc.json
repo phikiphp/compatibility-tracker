@@ -1,19 +1,11 @@
 {
     "name": "asciidoc",
     "total": 673,
-    "compatible": 435,
+    "compatible": 497,
     "incompatible": [
         {
             "pattern": "((?<=--|====)|^\\p{blank}*)$",
             "error": "Compilation failed: unknown property after \\P or \\p at offset 24"
-        },
-        {
-            "pattern": "(?<=\\1)",
-            "error": "Compilation failed: reference to non-existent subpattern at offset 5"
-        },
-        {
-            "pattern": "(?<=\\1)",
-            "error": "Compilation failed: reference to non-existent subpattern at offset 5"
         },
         {
             "pattern": "^(NOTE|TIP|IMPORTANT|WARNING|CAUTION):\\p{blank}+",
@@ -44,24 +36,8 @@
             "error": "Compilation failed: unknown property after \\P or \\p at offset 14"
         },
         {
-            "pattern": "(?:(?://|#|--|;;) ?)?( )?(?<!\\\\)(<)!?(--|)(\\d+)\\3(>)(?=(?: ?<!?\\3\\d+\\3>)*$)",
-            "error": "Unknown modifier '/'"
-        },
-        {
             "pattern": "^(<)(\\d+)(>)\\p{blank}+(.*)$",
             "error": "Compilation failed: unknown property after \\P or \\p at offset 21"
-        },
-        {
-            "pattern": "^(/{4,})$",
-            "error": "Unknown modifier '{'"
-        },
-        {
-            "pattern": "^\\1$",
-            "error": "Compilation failed: reference to non-existent subpattern at offset 2"
-        },
-        {
-            "pattern": "^/{2}([^/].*)?$",
-            "error": "Unknown modifier '{'"
         },
         {
             "pattern": "((?<=--)|^\\p{blank}*)$",
@@ -90,10 +66,6 @@
         {
             "pattern": "(?<=\\S)\\p{blank}+(\\\\)$",
             "error": "Compilation failed: unknown property after \\P or \\p at offset 16"
-        },
-        {
-            "pattern": "(?:^|[]();<>\\[\\s])((?<!\\\\)(?:https?|file|ftp|irc)://[^]<\\[\\s]*[^]),.<\\[\\s])(?:\\[((?:\\\\]|[^]])*?)])?",
-            "error": "Unknown modifier '/'"
         },
         {
             "pattern": "\\p{word}[-%+.[:word:]]*(@)\\p{alnum}[-.[:alnum:]]*(\\.)\\p{alpha}{2,4}\\b",
@@ -140,36 +112,8 @@
             "error": "Compilation failed: unknown property after \\P or \\p at offset 24"
         },
         {
-            "pattern": "(?<=\\1)",
-            "error": "Compilation failed: reference to non-existent subpattern at offset 5"
-        },
-        {
-            "pattern": "(?<=\\1)",
-            "error": "Compilation failed: reference to non-existent subpattern at offset 5"
-        },
-        {
-            "pattern": "\\1",
-            "error": "Compilation failed: reference to non-existent subpattern at offset 1"
-        },
-        {
             "pattern": "((?<=____|\"\"|--)|^\\p{blank}*)$",
             "error": "Compilation failed: unknown property after \\P or \\p at offset 27"
-        },
-        {
-            "pattern": "(?<=\\1)",
-            "error": "Compilation failed: reference to non-existent subpattern at offset 5"
-        },
-        {
-            "pattern": "(?<=\\1)",
-            "error": "Compilation failed: reference to non-existent subpattern at offset 5"
-        },
-        {
-            "pattern": "(?<=\\1)$",
-            "error": "Compilation failed: reference to non-existent subpattern at offset 5"
-        },
-        {
-            "pattern": "^\\1$",
-            "error": "Compilation failed: reference to non-existent subpattern at offset 2"
         },
         {
             "pattern": "^\\p{blank}*(>) ",
@@ -728,190 +672,6 @@
             "error": "Compilation failed: unknown property after \\P or \\p at offset 28"
         },
         {
-            "pattern": "^\\s*\\1\\s*$",
-            "error": "Compilation failed: reference to non-existent subpattern at offset 5"
-        },
-        {
-            "pattern": "^\\s*\\1\\s*$",
-            "error": "Compilation failed: reference to non-existent subpattern at offset 5"
-        },
-        {
-            "pattern": "^\\s*\\1\\s*$",
-            "error": "Compilation failed: reference to non-existent subpattern at offset 5"
-        },
-        {
-            "pattern": "^\\s*\\1\\s*$",
-            "error": "Compilation failed: reference to non-existent subpattern at offset 5"
-        },
-        {
-            "pattern": "^\\s*\\1\\s*$",
-            "error": "Compilation failed: reference to non-existent subpattern at offset 5"
-        },
-        {
-            "pattern": "^\\s*\\1\\s*$",
-            "error": "Compilation failed: reference to non-existent subpattern at offset 5"
-        },
-        {
-            "pattern": "^\\s*\\1\\s*$",
-            "error": "Compilation failed: reference to non-existent subpattern at offset 5"
-        },
-        {
-            "pattern": "^\\s*\\1\\s*$",
-            "error": "Compilation failed: reference to non-existent subpattern at offset 5"
-        },
-        {
-            "pattern": "^\\s*\\1\\s*$",
-            "error": "Compilation failed: reference to non-existent subpattern at offset 5"
-        },
-        {
-            "pattern": "^\\s*\\1\\s*$",
-            "error": "Compilation failed: reference to non-existent subpattern at offset 5"
-        },
-        {
-            "pattern": "^\\s*\\1\\s*$",
-            "error": "Compilation failed: reference to non-existent subpattern at offset 5"
-        },
-        {
-            "pattern": "^\\s*\\1\\s*$",
-            "error": "Compilation failed: reference to non-existent subpattern at offset 5"
-        },
-        {
-            "pattern": "^\\s*\\1\\s*$",
-            "error": "Compilation failed: reference to non-existent subpattern at offset 5"
-        },
-        {
-            "pattern": "^\\s*\\1\\s*$",
-            "error": "Compilation failed: reference to non-existent subpattern at offset 5"
-        },
-        {
-            "pattern": "^\\s*\\1\\s*$",
-            "error": "Compilation failed: reference to non-existent subpattern at offset 5"
-        },
-        {
-            "pattern": "^\\s*\\1\\s*$",
-            "error": "Compilation failed: reference to non-existent subpattern at offset 5"
-        },
-        {
-            "pattern": "^\\s*\\1\\s*$",
-            "error": "Compilation failed: reference to non-existent subpattern at offset 5"
-        },
-        {
-            "pattern": "^\\s*\\1\\s*$",
-            "error": "Compilation failed: reference to non-existent subpattern at offset 5"
-        },
-        {
-            "pattern": "^\\s*\\1\\s*$",
-            "error": "Compilation failed: reference to non-existent subpattern at offset 5"
-        },
-        {
-            "pattern": "^\\s*\\1\\s*$",
-            "error": "Compilation failed: reference to non-existent subpattern at offset 5"
-        },
-        {
-            "pattern": "^\\s*\\1\\s*$",
-            "error": "Compilation failed: reference to non-existent subpattern at offset 5"
-        },
-        {
-            "pattern": "^\\s*\\1\\s*$",
-            "error": "Compilation failed: reference to non-existent subpattern at offset 5"
-        },
-        {
-            "pattern": "^\\s*\\1\\s*$",
-            "error": "Compilation failed: reference to non-existent subpattern at offset 5"
-        },
-        {
-            "pattern": "^\\s*\\1\\s*$",
-            "error": "Compilation failed: reference to non-existent subpattern at offset 5"
-        },
-        {
-            "pattern": "^\\s*\\1\\s*$",
-            "error": "Compilation failed: reference to non-existent subpattern at offset 5"
-        },
-        {
-            "pattern": "^\\s*\\1\\s*$",
-            "error": "Compilation failed: reference to non-existent subpattern at offset 5"
-        },
-        {
-            "pattern": "^\\s*\\1\\s*$",
-            "error": "Compilation failed: reference to non-existent subpattern at offset 5"
-        },
-        {
-            "pattern": "^\\s*\\1\\s*$",
-            "error": "Compilation failed: reference to non-existent subpattern at offset 5"
-        },
-        {
-            "pattern": "^\\s*\\1\\s*$",
-            "error": "Compilation failed: reference to non-existent subpattern at offset 5"
-        },
-        {
-            "pattern": "^\\s*\\1\\s*$",
-            "error": "Compilation failed: reference to non-existent subpattern at offset 5"
-        },
-        {
-            "pattern": "^\\s*\\1\\s*$",
-            "error": "Compilation failed: reference to non-existent subpattern at offset 5"
-        },
-        {
-            "pattern": "^\\s*\\1\\s*$",
-            "error": "Compilation failed: reference to non-existent subpattern at offset 5"
-        },
-        {
-            "pattern": "^\\s*\\1\\s*$",
-            "error": "Compilation failed: reference to non-existent subpattern at offset 5"
-        },
-        {
-            "pattern": "^\\s*\\1\\s*$",
-            "error": "Compilation failed: reference to non-existent subpattern at offset 5"
-        },
-        {
-            "pattern": "^\\s*\\1\\s*$",
-            "error": "Compilation failed: reference to non-existent subpattern at offset 5"
-        },
-        {
-            "pattern": "^\\s*\\1\\s*$",
-            "error": "Compilation failed: reference to non-existent subpattern at offset 5"
-        },
-        {
-            "pattern": "^\\s*\\1\\s*$",
-            "error": "Compilation failed: reference to non-existent subpattern at offset 5"
-        },
-        {
-            "pattern": "^\\s*\\1\\s*$",
-            "error": "Compilation failed: reference to non-existent subpattern at offset 5"
-        },
-        {
-            "pattern": "^\\s*\\1\\s*$",
-            "error": "Compilation failed: reference to non-existent subpattern at offset 5"
-        },
-        {
-            "pattern": "^\\s*\\1\\s*$",
-            "error": "Compilation failed: reference to non-existent subpattern at offset 5"
-        },
-        {
-            "pattern": "^\\s*\\1\\s*$",
-            "error": "Compilation failed: reference to non-existent subpattern at offset 5"
-        },
-        {
-            "pattern": "^\\s*\\1\\s*$",
-            "error": "Compilation failed: reference to non-existent subpattern at offset 5"
-        },
-        {
-            "pattern": "^\\s*\\1\\s*$",
-            "error": "Compilation failed: reference to non-existent subpattern at offset 5"
-        },
-        {
-            "pattern": "^\\s*\\1\\s*$",
-            "error": "Compilation failed: reference to non-existent subpattern at offset 5"
-        },
-        {
-            "pattern": "^\\s*\\1\\s*$",
-            "error": "Compilation failed: reference to non-existent subpattern at offset 5"
-        },
-        {
-            "pattern": "^\\s*\\1\\s*$",
-            "error": "Compilation failed: reference to non-existent subpattern at offset 5"
-        },
-        {
             "pattern": "(?<![*:;\\\\[:word:]])(\\[.+?])?((\\*)(\\S(?:|.*?\\S))(\\*)(?!\\p{word}))",
             "error": "Compilation failed: unknown property after \\P or \\p at offset 63"
         },
@@ -946,14 +706,6 @@
         {
             "pattern": "(?:^|(?<![:;[:word:]]))(\\[([^]]+?)])?('`)(\\S(?:|.*?\\S))(`')(?!\\p{word})",
             "error": "Compilation failed: unknown property after \\P or \\p at offset 70"
-        },
-        {
-            "pattern": "(?<!\\\\)(<<)([\"./:[:word:]]+,)?(.*?)(>>)",
-            "error": "Unknown modifier ':'"
-        },
-        {
-            "pattern": "(?<!\\\\)(xref:)([\"./:[:word:]].*?)(\\[)",
-            "error": "Unknown modifier ':'"
         }
     ]
 }

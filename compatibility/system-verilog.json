@@ -1,35 +1,11 @@
 {
     "name": "system-verilog",
     "total": 112,
-    "compatible": 105,
+    "compatible": 111,
     "incompatible": [
         {
-            "pattern": "/\\*",
-            "error": "Unknown modifier '\\'"
-        },
-        {
-            "pattern": "\\*/",
-            "error": "Unknown modifier '/'"
-        },
-        {
-            "pattern": "//",
-            "error": "Unknown modifier '/'"
-        },
-        {
-            "pattern": "\\b(?:dist|inside|with|intersect|and|or|throughout|within|first_match)\\b|:=|:/|\\|->|\\|=>|->>|\\*>|#-#|#=#|&&&",
-            "error": "Unknown modifier '|'"
-        },
-        {
-            "pattern": "(?:[-%\\&*+/^|]|>>>?|<<<?|<?)=",
-            "error": "Unknown modifier '^'"
-        },
-        {
-            "pattern": "[-+]|\\*\\*|[%*/]",
-            "error": "Unknown modifier ']'"
-        },
-        {
             "pattern": ",?[\\t\\n\\r ]*(?:\\b(output|input|inout|ref)\\b[\\t\\n\\r ]*)?(?:\\b(localparam|parameter|var|supply[01]|tri|triand|trior|trireg|tri[01]|uwire|wire|wand|wor)\\b[\\t\\n\\r ]*)?(?:\\b([A-Z_a-z][$0-9A-Z_a-z]*)(::))?(?:([A-Z_a-z][$0-9A-Z_a-z]*)\\b[\\t\\n\\r ]*)?(?:\\b((?:|un)signed)\\b[\\t\\n\\r ]*)?(?:(\\[[]\\t\\n\\r $%'-+\\--:A-\\[_-z]*])[\\t\\n\\r ]*)?(?<!(?<!#)[-!%\\&(*+/:<-?^|~][\\t\\n\\r ]*)\\b([A-Z_a-z][$0-9A-Z_a-z]*)\\b[\\t\\n\\r ]*(\\[[]\\t\\n\\r $%'-+\\--:A-\\[_-z]*])?[\\t\\n\\r ]*(?=[),/;=]|$)",
-            "error": "Unknown modifier ':'"
+            "error": "Compilation failed: length of lookbehind assertion is not limited at offset 322"
         }
     ]
 }

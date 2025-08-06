@@ -1,11 +1,6 @@
 {
     "name": "tcl",
     "total": 37,
-    "compatible": 36,
-    "incompatible": [
-        {
-            "pattern": "(?<=[ \\d])([-+~]|&{1,2}|\\|{1,2}|<{1,2}|>{1,2}|\\*{1,2}|[!%/]|<=|>=|={1,2}|!=|\\^)(?=[ \\d])",
-            "error": "Unknown modifier ']'"
-        }
-    ]
+    "compatible": 37,
+    "incompatible": []
 }

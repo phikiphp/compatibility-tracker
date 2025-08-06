@@ -1,111 +1,23 @@
 {
     "name": "csharp",
     "total": 520,
-    "compatible": 494,
+    "compatible": 516,
     "incompatible": [
         {
-            "pattern": "\\b(new)\\b\\s*(?=\\{|//|/\\*|$)",
-            "error": "Unknown modifier '/'"
-        },
-        {
-            "pattern": "(?:[-%*+/]|\\?\\?|[\\&^]|<<|>>>?|\\|)?=(?![=>])",
-            "error": "Unknown modifier ']'"
-        },
-        {
-            "pattern": "(?:[-%*+/]|\\?\\?)=",
-            "error": "Unknown modifier ']'"
-        },
-        {
             "pattern": "(?<!\\.\\s*)\\b(await)\\b",
             "error": "Compilation failed: length of lookbehind assertion is not limited at offset 0"
         },
         {
             "pattern": "(?<!\\.\\s*)\\b(await)\\b",
             "error": "Compilation failed: length of lookbehind assertion is not limited at offset 0"
-        },
-        {
-            "pattern": "(^\\s+)?(///)(?!/)",
-            "error": "Unknown modifier '/'"
-        },
-        {
-            "pattern": "^(\\s*)(///)(?!/)",
-            "error": "Unknown modifier '/'"
-        },
-        {
-            "pattern": "(^\\s+)?(/\\*\\*)(?!/)",
-            "error": "Unknown modifier '\\'"
-        },
-        {
-            "pattern": "(^\\s+)?(\\*/)",
-            "error": "Unknown modifier ')'"
         },
         {
             "pattern": "\\G(?=(?~\\*/)$)",
-            "error": "Unknown modifier ')'"
+            "error": "Compilation failed: unrecognized character after (? or (?- at offset 7"
         },
         {
             "pattern": "^(\\s*+)(\\*(?!/))?(?=(?~\\*/)$)",
-            "error": "Unknown modifier ')'"
-        },
-        {
-            "pattern": "(^\\s+)?(//).*$",
-            "error": "Unknown modifier '/'"
-        },
-        {
-            "pattern": "^(\\s*)(//).*$",
-            "error": "Unknown modifier '/'"
-        },
-        {
-            "pattern": "/\\*",
-            "error": "Unknown modifier '\\'"
-        },
-        {
-            "pattern": "\\*/",
-            "error": "Unknown modifier '/'"
-        },
-        {
-            "pattern": "\\b(add|remove)\\b\\s*(?=[;{]|=>|//|/\\*|$)",
-            "error": "Unknown modifier '/'"
-        },
-        {
-            "pattern": "\\b(event)\\b\\s*(?<return_type>(?<type_name>(?:(?:(?<identifier>@?[_[:alpha:]][_[:alnum:]]*)\\s*::\\s*)?(?<name_and_type_args>\\g<identifier>\\s*(?<type_args>\\s*<(?:[^<>]|\\g<type_args>)+>\\s*)?)(?:\\s*\\.\\s*\\g<name_and_type_args>)*|(?<tuple>\\s*\\((?:[^()]|\\g<tuple>)+\\)))(?:\\s*\\?\\s*)?(?:\\s*\\[(?:\\s*,\\s*)*]\\s*\\??\\s*)*)\\s+)(?<interface_name>\\g<type_name>\\s*\\.\\s*)?(\\g<identifier>)\\s*(?=[,;={]|//|/\\*|$)",
-            "error": "Unknown modifier '/'"
-        },
-        {
-            "pattern": "\\+|-(?!>)|[%*/]",
-            "error": "Unknown modifier ']'"
-        },
-        {
-            "pattern": "(new)\\s+(?<type_name>(?:(?:(?<identifier>@?[_[:alpha:]][_[:alnum:]]*)\\s*::\\s*)?(?<name_and_type_args>\\g<identifier>\\s*(?<type_args>\\s*<(?:[^<>]|\\g<type_args>)+>\\s*)?)(?:\\s*\\.\\s*\\g<name_and_type_args>)*|(?<tuple>\\s*\\((?:[^()]|\\g<tuple>)+\\)))(?:\\s*\\?\\s*)?(?:\\s*\\[(?:\\s*,\\s*)*]\\s*\\??\\s*)*)\\s*(?=\\{|//|/\\*|$)",
-            "error": "Unknown modifier '/'"
-        },
-        {
-            "pattern": "(?<type_name>(?:ref\\s+(?:readonly\\s+)?)?(?:(?:(?<identifier>@?[_[:alpha:]][_[:alnum:]]*)\\s*::\\s*)?(?<name_and_type_args>\\g<identifier>\\s*(?<type_args>\\s*<(?:[^<>]|\\g<type_args>)+>\\s*)?)(?:\\s*\\.\\s*\\g<name_and_type_args>)*|(?<tuple>\\s*\\((?:[^()]|\\g<tuple>)+\\)))(?:\\s*\\?\\s*)?(?:\\s*\\[(?:\\s*,\\s*)*]\\s*\\??\\s*)*)\\s*\\b(?<operator_keyword>operator)\\b\\s*(?<operator>[-!%\\&*+/<=>^|~]+|true|false)\\s*(?=\\()",
-            "error": "Unknown modifier '<'"
-        },
-        {
-            "pattern": "\\b(get)\\b\\s*(?=[;{]|=>|//|/\\*|$)",
-            "error": "Unknown modifier '/'"
-        },
-        {
-            "pattern": "\\b(set|init)\\b\\s*(?=[;{]|=>|//|/\\*|$)",
-            "error": "Unknown modifier '/'"
-        },
-        {
-            "pattern": "(?![[:word:]\\s]*\\b(?:class|interface|struct|enum|event)\\b)(?<return_type>(?<type_name>(?:ref\\s+(?:readonly\\s+)?)?(?:(?:(?<identifier>@?[_[:alpha:]][_[:alnum:]]*)\\s*::\\s*)?(?<name_and_type_args>\\g<identifier>\\s*(?<type_args>\\s*<(?:[^<>]|\\g<type_args>)+>\\s*)?)(?:\\s*\\.\\s*\\g<name_and_type_args>)*|(?<tuple>\\s*\\((?:[^()]|\\g<tuple>)+\\)))(?:\\s*\\?\\s*)?(?:\\s*\\[(?:\\s*,\\s*)*]\\s*\\??\\s*)*)\\s+)(?<interface_name>\\g<type_name>\\s*\\.\\s*)?(?<property_name>\\g<identifier>)\\s*(?=\\{|=>|//|/\\*|$)",
-            "error": "Unknown modifier '/'"
-        },
-        {
-            "pattern": "(?<!\\.)\\b(with)\\b\\s*(?=\\{|//|/\\*|$)",
-            "error": "Unknown modifier '/'"
-        },
-        {
-            "pattern": "(</?)((?:([-_[:alnum:]]+)(:))?([-_[:alnum:]]+))",
-            "error": "Unknown modifier '?'"
-        },
-        {
-            "pattern": "(/?>)",
-            "error": "Unknown modifier '?'"
+            "error": "Compilation failed: unrecognized character after (? or (?- at offset 23"
         }
     ]
 }

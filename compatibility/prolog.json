@@ -1,19 +1,6 @@
 {
     "name": "prolog",
     "total": 29,
-    "compatible": 26,
-    "incompatible": [
-        {
-            "pattern": "/\\*",
-            "error": "Unknown modifier '\\'"
-        },
-        {
-            "pattern": "\\*/",
-            "error": "Unknown modifier '/'"
-        },
-        {
-            "pattern": "(?<![/A-Za-z])(\\d+|(\\d+\\.\\d+))",
-            "error": "Unknown modifier '-'"
-        }
-    ]
+    "compatible": 29,
+    "incompatible": []
 }

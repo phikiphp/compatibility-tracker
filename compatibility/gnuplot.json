@@ -1,15 +1,6 @@
 {
     "name": "gnuplot",
     "total": 99,
-    "compatible": 97,
-    "incompatible": [
-        {
-            "pattern": "(\\*\\*|[-%*+/])",
-            "error": "Unknown modifier ']'"
-        },
-        {
-            "pattern": "^(\\3)\\b(.*)",
-            "error": "Compilation failed: reference to non-existent subpattern at offset 3"
-        }
-    ]
+    "compatible": 99,
+    "incompatible": []
 }

@@ -1,27 +1,6 @@
 {
     "name": "bsl",
     "total": 90,
-    "compatible": 85,
-    "incompatible": [
-        {
-            "pattern": "//",
-            "error": "Unknown modifier '/'"
-        },
-        {
-            "pattern": "^(\\s*//.*)$",
-            "error": "Unknown modifier '/'"
-        },
-        {
-            "pattern": "([-%*+/])",
-            "error": "Unknown modifier ']'"
-        },
-        {
-            "pattern": "^\\s*//",
-            "error": "Unknown modifier '/'"
-        },
-        {
-            "pattern": "(//((\"\")|[^\"])*)",
-            "error": "Unknown modifier '/'"
-        }
-    ]
+    "compatible": 90,
+    "incompatible": []
 }

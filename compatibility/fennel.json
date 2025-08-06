@@ -1,11 +1,6 @@
 {
     "name": "fennel",
     "total": 32,
-    "compatible": 31,
-    "incompatible": [
-        {
-            "pattern": "[#%*+]|\\?\\.|(\\.)?\\.|(/)?/|:|<=?|=|>=?|\\^",
-            "error": "Unknown modifier ')'"
-        }
-    ]
+    "compatible": 32,
+    "incompatible": []
 }

@@ -1,27 +1,11 @@
 {
     "name": "yaml",
     "total": 62,
-    "compatible": 57,
+    "compatible": 61,
     "incompatible": [
-        {
-            "pattern": "^(?!\\1|\\s*$)",
-            "error": "Compilation failed: reference to non-existent subpattern at offset 5"
-        },
         {
             "pattern": "(?:^([\\t ]*)|[\\t ]+)(?=#\\p{print}*$)",
             "error": "Compilation failed: unknown property after \\P or \\p at offset 33"
-        },
-        {
-            "pattern": "((\\*))([^],/\\[{}\\s]+)([^],}\\s]\\S*)?",
-            "error": "Unknown modifier '\\'"
-        },
-        {
-            "pattern": "\\\\([ \"/0LN\\\\_abefnprtv]|x\\d\\d|u\\d{4}|U\\d{8})",
-            "error": "Unknown modifier '0'"
-        },
-        {
-            "pattern": "\\G((&))([^],/\\[{}\\s]+)(\\S+)?",
-            "error": "Unknown modifier '\\'"
         }
     ]
 }

@@ -21,6 +21,10 @@ function test(string $pattern): void {
         throw new RuntimeException($errstr, $errno);
     });
 
+    if (str_contains($pattern, '/') && !str_contains($pattern, '\\/')) {
+        $pattern = str_replace('/', '\\/', $pattern);
+    }
+
     preg_match("/{$pattern}/u", '');
 
     restore_error_handler();

@@ -1,11 +1,6 @@
 {
     "name": "liquid",
     "total": 108,
-    "compatible": 107,
-    "incompatible": [
-        {
-            "pattern": "(?<=\\s)([-*+/])(?=\\s)",
-            "error": "Unknown modifier ']'"
-        }
-    ]
+    "compatible": 108,
+    "incompatible": []
 }

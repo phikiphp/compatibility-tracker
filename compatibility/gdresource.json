@@ -1,31 +1,6 @@
 {
     "name": "gdresource",
     "total": 41,
-    "compatible": 35,
-    "incompatible": [
-        {
-            "pattern": "\\\\([\\n \"/\\\\bfnrt]|u\\h{4}|U\\h{8})",
-            "error": "Unknown modifier '\\'"
-        },
-        {
-            "pattern": "\\\\[^\\n\"/\\\\bfnrt]",
-            "error": "Unknown modifier '\\'"
-        },
-        {
-            "pattern": "\"res://[^\"\\\\]*(?:\\\\.[^\"\\\\]*)*\"",
-            "error": "Unknown modifier '/'"
-        },
-        {
-            "pattern": "\\\\([\\n \"/\\\\bfnrt]|u\\h{4}|U\\h{8})",
-            "error": "Unknown modifier '\\'"
-        },
-        {
-            "pattern": "\\\\[^\\n\"/\\\\bfnrt]",
-            "error": "Unknown modifier '\\'"
-        },
-        {
-            "pattern": "(script/source) = \"",
-            "error": "Unknown modifier 'o'"
-        }
-    ]
+    "compatible": 41,
+    "incompatible": []
 }

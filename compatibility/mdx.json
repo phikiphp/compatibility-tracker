@@ -1,51 +1,6 @@
 {
     "name": "mdx",
     "total": 508,
-    "compatible": 497,
-    "incompatible": [
-        {
-            "pattern": "\\\\[!-/:-@\\[-`{-~]",
-            "error": "Unknown modifier ':'"
-        },
-        {
-            "pattern": "(?:^|\\G)[\\t ]*(`{3,})[\\t ]*((?i:ecere-projects|ipython-notebook|jupyter-notebook|max|max/msp|maxmsp|oasv2-json|oasv3-json|(?:.*\\.)?(?:4dform|4dproject|avsc|epj|geojson|gltf|har|ice|ipynb|json|json-tmlanguage|jsonl|maxhelp|maxpat|maxproj|mcmeta|mxt|pat|sarif|tfstate|tfstate\\.backup|topojson|webapp|webmanifest|yyp??)))(?:[\\t ]+([^\\n\\r`]+))?[\\t ]*$",
-            "error": "Unknown modifier 'p'"
-        },
-        {
-            "pattern": "(?:^|\\G)[\\t ]*(~{3,})[\\t ]*((?i:ecere-projects|ipython-notebook|jupyter-notebook|max|max/msp|maxmsp|oasv2-json|oasv3-json|(?:.*\\.)?(?:4dform|4dproject|avsc|epj|geojson|gltf|har|ice|ipynb|json|json-tmlanguage|jsonl|maxhelp|maxpat|maxproj|mcmeta|mxt|pat|sarif|tfstate|tfstate\\.backup|topojson|webapp|webmanifest|yyp??)))(?:[\\t ]+([^\\n\\r]+))?[\\t ]*$",
-            "error": "Unknown modifier 'p'"
-        },
-        {
-            "pattern": "(?<=^|[^A-Za-z])(?i:https?://)(?=[\\p{L}\\p{N}])(?:(?:[-\\p{L}\\p{N}]|[._](?![!\"')*,.:;<?_~]*(?:[<\\s]|][\\t\\n (\\[])))+\\g<path>?)?(?<path>(?:(?:[^]\\t\\n\\r !\"\\&-*,.:;<?_~]|&(?![A-Za-z]*;[!\"')*,.:;<?_~]*(?:[<\\s]|][\\t\\n (\\[]))|[!\"')*,.:;?_~](?![!\"')*,.:;<?_~]*(?:[<\\s]|][\\t\\n (\\[])))|\\(\\g<path>*\\))+){0}",
-            "error": "Unknown modifier '/'"
-        },
-        {
-            "pattern": "(?<=^|[^/A-Za-z])(?i:mailto:|xmpp:)?[-+.0-9A-Z_a-z]+@(?:(?:[0-9A-Za-z]|[-_](?![!\"')*,.:;<?_~]*(?:[<\\s]|][\\t\\n (\\[])))+\\.(?![!\"')*,.:;<?_~]*(?:[<\\s]|][\\t\\n (\\[])))+(?:[A-Za-z]|[-_](?![!\"')*,.:;<?_~]*(?:[<\\s]|][\\t\\n (\\[])))+",
-            "error": "Unknown modifier '-'"
-        },
-        {
-            "pattern": "(?<![0-9A-Z_-z])(@)([0-9A-Za-z][-0-9A-Za-z]{0,38}(?:/[0-9A-Za-z][-0-9A-Za-z]{0,38})?)(?![0-9A-Z_-z])",
-            "error": "Unknown modifier '['"
-        },
-        {
-            "pattern": "(?<![^\\t\\n\\r (@\\[{])([0-9A-Za-z][-0-9A-Za-z]{0,38}(?:/(?:\\.git[-0-9A-Z_a-z]|\\.(?!git)|[-0-9A-Z_a-z])+)?)(#)([0-9]+)(?![0-9A-Z_a-z])",
-            "error": "Unknown modifier '('"
-        },
-        {
-            "pattern": "(?<=^|\\G|>)[\\t ]*(<)(?=(?![\\t\\n\\r ]))(?:\\s*(/))?(?:\\s*(?:([$_[:alpha:]][-$_[:alnum:]]*)\\s*(:)\\s*([$_[:alpha:]][-$_[:alnum:]]*)|([$_[:alpha:]][$_[:alnum:]]*(?:\\s*\\.\\s*[$_[:alpha:]][-$_[:alnum:]]*)+)|([$_[:upper:]][$_[:alnum:]]*)|([$_[:alpha:]][-$_[:alnum:]]*))(?=[/>{\\s]))?",
-            "error": "Unknown modifier ')'"
-        },
-        {
-            "pattern": "(?:(/)\\s*)?(>)",
-            "error": "Unknown modifier ')'"
-        },
-        {
-            "pattern": "(<)(?=(?![\\t\\n\\r ]))(?:\\s*(/))?(?:\\s*(?:([$_[:alpha:]][-$_[:alnum:]]*)\\s*(:)\\s*([$_[:alpha:]][-$_[:alnum:]]*)|([$_[:alpha:]][$_[:alnum:]]*(?:\\s*\\.\\s*[$_[:alpha:]][-$_[:alnum:]]*)+)|([$_[:upper:]][$_[:alnum:]]*)|([$_[:alpha:]][-$_[:alnum:]]*))(?=[/>{\\s]))?",
-            "error": "Unknown modifier ')'"
-        },
-        {
-            "pattern": "(?:(/)\\s*)?(>)",
-            "error": "Unknown modifier ')'"
-        }
-    ]
+    "compatible": 508,
+    "incompatible": []
 }

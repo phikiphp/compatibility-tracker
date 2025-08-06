@@ -1,67 +1,6 @@
 {
     "name": "vue-html",
     "total": 53,
-    "compatible": 38,
-    "incompatible": [
-        {
-            "pattern": "(<)([A-Z][-0-:A-Za-z]*)(?=[^>]*></\\2>)",
-            "error": "Unknown modifier '\\'"
-        },
-        {
-            "pattern": "(>)(<)(/)(\\2)(>)",
-            "error": "Unknown modifier ')'"
-        },
-        {
-            "pattern": "(<)([a-z][-0-:A-Za-z]*)(?=[^>]*></\\2>)",
-            "error": "Unknown modifier '\\'"
-        },
-        {
-            "pattern": "(>)(<)(/)(\\2)(>)",
-            "error": "Unknown modifier ')'"
-        },
-        {
-            "pattern": "(</?)([A-Z][-0-:A-Za-z]*)\\b",
-            "error": "Unknown modifier '?'"
-        },
-        {
-            "pattern": "(</?)([a-z][-0-:A-Za-z]*)\\b",
-            "error": "Unknown modifier '?'"
-        },
-        {
-            "pattern": "(</?)((?i:body|head|html))\\b",
-            "error": "Unknown modifier '?'"
-        },
-        {
-            "pattern": "(</?)((?i:address|blockquote|dd|div|dl|dt|fieldset|form|frame|frameset|h1|h2|h3|h4|h5|h6|iframe|noframes|object|ol|p|ul|applet|center|dir|hr|menu|pre)(?!-))\\b",
-            "error": "Unknown modifier '?'"
-        },
-        {
-            "pattern": "(</?)((?i:a|abbr|acronym|area|b|base|basefont|bdo|big|br|button|caption|cite|code|col|colgroup|del|dfn|em|font|head|html|i|img|input|ins|isindex|kbd|label|legend|li|link|map|meta|noscript|optgroup|option|param|[qs]|samp|script|select|small|span|strike|strong|style|sub|sup|table|tbody|td|textarea|tfoot|th|thead|title|tr|tt|u|var)(?!-))\\b",
-            "error": "Unknown modifier '?'"
-        },
-        {
-            "pattern": "(/?>)",
-            "error": "Unknown modifier '?'"
-        },
-        {
-            "pattern": "(</?)([-0-:A-Za-z]+)",
-            "error": "Unknown modifier '?'"
-        },
-        {
-            "pattern": "(/?>)",
-            "error": "Unknown modifier '?'"
-        },
-        {
-            "pattern": "(?!\\G)(?<=[\"'[^/<>\\s]])",
-            "error": "Unknown modifier '<'"
-        },
-        {
-            "pattern": "(?<==)(?:[^\"'/<>\\s]|/(?!>))+",
-            "error": "Unknown modifier '<'"
-        },
-        {
-            "pattern": "(?<==)(?:[^\"'/<>\\s]|/(?!>))+",
-            "error": "Unknown modifier '<'"
-        }
-    ]
+    "compatible": 53,
+    "incompatible": []
 }

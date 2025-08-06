@@ -1,27 +1,6 @@
 {
     "name": "verilog",
     "total": 35,
-    "compatible": 30,
-    "incompatible": [
-        {
-            "pattern": "(^[\\t ]+)?(?=//)",
-            "error": "Unknown modifier '/'"
-        },
-        {
-            "pattern": "//",
-            "error": "Unknown modifier '/'"
-        },
-        {
-            "pattern": "/\\*",
-            "error": "Unknown modifier '\\'"
-        },
-        {
-            "pattern": "\\*/",
-            "error": "Unknown modifier '/'"
-        },
-        {
-            "pattern": "[-%*+/]|([<>])=?|([!=])?==?|!|&&?|\\|\\|?|\\^?~|~\\^?",
-            "error": "Unknown modifier ']'"
-        }
-    ]
+    "compatible": 35,
+    "incompatible": []
 }

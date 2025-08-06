@@ -1,19 +1,6 @@
 {
     "name": "talonscript",
     "total": 51,
-    "compatible": 48,
-    "incompatible": [
-        {
-            "pattern": "\\s([-*+/]|or)\\s",
-            "error": "Unknown modifier ']'"
-        },
-        {
-            "pattern": "(/)",
-            "error": "Unknown modifier ')'"
-        },
-        {
-            "pattern": "(/)",
-            "error": "Unknown modifier ')'"
-        }
-    ]
+    "compatible": 51,
+    "incompatible": []
 }

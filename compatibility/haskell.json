@@ -1,67 +1,6 @@
 {
     "name": "haskell",
     "total": 192,
-    "compatible": 177,
-    "incompatible": [
-        {
-            "pattern": "(?=(?<!')\\bwhere\\b(?!'))|(?=[;}])|^(?!\\1\\s+\\S|\\s*(?:$|\\{-[^@]|--+(?![[\\p{S}\\p{P}]&&[^]\"'(),;\\[_`{}]]).*$))",
-            "error": "Compilation failed: reference to non-existent subpattern at offset 39"
-        },
-        {
-            "pattern": "(?=(?<!')\\bderiving\\b(?!'))|(?=[;}])|^(?!\\1\\s+\\S|\\s*(?:$|\\{-[^@]|--+(?![[\\p{S}\\p{P}]&&[^]\"'(),;\\[_`{}]]).*$))",
-            "error": "Compilation failed: reference to non-existent subpattern at offset 42"
-        },
-        {
-            "pattern": "(?=[;}])|^(?!\\1\\s+\\S|\\s*(?:$|\\{-[^@]|--+(?![[\\p{S}\\p{P}]&&[^]\"'(),;\\[_`{}]]).*$))",
-            "error": "Compilation failed: reference to non-existent subpattern at offset 14"
-        },
-        {
-            "pattern": "(?=[;}])|^(?!\\1\\s+\\S|\\s*(?:$|\\{-[^@]|--+(?![[\\p{S}\\p{P}]&&[^]\"'(),;\\[_`{}]]).*$))",
-            "error": "Compilation failed: reference to non-existent subpattern at offset 14"
-        },
-        {
-            "pattern": "(?=[;}])|^(?!\\1\\s+\\S|\\s*(?:$|\\{-[^@]|--+(?![[\\p{S}\\p{P}]&&[^]\"'(),;\\[_`{}]]).*$))",
-            "error": "Compilation failed: reference to non-existent subpattern at offset 14"
-        },
-        {
-            "pattern": "(?=[;}])|^(?!\\1\\s+\\S|\\s*(?:$|\\{-[^@]|--+(?![[\\p{S}\\p{P}]&&[^]\"'(),;\\[_`{}]]).*$))",
-            "error": "Compilation failed: reference to non-existent subpattern at offset 14"
-        },
-        {
-            "pattern": "(?=[;}])|^(?!\\1\\s+\\S|\\s*(?:$|\\{-[^@]|--+(?![[\\p{S}\\p{P}]&&[^]\"'(),;\\[_`{}]]).*$))",
-            "error": "Compilation failed: reference to non-existent subpattern at offset 14"
-        },
-        {
-            "pattern": "(?=^(?!\\1--+(?![[\\p{S}\\p{P}]&&[^]\"'(),;\\[_`{}]])))",
-            "error": "Compilation failed: reference to non-existent subpattern at offset 8"
-        },
-        {
-            "pattern": "(?=[;}])|^(?!\\1\\s+\\S|\\s*(?:$|\\{-[^@]|--+(?![[\\p{S}\\p{P}]&&[^]\"'(),;\\[_`{}]]).*$))",
-            "error": "Compilation failed: reference to non-existent subpattern at offset 14"
-        },
-        {
-            "pattern": "(?=[;}])|^(?!\\1\\s+\\S|\\s*(?:$|\\{-[^@]|--+(?![[\\p{S}\\p{P}]&&[^]\"'(),;\\[_`{}]]).*$))",
-            "error": "Compilation failed: reference to non-existent subpattern at offset 14"
-        },
-        {
-            "pattern": "(?=\\b(?<!'')deriving\\b(?!'))|(?=[;}])|^(?!\\1\\s+\\S|\\s*(?:$|\\{-[^@]|--+(?![[\\p{S}\\p{P}]&&[^]\"'(),;\\[_`{}]]).*$))",
-            "error": "Compilation failed: reference to non-existent subpattern at offset 43"
-        },
-        {
-            "pattern": "\\3]",
-            "error": "Compilation failed: reference to non-existent subpattern at offset 1"
-        },
-        {
-            "pattern": "\\3]",
-            "error": "Compilation failed: reference to non-existent subpattern at offset 1"
-        },
-        {
-            "pattern": "\\5]",
-            "error": "Compilation failed: reference to non-existent subpattern at offset 1"
-        },
-        {
-            "pattern": "(?=[;}])|^(?!\\1\\s+\\S|\\s*(?:$|\\{-[^@]|--+(?![[\\p{S}\\p{P}]&&[^]\"'(),;\\[_`{}]]).*$))",
-            "error": "Compilation failed: reference to non-existent subpattern at offset 14"
-        }
-    ]
+    "compatible": 192,
+    "incompatible": []
 }

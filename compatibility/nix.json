@@ -1,31 +1,6 @@
 {
     "name": "nix",
     "total": 160,
-    "compatible": 154,
-    "incompatible": [
-        {
-            "pattern": "/\\*([^*]|\\*[^/])*",
-            "error": "Unknown modifier '\\'"
-        },
-        {
-            "pattern": "\\*/",
-            "error": "Unknown modifier '/'"
-        },
-        {
-            "pattern": "(\\bor\\b|\\.|\\|>|<\\||==|!=?|<=?|>=?|&&|\\|\\||->|//|\\?|\\+\\+|[-*]|/(?=([^*]|$))|\\+)",
-            "error": "Unknown modifier '/'"
-        },
-        {
-            "pattern": "(?=(\\b[A-Z_a-z][-'0-9A-Z_a-z]*\\s*[:@]|\\{[^}]*}\\s*:|\\{[^\"#'/=}]*[,?]))",
-            "error": "Unknown modifier '='"
-        },
-        {
-            "pattern": "(~?[-+.0-9A-Z_a-z]*(/[-+.0-9A-Z_a-z]+)+)",
-            "error": "Unknown modifier '['"
-        },
-        {
-            "pattern": "(<[-+.0-9A-Z_a-z]+(/[-+.0-9A-Z_a-z]+)*>)",
-            "error": "Unknown modifier '['"
-        }
-    ]
+    "compatible": 160,
+    "incompatible": []
 }

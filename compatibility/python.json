@@ -1,16 +1,8 @@
 {
     "name": "python",
     "total": 352,
-    "compatible": 325,
+    "compatible": 341,
     "incompatible": [
-        {
-            "pattern": "<<=|>>=|//=|\\*\\*=|\\+=|-=|/=|@=|\\*=|%=|~=|\\^=|&=|\\|=|=(?!=)",
-            "error": "Unknown modifier '/'"
-        },
-        {
-            "pattern": "(\\2)",
-            "error": "Compilation failed: reference to non-existent subpattern at offset 2"
-        },
         {
             "pattern": "((?<=\\1)|^)(?!\\s*[Rr]?('''|\"\"\"|[\"']))",
             "error": "Compilation failed: length of lookbehind assertion is not limited at offset 1"
@@ -32,40 +24,8 @@
             "error": "Compilation failed: unknown property after \\P or \\p at offset 27"
         },
         {
-            "pattern": "(\\3)",
-            "error": "Compilation failed: reference to non-existent subpattern at offset 2"
-        },
-        {
-            "pattern": "(\\3)|((?<!\\\\)\\n)",
-            "error": "Compilation failed: reference to non-existent subpattern at offset 2"
-        },
-        {
-            "pattern": "(\\3)",
-            "error": "Compilation failed: reference to non-existent subpattern at offset 2"
-        },
-        {
-            "pattern": "(\\3)|((?<!\\\\)\\n)",
-            "error": "Compilation failed: reference to non-existent subpattern at offset 2"
-        },
-        {
-            "pattern": "(\\2)",
-            "error": "Compilation failed: reference to non-existent subpattern at offset 2"
-        },
-        {
             "pattern": "\\s*(?:\\b(async)\\s+)?\\b(def)\\s+(?=[_[:alpha:]]\\p{word}*\\s*\\()",
             "error": "Compilation failed: unknown property after \\P or \\p at offset 53"
-        },
-        {
-            "pattern": "/",
-            "error": "Unknown modifier '/'"
-        },
-        {
-            "pattern": "\\b(?<!\\.)(?:(and|or|not|in|is)|(for|if|else|await|yield(?:\\s+from)?))(?!\\s*:)\\b|(<<|>>|[\\&^|~])|(\\*\\*|[-%*+]|//|[/@])|(!=|==|>=|<=|[<>])|(:=)",
-            "error": "Unknown modifier '/'"
-        },
-        {
-            "pattern": "/",
-            "error": "Unknown modifier '/'"
         },
         {
             "pattern": "(\\()(\\?P=\\w+(?:\\s+\\p{alnum}+)?)(\\))",
@@ -86,30 +46,6 @@
         {
             "pattern": "(\\()(\\?P<\\w+(?:\\s+\\p{alnum}+)?>)",
             "error": "Compilation failed: unknown property after \\P or \\p at offset 27"
-        },
-        {
-            "pattern": "(\\2)",
-            "error": "Compilation failed: reference to non-existent subpattern at offset 2"
-        },
-        {
-            "pattern": "(\\3)",
-            "error": "Compilation failed: reference to non-existent subpattern at offset 2"
-        },
-        {
-            "pattern": "(\\3)|((?<!\\\\)\\n)",
-            "error": "Compilation failed: reference to non-existent subpattern at offset 2"
-        },
-        {
-            "pattern": "(\\2)",
-            "error": "Compilation failed: reference to non-existent subpattern at offset 2"
-        },
-        {
-            "pattern": "(\\4)",
-            "error": "Compilation failed: reference to non-existent subpattern at offset 2"
-        },
-        {
-            "pattern": "(\\4)|((?<!\\\\)\\n)",
-            "error": "Compilation failed: reference to non-existent subpattern at offset 2"
         }
     ]
 }

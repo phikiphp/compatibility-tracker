@@ -1,43 +1,6 @@
 {
     "name": "apl",
     "total": 191,
-    "compatible": 182,
-    "incompatible": [
-        {
-            "pattern": "(?<=\\s)(\\2>)",
-            "error": "Compilation failed: reference to non-existent subpattern at offset 9"
-        },
-        {
-            "pattern": "^.*?\\2.*?$",
-            "error": "Compilation failed: reference to non-existent subpattern at offset 5"
-        },
-        {
-            "pattern": "^.*?\\2.*?$",
-            "error": "Compilation failed: reference to non-existent subpattern at offset 5"
-        },
-        {
-            "pattern": "^.*?\\2.*?$",
-            "error": "Compilation failed: reference to non-existent subpattern at offset 5"
-        },
-        {
-            "pattern": "^.*?\\2.*?$",
-            "error": "Compilation failed: reference to non-existent subpattern at offset 5"
-        },
-        {
-            "pattern": "^.*?\\2.*?$",
-            "error": "Compilation failed: reference to non-existent subpattern at offset 5"
-        },
-        {
-            "pattern": "^.*?\\2.*?$",
-            "error": "Compilation failed: reference to non-existent subpattern at offset 5"
-        },
-        {
-            "pattern": "^.*?\\2.*?$",
-            "error": "Compilation failed: reference to non-existent subpattern at offset 5"
-        },
-        {
-            "pattern": "/",
-            "error": "Unknown modifier '/'"
-        }
-    ]
+    "compatible": 191,
+    "incompatible": []
 }

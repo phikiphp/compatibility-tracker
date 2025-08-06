@@ -1,35 +1,6 @@
 {
     "name": "sass",
     "total": 78,
-    "compatible": 71,
-    "incompatible": [
-        {
-            "pattern": "^(\\s*)(/\\*)",
-            "error": "Unknown modifier '\\'"
-        },
-        {
-            "pattern": "(\\*/)|^(?!\\s\\1)",
-            "error": "Unknown modifier ')'"
-        },
-        {
-            "pattern": "^[\\t ]*/?//[\\t ]*[IRS][\\t ]*$",
-            "error": "Unknown modifier '?'"
-        },
-        {
-            "pattern": "^[\\t ]*//[\\t ]*(import)[\\t ]*(css-variables)[\\t ]*(from)",
-            "error": "Unknown modifier '/'"
-        },
-        {
-            "pattern": "//",
-            "error": "Unknown modifier '/'"
-        },
-        {
-            "pattern": "[\"']?\\.{0,2}[/\\w]+[\"']?",
-            "error": "Unknown modifier '\\'"
-        },
-        {
-            "pattern": "\\+|\\s-\\s|\\s-(?=\\$)|(?<=\\()-(?=\\$)|\\s-(?=\\()|[!%*/<=>~]",
-            "error": "Unknown modifier '<'"
-        }
-    ]
+    "compatible": 78,
+    "incompatible": []
 }
