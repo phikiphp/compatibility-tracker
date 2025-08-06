@@ -1,6 +1,15 @@
 {
     "name": "handlebars",
     "total": 82,
-    "compatible": 82,
-    "incompatible": []
+    "compatible": 80,
+    "incompatible": [
+        {
+            "pattern": "(?<=[\"']?)",
+            "error": "Compilation failed: lookbehind assertion is not fixed length at offset 0"
+        },
+        {
+            "pattern": "(?<=[\"']?)",
+            "error": "Compilation failed: lookbehind assertion is not fixed length at offset 0"
+        }
+    ]
 }

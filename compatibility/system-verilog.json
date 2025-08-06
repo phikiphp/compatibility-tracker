@@ -1,11 +1,15 @@
 {
     "name": "system-verilog",
     "total": 112,
-    "compatible": 111,
+    "compatible": 110,
     "incompatible": [
         {
+            "pattern": "(?<!@[\\t\\n\\r ]?)\\(\\*",
+            "error": "Compilation failed: lookbehind assertion is not fixed length at offset 0"
+        },
+        {
             "pattern": ",?[\\t\\n\\r ]*(?:\\b(output|input|inout|ref)\\b[\\t\\n\\r ]*)?(?:\\b(localparam|parameter|var|supply[01]|tri|triand|trior|trireg|tri[01]|uwire|wire|wand|wor)\\b[\\t\\n\\r ]*)?(?:\\b([A-Z_a-z][$0-9A-Z_a-z]*)(::))?(?:([A-Z_a-z][$0-9A-Z_a-z]*)\\b[\\t\\n\\r ]*)?(?:\\b((?:|un)signed)\\b[\\t\\n\\r ]*)?(?:(\\[[]\\t\\n\\r $%'-+\\--:A-\\[_-z]*])[\\t\\n\\r ]*)?(?<!(?<!#)[-!%\\&(*+/:<-?^|~][\\t\\n\\r ]*)\\b([A-Z_a-z][$0-9A-Z_a-z]*)\\b[\\t\\n\\r ]*(\\[[]\\t\\n\\r $%'-+\\--:A-\\[_-z]*])?[\\t\\n\\r ]*(?=[),/;=]|$)",
-            "error": "Compilation failed: length of lookbehind assertion is not limited at offset 322"
+            "error": "Compilation failed: lookbehind assertion is not fixed length at offset 322"
         }
     ]
 }

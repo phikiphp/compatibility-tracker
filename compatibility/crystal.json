@@ -1,6 +1,15 @@
 {
     "name": "crystal",
     "total": 193,
-    "compatible": 193,
-    "incompatible": []
+    "compatible": 191,
+    "incompatible": [
+        {
+            "pattern": "(?:^|(?<=[\\&(,:;=>?\\[|~]|[;\\s]if\\s|[;\\s]elsif\\s|[;\\s]while\\s|[;\\s]unless\\s|[;\\s]when\\s|[;\\s]assert_match\\s|[;\\s]or\\s|[;\\s]and\\s|[;\\s]not\\s|[.\\s]index\\s|[.\\s]scan\\s|[.\\s]sub\\s|[.\\s]sub!\\s|[.\\s]gsub\\s|[.\\s]gsub!\\s|[.\\s]match\\s)|(?<=^(?:when|if|elsif|while|unless)\\s))\\s*((/))(?![*+?{}])",
+            "error": "Compilation failed: lookbehind assertion is not fixed length at offset 226"
+        },
+        {
+            "pattern": "(?<=\\{\\s??|[^0-9A-Z_a-z]do|^do|[^0-9A-Z_a-z]do\\s|^do\\s)(\\|)",
+            "error": "Compilation failed: lookbehind assertion is not fixed length at offset 0"
+        }
+    ]
 }

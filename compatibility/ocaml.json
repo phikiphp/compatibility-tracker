@@ -1,8 +1,24 @@
 {
     "name": "ocaml",
     "total": 350,
-    "compatible": 307,
+    "compatible": 277,
     "incompatible": [
+        {
+            "pattern": "(?<=(?:[^-!#-\\&*+./:<-@^|~]|^)%)(?![-!#-\\&*+./:<-@^|~])",
+            "error": "Compilation failed: lookbehind assertion is not fixed length at offset 0"
+        },
+        {
+            "pattern": "(?<=(?:[^-!#-\\&*+./:<-@^|~]|^):)(?![-!#-\\&*+./:<-@^|~])",
+            "error": "Compilation failed: lookbehind assertion is not fixed length at offset 0"
+        },
+        {
+            "pattern": "(?<=(?:[^-!#-\\&*+./:<-@^|~]|^)\\?)(?![-!#-\\&*+./:<-@^|~])",
+            "error": "Compilation failed: lookbehind assertion is not fixed length at offset 0"
+        },
+        {
+            "pattern": "(?<=(?:[^-!#-\\&*+./:<-@^|~]|^)\\?)(?![-!#-\\&*+./:<-@^|~])",
+            "error": "Compilation failed: lookbehind assertion is not fixed length at offset 0"
+        },
         {
             "pattern": "(?<=(?:\\P{word}|^)when)(?!\\p{word})",
             "error": "Compilation failed: unknown property after \\P or \\p at offset 15"
@@ -16,12 +32,28 @@
             "error": "Compilation failed: unknown property after \\P or \\p at offset 15"
         },
         {
+            "pattern": "(?<=(?:[^-!#-\\&*+./:<-@^|~]|^):)(?![-!#-\\&*+./:<-@^|~])",
+            "error": "Compilation failed: lookbehind assertion is not fixed length at offset 0"
+        },
+        {
+            "pattern": "(?<=(?:[^-!#-\\&*+./:<-@^|~]|^)=)(?![-!#-\\&*+./:<-@^|~])",
+            "error": "Compilation failed: lookbehind assertion is not fixed length at offset 0"
+        },
+        {
             "pattern": "(?<=(?:\\P{word}|^)(?:and|class|type))(?!\\p{word})",
             "error": "Compilation failed: unknown property after \\P or \\p at offset 15"
         },
         {
             "pattern": "(?<=(?:\\P{word}|^)(?:and|class|type))(?!\\p{word})",
             "error": "Compilation failed: unknown property after \\P or \\p at offset 15"
+        },
+        {
+            "pattern": "(?<=(?:[^-!#-\\&*+./:<-@^|~]|^):)(?![-!#-\\&*+./:<-@^|~])",
+            "error": "Compilation failed: lookbehind assertion is not fixed length at offset 0"
+        },
+        {
+            "pattern": "(?<=(?:[^-!#-\\&*+./:<-@^|~]|^)=)(?![-!#-\\&*+./:<-@^|~])",
+            "error": "Compilation failed: lookbehind assertion is not fixed length at offset 0"
         },
         {
             "pattern": "(?<=(?:\\P{word}|^)exception)(?!\\p{word})|(?<=[^-!#-\\&*+./:<-@^|~]\\+=|^\\+=|[^-!#-\\&*+./:<-@^|~]=|^=|[^-!#-\\&*+./:<-@^|~]\\||^\\|)(?![-!#-\\&*+./:<-@^|~])",
@@ -36,8 +68,20 @@
             "error": "Compilation failed: unknown property after \\P or \\p at offset 15"
         },
         {
+            "pattern": "(?<=(?:[^-!#-\\&*+./:<-@^|~]|^)=)(?![-!#-\\&*+./:<-@^|~])",
+            "error": "Compilation failed: lookbehind assertion is not fixed length at offset 0"
+        },
+        {
             "pattern": "(?<=(?:\\P{word}|^)and)(?!\\p{word})|(?=\\p{upper})",
             "error": "Compilation failed: unknown property after \\P or \\p at offset 15"
+        },
+        {
+            "pattern": "(?<=(?:[^-!#-\\&*+./:<-@^|~]|^):)(?![-!#-\\&*+./:<-@^|~])",
+            "error": "Compilation failed: lookbehind assertion is not fixed length at offset 0"
+        },
+        {
+            "pattern": "(?<=(?:[^-!#-\\&*+./:<-@^|~]:|^:|[^-!#-\\&*+./:<-@^|~]|^)=)(?![-!#-\\&*+./:<-@^|~])",
+            "error": "Compilation failed: lookbehind assertion is not fixed length at offset 0"
         },
         {
             "pattern": "(?<=(?:[^-!#-\\&*+./:<-@^|~]|^)!)(?![-!#-\\&*+./:<-@^|~])|(?<=(?:\\P{word}|^)(?:and|external|let|method|val))(?!\\p{word})",
@@ -60,12 +104,32 @@
             "error": "Compilation failed: unknown property after \\P or \\p at offset 15"
         },
         {
+            "pattern": "(?<=(?:[^-!#-\\&*+./:<-@^|~]|^):)(?![-!#-\\&*+./:<-@^|~])",
+            "error": "Compilation failed: lookbehind assertion is not fixed length at offset 0"
+        },
+        {
+            "pattern": "(?<=(?:[^-!#-\\&*+./:<-@^|~]|^):)(?![-!#-\\&*+./:<-@^|~])",
+            "error": "Compilation failed: lookbehind assertion is not fixed length at offset 0"
+        },
+        {
             "pattern": "(?<=(?:\\P{word}|^)type)(?!\\p{word})",
             "error": "Compilation failed: unknown property after \\P or \\p at offset 15"
         },
         {
+            "pattern": "(?<=(?:[^-!#-\\&*+./:<-@^|~]|^)=)(?![-!#-\\&*+./:<-@^|~])",
+            "error": "Compilation failed: lookbehind assertion is not fixed length at offset 0"
+        },
+        {
+            "pattern": "(?<=(?:[^-!#-\\&*+./:<-@^|~]|^)=)(?![-!#-\\&*+./:<-@^|~])",
+            "error": "Compilation failed: lookbehind assertion is not fixed length at offset 0"
+        },
+        {
             "pattern": "(?<=(?:\\P{word}|^)(?:and|type))(?!\\p{word})",
             "error": "Compilation failed: unknown property after \\P or \\p at offset 15"
+        },
+        {
+            "pattern": "(?<=(?:[^-!#-\\&*+./:<-@^|~]\\+|^\\+|[^-!#-\\&*+./:<-@^|~]|^)=)(?![-!#-\\&*+./:<-@^|~])",
+            "error": "Compilation failed: lookbehind assertion is not fixed length at offset 0"
         },
         {
             "pattern": "(?<=(?:\\P{word}|^)class)(?!\\p{word})",
@@ -100,8 +164,28 @@
             "error": "Compilation failed: unknown property after \\P or \\p at offset 15"
         },
         {
+            "pattern": "(?<=(?:[^-!#-\\&*+./:<-@^|~]|^):)(?![-!#-\\&*+./:<-@^|~])",
+            "error": "Compilation failed: lookbehind assertion is not fixed length at offset 0"
+        },
+        {
+            "pattern": "(?<=(?:[^-!#-\\&*+./:<-@^|~]|^)=)(?![-!#-\\&*+./:<-@^|~])",
+            "error": "Compilation failed: lookbehind assertion is not fixed length at offset 0"
+        },
+        {
+            "pattern": "(?<=(?:[^-!#-\\&*+./:<-@^|~]|^)\\.)(?![-!#-\\&*+./:<-@^|~])|(?<![-!#-\\&*+./:<-@^|~])\\.(?![-!#-\\&*+./:<-@^|~])",
+            "error": "Compilation failed: lookbehind assertion is not fixed length at offset 0"
+        },
+        {
             "pattern": "(?<=(?:\\P{word}|^)with)(?!\\p{word})",
             "error": "Compilation failed: unknown property after \\P or \\p at offset 15"
+        },
+        {
+            "pattern": "(?<=(?:[^-!#-\\&*+./:<-@^|~]|^):)(?![-!#-\\&*+./:<-@^|~])",
+            "error": "Compilation failed: lookbehind assertion is not fixed length at offset 0"
+        },
+        {
+            "pattern": "(?<=(?:[^-!#-\\&*+./:<-@^|~]|^)=)(?![-!#-\\&*+./:<-@^|~])",
+            "error": "Compilation failed: lookbehind assertion is not fixed length at offset 0"
         },
         {
             "pattern": "(?<=(?:\\P{word}|^)with)(?!\\p{word})",
@@ -110,6 +194,14 @@
         {
             "pattern": "(?<=(?:\\P{word}|^)functor)(?!\\p{word})",
             "error": "Compilation failed: unknown property after \\P or \\p at offset 15"
+        },
+        {
+            "pattern": "(?<=(?:[^-!#-\\&*+./:<-@^|~]|^):)(?![-!#-\\&*+./:<-@^|~])",
+            "error": "Compilation failed: lookbehind assertion is not fixed length at offset 0"
+        },
+        {
+            "pattern": "(?<=(?:[^-!#-\\&*+./:<-@^|~]|^)->)(?![-!#-\\&*+./:<-@^|~])",
+            "error": "Compilation failed: lookbehind assertion is not fixed length at offset 0"
         },
         {
             "pattern": "\\(|(?<=[^-!#-\\&*+./:<-@^|~]:|^:|[^-!#-\\&*+./:<-@^|~]->|^->)(?![-!#-\\&*+./:<-@^|~])|(?<=(?:\\P{word}|^)(?:include|open))(?!\\p{word})",
@@ -136,8 +228,20 @@
             "error": "Compilation failed: unknown property after \\P or \\p at offset 15"
         },
         {
+            "pattern": "(?<=(?:[^-!#-\\&*+./:<-@^|~]|^):)(?![-!#-\\&*+./:<-@^|~])",
+            "error": "Compilation failed: lookbehind assertion is not fixed length at offset 0"
+        },
+        {
+            "pattern": "(?<=(?:[^-!#-\\&*+./:<-@^|~]|^)->)(?![-!#-\\&*+./:<-@^|~])",
+            "error": "Compilation failed: lookbehind assertion is not fixed length at offset 0"
+        },
+        {
             "pattern": "(?<=(?:\\P{word}|^)for)(?!\\p{word})",
             "error": "Compilation failed: unknown property after \\P or \\p at offset 15"
+        },
+        {
+            "pattern": "(?<=(?:[^-!#-\\&*+./:<-@^|~]|^)=)(?![-!#-\\&*+./:<-@^|~])",
+            "error": "Compilation failed: lookbehind assertion is not fixed length at offset 0"
         },
         {
             "pattern": "(?<=(?:\\P{word}|^)to)(?!\\p{word})",
@@ -160,6 +264,10 @@
             "error": "Compilation failed: unknown property after \\P or \\p at offset 15"
         },
         {
+            "pattern": "(?<=(?:[^-!#-\\&*+./:<-@\\[^|~]|^)\\|)(?![-!#-\\&*+./:<-@^|~])|(?<![-!#-\\&*+./:<-@^|~])\\|(?![-!#-\\&*+./:<-@^|~])",
+            "error": "Compilation failed: lookbehind assertion is not fixed length at offset 0"
+        },
+        {
             "pattern": "(?<=(?:\\P{word}|^)while)(?!\\p{word})",
             "error": "Compilation failed: unknown property after \\P or \\p at offset 15"
         },
@@ -172,8 +280,20 @@
             "error": "Compilation failed: unknown property after \\P or \\p at offset 490"
         },
         {
+            "pattern": "(?<=(?:[^-!#-\\&*+./:<-@^|~]|^):)(?![-!#-\\&*+./:<-@^|~])",
+            "error": "Compilation failed: lookbehind assertion is not fixed length at offset 0"
+        },
+        {
             "pattern": "(?<=(?:\\P{word}|^)with)(?!\\p{word})",
             "error": "Compilation failed: unknown property after \\P or \\p at offset 15"
+        },
+        {
+            "pattern": "(?<=(?:[^-!#-\\&*+./:<-@^|~]|^):)(?![-!#-\\&*+./:<-@^|~])",
+            "error": "Compilation failed: lookbehind assertion is not fixed length at offset 0"
+        },
+        {
+            "pattern": "(?<=(?:[^-!#-\\&*+./:<-@^|~]|^)=)(?![-!#-\\&*+./:<-@^|~])",
+            "error": "Compilation failed: lookbehind assertion is not fixed length at offset 0"
         }
     ]
 }

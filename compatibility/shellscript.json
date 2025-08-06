@@ -1,6 +1,11 @@
 {
     "name": "shellscript",
     "total": 195,
-    "compatible": 195,
-    "incompatible": []
+    "compatible": 194,
+    "incompatible": [
+        {
+            "pattern": "(?!^[\\t ]*+$)(?:(?<=(?:^until| until|\\tuntil|^while| while|\\twhile|^elif| elif|\\telif|^else| else|\\telse|^then| then|\\tthen|^do| do|\\tdo|^if| if|\\tif) )|(?<=^|[!\\&(;`{|]))[\\t ]*+(?!nocorrect\\W|nocorrect\\$|function\\W|function\\$|foreach\\W|foreach\\$|repeat\\W|repeat\\$|logout\\W|logout\\$|coproc\\W|coproc\\$|select\\W|select\\$|while\\W|while\\$|pushd\\W|pushd\\$|until\\W|until\\$|case\\W|case\\$|done\\W|done\\$|elif\\W|elif\\$|else\\W|else\\$|esac\\W|esac\\$|popd\\W|popd\\$|then\\W|then\\$|time\\W|time\\$|for\\W|for\\$|end\\W|end\\$|fi\\W|fi\\$|do\\W|do\\$|in\\W|in\\$|if\\W|if\\$)",
+            "error": "Compilation failed: lookbehind assertion is not fixed length at offset 16"
+        }
+    ]
 }

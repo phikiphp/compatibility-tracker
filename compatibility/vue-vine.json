@@ -1,6 +1,19 @@
 {
     "name": "vue-vine",
     "total": 576,
-    "compatible": 576,
-    "incompatible": []
+    "compatible": 573,
+    "incompatible": [
+        {
+            "pattern": "(?<!(?:^|[^$._[:alnum:]])import)(?=;|$|^)",
+            "error": "Compilation failed: lookbehind assertion is not fixed length at offset 0"
+        },
+        {
+            "pattern": "(?<=(?:^|[^$._[:alnum:]])import)(?!\\s*[\"'])",
+            "error": "Compilation failed: lookbehind assertion is not fixed length at offset 0"
+        },
+        {
+            "pattern": "(?!(?<![$_[:alnum:]])(?:(?<=\\.\\.\\.)|(?<!\\.))(?:\\b(export)\\s+)?(?:\\b(declare)\\s+)?\\b(const(?!\\s+enum\\b))(?![$_[:alnum:]])(?:(?=\\.\\.\\.)|(?!\\.)))((?=^|[;}]|((?<![$_[:alnum:]])(?:(?<=\\.\\.\\.)|(?<!\\.))(of|in)\\s+)|;|^\\s*$|^\\s*(?:abstract|async|break|case|catch|class|const|continue|declare|do|else|enum|export|finally|function|for|goto|if|import|interface|let|module|namespace|switch|return|throw|try|type|var|while)\\b)|((?<!(?:^|[^$._[:alnum:]])const)(?=\\s*$)))",
+            "error": "Compilation failed: lookbehind assertion is not fixed length at offset 414"
+        }
+    ]
 }

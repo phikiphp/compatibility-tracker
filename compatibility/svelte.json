@@ -1,35 +1,43 @@
 {
     "name": "svelte",
     "total": 161,
-    "compatible": 154,
+    "compatible": 152,
     "incompatible": [
         {
+            "pattern": "(?<=(use|transition|in|out|animate):).*$",
+            "error": "Compilation failed: lookbehind assertion is not fixed length at offset 0"
+        },
+        {
+            "pattern": "(?<=(let|class|style):).*$",
+            "error": "Compilation failed: lookbehind assertion is not fixed length at offset 0"
+        },
+        {
             "pattern": "(?<=(if|key|then|catch|html|render).*?)\\G",
-            "error": "Compilation failed: length of lookbehind assertion is not limited at offset 0"
+            "error": "Compilation failed: lookbehind assertion is not fixed length at offset 0"
         },
         {
             "pattern": "(?<=snippet.*?)\\G",
-            "error": "Compilation failed: length of lookbehind assertion is not limited at offset 0"
+            "error": "Compilation failed: lookbehind assertion is not fixed length at offset 0"
         },
         {
             "pattern": "(?<=>\\s*\\()",
-            "error": "Compilation failed: length of lookbehind assertion is not limited at offset 0"
+            "error": "Compilation failed: lookbehind assertion is not fixed length at offset 0"
         },
         {
             "pattern": "(?<=const.*?)\\G",
-            "error": "Compilation failed: length of lookbehind assertion is not limited at offset 0"
+            "error": "Compilation failed: lookbehind assertion is not fixed length at offset 0"
         },
         {
             "pattern": "(?<=each.*?)\\G",
-            "error": "Compilation failed: length of lookbehind assertion is not limited at offset 0"
+            "error": "Compilation failed: lookbehind assertion is not fixed length at offset 0"
         },
         {
             "pattern": "(?<=await.*?)\\G",
-            "error": "Compilation failed: length of lookbehind assertion is not limited at offset 0"
+            "error": "Compilation failed: lookbehind assertion is not fixed length at offset 0"
         },
         {
             "pattern": "(?<=debug.*?)\\G",
-            "error": "Compilation failed: length of lookbehind assertion is not limited at offset 0"
+            "error": "Compilation failed: lookbehind assertion is not fixed length at offset 0"
         }
     ]
 }

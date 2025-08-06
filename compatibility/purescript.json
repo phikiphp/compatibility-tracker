@@ -5,7 +5,7 @@
     "incompatible": [
         {
             "pattern": "(?<=([=|])\\s*)([\\p{Lu}\\p{Lt}]['_\\p{Ll}\\p{Lu}\\p{Lt}\\d]*)",
-            "error": "Compilation failed: length of lookbehind assertion is not limited at offset 0"
+            "error": "Compilation failed: lookbehind assertion is not fixed length at offset 0"
         },
         {
             "pattern": "\\((?<classConstraints>([\\p{Lu}\\p{Lt}]['_\\p{Ll}\\p{Lu}\\p{Lt}\\d]*(?:\\.[\\p{Lu}\\p{Lt}]['_\\p{Ll}\\p{Lu}\\p{Lt}\\d]*)*)\\s+(?<classConstraint>(?:[\\p{Lu}\\p{Lt}]['_\\p{Ll}\\p{Lu}\\p{Lt}\\d]*(?:\\.[\\p{Lu}\\p{Lt}]['_\\p{Ll}\\p{Lu}\\p{Lt}\\d]*)*|(?:[\\p{Lu}\\p{Lt}]['_\\p{Ll}\\p{Lu}\\p{Lt}\\d]*(?:\\.[\\p{Lu}\\p{Lt}]['_\\p{Ll}\\p{Lu}\\p{Lt}\\d]*)*\\.)?[_\\p{Ll}]['_\\p{Ll}\\p{Lu}\\p{Lt}\\d]*)(?:\\s*\\s+\\s*(?:[\\p{Lu}\\p{Lt}]['_\\p{Ll}\\p{Lu}\\p{Lt}\\d]*(?:\\.[\\p{Lu}\\p{Lt}]['_\\p{Ll}\\p{Lu}\\p{Lt}\\d]*)*|(?:[\\p{Lu}\\p{Lt}]['_\\p{Ll}\\p{Lu}\\p{Lt}\\d]*(?:\\.[\\p{Lu}\\p{Lt}]['_\\p{Ll}\\p{Lu}\\p{Lt}\\d]*)*\\.)?[_\\p{Ll}]['_\\p{Ll}\\p{Lu}\\p{Lt}\\d]*))*)(?:\\s*,\\s*([\\p{Lu}\\p{Lt}]['_\\p{Ll}\\p{Lu}\\p{Lt}\\d]*(?:\\.[\\p{Lu}\\p{Lt}]['_\\p{Ll}\\p{Lu}\\p{Lt}\\d]*)*)\\s+(?<classConstraint>(?:[\\p{Lu}\\p{Lt}]['_\\p{Ll}\\p{Lu}\\p{Lt}\\d]*(?:\\.[\\p{Lu}\\p{Lt}]['_\\p{Ll}\\p{Lu}\\p{Lt}\\d]*)*|(?:[\\p{Lu}\\p{Lt}]['_\\p{Ll}\\p{Lu}\\p{Lt}\\d]*(?:\\.[\\p{Lu}\\p{Lt}]['_\\p{Ll}\\p{Lu}\\p{Lt}\\d]*)*\\.)?[_\\p{Ll}]['_\\p{Ll}\\p{Lu}\\p{Lt}\\d]*)(?:\\s*\\s+\\s*(?:[\\p{Lu}\\p{Lt}]['_\\p{Ll}\\p{Lu}\\p{Lt}\\d]*(?:\\.[\\p{Lu}\\p{Lt}]['_\\p{Ll}\\p{Lu}\\p{Lt}\\d]*)*|(?:[\\p{Lu}\\p{Lt}]['_\\p{Ll}\\p{Lu}\\p{Lt}\\d]*(?:\\.[\\p{Lu}\\p{Lt}]['_\\p{Ll}\\p{Lu}\\p{Lt}\\d]*)*\\.)?[_\\p{Ll}]['_\\p{Ll}\\p{Lu}\\p{Lt}\\d]*))*))*)\\)\\s*(=>|<=|[⇐⇒])",

@@ -1,6 +1,11 @@
 {
     "name": "latex",
     "total": 448,
-    "compatible": 448,
-    "incompatible": []
+    "compatible": 447,
+    "incompatible": [
+        {
+            "pattern": "(?<=\\\\(?:[@\\w]|[@\\w]{2}|[@\\w]{3}|[@\\w]{4}|[@\\w]{5}|[@\\w]{6}))\\s",
+            "error": "Compilation failed: lookbehind assertion is not fixed length at offset 0"
+        }
+    ]
 }

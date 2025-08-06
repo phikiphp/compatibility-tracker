@@ -5,23 +5,23 @@
     "incompatible": [
         {
             "pattern": "[*+/]|(?<![_[:alpha:]][-_[:alnum:]]*)-(?![:almnu]_-]*[_[:alpha:]])",
-            "error": "Compilation failed: length of lookbehind assertion is not limited at offset 7"
+            "error": "Compilation failed: lookbehind assertion is not fixed length at offset 7"
         },
         {
             "pattern": "(?<=\\bshow\\s*)\\b[_[:alpha:]][-_[:alnum:]]*(?=\\s*[.:])",
-            "error": "Compilation failed: length of lookbehind assertion is not limited at offset 0"
+            "error": "Compilation failed: lookbehind assertion is not fixed length at offset 0"
         },
         {
             "pattern": "(?<=\\b[_[:alpha:]][-_[:alnum:]]*!?)\\(",
-            "error": "Compilation failed: length of lookbehind assertion is not limited at offset 0"
+            "error": "Compilation failed: lookbehind assertion is not fixed length at offset 0"
         },
         {
             "pattern": "((#)if|(?<=([]}])\\s*)else)\\b",
-            "error": "Compilation failed: length of lookbehind assertion is not limited at offset 7"
+            "error": "Compilation failed: lookbehind assertion is not fixed length at offset 7"
         },
         {
             "pattern": "(?<=#[_[:alpha:]][-_[:alnum:]]*!?)\\(",
-            "error": "Compilation failed: length of lookbehind assertion is not limited at offset 0"
+            "error": "Compilation failed: lookbehind assertion is not fixed length at offset 0"
         }
     ]
 }

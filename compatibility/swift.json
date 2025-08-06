@@ -1,8 +1,12 @@
 {
     "name": "swift",
     "total": 439,
-    "compatible": 437,
+    "compatible": 436,
     "incompatible": [
+        {
+            "pattern": "(?<=(?:^|\\W)(?:Process\\.|CommandLine\\.))(arguments|argc|unsafeArgv)",
+            "error": "Compilation failed: lookbehind assertion is not fixed length at offset 0"
+        },
         {
             "pattern": "(\\()(?<keyw>\\?C)(?:(?<num>\\d+)|`(?<name>(?:[^`]|``)*)`|'(?<name>(?:[^']|'')*)'|\"(?<name>(?:[^\"]|\"\")*)\"|\\^(?<name>(?:[^^]|\\^\\^)*)\\^|%(?<name>(?:[^%]|%%)*)%|#(?<name>(?:[^#]|##)*)#|\\$(?<name>(?:[^$]|\\$\\$)*)\\$|\\{(?<name>(?:[^}]|}})*)})?(\\))|(\\()(?<keyw>\\*)(?<name>(?!\\d)\\w+)(?:\\[(?<tag>(?!\\d)\\w+)])?(?:\\{[^,}]+(?:,[^,}]+)*})?(\\))|(\\()(?<keyw>\\?)(?>(\\{(?:\\g<20>|(?!\\{).*?)}))(?:\\[(?<tag>(?!\\d)\\w+)])?(?<keyw>[<>X]?)(\\))",
             "error": "Compilation failed: two named subpatterns have the same name (PCRE2_DUPNAMES not set) at offset 64"

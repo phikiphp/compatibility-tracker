@@ -1,6 +1,19 @@
 {
     "name": "twig",
     "total": 110,
-    "compatible": 110,
-    "incompatible": []
+    "compatible": 107,
+    "incompatible": [
+        {
+            "pattern": "(?i)(?<=\\{%\\s(?:|include)js\\s%})",
+            "error": "Compilation failed: lookbehind assertion is not fixed length at offset 4"
+        },
+        {
+            "pattern": "(?i)(?<=\\{%\\s(?:|include|includehires)css\\s%})",
+            "error": "Compilation failed: lookbehind assertion is not fixed length at offset 4"
+        },
+        {
+            "pattern": "(?i)(?<=\\{%\\s(?:|include|includehires)scss\\s%})",
+            "error": "Compilation failed: lookbehind assertion is not fixed length at offset 4"
+        }
+    ]
 }

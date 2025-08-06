@@ -5,11 +5,11 @@
     "incompatible": [
         {
             "pattern": "(?<!\\.\\s*)\\b(await)\\b",
-            "error": "Compilation failed: length of lookbehind assertion is not limited at offset 0"
+            "error": "Compilation failed: lookbehind assertion is not fixed length at offset 0"
         },
         {
             "pattern": "(?<!\\.\\s*)\\b(await)\\b",
-            "error": "Compilation failed: length of lookbehind assertion is not limited at offset 0"
+            "error": "Compilation failed: lookbehind assertion is not fixed length at offset 0"
         },
         {
             "pattern": "\\G(?=(?~\\*/)$)",

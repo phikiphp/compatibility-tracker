@@ -5,7 +5,7 @@
     "incompatible": [
         {
             "pattern": "(?=\\s(?!\\())|(?=\\s*$)|(?<=\\s*\\))",
-            "error": "Compilation failed: length of lookbehind assertion is not limited at offset 22"
+            "error": "Compilation failed: lookbehind assertion is not fixed length at offset 22"
         }
     ]
 }

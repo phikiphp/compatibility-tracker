@@ -1,6 +1,11 @@
 {
     "name": "jinja",
     "total": 37,
-    "compatible": 37,
-    "incompatible": []
+    "compatible": 36,
+    "incompatible": [
+        {
+            "pattern": "(?<=\\{%-?)\\s*\\b([A-Z_a-z][0-9A-Z_a-z]*)\\b(?!\\s*[,=])",
+            "error": "Compilation failed: lookbehind assertion is not fixed length at offset 0"
+        }
+    ]
 }

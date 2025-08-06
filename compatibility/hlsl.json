@@ -1,6 +1,23 @@
 {
     "name": "hlsl",
     "total": 53,
-    "compatible": 53,
-    "incompatible": []
+    "compatible": 49,
+    "incompatible": [
+        {
+            "pattern": "(?<=:\\s?)(?i:BINORMAL[0-9]*|BLENDINDICES[0-9]*|BLENDWEIGHT[0-9]*|COLOR[0-9]*|NORMAL[0-9]*|POSITIONT?|PSIZE[0-9]*|TANGENT[0-9]*|TEXCOORD[0-9]*|FOG|TESSFACTOR[0-9]*|VFACE|VPOS|DEPTH[0-9]*)\\b",
+            "error": "Compilation failed: lookbehind assertion is not fixed length at offset 0"
+        },
+        {
+            "pattern": "(?<=:\\s?)(?i:SV_(?:ClipDistance[0-9]*|CullDistance[0-9]*|Coverage|Depth|DepthGreaterEqual[0-9]*|DepthLessEqual[0-9]*|InstanceID|IsFrontFace|Position|RenderTargetArrayIndex|SampleIndex|StencilRef|Target[0-7]?|VertexID|ViewportArrayIndex))\\b",
+            "error": "Compilation failed: lookbehind assertion is not fixed length at offset 0"
+        },
+        {
+            "pattern": "(?<=:\\s?)(?i:SV_(?:DispatchThreadID|DomainLocation|GroupID|GroupIndex|GroupThreadID|GSInstanceID|InsideTessFactor|OutputControlPointID|TessFactor))\\b",
+            "error": "Compilation failed: lookbehind assertion is not fixed length at offset 0"
+        },
+        {
+            "pattern": "(?<=:\\s?)(?i:SV_(?:InnerCoverage|StencilRef))\\b",
+            "error": "Compilation failed: lookbehind assertion is not fixed length at offset 0"
+        }
+    ]
 }

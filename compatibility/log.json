@@ -1,27 +1,31 @@
 {
     "name": "log",
     "total": 31,
-    "compatible": 26,
+    "compatible": 25,
     "incompatible": [
         {
             "pattern": "(?<=^[p\\s\\d]*)\\bV\\b",
-            "error": "Compilation failed: length of lookbehind assertion is not limited at offset 0"
+            "error": "Compilation failed: lookbehind assertion is not fixed length at offset 0"
         },
         {
             "pattern": "(?<=^[p\\s\\d]*)\\bD\\b",
-            "error": "Compilation failed: length of lookbehind assertion is not limited at offset 0"
+            "error": "Compilation failed: lookbehind assertion is not fixed length at offset 0"
         },
         {
             "pattern": "(?<=^[p\\s\\d]*)\\bI\\b",
-            "error": "Compilation failed: length of lookbehind assertion is not limited at offset 0"
+            "error": "Compilation failed: lookbehind assertion is not fixed length at offset 0"
         },
         {
             "pattern": "(?<=^[p\\s\\d]*)\\bW\\b",
-            "error": "Compilation failed: length of lookbehind assertion is not limited at offset 0"
+            "error": "Compilation failed: lookbehind assertion is not fixed length at offset 0"
         },
         {
             "pattern": "(?<=^[p\\s\\d]*)\\bE\\b",
-            "error": "Compilation failed: length of lookbehind assertion is not limited at offset 0"
+            "error": "Compilation failed: lookbehind assertion is not fixed length at offset 0"
+        },
+        {
+            "pattern": "(?<=(^|\\s))\\d{2}[^\\w\\s]\\d{2}[^\\w\\s]\\d{4}\\b",
+            "error": "Compilation failed: lookbehind assertion is not fixed length at offset 0"
         }
     ]
 }

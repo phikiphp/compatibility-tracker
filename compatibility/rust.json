@@ -1,6 +1,11 @@
 {
     "name": "rust",
     "total": 94,
-    "compatible": 94,
-    "incompatible": []
+    "compatible": 93,
+    "incompatible": [
+        {
+            "pattern": "(?<![0-9A-Z_a-z])([0-9A-Z_a-z]+)((?<!s(?:uper|elf))::)",
+            "error": "Compilation failed: lookbehind assertion is not fixed length at offset 33"
+        }
+    ]
 }

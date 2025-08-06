@@ -9,7 +9,7 @@
         },
         {
             "pattern": "(?<=\\{|\\{\\s+|[^$0-:@-Z_a-z]do|^do|[^$0-:@-Z_a-z]do\\s+|^do\\s+)(\\|)",
-            "error": "Compilation failed: length of lookbehind assertion is not limited at offset 0"
+            "error": "Compilation failed: lookbehind assertion is not fixed length at offset 0"
         }
     ]
 }

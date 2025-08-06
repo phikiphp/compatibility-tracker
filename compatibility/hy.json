@@ -5,15 +5,15 @@
     "incompatible": [
         {
             "pattern": "(?<=\\(\\s*)\\.\\.\\.(?![-!$%\\&*./:<-@^_\\w])",
-            "error": "Compilation failed: length of lookbehind assertion is not limited at offset 0"
+            "error": "Compilation failed: lookbehind assertion is not fixed length at offset 0"
         },
         {
             "pattern": "(?<=\\(\\s*)\\.(?![-!$%\\&*./:<-@^_\\w])",
-            "error": "Compilation failed: length of lookbehind assertion is not limited at offset 0"
+            "error": "Compilation failed: lookbehind assertion is not fixed length at offset 0"
         },
         {
             "pattern": "(\"|(?<=[\"}]\\N*?)\\{)",
-            "error": "Compilation failed: length of lookbehind assertion is not limited at offset 3"
+            "error": "Compilation failed: lookbehind assertion is not fixed length at offset 3"
         }
     ]
 }

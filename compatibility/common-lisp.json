@@ -1,6 +1,87 @@
 {
     "name": "common-lisp",
     "total": 62,
-    "compatible": 62,
-    "incompatible": []
+    "compatible": 42,
+    "incompatible": [
+        {
+            "pattern": "(?i)(?<=^|[(\\s]|,@|,\\.?)(?:t|single-float-negative-epsilon|single-float-epsilon|short-float-negative-epsilon|short-float-epsilon|pi|nil|multiple-values-limit|most-positive-single-float|most-positive-short-float|most-positive-long-float|most-positive-fixnum|most-positive-double-float|most-negative-single-float|most-negative-short-float|most-negative-long-float|most-negative-fixnum|most-negative-double-float|long-float-negative-epsilon|long-float-epsilon|least-positive-single-float|least-positive-short-float|least-positive-normalized-single-float|least-positive-normalized-short-float|least-positive-normalized-long-float|least-positive-normalized-double-float|least-positive-long-float|least-positive-double-float|least-negative-single-float|least-negative-short-float|least-negative-normalized-single-float|least-negative-normalized-short-float|least-negative-normalized-long-float|least-negative-normalized-double-float|least-negative-long-float|least-negative-double-float|lambda-parameters-limit|lambda-list-keywords|internal-time-units-per-second|double-float-negative-epsilon|double-float-epsilon|char-code-limit|call-arguments-limit|boole-xor|boole-set|boole-orc2|boole-orc1|boole-nor|boole-nand|boole-ior|boole-eqv|boole-clr|boole-c2|boole-c1|boole-andc2|boole-andc1|boole-and|boole-2|boole-1|array-total-size-limit|array-rank-limit|array-dimension-limit)(?=([()\\s]))",
+            "error": "Compilation failed: lookbehind assertion is not fixed length at offset 4"
+        },
+        {
+            "pattern": "(?<=^|[(\\s]|,@|,\\.?)([-+]?[0-9]+(?:/[0-9]+)*|[-+]?[0-9]*\\.?[0-9]+([Ee][-+]?[0-9]+)?|(#[Bb])[-+/01]+|(#[Oo])[-+/-7]+|(#[Xx])[-+/\\h]+|(#[0-9]+[Rr]?)[-+/-9A-Za-z]+)(?=([)\\s]))",
+            "error": "Compilation failed: lookbehind assertion is not fixed length at offset 0"
+        },
+        {
+            "pattern": "(?<=^|[(\\s]|,@|,\\.?)([-+]?[0-9]*\\.[0-9]*(([DEFLSdefls])[-+]?[0-9]+)?|[-+]?[0-9]+(\\.[0-9]*)?([DEFLSdefls])[-+]?[0-9]+)(?=([)\\s]))",
+            "error": "Compilation failed: lookbehind assertion is not fixed length at offset 0"
+        },
+        {
+            "pattern": "(?i)(?<=^|[(\\s]|,@|,\\.?)(([]!$%\\&*+\\--9<-\\[^_a-{}~]+?)|(#))(?=::?)",
+            "error": "Compilation failed: lookbehind assertion is not fixed length at offset 4"
+        },
+        {
+            "pattern": "(?i)(?<=^|[(\\s]|,@|,\\.?)(['`])(?=\\S)",
+            "error": "Compilation failed: lookbehind assertion is not fixed length at offset 4"
+        },
+        {
+            "pattern": "(?i)(?<=^|[(\\s]|,@|,\\.?):[]!#-\\&*+\\--:<-\\[^_a-{}~]+?(?=([()\\s]))",
+            "error": "Compilation failed: lookbehind assertion is not fixed length at offset 4"
+        },
+        {
+            "pattern": "(?i)(?<=^|[(\\s]|,@|,\\.?)(#)([0-9]*)(?=\\()",
+            "error": "Compilation failed: lookbehind assertion is not fixed length at offset 4"
+        },
+        {
+            "pattern": "(?i)(?<=^|[(\\s]|,@|,\\.?)(#)([0-9]*)(\\*)(?=[01])",
+            "error": "Compilation failed: lookbehind assertion is not fixed length at offset 4"
+        },
+        {
+            "pattern": "(?i)(?<=^|[(\\s]|,@|,\\.?)(#0??\\*)(?=([()\\s]))",
+            "error": "Compilation failed: lookbehind assertion is not fixed length at offset 4"
+        },
+        {
+            "pattern": "(?i)(?<=^|[(\\s]|,@|,\\.?)(#)([0-9]+)([Aa])(?=.)",
+            "error": "Compilation failed: lookbehind assertion is not fixed length at offset 4"
+        },
+        {
+            "pattern": "(?i)(?<=^|[(\\s]|,@|,\\.?)(#)([0-9]+)(=)(?=.)",
+            "error": "Compilation failed: lookbehind assertion is not fixed length at offset 4"
+        },
+        {
+            "pattern": "(?i)(?<=^|[(\\s]|,@|,\\.?)(#)([0-9]+)(#)(?=.)",
+            "error": "Compilation failed: lookbehind assertion is not fixed length at offset 4"
+        },
+        {
+            "pattern": "(?i)(?<=^|[(\\s]|,@|,\\.?)(#([-+]))(?=\\S)",
+            "error": "Compilation failed: lookbehind assertion is not fixed length at offset 4"
+        },
+        {
+            "pattern": "(?i)(?<=^|[(\\s]|,@|,\\.?)(#([',.CPScps]))(?=\\S)",
+            "error": "Compilation failed: lookbehind assertion is not fixed length at offset 4"
+        },
+        {
+            "pattern": "(?i)(?<=^|[(\\s]|,@|,\\.?)(#)(:)(?=\\S)",
+            "error": "Compilation failed: lookbehind assertion is not fixed length at offset 4"
+        },
+        {
+            "pattern": "(?i)(?<=(?:^|[(\\s]|,@|,\\.?)')(\\S+?)(::?)((\\+[^+\\s]+\\+)|(\\*[^*\\s]+\\*))(?=([()\\s]))",
+            "error": "Compilation failed: lookbehind assertion is not fixed length at offset 4"
+        },
+        {
+            "pattern": "(?i)(?<=\\S:|^|[(\\s]|,@|,\\.?)(\\+[^+\\s]+\\+)(?=([()\\s]))",
+            "error": "Compilation failed: lookbehind assertion is not fixed length at offset 4"
+        },
+        {
+            "pattern": "(?i)(?<=\\S:|^|[(\\s]|,@|,\\.?)(\\*[^*\\s]+\\*)(?=([()\\s]))",
+            "error": "Compilation failed: lookbehind assertion is not fixed length at offset 4"
+        },
+        {
+            "pattern": "(?i)(?<=^|[(\\s]|,@|,\\.?)\\*(?:trace-output|terminal-io|standard-output|standard-input|readtable|read-suppress|read-eval|read-default-float-format|read-base|random-state|query-io|print-right-margin|print-readably|print-radix|print-pretty|print-pprint-dispatch|print-miser-width|print-lines|print-level|print-length|print-gensym|print-escape|print-circle|print-case|print-base|print-array|package|modules|macroexpand-hook|load-verbose|load-truename|load-print|load-pathname|gensym-counter|features|error-output|default-pathname-defaults|debugger-hook|debug-io|compile-verbose|compile-print|compile-file-truename|compile-file-pathname|break-on-signals)\\*(?=([()\\s]))",
+            "error": "Compilation failed: lookbehind assertion is not fixed length at offset 4"
+        },
+        {
+            "pattern": "(?i)(?<=^|[(\\s]|,@|,\\.?)(?:\\*\\*\\*?|\\+\\+\\+?|///?)(?=([()\\s]))",
+            "error": "Compilation failed: lookbehind assertion is not fixed length at offset 4"
+        }
+    ]
 }

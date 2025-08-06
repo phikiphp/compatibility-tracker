@@ -5,7 +5,7 @@
     "incompatible": [
         {
             "pattern": "(?<!\\\\)(~{2,})(?!(?<=\\w~~)_)((?:[^~]|(?!(?<![\\\\~])\\1(?!~))~)*+)(\\1)(?!(?<=_\\1)\\w)",
-            "error": "Compilation failed: length of lookbehind assertion is not limited at offset 70"
+            "error": "Compilation failed: lookbehind assertion is not fixed length at offset 70"
         }
     ]
 }

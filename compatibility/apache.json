@@ -1,6 +1,11 @@
 {
     "name": "apache",
     "total": 60,
-    "compatible": 60,
-    "incompatible": []
+    "compatible": 59,
+    "incompatible": [
+        {
+            "pattern": "(?<=(?:Script|)AliasMatch)\\s+(.+?)\\s+((.+?)\\s)?",
+            "error": "Compilation failed: lookbehind assertion is not fixed length at offset 0"
+        }
+    ]
 }
