@@ -212,7 +212,7 @@ You can view the compatibility data for each grammar file inside of the [compati
 | kusto | 60 | 59 | 1 |
 | solidity | 125 | 125 | 0 |
 | razor | 121 | 119 | 2 |
-| fsharp | 162 | 162 | 0 |
+| fsharp | 161 | 161 | 0 |
 | viml | 75 | 74 | 1 |
 | asm | 309 | 309 | 0 |
 | html-derivative | 3 | 3 | 0 |
