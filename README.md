@@ -73,7 +73,7 @@ You can view the compatibility data for each grammar file inside of the [compati
 | plsql | 45 | 45 | 0 |
 | objective-cpp | 720 | 719 | 1 |
 | qss | 35 | 35 | 0 |
-| marko | 169 | 159 | 10 |
+| marko | 169 | 168 | 1 |
 | sparql | 4 | 4 | 0 |
 | cue | 121 | 121 | 0 |
 | emacs-lisp | 169 | 169 | 0 |
@@ -216,7 +216,7 @@ You can view the compatibility data for each grammar file inside of the [compati
 | json | 23 | 23 | 0 |
 | html | 227 | 227 | 0 |
 | solidity | 125 | 125 | 0 |
-| asciidoc | 673 | 497 | 176 |
+| asciidoc | 1324 | 1101 | 223 |
 | reg | 9 | 9 | 0 |
 | tsx | 534 | 530 | 4 |
 | dream-maker | 77 | 77 | 0 |

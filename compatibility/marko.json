@@ -1,46 +1,10 @@
 {
     "name": "marko",
     "total": 169,
-    "compatible": 159,
+    "compatible": 168,
     "incompatible": [
         {
-            "pattern": "(?=[],;]|/>|(?<=[^=])>|(?<!(?:^|[!%\\&*:?^|~]|[-!%\\&*+/<-?^|~]=|=>|>{2,}|[^.]\\.|[^-]-|^\\s*\\+\\+|[^+]\\+{2}*\\+|[]%).0-9<A-Za-z}]\\s*/|\\b(?<!\\.\\s*)(?:await|async|class|function|keyof|new|typeof|void))\\s*)(?:\\n|[\\t ]+(?![\\n!%\\&(*+:?^{|~]|[-/<=>]=|=>|>{2,}|\\.[^.]|-[^-]|/[^>]|(?:in|instanceof|satisfies|as|extends)\\s+[^,/:;=>])))",
-            "error": "Compilation failed: quantifier does not follow a repeatable item at offset 105"
-        },
-        {
-            "pattern": "(?=[],;]|/>|(?<=[^=])>|(?<!(?:^|[!%\\&*:?^|~]|[-!%\\&*+/<-?^|~]=|=>|>{2,}|[^.]\\.|[^-]-|^\\s*\\+\\+|[^+]\\+{2}*\\+|[]%).0-9<A-Za-z}]\\s*/|\\b(?<!\\.\\s*)(?:await|async|class|function|keyof|new|typeof|void))\\s*)(?:\\n|[\\t ]+(?![\\n!%\\&(*+:?^{|~]|[-/<=>]=|=>|>{2,}|\\.[^.]|-[^-]|/[^>]|(?:in|instanceof|satisfies|as|extends)\\s+[^,/:;=>])))",
-            "error": "Compilation failed: quantifier does not follow a repeatable item at offset 105"
-        },
-        {
-            "pattern": "(?=[](,;]|/>|(?<=[^=])>|(?<!(?:^|[!%\\&*:?^|~]|[-!%\\&*+/<-?^|~]=|=>|>{2,}|[^.]\\.|[^-]-|^\\s*\\+\\+|[^+]\\+{2}*\\+|[]%).0-9<A-Za-z}]\\s*/|\\b(?<!\\.\\s*)(?:await|async|class|function|keyof|new|typeof|void))\\s*)(?:\\n|[\\t ]+(?![\\n!%\\&*+:?^{|~]|[-/<=>]=|=>|>{2,}|\\.[^.]|-[^-]|/[^>]|(?:in|instanceof|satisfies|as|extends)\\s+[^,/:;=>])))",
-            "error": "Compilation failed: quantifier does not follow a repeatable item at offset 106"
-        },
-        {
-            "pattern": "/>|(?<=</(?:html-comment)?>)",
-            "error": "Compilation failed: lookbehind assertion is not fixed length at offset 4"
-        },
-        {
-            "pattern": "/>|(?<=</(?:(?:html-)?style)?>)",
-            "error": "Compilation failed: lookbehind assertion is not fixed length at offset 4"
-        },
-        {
-            "pattern": "/>|(?<=</(?:(?:html-)?style)?>)",
-            "error": "Compilation failed: lookbehind assertion is not fixed length at offset 4"
-        },
-        {
-            "pattern": "/>|(?<=</(?:(?:html-)?style)?>)",
-            "error": "Compilation failed: lookbehind assertion is not fixed length at offset 4"
-        },
-        {
-            "pattern": "/>|(?<=</(?:(?:html-)?style)?>)",
-            "error": "Compilation failed: lookbehind assertion is not fixed length at offset 4"
-        },
-        {
-            "pattern": "/>|(?<=</(?:(?:html-)?script)?>)",
-            "error": "Compilation failed: lookbehind assertion is not fixed length at offset 4"
-        },
-        {
-            "pattern": "/>|(?<=</[-#$.0-:@-Z_a-z]*>)",
+            "pattern": "/>|(?<=</(?:>|html-comment>))",
             "error": "Compilation failed: lookbehind assertion is not fixed length at offset 4"
         }
     ]

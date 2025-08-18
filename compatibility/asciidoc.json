@@ -1,7 +1,7 @@
 {
     "name": "asciidoc",
-    "total": 673,
-    "compatible": 497,
+    "total": 1324,
+    "compatible": 1101,
     "incompatible": [
         {
             "pattern": "((?<=--|====)|^\\p{blank}*)$",
@@ -128,7 +128,7 @@
             "error": "Compilation failed: unknown property after \\P or \\p at offset 28"
         },
         {
-            "pattern": "(?=(?>^\\[(source)[#,]\\p{blank}*(?i:(c))([#,][^]]+)*]$))",
+            "pattern": "(?=(?>^\\[(source)[#,]\\p{blank}*(?i:(css(?:|.erb)))([#,][^]]+)*]$))",
             "error": "Compilation failed: unknown property after \\P or \\p at offset 30"
         },
         {
@@ -136,11 +136,11 @@
             "error": "Compilation failed: unknown property after \\P or \\p at offset 28"
         },
         {
-            "pattern": "^\\[(source)[#,]\\p{blank}*(?i:(c))([#,]([^],]+))*]$",
+            "pattern": "^\\[(source)[#,]\\p{blank}*(?i:(css(?:|.erb)))([#,]([^],]+))*]$",
             "error": "Compilation failed: unknown property after \\P or \\p at offset 24"
         },
         {
-            "pattern": "(?=(?>^\\[(source)[#,]\\p{blank}*(?i:(clojure))([#,][^]]+)*]$))",
+            "pattern": "(?=(?>^\\[(source)[#,]\\p{blank}*(?i:(html?|shtml|xhtml|inc|tmpl|tpl))([#,][^]]+)*]$))",
             "error": "Compilation failed: unknown property after \\P or \\p at offset 30"
         },
         {
@@ -148,11 +148,11 @@
             "error": "Compilation failed: unknown property after \\P or \\p at offset 28"
         },
         {
-            "pattern": "^\\[(source)[#,]\\p{blank}*(?i:(clojure))([#,]([^],]+))*]$",
+            "pattern": "^\\[(source)[#,]\\p{blank}*(?i:(html?|shtml|xhtml|inc|tmpl|tpl))([#,]([^],]+))*]$",
             "error": "Compilation failed: unknown property after \\P or \\p at offset 24"
         },
         {
-            "pattern": "(?=(?>^\\[(source)[#,]\\p{blank}*(?i:(coffee-?(script)?))([#,][^]]+)*]$))",
+            "pattern": "(?=(?>^\\[(source)[#,]\\p{blank}*(?i:(ini|conf))([#,][^]]+)*]$))",
             "error": "Compilation failed: unknown property after \\P or \\p at offset 30"
         },
         {
@@ -160,11 +160,11 @@
             "error": "Compilation failed: unknown property after \\P or \\p at offset 28"
         },
         {
-            "pattern": "^\\[(source)[#,]\\p{blank}*(?i:(coffee-?(script)?))([#,]([^],]+))*]$",
+            "pattern": "^\\[(source)[#,]\\p{blank}*(?i:(ini|conf))([#,]([^],]+))*]$",
             "error": "Compilation failed: unknown property after \\P or \\p at offset 24"
         },
         {
-            "pattern": "(?=(?>^\\[(source)[#,]\\p{blank}*(?i:(c(pp|\\+\\+)))([#,][^]]+)*]$))",
+            "pattern": "(?=(?>^\\[(source)[#,]\\p{blank}*(?i:(java|bsh))([#,][^]]+)*]$))",
             "error": "Compilation failed: unknown property after \\P or \\p at offset 30"
         },
         {
@@ -172,11 +172,11 @@
             "error": "Compilation failed: unknown property after \\P or \\p at offset 28"
         },
         {
-            "pattern": "^\\[(source)[#,]\\p{blank}*(?i:(c(pp|\\+\\+)))([#,]([^],]+))*]$",
+            "pattern": "^\\[(source)[#,]\\p{blank}*(?i:(java|bsh))([#,]([^],]+))*]$",
             "error": "Compilation failed: unknown property after \\P or \\p at offset 24"
         },
         {
-            "pattern": "(?=(?>^\\[(source)[#,]\\p{blank}*(?i:(css))([#,][^]]+)*]$))",
+            "pattern": "(?=(?>^\\[(source)[#,]\\p{blank}*(?i:(lua))([#,][^]]+)*]$))",
             "error": "Compilation failed: unknown property after \\P or \\p at offset 30"
         },
         {
@@ -184,11 +184,11 @@
             "error": "Compilation failed: unknown property after \\P or \\p at offset 28"
         },
         {
-            "pattern": "^\\[(source)[#,]\\p{blank}*(?i:(css))([#,]([^],]+))*]$",
+            "pattern": "^\\[(source)[#,]\\p{blank}*(?i:(lua))([#,]([^],]+))*]$",
             "error": "Compilation failed: unknown property after \\P or \\p at offset 24"
         },
         {
-            "pattern": "(?=(?>^\\[(source)[#,]\\p{blank}*(?i:(cs(harp)?))([#,][^]]+)*]$))",
+            "pattern": "(?=(?>^\\[(source)[#,]\\p{blank}*(?i:((?:[Mm]|GNUm|OCamlM)akefile))([#,][^]]+)*]$))",
             "error": "Compilation failed: unknown property after \\P or \\p at offset 30"
         },
         {
@@ -196,11 +196,11 @@
             "error": "Compilation failed: unknown property after \\P or \\p at offset 28"
         },
         {
-            "pattern": "^\\[(source)[#,]\\p{blank}*(?i:(cs(harp)?))([#,]([^],]+))*]$",
+            "pattern": "^\\[(source)[#,]\\p{blank}*(?i:((?:[Mm]|GNUm|OCamlM)akefile))([#,]([^],]+))*]$",
             "error": "Compilation failed: unknown property after \\P or \\p at offset 24"
         },
         {
-            "pattern": "(?=(?>^\\[(source)[#,]\\p{blank}*(?i:(diff|patch|rej))([#,][^]]+)*]$))",
+            "pattern": "(?=(?>^\\[(source)[#,]\\p{blank}*(?i:(perl|pl|pm|pod|t|PL|psgi|vcl))([#,][^]]+)*]$))",
             "error": "Compilation failed: unknown property after \\P or \\p at offset 30"
         },
         {
@@ -208,11 +208,11 @@
             "error": "Compilation failed: unknown property after \\P or \\p at offset 28"
         },
         {
-            "pattern": "^\\[(source)[#,]\\p{blank}*(?i:(diff|patch|rej))([#,]([^],]+))*]$",
+            "pattern": "^\\[(source)[#,]\\p{blank}*(?i:(perl|pl|pm|pod|t|PL|psgi|vcl))([#,]([^],]+))*]$",
             "error": "Compilation failed: unknown property after \\P or \\p at offset 24"
         },
         {
-            "pattern": "(?=(?>^\\[(source)[#,]\\p{blank}*(?i:(docker(file)?))([#,][^]]+)*]$))",
+            "pattern": "(?=(?>^\\[(source)[#,]\\p{blank}*(?i:([RSrs]|Rprofile|\\{\\.r.+?}))([#,][^]]+)*]$))",
             "error": "Compilation failed: unknown property after \\P or \\p at offset 30"
         },
         {
@@ -220,11 +220,11 @@
             "error": "Compilation failed: unknown property after \\P or \\p at offset 28"
         },
         {
-            "pattern": "^\\[(source)[#,]\\p{blank}*(?i:(docker(file)?))([#,]([^],]+))*]$",
+            "pattern": "^\\[(source)[#,]\\p{blank}*(?i:([RSrs]|Rprofile|\\{\\.r.+?}))([#,]([^],]+))*]$",
             "error": "Compilation failed: unknown property after \\P or \\p at offset 24"
         },
         {
-            "pattern": "(?=(?>^\\[(source)[#,]\\p{blank}*(?i:(elixir))([#,][^]]+)*]$))",
+            "pattern": "(?=(?>^\\[(source)[#,]\\p{blank}*(?i:(ruby|rbx??|rjs|Rakefile|rake|cgi|fcgi|gemspec|irbrc|Capfile|ru|prawn|Cheffile|Gemfile|Guardfile|Hobofile|Vagrantfile|Appraisals|Rantfile|Berksfile|Berksfile.lock|Thorfile|Puppetfile))([#,][^]]+)*]$))",
             "error": "Compilation failed: unknown property after \\P or \\p at offset 30"
         },
         {
@@ -232,11 +232,11 @@
             "error": "Compilation failed: unknown property after \\P or \\p at offset 28"
         },
         {
-            "pattern": "^\\[(source)[#,]\\p{blank}*(?i:(elixir))([#,]([^],]+))*]$",
+            "pattern": "^\\[(source)[#,]\\p{blank}*(?i:(ruby|rbx??|rjs|Rakefile|rake|cgi|fcgi|gemspec|irbrc|Capfile|ru|prawn|Cheffile|Gemfile|Guardfile|Hobofile|Vagrantfile|Appraisals|Rantfile|Berksfile|Berksfile.lock|Thorfile|Puppetfile))([#,]([^],]+))*]$",
             "error": "Compilation failed: unknown property after \\P or \\p at offset 24"
         },
         {
-            "pattern": "(?=(?>^\\[(source)[#,]\\p{blank}*(?i:(elm))([#,][^]]+)*]$))",
+            "pattern": "(?=(?>^\\[(source)[#,]\\p{blank}*(?i:(php3??|php4|php5|phpt|phtml|aw|ctp))([#,][^]]+)*]$))",
             "error": "Compilation failed: unknown property after \\P or \\p at offset 30"
         },
         {
@@ -244,11 +244,11 @@
             "error": "Compilation failed: unknown property after \\P or \\p at offset 28"
         },
         {
-            "pattern": "^\\[(source)[#,]\\p{blank}*(?i:(elm))([#,]([^],]+))*]$",
+            "pattern": "^\\[(source)[#,]\\p{blank}*(?i:(php3??|php4|php5|phpt|phtml|aw|ctp))([#,]([^],]+))*]$",
             "error": "Compilation failed: unknown property after \\P or \\p at offset 24"
         },
         {
-            "pattern": "(?=(?>^\\[(source)[#,]\\p{blank}*(?i:(erlang))([#,][^]]+)*]$))",
+            "pattern": "(?=(?>^\\[(source)[#,]\\p{blank}*(?i:(sql|ddl|dml))([#,][^]]+)*]$))",
             "error": "Compilation failed: unknown property after \\P or \\p at offset 30"
         },
         {
@@ -256,11 +256,11 @@
             "error": "Compilation failed: unknown property after \\P or \\p at offset 28"
         },
         {
-            "pattern": "^\\[(source)[#,]\\p{blank}*(?i:(erlang))([#,]([^],]+))*]$",
+            "pattern": "^\\[(source)[#,]\\p{blank}*(?i:(sql|ddl|dml))([#,]([^],]+))*]$",
             "error": "Compilation failed: unknown property after \\P or \\p at offset 24"
         },
         {
-            "pattern": "(?=(?>^\\[(source)[#,]\\p{blank}*(?i:(go(lang)?))([#,][^]]+)*]$))",
+            "pattern": "(?=(?>^\\[(source)[#,]\\p{blank}*(?i:(vb))([#,][^]]+)*]$))",
             "error": "Compilation failed: unknown property after \\P or \\p at offset 30"
         },
         {
@@ -268,11 +268,11 @@
             "error": "Compilation failed: unknown property after \\P or \\p at offset 28"
         },
         {
-            "pattern": "^\\[(source)[#,]\\p{blank}*(?i:(go(lang)?))([#,]([^],]+))*]$",
+            "pattern": "^\\[(source)[#,]\\p{blank}*(?i:(vb))([#,]([^],]+))*]$",
             "error": "Compilation failed: unknown property after \\P or \\p at offset 24"
         },
         {
-            "pattern": "(?=(?>^\\[(source)[#,]\\p{blank}*(?i:(groovy))([#,][^]]+)*]$))",
+            "pattern": "(?=(?>^\\[(source)[#,]\\p{blank}*(?i:(xml|xsd|tld|jsp|pt|cpt|dtml|rss|opml))([#,][^]]+)*]$))",
             "error": "Compilation failed: unknown property after \\P or \\p at offset 30"
         },
         {
@@ -280,11 +280,11 @@
             "error": "Compilation failed: unknown property after \\P or \\p at offset 28"
         },
         {
-            "pattern": "^\\[(source)[#,]\\p{blank}*(?i:(groovy))([#,]([^],]+))*]$",
+            "pattern": "^\\[(source)[#,]\\p{blank}*(?i:(xml|xsd|tld|jsp|pt|cpt|dtml|rss|opml))([#,]([^],]+))*]$",
             "error": "Compilation failed: unknown property after \\P or \\p at offset 24"
         },
         {
-            "pattern": "(?=(?>^\\[(source)[#,]\\p{blank}*(?i:(haskell))([#,][^]]+)*]$))",
+            "pattern": "(?=(?>^\\[(source)[#,]\\p{blank}*(?i:(xslt??))([#,][^]]+)*]$))",
             "error": "Compilation failed: unknown property after \\P or \\p at offset 30"
         },
         {
@@ -292,367 +292,7 @@
             "error": "Compilation failed: unknown property after \\P or \\p at offset 28"
         },
         {
-            "pattern": "^\\[(source)[#,]\\p{blank}*(?i:(haskell))([#,]([^],]+))*]$",
-            "error": "Compilation failed: unknown property after \\P or \\p at offset 24"
-        },
-        {
-            "pattern": "(?=(?>^\\[(source)[#,]\\p{blank}*(?i:(html))([#,][^]]+)*]$))",
-            "error": "Compilation failed: unknown property after \\P or \\p at offset 30"
-        },
-        {
-            "pattern": "((?<=--|\\.\\.\\.\\.)|^\\p{blank}*)$",
-            "error": "Compilation failed: unknown property after \\P or \\p at offset 28"
-        },
-        {
-            "pattern": "^\\[(source)[#,]\\p{blank}*(?i:(html))([#,]([^],]+))*]$",
-            "error": "Compilation failed: unknown property after \\P or \\p at offset 24"
-        },
-        {
-            "pattern": "(?=(?>^\\[(source)[#,]\\p{blank}*(?i:(java))([#,][^]]+)*]$))",
-            "error": "Compilation failed: unknown property after \\P or \\p at offset 30"
-        },
-        {
-            "pattern": "((?<=--|\\.\\.\\.\\.)|^\\p{blank}*)$",
-            "error": "Compilation failed: unknown property after \\P or \\p at offset 28"
-        },
-        {
-            "pattern": "^\\[(source)[#,]\\p{blank}*(?i:(java))([#,]([^],]+))*]$",
-            "error": "Compilation failed: unknown property after \\P or \\p at offset 24"
-        },
-        {
-            "pattern": "(?=(?>^\\[(source)[#,]\\p{blank}*(?i:(j(?:avascript|s)))([#,][^]]+)*]$))",
-            "error": "Compilation failed: unknown property after \\P or \\p at offset 30"
-        },
-        {
-            "pattern": "((?<=--|\\.\\.\\.\\.)|^\\p{blank}*)$",
-            "error": "Compilation failed: unknown property after \\P or \\p at offset 28"
-        },
-        {
-            "pattern": "^\\[(source)[#,]\\p{blank}*(?i:(j(?:avascript|s)))([#,]([^],]+))*]$",
-            "error": "Compilation failed: unknown property after \\P or \\p at offset 24"
-        },
-        {
-            "pattern": "(?=(?>^\\[(source)[#,]\\p{blank}*(?i:(json))([#,][^]]+)*]$))",
-            "error": "Compilation failed: unknown property after \\P or \\p at offset 30"
-        },
-        {
-            "pattern": "((?<=--|\\.\\.\\.\\.)|^\\p{blank}*)$",
-            "error": "Compilation failed: unknown property after \\P or \\p at offset 28"
-        },
-        {
-            "pattern": "^\\[(source)[#,]\\p{blank}*(?i:(json))([#,]([^],]+))*]$",
-            "error": "Compilation failed: unknown property after \\P or \\p at offset 24"
-        },
-        {
-            "pattern": "(?=(?>^\\[(source)[#,]\\p{blank}*(?i:(jsx))([#,][^]]+)*]$))",
-            "error": "Compilation failed: unknown property after \\P or \\p at offset 30"
-        },
-        {
-            "pattern": "((?<=--|\\.\\.\\.\\.)|^\\p{blank}*)$",
-            "error": "Compilation failed: unknown property after \\P or \\p at offset 28"
-        },
-        {
-            "pattern": "^\\[(source)[#,]\\p{blank}*(?i:(jsx))([#,]([^],]+))*]$",
-            "error": "Compilation failed: unknown property after \\P or \\p at offset 24"
-        },
-        {
-            "pattern": "(?=(?>^\\[(source)[#,]\\p{blank}*(?i:(julia))([#,][^]]+)*]$))",
-            "error": "Compilation failed: unknown property after \\P or \\p at offset 30"
-        },
-        {
-            "pattern": "((?<=--|\\.\\.\\.\\.)|^\\p{blank}*)$",
-            "error": "Compilation failed: unknown property after \\P or \\p at offset 28"
-        },
-        {
-            "pattern": "^\\[(source)[#,]\\p{blank}*(?i:(julia))([#,]([^],]+))*]$",
-            "error": "Compilation failed: unknown property after \\P or \\p at offset 24"
-        },
-        {
-            "pattern": "(?=(?>^\\[(source)[#,]\\p{blank}*(?i:(k(?:otlin|ts?)))([#,][^]]+)*]$))",
-            "error": "Compilation failed: unknown property after \\P or \\p at offset 30"
-        },
-        {
-            "pattern": "((?<=--|\\.\\.\\.\\.)|^\\p{blank}*)$",
-            "error": "Compilation failed: unknown property after \\P or \\p at offset 28"
-        },
-        {
-            "pattern": "^\\[(source)[#,]\\p{blank}*(?i:(k(?:otlin|ts?)))([#,]([^],]+))*]$",
-            "error": "Compilation failed: unknown property after \\P or \\p at offset 24"
-        },
-        {
-            "pattern": "(?=(?>^\\[(source)[#,]\\p{blank}*(?i:(less))([#,][^]]+)*]$))",
-            "error": "Compilation failed: unknown property after \\P or \\p at offset 30"
-        },
-        {
-            "pattern": "((?<=--|\\.\\.\\.\\.)|^\\p{blank}*)$",
-            "error": "Compilation failed: unknown property after \\P or \\p at offset 28"
-        },
-        {
-            "pattern": "^\\[(source)[#,]\\p{blank}*(?i:(less))([#,]([^],]+))*]$",
-            "error": "Compilation failed: unknown property after \\P or \\p at offset 24"
-        },
-        {
-            "pattern": "(?=(?>^\\[(source)[#,]\\p{blank}*(?i:(make(file)?))([#,][^]]+)*]$))",
-            "error": "Compilation failed: unknown property after \\P or \\p at offset 30"
-        },
-        {
-            "pattern": "((?<=--|\\.\\.\\.\\.)|^\\p{blank}*)$",
-            "error": "Compilation failed: unknown property after \\P or \\p at offset 28"
-        },
-        {
-            "pattern": "^\\[(source)[#,]\\p{blank}*(?i:(make(file)?))([#,]([^],]+))*]$",
-            "error": "Compilation failed: unknown property after \\P or \\p at offset 24"
-        },
-        {
-            "pattern": "(?=(?>^\\[(source)[#,]\\p{blank}*(?i:(m(?:arkdown|down|d)))([#,][^]]+)*]$))",
-            "error": "Compilation failed: unknown property after \\P or \\p at offset 30"
-        },
-        {
-            "pattern": "((?<=--|\\.\\.\\.\\.)|^\\p{blank}*)$",
-            "error": "Compilation failed: unknown property after \\P or \\p at offset 28"
-        },
-        {
-            "pattern": "^\\[(source)[#,]\\p{blank}*(?i:(m(?:arkdown|down|d)))([#,]([^],]+))*]$",
-            "error": "Compilation failed: unknown property after \\P or \\p at offset 24"
-        },
-        {
-            "pattern": "(?=(?>^\\[(source)[#,]\\p{blank}*(?i:(mustache))([#,][^]]+)*]$))",
-            "error": "Compilation failed: unknown property after \\P or \\p at offset 30"
-        },
-        {
-            "pattern": "((?<=--|\\.\\.\\.\\.)|^\\p{blank}*)$",
-            "error": "Compilation failed: unknown property after \\P or \\p at offset 28"
-        },
-        {
-            "pattern": "^\\[(source)[#,]\\p{blank}*(?i:(mustache))([#,]([^],]+))*]$",
-            "error": "Compilation failed: unknown property after \\P or \\p at offset 24"
-        },
-        {
-            "pattern": "(?=(?>^\\[(source)[#,]\\p{blank}*(?i:(obj(?:c|ective-c)))([#,][^]]+)*]$))",
-            "error": "Compilation failed: unknown property after \\P or \\p at offset 30"
-        },
-        {
-            "pattern": "((?<=--|\\.\\.\\.\\.)|^\\p{blank}*)$",
-            "error": "Compilation failed: unknown property after \\P or \\p at offset 28"
-        },
-        {
-            "pattern": "^\\[(source)[#,]\\p{blank}*(?i:(obj(?:c|ective-c)))([#,]([^],]+))*]$",
-            "error": "Compilation failed: unknown property after \\P or \\p at offset 24"
-        },
-        {
-            "pattern": "(?=(?>^\\[(source)[#,]\\p{blank}*(?i:(ocaml))([#,][^]]+)*]$))",
-            "error": "Compilation failed: unknown property after \\P or \\p at offset 30"
-        },
-        {
-            "pattern": "((?<=--|\\.\\.\\.\\.)|^\\p{blank}*)$",
-            "error": "Compilation failed: unknown property after \\P or \\p at offset 28"
-        },
-        {
-            "pattern": "^\\[(source)[#,]\\p{blank}*(?i:(ocaml))([#,]([^],]+))*]$",
-            "error": "Compilation failed: unknown property after \\P or \\p at offset 24"
-        },
-        {
-            "pattern": "(?=(?>^\\[(source)[#,]\\p{blank}*(?i:(perl))([#,][^]]+)*]$))",
-            "error": "Compilation failed: unknown property after \\P or \\p at offset 30"
-        },
-        {
-            "pattern": "((?<=--|\\.\\.\\.\\.)|^\\p{blank}*)$",
-            "error": "Compilation failed: unknown property after \\P or \\p at offset 28"
-        },
-        {
-            "pattern": "^\\[(source)[#,]\\p{blank}*(?i:(perl))([#,]([^],]+))*]$",
-            "error": "Compilation failed: unknown property after \\P or \\p at offset 24"
-        },
-        {
-            "pattern": "(?=(?>^\\[(source)[#,]\\p{blank}*(?i:(perl6))([#,][^]]+)*]$))",
-            "error": "Compilation failed: unknown property after \\P or \\p at offset 30"
-        },
-        {
-            "pattern": "((?<=--|\\.\\.\\.\\.)|^\\p{blank}*)$",
-            "error": "Compilation failed: unknown property after \\P or \\p at offset 28"
-        },
-        {
-            "pattern": "^\\[(source)[#,]\\p{blank}*(?i:(perl6))([#,]([^],]+))*]$",
-            "error": "Compilation failed: unknown property after \\P or \\p at offset 24"
-        },
-        {
-            "pattern": "(?=(?>^\\[(source)[#,]\\p{blank}*(?i:(php))([#,][^]]+)*]$))",
-            "error": "Compilation failed: unknown property after \\P or \\p at offset 30"
-        },
-        {
-            "pattern": "((?<=--|\\.\\.\\.\\.)|^\\p{blank}*)$",
-            "error": "Compilation failed: unknown property after \\P or \\p at offset 28"
-        },
-        {
-            "pattern": "^\\[(source)[#,]\\p{blank}*(?i:(php))([#,]([^],]+))*]$",
-            "error": "Compilation failed: unknown property after \\P or \\p at offset 24"
-        },
-        {
-            "pattern": "(?=(?>^\\[(source)[#,]\\p{blank}*(?i:(properties))([#,][^]]+)*]$))",
-            "error": "Compilation failed: unknown property after \\P or \\p at offset 30"
-        },
-        {
-            "pattern": "((?<=--|\\.\\.\\.\\.)|^\\p{blank}*)$",
-            "error": "Compilation failed: unknown property after \\P or \\p at offset 28"
-        },
-        {
-            "pattern": "^\\[(source)[#,]\\p{blank}*(?i:(properties))([#,]([^],]+))*]$",
-            "error": "Compilation failed: unknown property after \\P or \\p at offset 24"
-        },
-        {
-            "pattern": "(?=(?>^\\[(source)[#,]\\p{blank}*(?i:(py(thon)?))([#,][^]]+)*]$))",
-            "error": "Compilation failed: unknown property after \\P or \\p at offset 30"
-        },
-        {
-            "pattern": "((?<=--|\\.\\.\\.\\.)|^\\p{blank}*)$",
-            "error": "Compilation failed: unknown property after \\P or \\p at offset 28"
-        },
-        {
-            "pattern": "^\\[(source)[#,]\\p{blank}*(?i:(py(thon)?))([#,]([^],]+))*]$",
-            "error": "Compilation failed: unknown property after \\P or \\p at offset 24"
-        },
-        {
-            "pattern": "(?=(?>^\\[(source)[#,]\\p{blank}*(?i:(r))([#,][^]]+)*]$))",
-            "error": "Compilation failed: unknown property after \\P or \\p at offset 30"
-        },
-        {
-            "pattern": "((?<=--|\\.\\.\\.\\.)|^\\p{blank}*)$",
-            "error": "Compilation failed: unknown property after \\P or \\p at offset 28"
-        },
-        {
-            "pattern": "^\\[(source)[#,]\\p{blank}*(?i:(r))([#,]([^],]+))*]$",
-            "error": "Compilation failed: unknown property after \\P or \\p at offset 24"
-        },
-        {
-            "pattern": "(?=(?>^\\[(source)[#,]\\p{blank}*(?i:(r(?:uby|b)))([#,][^]]+)*]$))",
-            "error": "Compilation failed: unknown property after \\P or \\p at offset 30"
-        },
-        {
-            "pattern": "((?<=--|\\.\\.\\.\\.)|^\\p{blank}*)$",
-            "error": "Compilation failed: unknown property after \\P or \\p at offset 28"
-        },
-        {
-            "pattern": "^\\[(source)[#,]\\p{blank}*(?i:(r(?:uby|b)))([#,]([^],]+))*]$",
-            "error": "Compilation failed: unknown property after \\P or \\p at offset 24"
-        },
-        {
-            "pattern": "(?=(?>^\\[(source)[#,]\\p{blank}*(?i:(r(?:ust|s)))([#,][^]]+)*]$))",
-            "error": "Compilation failed: unknown property after \\P or \\p at offset 30"
-        },
-        {
-            "pattern": "((?<=--|\\.\\.\\.\\.)|^\\p{blank}*)$",
-            "error": "Compilation failed: unknown property after \\P or \\p at offset 28"
-        },
-        {
-            "pattern": "^\\[(source)[#,]\\p{blank}*(?i:(r(?:ust|s)))([#,]([^],]+))*]$",
-            "error": "Compilation failed: unknown property after \\P or \\p at offset 24"
-        },
-        {
-            "pattern": "(?=(?>^\\[(source)[#,]\\p{blank}*(?i:(sass))([#,][^]]+)*]$))",
-            "error": "Compilation failed: unknown property after \\P or \\p at offset 30"
-        },
-        {
-            "pattern": "((?<=--|\\.\\.\\.\\.)|^\\p{blank}*)$",
-            "error": "Compilation failed: unknown property after \\P or \\p at offset 28"
-        },
-        {
-            "pattern": "^\\[(source)[#,]\\p{blank}*(?i:(sass))([#,]([^],]+))*]$",
-            "error": "Compilation failed: unknown property after \\P or \\p at offset 24"
-        },
-        {
-            "pattern": "(?=(?>^\\[(source)[#,]\\p{blank}*(?i:(scala))([#,][^]]+)*]$))",
-            "error": "Compilation failed: unknown property after \\P or \\p at offset 30"
-        },
-        {
-            "pattern": "((?<=--|\\.\\.\\.\\.)|^\\p{blank}*)$",
-            "error": "Compilation failed: unknown property after \\P or \\p at offset 28"
-        },
-        {
-            "pattern": "^\\[(source)[#,]\\p{blank}*(?i:(scala))([#,]([^],]+))*]$",
-            "error": "Compilation failed: unknown property after \\P or \\p at offset 24"
-        },
-        {
-            "pattern": "(?=(?>^\\[(source)[#,]\\p{blank}*(?i:(scss))([#,][^]]+)*]$))",
-            "error": "Compilation failed: unknown property after \\P or \\p at offset 30"
-        },
-        {
-            "pattern": "((?<=--|\\.\\.\\.\\.)|^\\p{blank}*)$",
-            "error": "Compilation failed: unknown property after \\P or \\p at offset 28"
-        },
-        {
-            "pattern": "^\\[(source)[#,]\\p{blank}*(?i:(scss))([#,]([^],]+))*]$",
-            "error": "Compilation failed: unknown property after \\P or \\p at offset 24"
-        },
-        {
-            "pattern": "(?=(?>^\\[(source)[#,]\\p{blank}*(?i:(sh|bash|shell))([#,][^]]+)*]$))",
-            "error": "Compilation failed: unknown property after \\P or \\p at offset 30"
-        },
-        {
-            "pattern": "((?<=--|\\.\\.\\.\\.)|^\\p{blank}*)$",
-            "error": "Compilation failed: unknown property after \\P or \\p at offset 28"
-        },
-        {
-            "pattern": "^\\[(source)[#,]\\p{blank}*(?i:(sh|bash|shell))([#,]([^],]+))*]$",
-            "error": "Compilation failed: unknown property after \\P or \\p at offset 24"
-        },
-        {
-            "pattern": "(?=(?>^\\[(source)[#,]\\p{blank}*(?i:(sql))([#,][^]]+)*]$))",
-            "error": "Compilation failed: unknown property after \\P or \\p at offset 30"
-        },
-        {
-            "pattern": "((?<=--|\\.\\.\\.\\.)|^\\p{blank}*)$",
-            "error": "Compilation failed: unknown property after \\P or \\p at offset 28"
-        },
-        {
-            "pattern": "^\\[(source)[#,]\\p{blank}*(?i:(sql))([#,]([^],]+))*]$",
-            "error": "Compilation failed: unknown property after \\P or \\p at offset 24"
-        },
-        {
-            "pattern": "(?=(?>^\\[(source)[#,]\\p{blank}*(?i:(swift))([#,][^]]+)*]$))",
-            "error": "Compilation failed: unknown property after \\P or \\p at offset 30"
-        },
-        {
-            "pattern": "((?<=--|\\.\\.\\.\\.)|^\\p{blank}*)$",
-            "error": "Compilation failed: unknown property after \\P or \\p at offset 28"
-        },
-        {
-            "pattern": "^\\[(source)[#,]\\p{blank}*(?i:(swift))([#,]([^],]+))*]$",
-            "error": "Compilation failed: unknown property after \\P or \\p at offset 24"
-        },
-        {
-            "pattern": "(?=(?>^\\[(source)[#,]\\p{blank}*(?i:(toml))([#,][^]]+)*]$))",
-            "error": "Compilation failed: unknown property after \\P or \\p at offset 30"
-        },
-        {
-            "pattern": "((?<=--|\\.\\.\\.\\.)|^\\p{blank}*)$",
-            "error": "Compilation failed: unknown property after \\P or \\p at offset 28"
-        },
-        {
-            "pattern": "^\\[(source)[#,]\\p{blank}*(?i:(toml))([#,]([^],]+))*]$",
-            "error": "Compilation failed: unknown property after \\P or \\p at offset 24"
-        },
-        {
-            "pattern": "(?=(?>^\\[(source)[#,]\\p{blank}*(?i:(t(?:ypescript|s)))([#,][^]]+)*]$))",
-            "error": "Compilation failed: unknown property after \\P or \\p at offset 30"
-        },
-        {
-            "pattern": "((?<=--|\\.\\.\\.\\.)|^\\p{blank}*)$",
-            "error": "Compilation failed: unknown property after \\P or \\p at offset 28"
-        },
-        {
-            "pattern": "^\\[(source)[#,]\\p{blank}*(?i:(t(?:ypescript|s)))([#,]([^],]+))*]$",
-            "error": "Compilation failed: unknown property after \\P or \\p at offset 24"
-        },
-        {
-            "pattern": "(?=(?>^\\[(source)[#,]\\p{blank}*(?i:(xml))([#,][^]]+)*]$))",
-            "error": "Compilation failed: unknown property after \\P or \\p at offset 30"
-        },
-        {
-            "pattern": "((?<=--|\\.\\.\\.\\.)|^\\p{blank}*)$",
-            "error": "Compilation failed: unknown property after \\P or \\p at offset 28"
-        },
-        {
-            "pattern": "^\\[(source)[#,]\\p{blank}*(?i:(xml))([#,]([^],]+))*]$",
+            "pattern": "^\\[(source)[#,]\\p{blank}*(?i:(xslt??))([#,]([^],]+))*]$",
             "error": "Compilation failed: unknown property after \\P or \\p at offset 24"
         },
         {
@@ -668,8 +308,556 @@
             "error": "Compilation failed: unknown property after \\P or \\p at offset 24"
         },
         {
+            "pattern": "(?=(?>^\\[(source)[#,]\\p{blank}*(?i:(bat(?:|ch)))([#,][^]]+)*]$))",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 30"
+        },
+        {
             "pattern": "((?<=--|\\.\\.\\.\\.)|^\\p{blank}*)$",
             "error": "Compilation failed: unknown property after \\P or \\p at offset 28"
+        },
+        {
+            "pattern": "^\\[(source)[#,]\\p{blank}*(?i:(bat(?:|ch)))([#,]([^],]+))*]$",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 24"
+        },
+        {
+            "pattern": "(?=(?>^\\[(source)[#,]\\p{blank}*(?i:(cl(?:js??|ojure)))([#,][^]]+)*]$))",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 30"
+        },
+        {
+            "pattern": "((?<=--|\\.\\.\\.\\.)|^\\p{blank}*)$",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 28"
+        },
+        {
+            "pattern": "^\\[(source)[#,]\\p{blank}*(?i:(cl(?:js??|ojure)))([#,]([^],]+))*]$",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 24"
+        },
+        {
+            "pattern": "(?=(?>^\\[(source)[#,]\\p{blank}*(?i:(coffee|Cakefile|coffee.erb))([#,][^]]+)*]$))",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 30"
+        },
+        {
+            "pattern": "((?<=--|\\.\\.\\.\\.)|^\\p{blank}*)$",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 28"
+        },
+        {
+            "pattern": "^\\[(source)[#,]\\p{blank}*(?i:(coffee|Cakefile|coffee.erb))([#,]([^],]+))*]$",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 24"
+        },
+        {
+            "pattern": "(?=(?>^\\[(source)[#,]\\p{blank}*(?i:([ch]))([#,][^]]+)*]$))",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 30"
+        },
+        {
+            "pattern": "((?<=--|\\.\\.\\.\\.)|^\\p{blank}*)$",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 28"
+        },
+        {
+            "pattern": "^\\[(source)[#,]\\p{blank}*(?i:([ch]))([#,]([^],]+))*]$",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 24"
+        },
+        {
+            "pattern": "(?=(?>^\\[(source)[#,]\\p{blank}*(?i:(c(?:pp|\\+\\+|xx)))([#,][^]]+)*]$))",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 30"
+        },
+        {
+            "pattern": "((?<=--|\\.\\.\\.\\.)|^\\p{blank}*)$",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 28"
+        },
+        {
+            "pattern": "^\\[(source)[#,]\\p{blank}*(?i:(c(?:pp|\\+\\+|xx)))([#,]([^],]+))*]$",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 24"
+        },
+        {
+            "pattern": "(?=(?>^\\[(source)[#,]\\p{blank}*(?i:(patch|diff|rej))([#,][^]]+)*]$))",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 30"
+        },
+        {
+            "pattern": "((?<=--|\\.\\.\\.\\.)|^\\p{blank}*)$",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 28"
+        },
+        {
+            "pattern": "^\\[(source)[#,]\\p{blank}*(?i:(patch|diff|rej))([#,]([^],]+))*]$",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 24"
+        },
+        {
+            "pattern": "(?=(?>^\\[(source)[#,]\\p{blank}*(?i:([Dd]ockerfile))([#,][^]]+)*]$))",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 30"
+        },
+        {
+            "pattern": "((?<=--|\\.\\.\\.\\.)|^\\p{blank}*)$",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 28"
+        },
+        {
+            "pattern": "^\\[(source)[#,]\\p{blank}*(?i:([Dd]ockerfile))([#,]([^],]+))*]$",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 24"
+        },
+        {
+            "pattern": "(?=(?>^\\[(source)[#,]\\p{blank}*(?i:((?:COMMIT_EDIT|MERGE_)MSG))([#,][^]]+)*]$))",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 30"
+        },
+        {
+            "pattern": "((?<=--|\\.\\.\\.\\.)|^\\p{blank}*)$",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 28"
+        },
+        {
+            "pattern": "^\\[(source)[#,]\\p{blank}*(?i:((?:COMMIT_EDIT|MERGE_)MSG))([#,]([^],]+))*]$",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 24"
+        },
+        {
+            "pattern": "(?=(?>^\\[(source)[#,]\\p{blank}*(?i:(git-rebase-todo))([#,][^]]+)*]$))",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 30"
+        },
+        {
+            "pattern": "((?<=--|\\.\\.\\.\\.)|^\\p{blank}*)$",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 28"
+        },
+        {
+            "pattern": "^\\[(source)[#,]\\p{blank}*(?i:(git-rebase-todo))([#,]([^],]+))*]$",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 24"
+        },
+        {
+            "pattern": "(?=(?>^\\[(source)[#,]\\p{blank}*(?i:(go(?:|lang)))([#,][^]]+)*]$))",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 30"
+        },
+        {
+            "pattern": "((?<=--|\\.\\.\\.\\.)|^\\p{blank}*)$",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 28"
+        },
+        {
+            "pattern": "^\\[(source)[#,]\\p{blank}*(?i:(go(?:|lang)))([#,]([^],]+))*]$",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 24"
+        },
+        {
+            "pattern": "(?=(?>^\\[(source)[#,]\\p{blank}*(?i:(g(?:roovy|vy)))([#,][^]]+)*]$))",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 30"
+        },
+        {
+            "pattern": "((?<=--|\\.\\.\\.\\.)|^\\p{blank}*)$",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 28"
+        },
+        {
+            "pattern": "^\\[(source)[#,]\\p{blank}*(?i:(g(?:roovy|vy)))([#,]([^],]+))*]$",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 24"
+        },
+        {
+            "pattern": "(?=(?>^\\[(source)[#,]\\p{blank}*(?i:(jade|pug))([#,][^]]+)*]$))",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 30"
+        },
+        {
+            "pattern": "((?<=--|\\.\\.\\.\\.)|^\\p{blank}*)$",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 28"
+        },
+        {
+            "pattern": "^\\[(source)[#,]\\p{blank}*(?i:(jade|pug))([#,]([^],]+))*]$",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 24"
+        },
+        {
+            "pattern": "(?=(?>^\\[(source)[#,]\\p{blank}*(?i:(jsx??|javascript|es6|mjs|cjs|dataviewjs|\\{\\.js.+?}))([#,][^]]+)*]$))",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 30"
+        },
+        {
+            "pattern": "((?<=--|\\.\\.\\.\\.)|^\\p{blank}*)$",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 28"
+        },
+        {
+            "pattern": "^\\[(source)[#,]\\p{blank}*(?i:(jsx??|javascript|es6|mjs|cjs|dataviewjs|\\{\\.js.+?}))([#,]([^],]+))*]$",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 24"
+        },
+        {
+            "pattern": "(?=(?>^\\[(source)[#,]\\p{blank}*(?i:(regexp))([#,][^]]+)*]$))",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 30"
+        },
+        {
+            "pattern": "((?<=--|\\.\\.\\.\\.)|^\\p{blank}*)$",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 28"
+        },
+        {
+            "pattern": "^\\[(source)[#,]\\p{blank}*(?i:(regexp))([#,]([^],]+))*]$",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 24"
+        },
+        {
+            "pattern": "(?=(?>^\\[(source)[#,]\\p{blank}*(?i:(json5??|sublime-settings|sublime-menu|sublime-keymap|sublime-mousemap|sublime-theme|sublime-build|sublime-project|sublime-completions))([#,][^]]+)*]$))",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 30"
+        },
+        {
+            "pattern": "((?<=--|\\.\\.\\.\\.)|^\\p{blank}*)$",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 28"
+        },
+        {
+            "pattern": "^\\[(source)[#,]\\p{blank}*(?i:(json5??|sublime-settings|sublime-menu|sublime-keymap|sublime-mousemap|sublime-theme|sublime-build|sublime-project|sublime-completions))([#,]([^],]+))*]$",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 24"
+        },
+        {
+            "pattern": "(?=(?>^\\[(source)[#,]\\p{blank}*(?i:(jsonc))([#,][^]]+)*]$))",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 30"
+        },
+        {
+            "pattern": "((?<=--|\\.\\.\\.\\.)|^\\p{blank}*)$",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 28"
+        },
+        {
+            "pattern": "^\\[(source)[#,]\\p{blank}*(?i:(jsonc))([#,]([^],]+))*]$",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 24"
+        },
+        {
+            "pattern": "(?=(?>^\\[(source)[#,]\\p{blank}*(?i:(less))([#,][^]]+)*]$))",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 30"
+        },
+        {
+            "pattern": "((?<=--|\\.\\.\\.\\.)|^\\p{blank}*)$",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 28"
+        },
+        {
+            "pattern": "^\\[(source)[#,]\\p{blank}*(?i:(less))([#,]([^],]+))*]$",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 24"
+        },
+        {
+            "pattern": "(?=(?>^\\[(source)[#,]\\p{blank}*(?i:(objectivec|objective-c|mm|objc|obj-c|[hm]))([#,][^]]+)*]$))",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 30"
+        },
+        {
+            "pattern": "((?<=--|\\.\\.\\.\\.)|^\\p{blank}*)$",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 28"
+        },
+        {
+            "pattern": "^\\[(source)[#,]\\p{blank}*(?i:(objectivec|objective-c|mm|objc|obj-c|[hm]))([#,]([^],]+))*]$",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 24"
+        },
+        {
+            "pattern": "(?=(?>^\\[(source)[#,]\\p{blank}*(?i:(swift))([#,][^]]+)*]$))",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 30"
+        },
+        {
+            "pattern": "((?<=--|\\.\\.\\.\\.)|^\\p{blank}*)$",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 28"
+        },
+        {
+            "pattern": "^\\[(source)[#,]\\p{blank}*(?i:(swift))([#,]([^],]+))*]$",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 24"
+        },
+        {
+            "pattern": "(?=(?>^\\[(source)[#,]\\p{blank}*(?i:(scss))([#,][^]]+)*]$))",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 30"
+        },
+        {
+            "pattern": "((?<=--|\\.\\.\\.\\.)|^\\p{blank}*)$",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 28"
+        },
+        {
+            "pattern": "^\\[(source)[#,]\\p{blank}*(?i:(scss))([#,]([^],]+))*]$",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 24"
+        },
+        {
+            "pattern": "(?=(?>^\\[(source)[#,]\\p{blank}*(?i:(perl6|p6|pl6|pm6|nqp))([#,][^]]+)*]$))",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 30"
+        },
+        {
+            "pattern": "((?<=--|\\.\\.\\.\\.)|^\\p{blank}*)$",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 28"
+        },
+        {
+            "pattern": "^\\[(source)[#,]\\p{blank}*(?i:(perl6|p6|pl6|pm6|nqp))([#,]([^],]+))*]$",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 24"
+        },
+        {
+            "pattern": "(?=(?>^\\[(source)[#,]\\p{blank}*(?i:(p(?:owershell|s1|sm1|sd1|wsh)))([#,][^]]+)*]$))",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 30"
+        },
+        {
+            "pattern": "((?<=--|\\.\\.\\.\\.)|^\\p{blank}*)$",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 28"
+        },
+        {
+            "pattern": "^\\[(source)[#,]\\p{blank}*(?i:(p(?:owershell|s1|sm1|sd1|wsh)))([#,]([^],]+))*]$",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 24"
+        },
+        {
+            "pattern": "(?=(?>^\\[(source)[#,]\\p{blank}*(?i:(python|py3??|rpy|pyw|cpy|SConstruct|Sconstruct|sconstruct|SConscript|gypi??|\\{\\.python.+?}))([#,][^]]+)*]$))",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 30"
+        },
+        {
+            "pattern": "((?<=--|\\.\\.\\.\\.)|^\\p{blank}*)$",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 28"
+        },
+        {
+            "pattern": "^\\[(source)[#,]\\p{blank}*(?i:(python|py3??|rpy|pyw|cpy|SConstruct|Sconstruct|sconstruct|SConscript|gypi??|\\{\\.python.+?}))([#,]([^],]+))*]$",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 24"
+        },
+        {
+            "pattern": "(?=(?>^\\[(source)[#,]\\p{blank}*(?i:(julia|\\{\\.julia.+?}))([#,][^]]+)*]$))",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 30"
+        },
+        {
+            "pattern": "((?<=--|\\.\\.\\.\\.)|^\\p{blank}*)$",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 28"
+        },
+        {
+            "pattern": "^\\[(source)[#,]\\p{blank}*(?i:(julia|\\{\\.julia.+?}))([#,]([^],]+))*]$",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 24"
+        },
+        {
+            "pattern": "(?=(?>^\\[(source)[#,]\\p{blank}*(?i:(re))([#,][^]]+)*]$))",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 30"
+        },
+        {
+            "pattern": "((?<=--|\\.\\.\\.\\.)|^\\p{blank}*)$",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 28"
+        },
+        {
+            "pattern": "^\\[(source)[#,]\\p{blank}*(?i:(re))([#,]([^],]+))*]$",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 24"
+        },
+        {
+            "pattern": "(?=(?>^\\[(source)[#,]\\p{blank}*(?i:(rust|rs|\\{\\.rust.+?}))([#,][^]]+)*]$))",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 30"
+        },
+        {
+            "pattern": "((?<=--|\\.\\.\\.\\.)|^\\p{blank}*)$",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 28"
+        },
+        {
+            "pattern": "^\\[(source)[#,]\\p{blank}*(?i:(rust|rs|\\{\\.rust.+?}))([#,]([^],]+))*]$",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 24"
+        },
+        {
+            "pattern": "(?=(?>^\\[(source)[#,]\\p{blank}*(?i:(s(?:cala|bt)))([#,][^]]+)*]$))",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 30"
+        },
+        {
+            "pattern": "((?<=--|\\.\\.\\.\\.)|^\\p{blank}*)$",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 28"
+        },
+        {
+            "pattern": "^\\[(source)[#,]\\p{blank}*(?i:(s(?:cala|bt)))([#,]([^],]+))*]$",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 24"
+        },
+        {
+            "pattern": "(?=(?>^\\[(source)[#,]\\p{blank}*(?i:(shell|sh|bash|zsh|bashrc|bash_profile|bash_login|profile|bash_logout|.textmate_init|\\{\\.bash.+?}))([#,][^]]+)*]$))",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 30"
+        },
+        {
+            "pattern": "((?<=--|\\.\\.\\.\\.)|^\\p{blank}*)$",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 28"
+        },
+        {
+            "pattern": "^\\[(source)[#,]\\p{blank}*(?i:(shell|sh|bash|zsh|bashrc|bash_profile|bash_login|profile|bash_logout|.textmate_init|\\{\\.bash.+?}))([#,]([^],]+))*]$",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 24"
+        },
+        {
+            "pattern": "(?=(?>^\\[(source)[#,]\\p{blank}*(?i:(t(?:ypescript|s)))([#,][^]]+)*]$))",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 30"
+        },
+        {
+            "pattern": "((?<=--|\\.\\.\\.\\.)|^\\p{blank}*)$",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 28"
+        },
+        {
+            "pattern": "^\\[(source)[#,]\\p{blank}*(?i:(t(?:ypescript|s)))([#,]([^],]+))*]$",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 24"
+        },
+        {
+            "pattern": "(?=(?>^\\[(source)[#,]\\p{blank}*(?i:(tsx))([#,][^]]+)*]$))",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 30"
+        },
+        {
+            "pattern": "((?<=--|\\.\\.\\.\\.)|^\\p{blank}*)$",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 28"
+        },
+        {
+            "pattern": "^\\[(source)[#,]\\p{blank}*(?i:(tsx))([#,]([^],]+))*]$",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 24"
+        },
+        {
+            "pattern": "(?=(?>^\\[(source)[#,]\\p{blank}*(?i:(c(?:s|sharp|#)))([#,][^]]+)*]$))",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 30"
+        },
+        {
+            "pattern": "((?<=--|\\.\\.\\.\\.)|^\\p{blank}*)$",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 28"
+        },
+        {
+            "pattern": "^\\[(source)[#,]\\p{blank}*(?i:(c(?:s|sharp|#)))([#,]([^],]+))*]$",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 24"
+        },
+        {
+            "pattern": "(?=(?>^\\[(source)[#,]\\p{blank}*(?i:(f(?:s|sharp|#)))([#,][^]]+)*]$))",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 30"
+        },
+        {
+            "pattern": "((?<=--|\\.\\.\\.\\.)|^\\p{blank}*)$",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 28"
+        },
+        {
+            "pattern": "^\\[(source)[#,]\\p{blank}*(?i:(f(?:s|sharp|#)))([#,]([^],]+))*]$",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 24"
+        },
+        {
+            "pattern": "(?=(?>^\\[(source)[#,]\\p{blank}*(?i:(dart))([#,][^]]+)*]$))",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 30"
+        },
+        {
+            "pattern": "((?<=--|\\.\\.\\.\\.)|^\\p{blank}*)$",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 28"
+        },
+        {
+            "pattern": "^\\[(source)[#,]\\p{blank}*(?i:(dart))([#,]([^],]+))*]$",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 24"
+        },
+        {
+            "pattern": "(?=(?>^\\[(source)[#,]\\p{blank}*(?i:(h(?:andlebars|bs)))([#,][^]]+)*]$))",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 30"
+        },
+        {
+            "pattern": "((?<=--|\\.\\.\\.\\.)|^\\p{blank}*)$",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 28"
+        },
+        {
+            "pattern": "^\\[(source)[#,]\\p{blank}*(?i:(h(?:andlebars|bs)))([#,]([^],]+))*]$",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 24"
+        },
+        {
+            "pattern": "(?=(?>^\\[(source)[#,]\\p{blank}*(?i:(m(?:arkdown|d)))([#,][^]]+)*]$))",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 30"
+        },
+        {
+            "pattern": "((?<=--|\\.\\.\\.\\.)|^\\p{blank}*)$",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 28"
+        },
+        {
+            "pattern": "^\\[(source)[#,]\\p{blank}*(?i:(m(?:arkdown|d)))([#,]([^],]+))*]$",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 24"
+        },
+        {
+            "pattern": "(?=(?>^\\[(source)[#,]\\p{blank}*(?i:(log))([#,][^]]+)*]$))",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 30"
+        },
+        {
+            "pattern": "((?<=--|\\.\\.\\.\\.)|^\\p{blank}*)$",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 28"
+        },
+        {
+            "pattern": "^\\[(source)[#,]\\p{blank}*(?i:(log))([#,]([^],]+))*]$",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 24"
+        },
+        {
+            "pattern": "(?=(?>^\\[(source)[#,]\\p{blank}*(?i:(erlang))([#,][^]]+)*]$))",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 30"
+        },
+        {
+            "pattern": "((?<=--|\\.\\.\\.\\.)|^\\p{blank}*)$",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 28"
+        },
+        {
+            "pattern": "^\\[(source)[#,]\\p{blank}*(?i:(erlang))([#,]([^],]+))*]$",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 24"
+        },
+        {
+            "pattern": "(?=(?>^\\[(source)[#,]\\p{blank}*(?i:(elixir))([#,][^]]+)*]$))",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 30"
+        },
+        {
+            "pattern": "((?<=--|\\.\\.\\.\\.)|^\\p{blank}*)$",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 28"
+        },
+        {
+            "pattern": "^\\[(source)[#,]\\p{blank}*(?i:(elixir))([#,]([^],]+))*]$",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 24"
+        },
+        {
+            "pattern": "(?=(?>^\\[(source)[#,]\\p{blank}*(?i:((?:la|)tex))([#,][^]]+)*]$))",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 30"
+        },
+        {
+            "pattern": "((?<=--|\\.\\.\\.\\.)|^\\p{blank}*)$",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 28"
+        },
+        {
+            "pattern": "^\\[(source)[#,]\\p{blank}*(?i:((?:la|)tex))([#,]([^],]+))*]$",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 24"
+        },
+        {
+            "pattern": "(?=(?>^\\[(source)[#,]\\p{blank}*(?i:(bibtex))([#,][^]]+)*]$))",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 30"
+        },
+        {
+            "pattern": "((?<=--|\\.\\.\\.\\.)|^\\p{blank}*)$",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 28"
+        },
+        {
+            "pattern": "^\\[(source)[#,]\\p{blank}*(?i:(bibtex))([#,]([^],]+))*]$",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 24"
+        },
+        {
+            "pattern": "(?=(?>^\\[(source)[#,]\\p{blank}*(?i:(twig))([#,][^]]+)*]$))",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 30"
+        },
+        {
+            "pattern": "((?<=--|\\.\\.\\.\\.)|^\\p{blank}*)$",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 28"
+        },
+        {
+            "pattern": "^\\[(source)[#,]\\p{blank}*(?i:(twig))([#,]([^],]+))*]$",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 24"
+        },
+        {
+            "pattern": "(?=(?>^\\[(source)[#,]\\p{blank}*(?i:(yang))([#,][^]]+)*]$))",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 30"
+        },
+        {
+            "pattern": "((?<=--|\\.\\.\\.\\.)|^\\p{blank}*)$",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 28"
+        },
+        {
+            "pattern": "^\\[(source)[#,]\\p{blank}*(?i:(yang))([#,]([^],]+))*]$",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 24"
+        },
+        {
+            "pattern": "(?=(?>^\\[(source)[#,]\\p{blank}*(?i:(abap))([#,][^]]+)*]$))",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 30"
+        },
+        {
+            "pattern": "((?<=--|\\.\\.\\.\\.)|^\\p{blank}*)$",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 28"
+        },
+        {
+            "pattern": "^\\[(source)[#,]\\p{blank}*(?i:(abap))([#,]([^],]+))*]$",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 24"
+        },
+        {
+            "pattern": "(?=(?>^\\[(source)[#,]\\p{blank}*(?i:(r(?:estructuredtext|st)))([#,][^]]+)*]$))",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 30"
+        },
+        {
+            "pattern": "((?<=--|\\.\\.\\.\\.)|^\\p{blank}*)$",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 28"
+        },
+        {
+            "pattern": "^\\[(source)[#,]\\p{blank}*(?i:(r(?:estructuredtext|st)))([#,]([^],]+))*]$",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 24"
+        },
+        {
+            "pattern": "(?=(?>^\\[(source)[#,]\\p{blank}*(?i:(haskell))([#,][^]]+)*]$))",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 30"
+        },
+        {
+            "pattern": "((?<=--|\\.\\.\\.\\.)|^\\p{blank}*)$",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 28"
+        },
+        {
+            "pattern": "^\\[(source)[#,]\\p{blank}*(?i:(haskell))([#,]([^],]+))*]$",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 24"
+        },
+        {
+            "pattern": "(?=(?>^\\[(source)[#,]\\p{blank}*(?i:(k(?:otlin|t)))([#,][^]]+)*]$))",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 30"
+        },
+        {
+            "pattern": "((?<=--|\\.\\.\\.\\.)|^\\p{blank}*)$",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 28"
+        },
+        {
+            "pattern": "^\\[(source)[#,]\\p{blank}*(?i:(k(?:otlin|t)))([#,]([^],]+))*]$",
+            "error": "Compilation failed: unknown property after \\P or \\p at offset 24"
         },
         {
             "pattern": "(?<![*:;\\\\[:word:]])(\\[.+?])?((\\*)(\\S(?:|.*?\\S))(\\*)(?!\\p{word}))",
