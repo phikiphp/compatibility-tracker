@@ -1,5 +1,8 @@
 # Compatibility Tracker
 
+> [!WARNING]
+> This repository is no longer relevant as Phiki has a new tokenizer that doesn't rely on the PCRE2 engine.
+
 This repository contains a table that covers how compatible TextMate grammars provided by [`tm-grammars`](https://github.com/shikijs/textmate-grammars-themes/tree/main/packages/tm-grammars) are with PHP's regular expression engine PCRE2.
 
 Compatibility statistics are updated daily using a GitHub Actions workflow and displayed in a readable table format below.
